@@ -5,10 +5,10 @@
         <title></title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
-        <link rel="stylesheet" type="text/css" href="C:\Users\johnp\Desktop\Coding\WEB PROGRAMMING\test htmls\mapTest.css">
+        <link rel="stylesheet" type="text/css" href="mapTest.css">
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="C:/Users/johnp/Desktop/Coding/BoostrapSRC/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="C:/Users/johnp/Desktop/Coding/BoostrapSRC/jasny-bootstrap/css/jasny-bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
@@ -28,11 +28,11 @@
         <span class="icon-bar"></span>
       </button> -->
     </div>
-  </nav>  
-    
+  </nav>
 
 
-  <div id="wrapper" class="toggled">    
+
+  <div id="wrapper" class="toggled">
         <!-- Sidebar -->
 	<div id="slidebar-white" class="slidebar-nav">
       <nav id="navbar-white" class="navbar navbar-default" role="navigation">
@@ -41,22 +41,22 @@
           <li class="sidebar-form">
             <form class="input-group" border="0" id="af" name="af" role="search" action="/archive.php">
                 <input type="text" class="form-control" id="aa" name="aa" placeholder="Search">
-              <span class="input-group-btn">  
+              <span class="input-group-btn">
                 <button type="submit" class="btn btn-md" id="as" name="as" value="Go"><i class="glyphicon glyphicon-search"></i></button>
               </span>
             </form>
           </li>
           <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Services <b class="caret"></b></a>
-          <ul class="dropdown-menu"> 
+          <ul class="dropdown-menu">
             <li><a href="/">Carwashes</a></li>
             <li><a href="/">Lapdances</a></li>
             <li><a href="/">Musicals</a></li>
-            <li><a href="/">Tutorials</a></li>           
+            <li><a href="/">Tutorials</a></li>
             <li><a href="/">Catering</a></li>
           </ul>
         </li>
-               
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> Products <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -70,26 +70,26 @@
             <li><a href="/">Coffee Mugs</a></li>
           </ul>
         </li>
-             
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Profile <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="/"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Account</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
-            <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Notifications</a></li>           
+            <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Notifications</a></li>
           </ul>
         </li>
         </ul>
       </nav><!--/.navbar -->
-    </div><!--/.sidebar-nav -->  
+    </div><!--/.sidebar-nav -->
 
 
     <!-- Page Content -->
    <!-- <main id="page-wrapper6"> -->
-      <div class="container-fluid" style="height: 100%">  
+      <div class="container-fluid" style="height: 100%">
         <div id='map'></div>
-    
+
           <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
               var map = new mapboxgl.Map({
@@ -98,7 +98,7 @@
                   center: [-122.28476, 37.5173774], // starting position
                   zoom: 17.5 // starting zoom
               });
-              
+
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
                       layers: ['ndnuq2'] // replace this with the name of the layer
@@ -116,9 +116,9 @@
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
-              
+
           </script>
-        </div> 
+        </div>
    <!-- </main> -->
   </div><!-- /#wrapper -->
 
