@@ -1,0 +1,33 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "St. Mary's Hall",
+        "description": "Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.2849,
+          37.51675
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Carl and Celia Berta Gellert Library",
+        "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284719,
+          37.51755
+        ],
+        "type": "Point"
+      }
+    }
+    ],
+  "type": "FeatureCollection"
+}
