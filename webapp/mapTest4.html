@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title></title>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+        <link rel="stylesheet" type="text/css" href="C:\Users\johnp\Desktop\Coding\WEB PROGRAMMING\test htmls\mapTest.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="C:/Users/johnp/Desktop/Coding/BoostrapSRC/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="C:/Users/johnp/Desktop/Coding/BoostrapSRC/jasny-bootstrap/css/jasny-bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" style="width: 0%" role="navigation">
+    <div class="navbar-header">
+      <button href="#menu-toggle" class="slidebar-toggle" id="menu-toggle">
+        <span class="sr-only">Toggle sidebar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  <!--    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+    </div>
+  </nav>  
+    
+
+
+  <div id="wrapper" class="toggled">    
+        <!-- Sidebar -->
+	<div id="slidebar-white" class="slidebar-nav">
+      <nav id="navbar-white" class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav">
+          <li class="hidden-xs"><a class="navbar-brand" href="/">Slidebar</a></li>
+          <li class="sidebar-form">
+            <form class="input-group" border="0" id="af" name="af" role="search" action="/archive.php">
+                <input type="text" class="form-control" id="aa" name="aa" placeholder="Search">
+              <span class="input-group-btn">  
+                <button type="submit" class="btn btn-md" id="as" name="as" value="Go"><i class="glyphicon glyphicon-search"></i></button>
+              </span>
+            </form>
+          </li>
+          <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Services <b class="caret"></b></a>
+          <ul class="dropdown-menu"> 
+            <li><a href="/">Carwashes</a></li>
+            <li><a href="/">Lapdances</a></li>
+            <li><a href="/">Musicals</a></li>
+            <li><a href="/">Tutorials</a></li>           
+            <li><a href="/">Catering</a></li>
+          </ul>
+        </li>
+               
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> Products <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/">Books</a></li>
+            <li><a href="/">Leaflets</a></li>
+            <li><a href="/">CDs</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Merchandise</li>
+            <li><a href="/">Towels</a></li>
+            <li><a href="/">Flags</a></li>
+            <li><a href="/">Coffee Mugs</a></li>
+          </ul>
+        </li>
+             
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Profile <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Account</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Notifications</a></li>           
+          </ul>
+        </li>
+        </ul>
+      </nav><!--/.navbar -->
+    </div><!--/.sidebar-nav -->  
+
+
+    <!-- Page Content -->
+   <!-- <main id="page-wrapper6"> -->
+      <div class="container-fluid" style="height: 100%">  
+        <div id='map'></div>
+    
+          <script>
+              mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
+              var map = new mapboxgl.Map({
+                  container: 'map', // container id
+                  style: 'mapbox://styles/seprothx/ciygexdlu00172soc0yhbm2hu', //stylesheet location
+                  center: [-122.28476, 37.5173774], // starting position
+                  zoom: 17.5 // starting zoom
+              });
+              
+              map.on('click', function(e) {
+                  var features = map.queryRenderedFeatures(e.point, {
+                      layers: ['ndnuq2'] // replace this with the name of the layer
+                  });
+
+                  if (!features.length) {
+                      return;
+                  }
+
+                  var feature = features[0];
+
+                  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                  .setLngLat(feature.geometry.coordinates)
+                  .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+                  .setLngLat(feature.geometry.coordinates)
+                  .addTo(map);
+              });
+              
+          </script>
+        </div> 
+   <!-- </main> -->
+  </div><!-- /#wrapper -->
+
+    </body>
+    <script>
+        $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
+    </script>
+</html>
