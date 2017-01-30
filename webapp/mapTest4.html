@@ -9,8 +9,13 @@
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/pure-min.css">
+        <link rel="stylesheet" href="auto-complete.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="auto-complete.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
     </head>
     <body>
         <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" style="width: 0%" role="navigation">
@@ -90,8 +95,8 @@
       <div class="container-fluid" style="height: 100%">
           
           <!-- Search bar -->
-              <div class="input-group col-md-3 col-md-offset-4 floatburger" style="width: 25%">
-                  <input type="text" class="form-control input-lg" placeholder="search" />
+              <div class="input-group col-md-3 col-md-offset-4 floatburger front" style="width: 25%">
+                  <input type="text" class="form-control pure-form input-lg" id="advanced-demo" placeholder="search" />
                   <span class="input-group-btn">
                       <button id="mainSearch" class="btn btn-lg" type="button">
                           <i class="glyphicon glyphicon-search"></i>
@@ -137,5 +142,37 @@
     </body>
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
+
+        var locationSearch = new autoComplete({
+            selector: '#advanced-demo',
+            minChars: 0,
+            source: function(term, suggest){
+                term = term.toLowerCase();
+                var choices = [['St. Mary\'s Hall'], ['Financial Aid'], ['Registrar'], ['Business Office'], ['Public Safety'], ['Cafeteria'], ['The Carl and Celia Berta Gellert Library'], ['Library Lawn'], ['Walter Gleason Gym'], ['Campus Center'], ['Academic Success Center'], ['Admissions'], ['International Student Office'], ['Student Life & Leadership Office'], ['The Quad'], ['Writing Center'], ['Cunningham Chapel Annex'], ['Center for Spirituality'], ['Office of Diversity'], ['Dorothy Stang Center'], ['Julie Billiart Hall'], ['Dean of Students/Student Affairs'], ['Career Services'], ['St. Joseph Hall'], ['Housing'], ['The Apartments'], ['Koret Athletic Field'], ['Toso Residence (Compiegne)'], ['Human Resources'], ['Administration'], ['New Hall'], ['Counseling and Health Services'], ['Taube Center'], ['Ralston Hall'], ['Weigand Gallery'], ['Madison Art Center'], ['Cuvilly Hall'], ['Tabard'], ['Bookstore'], ['Gavin Hall']];
+                var suggestions = [];
+                for (i=0;i<choices.length;i++)
+                    if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+                suggest(suggestions);
+            },
+            renderItem: function (item, search){
+                search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&amp;');
+                var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
+                return '<div class="autocomplete-suggestion" data-langname="'+item[0]+'" data-lang="'+item[1]+'" data-val="'+search+'">'+item[0].replace(re, "<b>$1</b>")+'</div>';
+            },
+            onSelect: function(e, term, item){
+                console.log('Item "'+item.getAttribute('data-langname')+' ('+item.getAttribute('data-lang')+')" selected by '+(e.type == 'keydown' ? 'pressing enter' : 'mouse click')+'.');
+                document.getElementById('advanced-demo').value = item.getAttribute('data-langname');
+            }
+        });
+
+        if (~window.location.href.indexOf('http')) {
+            (function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
+            (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=114593902037957";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            document.getElementById('github_social').innerHTML = '\
+                <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
+                <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
+            ';
+        }
     </script>
 </html>
