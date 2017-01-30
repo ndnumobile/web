@@ -1,3 +1,45 @@
+#mainSearch{
+    background-color: white;
+    border: 1px solid;
+    z-index: 2;
+    border-color: lightgray;
+}
+
+#custom-search-input{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: none;
+    z-index: 2;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: white;
+    box-shadow: none;
+    border: 1px;
+    color: #666666;
+    padding: 7.5px 10px 7.5px 8px;
+    border-left: solid 1px #ccc;
+    
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+    
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+    
+}
+
 .boxy{
     text-align: center;
     height: 800px;
@@ -9,7 +51,6 @@
 }
 
 .floatburger{
-    width: 0%;
     padding: 10px;
 }
 
