@@ -88,7 +88,19 @@
     <!-- Page Content -->
    <!-- <main id="page-wrapper6"> -->
       <div class="container-fluid" style="height: 100%">
-        <div id='map'></div>
+          
+          <!-- Search bar -->
+              <div class="input-group col-md-3 col-md-offset-4 floatburger" style="width: 25%">
+                  <input type="text" class="form-control input-lg" placeholder="search" />
+                  <span class="input-group-btn">
+                      <button id="mainSearch" class="btn btn-lg" type="button">
+                          <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                  </span>
+              </div>
+          <!-- /Search bar -->
+          
+          <div id='map'></div>
 
           <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
