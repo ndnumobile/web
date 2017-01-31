@@ -1,20 +1,5 @@
 {
   "features": [
-
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-
-        ],
-        "type": "Point"
-      }
-    },
-
     {
       "type": "Feature",
       "properties": {
@@ -133,7 +118,7 @@
         ],
         "type": "Point"
       }
-    },
+    }
 
 
     ],
