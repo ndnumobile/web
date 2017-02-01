@@ -15,6 +15,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="auto-complete.js"></script>
+        <script src="mapScripts.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
     </head>
     <body>
@@ -98,7 +99,7 @@
               <div class="input-group col-md-3 col-md-offset-4 floatburger front" style="width: 25%">
                   <input type="text" class="form-control pure-form input-lg" id="advanced-demo" placeholder="search" />
                   <span class="input-group-btn">
-                      <button id="mainSearch" class="btn btn-lg" type="button">
+                      <button id="mainSearchBtn" class="btn btn-lg" type="button" onclick="searchBtn()">
                           <i class="glyphicon glyphicon-search"></i>
                       </button>
                   </span>
@@ -124,6 +125,11 @@
                   if (!features.length) {
                       return;
                   }
+                  
+                  map.flyTo({
+                        center: features[0].geometry.coordinates,
+                        speed: 0.3
+                  });
 
                   var feature = features[0];
 
@@ -133,7 +139,72 @@
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
-
+              
+              function searchBtn(){
+                   //this function authored by JohnPhilip Lahman
+                  var x = document.getElementById('advanced-demo').value;
+                  if(x == "St. Mary's Hall"){
+                      map.flyTo({
+                          center: [-122.2849, 37.51675],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.2849, 37.51675])
+                      .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+                      .addTo(map);
+                      
+                  } else if(x == "The Carl and Celia Berta Gellert Library"){
+                      map.flyTo({
+                          center: [-122.284719, 37.51755],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.284719, 37.51755])
+                      .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
+                      .addTo(map);
+                      
+                  }else if(x == "Ralston Hall"){
+                      map.flyTo({
+                          center: [-122.286784, 37.517380],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.286784, 37.517380])
+                      .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
+                      .addTo(map);
+                      
+                  }
+                  
+              }
+              
+              $("#advanced-demo").keyup(function(event){
+                if(event.keyCode == 13){
+                    $("#mainSearchBtn").click();
+                }
+              });
+             /* document.getElementById('mainSearchBtn').addEventListener('click', function() {
+                  //this function authored by JohnPhilip Lahman
+                  var x = document.getElementById('advanced-demo').value;
+                  if(x == "St. Mary's Hall"){
+                      map.flyTo({
+                          center: [-122.2849, 37.51675],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.2849, 37.51675])
+                      .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+                      .addTo(map);
+                      
+                  }
+              });*/
           </script>
         </div>
    <!-- </main> -->
@@ -148,7 +219,7 @@
             minChars: 0,
             source: function(term, suggest){
                 term = term.toLowerCase();
-                var choices = [['St. Mary\'s Hall'], ['Financial Aid'], ['Registrar'], ['Business Office'], ['Public Safety'], ['Cafeteria'], ['The Carl and Celia Berta Gellert Library'], ['Library Lawn'], ['Walter Gleason Gym'], ['Campus Center'], ['Academic Success Center'], ['Admissions'], ['International Student Office'], ['Student Life & Leadership Office'], ['The Quad'], ['Writing Center'], ['Cunningham Chapel Annex'], ['Center for Spirituality'], ['Office of Diversity'], ['Dorothy Stang Center'], ['Julie Billiart Hall'], ['Dean of Students/Student Affairs'], ['Career Services'], ['St. Joseph Hall'], ['Housing'], ['The Apartments'], ['Koret Athletic Field'], ['Toso Residence (Compiegne)'], ['Human Resources'], ['Administration'], ['New Hall'], ['Counseling and Health Services'], ['Taube Center'], ['Ralston Hall'], ['Weigand Gallery'], ['Madison Art Center'], ['Cuvilly Hall'], ['Tabard'], ['Bookstore'], ['Gavin Hall']];
+                var choices = [['St. Mary\'s Hall'], ['Financial Aid'], ['Registrar'], ['Business Office'], ['Public Safety'], ['Cafeteria'], ['The Carl and Celia Berta Gellert Library'], ['Library Lawn'], ['Walter Gleason Gym'], ['Campus Center'], ['Academic Success Center'], ['Admissions'], ['International Student Office'], ['Student Life & Leadership Office'], ['The Quad'], ['Writing Center'], ['Cunningham Chapel Annex'], ['Center for Spirituality'], ['Office of Diversity'], ['Dorothy Stang Center'], ['Julie Billiart Hall'], ['Dean of Students/Student Affairs'], ['Career Services'], ['St. Joseph Hall'], ['Housing'], ['The Apartments'], ['Koret Athletic Field'], ['Toso Residence (Compiegne)'], ['Human Resources'], ['Administration'], ['New Hall'], ['Counseling and Health Services'], ['Taube Center'], ['Ralston Hall'], ['Weigand Gallery'], ['Madison Art Center'], ['Cuvilly Hall'], ['Tabard'], ['Bookstore'], ['Gavin Hall'],['Province Center']];
                 var suggestions = [];
                 for (i=0;i<choices.length;i++)
                     if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);

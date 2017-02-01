@@ -5,6 +5,13 @@
     border-color: lightgray;
 }
 
+#mainSearchBtn{
+    background-color: white;
+    border: 1px solid;
+    z-index: 2;
+    border-color: lightgray;
+}
+
 #custom-search-input{
     padding: 10px;
     border-radius: 6px;
