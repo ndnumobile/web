@@ -18,6 +18,8 @@
         <script src="mapScripts.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
     </head>
+
+
     <body>
         <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" style="width: 0%" role="navigation">
     <div class="navbar-header">
@@ -210,6 +212,29 @@
    <!-- </main> -->
   </div><!-- /#wrapper -->
 
+
+  <!-- The Modal -->
+<div id="welcomeModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <img src="http://i.imgur.com/A35ss2e.png" alt="argo">
+  </div>
+
+    <div class="modal-body">
+      <p>Welcome to the NDNU Campus Tour</p>
+      <p>This is an interactive map.</p>
+      <p2>Take a look around or search for campus locations in the search bar.</p2>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
+</div>
+
     </body>
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
@@ -245,5 +270,30 @@
                 <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
             ';
         }
+
+    // Get the modal
+    var modal = document.getElementById('welcomeModal');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Modal opens on page load
+    function welcomeModal() {
+        modal.style.display = "block";
+    }
+    window.onload =welcomeModal;
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
     </script>
 </html>
