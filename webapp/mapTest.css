@@ -12,6 +12,21 @@
     border-color: lightgray;
 }
 
+div.col-sm-3 {
+    background-color: #333;
+}
+
+div.col-sm-3 a {
+    display: inline-block;
+    color: white;
+    padding: 1px;
+    text-decoration: none;
+}
+
+div.col-sm-3 a:hover {
+    background-color: rgb(41, 222, 29);
+}
+
 
 #custom-search-input{
     padding: 10px;
