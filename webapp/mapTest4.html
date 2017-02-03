@@ -195,11 +195,18 @@
 
           <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
+
+              var bounds = [
+                [-122.293931, 37.508234], // Southwest coordinates
+                [-122.274592, 37.527414]  // Northeast coordinates
+              ];
+
               var map = new mapboxgl.Map({
                   container: 'map', // container id
                   style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
                   center: [-122.285060, 37.517295], //starting map position.
-                  zoom: 16.9 // starting zoom
+                  zoom: 16.9, // starting zoom
+                  maxBounds: bounds //sets boundry that the map will pan within.
               });
 
               map.on('click', function(e) {
