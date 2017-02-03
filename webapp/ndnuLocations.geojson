@@ -1,0 +1,126 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "St. Mary's Hall",
+        "description": "Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.2849,
+          37.51675
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Carl and Celia Berta Gellert Library",
+        "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284719,
+          37.51755
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ralston Hall Mansion",
+        "description": "In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.286784,
+          37.517380
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Taube Center",
+        "description": "The Taube Center is used for performances and art showings."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.283010,
+          37.516661
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pool",
+        "description": "A refreshing recreational pool for students."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285473,
+          37.516289
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "NDNU Theatre",
+        "description": "The place where the NDNU Theatre Arts department puts on shows."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285244,
+          37.515499
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "New Hall",
+        "description": "The New Hall, a suite-style residence hall, was built in 2004. Each student has an individual room in a four-person suite, the modular designed furniture allows flexibility in rearranging the living space. Each suite consists of four rooms that share a common area, one bathroom and two sinks. Each individual room is furnished with a long twin bed, dresser, desk and wardrobe closet. All rooms are wheel-chair accessible. New Hall features an open inner quad, and laundry room with eight washers and dryers along with snack and soda machines"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285694,
+          37.517938
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chapel",
+        "description": "Dedicated in 1962, the Chapel holds two baby grand pianos and one harpsichord. There are no restrooms available for guest use in the Chapel facility, however, there are restrooms open to the public in the gymnasium next door. There is a sacristy but there is no dressing area specifically for a bridal party. The chapel is equipped with 130 Breaking Bread worship aid/hymnals."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284900,
+          37.518090
+        ],
+        "type": "Point"
+      }
+    }
+
+
+    ],
+  "type": "FeatureCollection"
+}
