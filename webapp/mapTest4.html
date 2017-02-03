@@ -15,8 +15,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="auto-complete.js"></script>
+        <script src="mapScripts.js"></script>
         <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
     </head>
+
+
     <body>
         <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" style="width: 0%" role="navigation">
     <div class="navbar-header">
@@ -39,10 +42,10 @@
 
   <div id="wrapper" class="toggled">
         <!-- Sidebar -->
-	<div id="slidebar-white" class="slidebar-nav">
+  <div id="slidebar-white" class="slidebar-nav">
       <nav id="navbar-white" class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav">
-          <li class="hidden-xs"><a class="navbar-brand" href="/">Slidebar</a></li>
+          <li class="hidden-xs"><a class="navbar-brand" href="/"></a></li>
           <li class="sidebar-form">
             <form class="input-group" border="0" id="af" name="af" role="search" action="/archive.php">
                 <input type="text" class="form-control" id="aa" name="aa" placeholder="Search">
@@ -52,37 +55,71 @@
             </form>
           </li>
           <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Services <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">Carwashes</a></li>
-            <li><a href="/">Lapdances</a></li>
-            <li><a href="/">Musicals</a></li>
-            <li><a href="/">Tutorials</a></li>
-            <li><a href="/">Catering</a></li>
+            <li><a href="/">St. Mary’s Hall</a></li>
+            <li><a href="/">Financial Aid</a></li>
+            <li><a href="/">Registrar</a></li>
+            <li><a href="/">Business Office</a></li>
+            <li><a href="/">Public Safety</a></li>
+            <li><a href="/">Cafeteria</a></li>
+            <li><a href="/">The Carl and Celia Berta Gellert Library</a></li>
+            <li><a href="/">Library Lawn</a></li>
+            <li><a href="/">Walter Gleason Gym </a></li>
+            <li><a href="/">Campus Center</a></li>
+            <li><a href="/">Academic Success Center</a></li>
+            <li><a href="/">International Student Office</a></li>
+            <li><a href="/">Student Life & Leadership Office</a></li>
+            <li><a href="/">The Quad</a></li>
+            <li><a href="/">Writing Center</a></li>
+            <li><a href="/">Cunningham Chapel Annex</a></li>
+            <li><a href="/">Center for Spirituality</a></li>
+            <li><a href="/">Office of Diversity</a></li>
+            <li><a href="/">Dorothy Stang Center</a></li>
+            <li><a href="/">ulie Billiart Hall</a></li>
+            <li><a href="/">Dean of Students/Student Affairs</a></li>
+            <li><a href="/">Career Services</a></li>
+            <li><a href="/">St. Joseph Hall</a></li>
+            <li><a href="/">Housing</a></li>
+            <li><a href="/">The Apartments</a></li>
+            <li><a href="/">Koret Athletic Field</a></li>
+            <li><a href="/">Toso Residence (Compiegne)</a></li>
+            <li><a href="/">Human Resources</a></li>
+            <li><a href="/">Administration</a></li>
+            <li><a href="/">New Hall</a></li>
+            <li><a href="/">Counseling and Health Services</a></li>
+            <li><a href="/">Taube Center</a></li>
+            <li><a href="/">Ralston Hall</a></li>
+            <li><a href="/">Weigand Gallery</a></li>
+            <li><a href="/">Madison Art Center</a></li>
+            <li><a href="/">Cuvilly Hall</a></li>
+            <li><a href="/">Tabard</a></li>
+            <li><a href="/">Bookstore</a></li>
+            <li><a href="/">Gavin Hall</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> Products <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">Books</a></li>
-            <li><a href="/">Leaflets</a></li>
-            <li><a href="/">CDs</a></li>
+            <li><a href="/">FAQ1</a></li>
+            <li><a href="/">FAQ2</a></li>
+            <li><a href="/">FAQ3</a></li>
             <li class="divider"></li>
-            <li class="dropdown-header">Merchandise</li>
-            <li><a href="/">Towels</a></li>
-            <li><a href="/">Flags</a></li>
-            <li><a href="/">Coffee Mugs</a></li>
+            <li class="dropdown-header">Extra</li>
+            <li><a href="/">FAQ4</a></li>
+            <li><a href="/">FAQ5</a></li>
+            <li><a href="/">FAQ6</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Profile <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Documents <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
-            <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Account</a></li>
-            <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
-            <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Notifications</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-user"></i> Doc1</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Doc2</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Doc3</a></li>
+            <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Doc4</a></li>
           </ul>
         </li>
         </ul>
@@ -118,7 +155,7 @@
               <div class="input-group col-md-3 col-md-offset-4 floatburger front" style="width: 25%">
                   <input type="text" class="form-control pure-form input-lg" id="advanced-demo" placeholder="search" />
                   <span class="input-group-btn">
-                      <button id="mainSearch" class="btn btn-lg" type="button">
+                      <button id="mainSearchBtn" class="btn btn-lg" type="button" onclick="searchBtn()">
                           <i class="glyphicon glyphicon-search"></i>
                       </button>
                   </span>
@@ -144,6 +181,11 @@
                   if (!features.length) {
                       return;
                   }
+                  
+                  map.flyTo({
+                        center: features[0].geometry.coordinates,
+                        speed: 0.3
+                  });
 
                   var feature = features[0];
 
@@ -153,11 +195,100 @@
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
-
+              
+              function searchBtn(){
+                   //this function authored by JohnPhilip Lahman
+                  var x = document.getElementById('advanced-demo').value;
+                  if(x == "St. Mary's Hall"){
+                      map.flyTo({
+                          center: [-122.2849, 37.51675],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.2849, 37.51675])
+                      .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+                      .addTo(map);
+                      
+                  } else if(x == "The Carl and Celia Berta Gellert Library"){
+                      map.flyTo({
+                          center: [-122.284719, 37.51755],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.284719, 37.51755])
+                      .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
+                      .addTo(map);
+                      
+                  }else if(x == "Ralston Hall"){
+                      map.flyTo({
+                          center: [-122.286784, 37.517380],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.286784, 37.517380])
+                      .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
+                      .addTo(map);
+                      
+                  }
+                  
+              }
+              
+              $("#advanced-demo").keyup(function(event){
+                if(event.keyCode == 13){
+                    $("#mainSearchBtn").click();
+                }
+              });
+             /* document.getElementById('mainSearchBtn').addEventListener('click', function() {
+                  //this function authored by JohnPhilip Lahman
+                  var x = document.getElementById('advanced-demo').value;
+                  if(x == "St. Mary's Hall"){
+                      map.flyTo({
+                          center: [-122.2849, 37.51675],
+                          speed: 0.3,
+                          //zoom: 20
+                      });
+                      
+                      var popup = new mapboxgl.Popup({closeOnClick: true})
+                      .setLngLat([-122.2849, 37.51675])
+                      .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+                      .addTo(map);
+                      
+                  }
+              });*/
           </script>
         </div>
    <!-- </main> -->
   </div><!-- /#wrapper -->
+
+
+<!-- The Modal -->
+
+<div id="welcomeModal" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    
+    <div class="modal-header2">
+      <span class="close2">&times;</span>
+      <img src="http://i.imgur.com/A35ss2e.png" alt="argo">
+  </div>
+
+    <div class="modal-body2">
+      <p>Welcome to the NDNU Campus Tour!</p>
+      <p1>This is an interactive map.</p1>
+      <p2>Take a look around or search for campus locations in the search bar.</p2>
+    </div>
+    <div class="modal-footer2">
+    </div>
+  </div>
+
+</div>
 
     </body>
     <script>
@@ -168,7 +299,7 @@
             minChars: 0,
             source: function(term, suggest){
                 term = term.toLowerCase();
-                var choices = [['St. Mary\'s Hall'], ['Financial Aid'], ['Registrar'], ['Business Office'], ['Public Safety'], ['Cafeteria'], ['The Carl and Celia Berta Gellert Library'], ['Library Lawn'], ['Walter Gleason Gym'], ['Campus Center'], ['Academic Success Center'], ['Admissions'], ['International Student Office'], ['Student Life & Leadership Office'], ['The Quad'], ['Writing Center'], ['Cunningham Chapel Annex'], ['Center for Spirituality'], ['Office of Diversity'], ['Dorothy Stang Center'], ['Julie Billiart Hall'], ['Dean of Students/Student Affairs'], ['Career Services'], ['St. Joseph Hall'], ['Housing'], ['The Apartments'], ['Koret Athletic Field'], ['Toso Residence (Compiegne)'], ['Human Resources'], ['Administration'], ['New Hall'], ['Counseling and Health Services'], ['Taube Center'], ['Ralston Hall'], ['Weigand Gallery'], ['Madison Art Center'], ['Cuvilly Hall'], ['Tabard'], ['Bookstore'], ['Gavin Hall']];
+                var choices = [['St. Mary\'s Hall'], ['Financial Aid'], ['Registrar'], ['Business Office'], ['Public Safety'], ['Cafeteria'], ['The Carl and Celia Berta Gellert Library'], ['Library Lawn'], ['Walter Gleason Gym'], ['Campus Center'], ['Academic Success Center'], ['Admissions'], ['International Student Office'], ['Student Life & Leadership Office'], ['The Quad'], ['Writing Center'], ['Cunningham Chapel Annex'], ['Center for Spirituality'], ['Office of Diversity'], ['Dorothy Stang Center'], ['Julie Billiart Hall'], ['Dean of Students/Student Affairs'], ['Career Services'], ['St. Joseph Hall'], ['Housing'], ['The Apartments'], ['Koret Athletic Field'], ['Toso Residence (Compiegne)'], ['Human Resources'], ['Administration'], ['New Hall'], ['Counseling and Health Services'], ['Taube Center'], ['Ralston Hall'], ['Weigand Gallery'], ['Madison Art Center'], ['Cuvilly Hall'], ['Tabard'], ['Bookstore'], ['Gavin Hall'],['Province Center']];
                 var suggestions = [];
                 for (i=0;i<choices.length;i++)
                     if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
@@ -194,5 +325,39 @@
                 <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
             ';
         }
+    //Modal Functions - authored by Anthony Piquette
+    // Get the modal
+    var modal2 = document.getElementById('welcomeModal');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close2")[0];
+
+    //Get Hamburger Menu element in order to close modal when clicked
+    var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0];
+
+    // Modal opens on page load
+    function welcomeModal() {
+        modal2.style.display = "block";
+    }
+    window.onload =welcomeModal;
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    // When the user clicks on <Hamburger Menu> Modal is closed
+    hamburgerClose.onclick = function(){
+      modal2.style.display ="none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
+
+
     </script>
 </html>
