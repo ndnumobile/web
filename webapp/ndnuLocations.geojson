@@ -1,4 +1,4 @@
-{
+{ "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
@@ -118,9 +118,83 @@
         ],
         "type": "Point"
       }
-    }
+    },
 
 
-    ],
-  "type": "FeatureCollection"
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chapel Annex",
+        "description": "An annex of the chapel, housing the Office of Spirituality."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285230,
+          37.518241
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sr. Dorothy Stang Center",
+        "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement will be nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Housed in a facility that is organized to encourage open communication, dialogue, and activism – including community art exhibits and performances, seminars, public speaking events, and community action gatherings – the Center will become a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285300,
+          37.518071
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+
+        ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Campus Center",
+        "description": "Including the Academic Success Center, Admissions, Writing Center, Welcom Center, International Student Office, and the Student Life & Leadership Office, the Campus Center earns it's name acting as the hub of the campus."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284698,
+          37.517036
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+
+        ],
+        "type": "Point"
+      }
+    },
+
+
+    ]
 }
