@@ -189,14 +189,14 @@
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
               var map = new mapboxgl.Map({
                   container: 'map', // container id
-                  style: 'mapbox://styles/seprothx/ciyl5737l003n2smgmzlic9xq', //stylesheet location
+                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
                   center: [-122.28476, 37.5173774], // starting position
                   zoom: 17.5 // starting zoom
               });
 
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
-                      layers: ['ndnux'] // replace this with the name of the layer
+                      layers: ['ndnuz'] // replace this with the name of the layer
                   });
 
                   if (!features.length) {
