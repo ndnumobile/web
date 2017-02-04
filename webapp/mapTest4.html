@@ -26,6 +26,24 @@
             }
         }
         </script>
+        <style>
+          .mapboxgl-popup-content{
+            max-width: 400px;
+            border-radius:25px;
+            padding-left:15px;
+            padding-right:10px;
+          }
+          .popup-image{
+            width:100px;
+            height:100px;
+            float:left;
+            margin:5px 10px 10px 0px;
+          }
+          .popup-desc{
+            margin-top:10px;
+            float:left;
+          }
+        </style>
     </head>
 
     <body onload="validateSession();">
@@ -46,8 +64,6 @@
     </div>
   </nav>
 
-
-
   <div id="wrapper" class="toggled">
         <!-- Sidebar -->
   <div id="slidebar-white" class="slidebar-nav">
@@ -55,12 +71,6 @@
         <ul class="nav navbar-nav">
           <li class="hidden-xs"><a class="navbar-brand" href="/"></a></li>
           <li class="sidebar-form">
-            <form class="input-group" border="0" id="af" name="af" role="search" action="/archive.php">
-                <input type="text" class="form-control" id="aa" name="aa" placeholder="Search">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-md" id="as" name="as" value="Go"><i class="glyphicon glyphicon-search"></i></button>
-              </span>
-            </form>
           </li>
           <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
@@ -108,18 +118,17 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ's and Tips <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">FAQ1</a></li>
-            <li><a href="/">FAQ2</a></li>
-            <li><a href="/">FAQ3</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Extra</li>
-            <li><a href="/">FAQ4</a></li>
-            <li><a href="/">FAQ5</a></li>
-            <li><a href="/">FAQ6</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#wifi">Wifi Connection</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#print">Printing Areas</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#email">Email and Login</a></li>
+            <li><a href="/">Didn't find an answer?</a></li>
           </ul>
         </li>
+
+
+
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Documents <b class="caret"></b></a>
@@ -128,6 +137,7 @@
             <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Doc2</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Doc3</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Doc4</a></li>
+
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/direct-deposit-form.pdf">Direct Deposit Form</a></li>
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/NDNU-Emergency-Contact-Form.pdf">Emergency Contact Form</a></li>
             <li><a href="http://www.ndnu.edu/giving/files/2013/06/payroll-deduction-form.pdf">Payroll Deduction Form</a></li>
@@ -155,6 +165,7 @@
         </ul>
       </nav><!--/.navbar -->
 
+
     </div><!--/.sidebar-nav -->
 
 
@@ -173,7 +184,7 @@
               </div>
           <!-- /Search bar -->
 
-          <div id='map'></div>
+          <div id='map' style="z-index:-1"></div>
 
           <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
@@ -185,7 +196,8 @@
 
               var map = new mapboxgl.Map({
                   container: 'map', // container id
-                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
+                  // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
+                  style: 'mapbox://styles/seprothx/ciyqib2bt001a2snv8g2348u0', //map style location
                   center: [-122.285060, 37.517295], //starting map position.
                   zoom: 16.9, // starting zoom
                   maxBounds: bounds //sets boundry that the map will pan within.
@@ -209,10 +221,13 @@
 
                   var popup = new mapboxgl.Popup({ offset: [0, -15] })
                   .setLngLat(feature.geometry.coordinates)
-                  .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+                  .setHTML('<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p>')
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
+
+              //adds map navigation controls for zoom and reset north. Default position in upper right.
+              map.addControl(new mapboxgl.NavigationControl());
 
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
@@ -736,7 +751,62 @@
 
 </div>
 
+<!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
+<div class="modal" id="wifi">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Connect to NDNU Wifi </h2>
+</div>
+    <div class="modal-body"></div>
+    <p>Basic Steps. (Wifi must be ON for your device)</p>
+    <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
+    <p>2) Type in the address 10.10.100.100</p>
+    <P>3) Proceed past any warning signs to Login page</p>
+    <p>4) Login credentials - Username = School email username.
+                           Password = First two letters of last name + last 4 numbers of StudentID.</p>
+  </div>
+</div>
+
+<div class="modal" id="print">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Printing Locations and Cost</h2>
+</div>
+    <div class="modal-body"></div>
+    <p> There are three known areas to print documents.</p>
+    <p> 1) The Library
+        2) The Mac Lab located in St. Mary's
+        3) The PC Lab located in St. Mary's
+
+        You must Log-In to one of the School Computers to Print.
+
+        Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.
+  </div>
+</div>
+
+<div class="modal" id="email">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Email and Login </h2>
+</div>
+    <div class="modal-body"></div>
+    <p> Your Student Email should be given at Registration</p>
+    <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu
+        2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
+        3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab
+        4) Password is the same as the password used for wifi.
+
+
+  </div>
+</div>
+
+<!--End of Modal Popups for FAQ's Still in Production.-->
     </body>
+
+
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
 
