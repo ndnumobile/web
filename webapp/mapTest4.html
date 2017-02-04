@@ -108,18 +108,17 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ's and Tips <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">FAQ1</a></li>
-            <li><a href="/">FAQ2</a></li>
-            <li><a href="/">FAQ3</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Extra</li>
-            <li><a href="/">FAQ4</a></li>
-            <li><a href="/">FAQ5</a></li>
-            <li><a href="/">FAQ6</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#wifi">Wifi Connection</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#print">Printing Areas</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#email">Email and Login</a></li>
+            <li><a href="/">Didn't find an answer?</a></li>
           </ul>
         </li>
+       
+
+
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Documents <b class="caret"></b></a>
@@ -754,7 +753,62 @@
 
 </div>
 
+<!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
+<div class="modal" id="wifi">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Connect to NDNU Wifi </h2>
+</div>
+    <div class="modal-body"></div>
+    <p>Basic Steps. (Wifi must be ON for your device)</p>
+    <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
+    <p>2) Type in the address 10.10.100.100</p>
+    <P>3) Proceed past any warning signs to Login page</p>
+    <p>4) Login credentials - Username = School email username. 
+                           Password = First two letters of last name + last 4 numbers of StudentID.</p>
+  </div>
+</div>
+
+<div class="modal" id="print">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Printing Locations and Cost</h2>
+</div>
+    <div class="modal-body"></div>
+    <p> There are three known areas to print documents.</p>
+    <p> 1) The Library
+        2) The Mac Lab located in St. Mary's
+        3) The PC Lab located in St. Mary's
+
+        You must Log-In to one of the School Computers to Print. 
+
+        Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account. 
+  </div>
+</div>
+
+<div class="modal" id="email">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Email and Login </h2>
+</div>
+    <div class="modal-body"></div>
+    <p> Your Student Email should be given at Registration</p>
+    <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu
+        2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
+        3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab
+        4) Password is the same as the password used for wifi.
+
+      
+  </div>
+</div>
+
+<!--End of Modal Popups for FAQ's Still in Production.-->
     </body>
+   
+
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
 
