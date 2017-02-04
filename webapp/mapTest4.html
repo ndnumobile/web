@@ -124,18 +124,17 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i> FAQ's and Tips <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">FAQ1</a></li>
-            <li><a href="/">FAQ2</a></li>
-            <li><a href="/">FAQ3</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Extra</li>
-            <li><a href="/">FAQ4</a></li>
-            <li><a href="/">FAQ5</a></li>
-            <li><a href="/">FAQ6</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#wifi">Wifi Connection</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#print">Printing Areas</a></li>
+            <li><a href="/" data-toggle="modal" data-target="#email">Email and Login</a></li>
+            <li><a href="/">Didn't find an answer?</a></li>
           </ul>
         </li>
+
+
+
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Documents <b class="caret"></b></a>
@@ -144,10 +143,49 @@
             <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Doc2</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Doc3</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Doc4</a></li>
+
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/direct-deposit-form.pdf">Direct Deposit Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/NDNU-Emergency-Contact-Form.pdf">Emergency Contact Form</a></li>
+            <li><a href="http://www.ndnu.edu/giving/files/2013/06/payroll-deduction-form.pdf">Payroll Deduction Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Application-For-Employment.pdf">Employment Application Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Authorization-for-Background-Check.pdf">Authorization for Background Check</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/tuition-remission-form.pdf">Tuition Remission Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Tuition-Exchange-Program-Application.pdf">Tuition Exchange Program Application</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Personnel-Requisition-Form.pdf">Personell Requisition Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Staff-Adjunct-Form.pdf">Staff Adjunct Form</a></li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Student-Employment-Requisition-Form.pdf">Student Employment Requisition Form</a><li>
+            <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/employee-handbook.pdf">Employee Handbook</a></li>
+    		<li><a href="http://www.ndnu.edu/human-resources/files/2013/01/faculty-handbook-part-1.pdf">Faculty Handbook</a></li>
+    		<li><a href="http://www.ndnu.edu/human-resources/files/2013/01/part-time-faculty-guidebook.pdf">Part Time Faculty Handbook</a></li>
+    		<li><a href="http://www.ndnu.edu/human-resources/files/2013/01/governance-handbook.pdf">Governance Handbook</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/add-drop-form.pdf">Add or Drop Form</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/request-for-administrative-course-withdrawal.pdf">Withdrawal Form</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/application-for-ndnu-certificate.pdf">Application NDNU Certificate</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/change-of-major-form.pdf">Change of Major Form</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/student-registration-form.pdf">Student Registration Form</a></li>
           </ul>
         </li>
         </ul>
       </nav><!--/.navbar -->
+    <h10>Navigation Drawer of Critical Locations</h10>
+    <div class="col-sm-3">
+  	<a href="#SaintMary's">Saint Mary's Hall</a>
+  	<a href="#CampusCenter">Campus Center</a>
+  	<a href="#ChapelAnnex">Chapel Annex</a>
+  	<a href="#SrDorothyStangCenter">Sister Dorothy Stang Center</a>
+  	<a href="#Chapel">Chapel</a>
+  	<a href="#JulieBilliartHall">Julie Billiart Hall</a>
+  	<a href="#TosoResidence">Toso Residence</a>
+  	<a href="#NewHall">New Hall</a>
+  	<a href="#VisitorParking">Visitor Parking</a>
+  	<a href="#StudentParking">Student Parking</a>
+  	<a href="#ParkingPassMachine">Parking Pass Machine</a>
+  	<a href="#CuvillyHall">Cuvilly Hall</a>
+  	<a href="#Wiegand Gallery">Wiegand Gallery</a>
+  	<a href="#NDNU Theatre">NDNU Theatre</a>
+  	<a href="#KoretAthleticField">Koret Athletic Field</a>
+	</div>
+
     </div><!--/.sidebar-nav -->
 
 
@@ -170,16 +208,23 @@
 
           <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vwcm90aHgiLCJhIjoiY2l5Nm55eHFnMDAwMzJ3bXhhYWZiYnpkeCJ9.ahH9UF5cEeZPs32GTdFzCg';
+
+              var bounds = [
+                [-122.293931, 37.508234], // Southwest coordinates
+                [-122.274592, 37.527414]  // Northeast coordinates
+              ];
+
               var map = new mapboxgl.Map({
                   container: 'map', // container id
-                  style: 'mapbox://styles/seprothx/ciyl5737l003n2smgmzlic9xq', //stylesheet location
-                  center: [-122.28476, 37.5173774], // starting position
-                  zoom: 17.5 // starting zoom
+                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
+                  center: [-122.285060, 37.517295], //starting map position.
+                  zoom: 16.9, // starting zoom
+                  maxBounds: bounds //sets boundry that the map will pan within.
               });
 
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
-                      layers: ['ndnux'] // replace this with the name of the layer
+                      layers: ['ndnuz'] // replace this with the name of the layer
                   });
 
                   if (!features.length) {
@@ -199,6 +244,9 @@
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
+
+              //adds map navigation controls for zoom and reset north. Default position in upper right.
+              map.addControl(new mapboxgl.NavigationControl());
 
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
@@ -722,7 +770,62 @@
 
 </div>
 
+<!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
+<div class="modal" id="wifi">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Connect to NDNU Wifi </h2>
+</div>
+    <div class="modal-body"></div>
+    <p>Basic Steps. (Wifi must be ON for your device)</p>
+    <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
+    <p>2) Type in the address 10.10.100.100</p>
+    <P>3) Proceed past any warning signs to Login page</p>
+    <p>4) Login credentials - Username = School email username.
+                           Password = First two letters of last name + last 4 numbers of StudentID.</p>
+  </div>
+</div>
+
+<div class="modal" id="print">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Printing Locations and Cost</h2>
+</div>
+    <div class="modal-body"></div>
+    <p> There are three known areas to print documents.</p>
+    <p> 1) The Library
+        2) The Mac Lab located in St. Mary's
+        3) The PC Lab located in St. Mary's
+
+        You must Log-In to one of the School Computers to Print.
+
+        Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.
+  </div>
+</div>
+
+<div class="modal" id="email">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">X</button>
+    <h2 class="modal-title">Email and Login </h2>
+</div>
+    <div class="modal-body"></div>
+    <p> Your Student Email should be given at Registration</p>
+    <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu
+        2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
+        3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab
+        4) Password is the same as the password used for wifi.
+
+
+  </div>
+</div>
+
+<!--End of Modal Popups for FAQ's Still in Production.-->
     </body>
+
+
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
 

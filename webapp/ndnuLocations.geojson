@@ -1,4 +1,4 @@
-{
+{ "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
@@ -323,9 +323,397 @@
         "coordinates": [-122.287378,37.516547],
         "type": "Point"
       }
-    }
+    },
 
 
-    ],
-  "type": "FeatureCollection"
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chapel Annex",
+        "description": "An annex of the chapel, housing the Office of Spirituality."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285230,
+          37.518241
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sr. Dorothy Stang Center",
+        "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement will be nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Housed in a facility that is organized to encourage open communication, dialogue, and activism – including community art exhibits and performances, seminars, public speaking events, and community action gatherings – the Center will become a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285300,
+          37.518071
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Campus Center",
+        "description": "Including the Academic Success Center, Admissions, Writing Center, Welcom Center, International Student Office, and the Student Life & Leadership Office, the Campus Center earns it's name acting as the hub of the campus."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284698,
+          37.517036
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Toso Residence",
+        "description": "Contains the Office of the Dean of the College of Arts and Sciences, Administration, and Human Resources offices."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.286523,
+          37.518043
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cuvilly Hall",
+        "description": "Houses classrooms, as well as the Office of the Dean of the School of Business and Management."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.287024,
+          37.517919
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dining Hall",
+        "description": "Serving Breakfast, Lunch, and Dinner, stop on by for a seasonal selection and regional favorites. Prepared by culinary masters, the Dining Hall is a great option for on campus dining."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285260,
+          37.517228
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Tabard Inn",
+        "description": "Tabard Inn contains administrative offices and advisors for the School of Business and Management."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.286909,
+          37.518083
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Koret Athletic Field",
+        "description": "Soccer and Lacrosse teams practice and play here."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284286,
+          37.515556
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "NDNU Bookstore",
+        "description": "Get your books, apparel and accesories, gifts and collectibles, typical school supplies, and tech gear!"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.287076,
+          37.518273
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Tennis Courts",
+        "description": "Let's go down to the tennis court, and talk it up like yeah!"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.283567,
+          37.515918
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parking Pass Machine",
+        "description": "2 dollars in coin or one dollar bills gets you a day use parking pass at this parking pass machine. The only one for the main, commuter parking lot."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284236,
+          37.517684
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Commuter Student Parking",
+        "description": "Commuter and Day Use or Guest parking is (sometimes) available here."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284176,
+          37.517525
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Faculty Parking",
+        "description": "Faculty parking only."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284369,
+          37.516835
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wiegnad Gallery",
+        "description": "The Wiegand Gallery’s mission is to focus attention on the contributions and accomplishments of outstanding artists who are under-recognized and whose body of work calls for greater recognition. The Gallery also curates exhibitions that reveal unusual or rarely seen work of renowned artists to show the public a different side of their creative endeavors."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.287767,
+          37.518218
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Madison Art Center",
+        "description": "a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried in the area."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.287622,
+          37.518005
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gavin Hall",
+        "description": "Art therapy sessions are held here."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.286769,
+          37.518552
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gleason Gym",
+        "description": "An indoor basketball court used for practice and games by our NDNU Argonaut basketball teams, and a fitness center open to all students."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.284403,
+          37.518211
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Julie Billiart Hall",
+        "description": "The Dean of Students, Career Services office, and office of Student Affairs are housed here."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285724,
+          37.517120
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "St. Joseph Hall",
+        "description": "The Office of the Dean of the School of Education and Leadership, as well as student housing."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285516,
+          37.517648
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Overflow Parking Lot",
+        "description": "Additional parking. A bus can pick you up at the bottom of the driveway. Not well lit, it is recommended to bring a flashlight, and a friend when heading here at night."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.282326,
+          37.517277
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wilkie Apartments",
+        "description": "Wilkie Apartments"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285800,
+          37.516752
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kane Apartments",
+        "description": "Kane Apartments"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285434,
+          37.516556
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Carroll Apartments",
+        "description": "Carroll Apartments"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285015,
+          37.516450
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Oaks Apartments",
+        "description": "Oaks Apartments"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285714,
+          37.516416
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Main Quad",
+        "description": "The Main Quad is a gathering place for all students, activities, BBQs, and rallies all happen here. A great place to start a run toward the Gym."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.285025,
+          37.516964
+        ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Province Center",
+        "description": "A gathering place."
+      },
+      "geometry": {
+        "coordinates": [
+          -122.287372,
+          37.516499
+        ],
+        "type": "Point"
+      }
+    },
+    ]
 }
