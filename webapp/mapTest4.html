@@ -26,6 +26,24 @@
             }
         }
         </script>
+        <style>
+          .mapboxgl-popup-content{
+            max-width: 400px;
+            border-radius:25px;
+            padding-left:15px;
+            padding-right:10px;
+          }
+          .popup-image{
+            width:100px;
+            height:100px;
+            float:left;
+            margin:5px 10px 10px 0px;
+          }
+          .popup-desc{
+            margin-top:10px;
+            float:left;
+          }
+        </style>
     </head>
 
     <body onload="validateSession();">
@@ -45,8 +63,6 @@
       </button> -->
     </div>
   </nav>
-
-
 
   <div id="wrapper" class="toggled">
         <!-- Sidebar -->
@@ -116,7 +132,7 @@
             <li><a href="/">Didn't find an answer?</a></li>
           </ul>
         </li>
-       
+
 
 
 
@@ -127,6 +143,7 @@
             <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Doc2</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Doc3</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Doc4</a></li>
+
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/direct-deposit-form.pdf">Direct Deposit Form</a></li>
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/NDNU-Emergency-Contact-Form.pdf">Emergency Contact Form</a></li>
             <li><a href="http://www.ndnu.edu/giving/files/2013/06/payroll-deduction-form.pdf">Payroll Deduction Form</a></li>
@@ -150,7 +167,6 @@
         </li>
         </ul>
       </nav><!--/.navbar -->
-
     <h10>Navigation Drawer of Critical Locations</h10>
     <div class="col-sm-3">
   	<a href="#SaintMary's">Saint Mary's Hall</a>
@@ -169,8 +185,6 @@
   	<a href="#NDNU Theatre">NDNU Theatre</a>
   	<a href="#KoretAthleticField">Koret Athletic Field</a>
 	</div>
-
-
 
     </div><!--/.sidebar-nav -->
 
@@ -226,7 +240,7 @@
 
                   var popup = new mapboxgl.Popup({ offset: [0, -15] })
                   .setLngLat(feature.geometry.coordinates)
-                  .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+                  .setHTML('<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p>')
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
@@ -768,7 +782,7 @@
     <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
     <p>2) Type in the address 10.10.100.100</p>
     <P>3) Proceed past any warning signs to Login page</p>
-    <p>4) Login credentials - Username = School email username. 
+    <p>4) Login credentials - Username = School email username.
                            Password = First two letters of last name + last 4 numbers of StudentID.</p>
   </div>
 </div>
@@ -785,9 +799,9 @@
         2) The Mac Lab located in St. Mary's
         3) The PC Lab located in St. Mary's
 
-        You must Log-In to one of the School Computers to Print. 
+        You must Log-In to one of the School Computers to Print.
 
-        Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account. 
+        Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.
   </div>
 </div>
 
@@ -804,13 +818,13 @@
         3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab
         4) Password is the same as the password used for wifi.
 
-      
+
   </div>
 </div>
 
 <!--End of Modal Popups for FAQ's Still in Production.-->
     </body>
-   
+
 
     <script>
         $("#menu-toggle").click(function(e){e.preventDefault();$("#wrapper").toggleClass("toggled");});
