@@ -12,6 +12,21 @@
     border-color: lightgray;
 }
 
+div.col-sm-3 {
+    background-color: #333;
+}
+
+div.col-sm-3 a {
+    display: inline-block;
+    color: white;
+    padding: 1px;
+    text-decoration: none;
+}
+
+div.col-sm-3 a:hover {
+    background-color: rgb(41, 222, 29);
+}
+
 
 #custom-search-input{
     padding: 10px;
@@ -435,6 +450,26 @@ p2{
     padding: 1px;
     font-size: 35px;
 }
+
+.fqmodal{
+  position:fixed;
+  top: 50px;
+  left:50%;
+  width:70%;
+  max-width:700px;
+
+  background-color: #006699;
+  border: 2px solid #f8c460;
+  padding 30px;
+  color white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0,0,0,.6);
+  
+
+
+}
+
+
 
 /*.modal-footer2 {
     background-color: #f8c460;
