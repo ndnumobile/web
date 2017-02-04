@@ -231,6 +231,9 @@
                   .addTo(map);
               });
 
+              //adds map navigation controls for zoom and reset north. Default position in upper right.
+              map.addControl(new mapboxgl.NavigationControl());
+
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
                   var x = document.getElementById('advanced-demo').value;
