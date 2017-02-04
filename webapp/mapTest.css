@@ -1,4 +1,4 @@
-/*#mainSearch{
+#mainSearch{
     background-color: white;
     border: 1px solid;
     z-index: 2;
@@ -33,7 +33,7 @@ div.col-sm-3 a:hover {
     border-radius: 6px;
     background-color: yellow;
     z-index: 2;
-}*/
+}
 
 #custom-search-input input{
     border: 0;
