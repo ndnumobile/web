@@ -451,6 +451,26 @@ p2{
     font-size: 35px;
 }
 
+.fqmodal{
+  position:fixed;
+  top: 50px;
+  left:50%;
+  width:70%;
+  max-width:700px;
+
+  background-color: #006699;
+  border: 2px solid #f8c460;
+  padding 30px;
+  color white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0,0,0,.6);
+  
+
+
+}
+
+
+
 /*.modal-footer2 {
     background-color: #f8c460;
     color: white;
