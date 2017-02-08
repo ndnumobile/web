@@ -74,12 +74,12 @@
           <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a id="button_press1" onclick="pressBtn()">St. Mary’s Hall</a></li>
-            <li><a href="/">Financial Aid</a></li>
-            <li><a href="/">Registrar</a></li>
-            <li><a href="/">Business Office</a></li>
-            <li><a href="/">Public Safety</a></li>
-            <li><a href="/">Cafeteria</a></li>
+            <li><a id="button_press1" onclick="pressBtn1()">St. Mary’s Hall</a></li>
+            <li><a id="button_press2" onclick="pressBtn2()">Financial Aid</a></li>
+            <li><a id="button_press3" onclick="pressBtn3()">Registrar</a></li>
+            <li><a id="button_press4" onclick="pressBtn4()">Business Office</a></li>
+            <li><a id="button_press5" onclick="pressBtn5()">Public Safety</a></li>
+            <li><a id="button_press6" onclick="pressBtn6()">Cafeteria</a></li>
             <li><a href="/">The Carl and Celia Berta Gellert Library</a></li>
             <li><a href="/">Library Lawn</a></li>
             <li><a href="/">Walter Gleason Gym </a></li>
@@ -228,7 +228,7 @@
               //adds map navigation controls for zoom and reset north. Default position in upper right.
               map.addControl(new mapboxgl.NavigationControl());
               
-              function pressBtn(){
+              function pressBtn1(){
               var y = document.getElementById('button_press1').value;
               
               	map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
@@ -238,7 +238,56 @@
               	.addTo(map);
               	
               }
-
+              
+              function pressBtn2(){
+              var z = document.getElementById('button_press2').value;
+              
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              var popup2 = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Financial Aid</h3><p>The Financial Aid Office at Notre Dame de Namur University offers a complete array of financial and support services which are designed to help you with the education-related expenses involved in obtaining your educational goal.</p>')
+              .addTo(map);	  
+              }
+              
+              function pressBtn3(){
+              var u = document.getElementById('button_press3').value;
+              
+              map.flyTo({center:[-122.2849, 37.51675], speed: 0.3});
+              var popup3 = new mapboxgl.Popup({closeOnClick:true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Registrar</h3><p>The Registrar’s Office is the official recorder and keeper of student academic records. Records are maintained in compliance with federal privacy regulations (FERPA). The office is charged to help maintain NDNU’s academic integrity through effective communication of, adherence to, and administration of university policies. Services provided by the office include registration, degree audit, enrollment verification and transcripts.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtn4(){
+              var u = document.getElementById('button_press4').value;
+              
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              var popup3 = new mapboxgl.Popup({closeOnClick:true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Business Office</h3><p>The Business Office is here to provide service to all students regarding their financial status. The office is located in St. Mary’s Hall, next to the Registrar. Business Office staff are available to assist with account payments, inquiries and payment plan options.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtn5(){
+              var u = document.getElementById('button_press5').value;
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtn6(){
+              var u = document.getElementById('button_press6').value;
+              map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285235,37.517219])
+              .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.</p>')
+              .addTo(map);
+              }
+              
+              
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
                   var x = document.getElementById('advanced-demo').value;
