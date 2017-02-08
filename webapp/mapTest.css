@@ -12,22 +12,6 @@
     border-color: lightgray;
 }
 
-div.col-sm-3 {
-    background-color: #333;
-}
-
-div.col-sm-3 a {
-    display: inline-block;
-    color: white;
-    padding: 1px;
-    text-decoration: none;
-}
-
-div.col-sm-3 a:hover {
-    background-color: rgb(41, 222, 29);
-}
-
-
 #custom-search-input{
     padding: 10px;
     border-radius: 6px;
@@ -158,9 +142,15 @@ body{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+.slidebar-nav .open .dropdown-menu:hover {
+  background-color: rgb(35, 160, 0);
+}
+
 .slidebar-nav .open .dropdown-menu > li > a {
   padding: 5px 15px 5px 25px;
 }
+
 .slidebar-nav .navbar-brand {
   width: 100%;
 }

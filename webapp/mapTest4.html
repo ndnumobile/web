@@ -74,7 +74,7 @@
           <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">St. Mary’s Hall</a></li>
+            <li><button id="button_press1" class="btn btn-lg" type="button" onclick="pressBtn()">St. Mary’s Hall</a></li>
             <li><a href="/">Financial Aid</a></li>
             <li><a href="/">Registrar</a></li>
             <li><a href="/">Business Office</a></li>
@@ -156,6 +156,9 @@
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/application-for-ndnu-certificate.pdf">Application NDNU Certificate</a></li>
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/change-of-major-form.pdf">Change of Major Form</a></li>
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/student-registration-form.pdf">Student Registration Form</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/transcript-request.pdf">Unofficial Transcript Request</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/undergraduate-change-of-program-form.pdf">Undergraduate Change of Program</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/authorization-to-release-information-to-a-third-party.pdf">Authorization Info Release</a></li>
           </ul>
         </li>
         </ul>
@@ -224,6 +227,17 @@
 
               //adds map navigation controls for zoom and reset north. Default position in upper right.
               map.addControl(new mapboxgl.NavigationControl());
+              
+              function pressBtn(){
+              var y = document.getElementById('button_press1').value;
+              
+              	map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              	var popup1 = new mapboxgl.Popup({closeOnClick: true})
+              	.setLngLat([-122.2849, 37.51675])
+              	.setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+              	.addTo(map);
+              	
+              }
 
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
@@ -717,7 +731,7 @@
                     $("#mainSearchBtn").click();
                 }
               });
-
+            
           </script>
         </div>
    <!-- </main> -->
