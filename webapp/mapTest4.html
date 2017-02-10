@@ -79,6 +79,7 @@
       </button> -->
     </div>
   </nav>
+  
 
   <div id="wrapper" class="toggled">
         <!-- Sidebar -->
@@ -192,6 +193,7 @@
               </div>
           <!-- /Search bar -->
 
+
           <div id='map' style="z-index:-1"></div>
 
           <script>
@@ -204,8 +206,8 @@
 
               var map = new mapboxgl.Map({
                   container: 'map', // container id
-                  // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
-                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //map style location
+                  // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location for staging 'ndnuZ' mapbox style.
+                  style: 'mapbox://styles/seprothx/ciyqib2bt001a2snv8g2348u0', //map style location for production 'ndnuZ-copy' mapbox style.
                   center: [-122.285060, 37.517295], //starting map position.
                   zoom: 16.9, // starting zoom
                   maxBounds: bounds //sets boundry that the map will pan within.
@@ -213,7 +215,7 @@
 
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
-                      layers: ['ndnuo'] // replace this with the name of the layer
+                      layers: ['ndnuz'] // replace this with the name of the layer
                   });
 
                   if (!features.length) {
