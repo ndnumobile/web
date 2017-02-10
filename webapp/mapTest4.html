@@ -100,16 +100,16 @@
             <li><a id="button_press6" onclick="pressBtn6()">Cafeteria</a></li>
             <li><a id="button_press7" onclick="pressBtn7()">The Carl and Celia Berta Gellert Library</a></li>
             <li><a id="button_press8" onclick="pressBtn8()">Library Lawn</a></li>
-            <li><a id="button_press9" onclick="pressBtn9()">Walter Gleason Gym </a></li>
-            <li><a id="button_press10" onclick="pressBtn10()">Campus Center</a></li>
-            <li><a href="/">Academic Success Center</a></li>
-            <li><a href="/">International Student Office</a></li>
-            <li><a href="/">Student Life & Leadership Office</a></li>
-            <li><a href="/">The Quad</a></li>
-            <li><a href="/">Writing Center</a></li>
-            <li><a href="/">Cunningham Chapel Annex</a></li>
-            <li><a href="/">Center for Spirituality</a></li>
-            <li><a href="/">Office of Diversity</a></li>
+            <li><a id="button_press9" onclick="pressBtn9()">Walter Gleason Gym</a></li>
+            <li><a id="button_pressA" onclick="pressBtnA()">Campus Center</a></li>
+            <li><a id="button_pressB" onclick="pressBtnB()">Academic Success Center</a></li>
+            <li><a id="button_pressC" onclick="pressBtnC()">International Student Office</a></li>
+            <li><a id="button_pressD" onclick="pressBtnD()">Student Life & Leadership Office</a></li>
+            <li><a id="button_pressE" onclick="pressBtnE()">The Quad</a></li>
+            <li><a id="button_pressF" onclick="pressBtnF()">Writing Center</a></li>
+            <li><a id="button_pressG" onclick="pressBtnG()">Cunningham Chapel Annex</a></li>
+            <li><a id="button_pressH" onclick="pressBtnH()">Center for Spirituality</a></li>
+            <li><a id="button_pressI" onclick="pressBtnI()">Office of Diversity</a></li>
             <li><a href="/">Dorothy Stang Center</a></li>
             <li><a href="/">ulie Billiart Hall</a></li>
             <li><a href="/">Dean of Students/Student Affairs</a></li>
@@ -342,8 +342,87 @@
               .addTo(map); 
               }
               
+              function pressBtnA(){
+              var u = document.getElementById('button_pressA').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
+              .addTo(map);
+              }
               
-
+              function pressBtnB(){
+              var u = document.getElementById('button_pressB').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnC(){
+              var u = document.getElementById('button_pressC').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnD(){
+              var u = document.getElementById('button_pressD').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnE(){
+              var u = document.getElementById('button_pressE').value;
+              map.flyTo({center: [-122.285009,37.516948],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285009,37.516948])
+              .setHTML('<h3>The Quad</h3><p>Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnF(){
+              var u = document.getElementById('button_pressF').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnG(){
+              var u = document.getElementById('button_pressG').value;
+              map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284900,37.518090])
+              .setHTML('<h3>Cunningham Chapel Annex</h3><p>The chapel was dedicated to the memory of sister Catherine Julie Cunningham, a former university president. Its windows are made of sculpted glass, created by well known artist Gabriel Loire. The chapel hosts weekly services and other events.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnH(){
+              var u = document.getElementById('button_pressH').value;
+              map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
+              var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285286,37.518197])
+              .setHTML('<h3>Center for Spirituality</h3><p>Guided by the spirit of the Sisters of Notre Dame, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtnI(){
+              var u = document.getElementById('button_pressI').value;
+              map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
+              var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285286,37.518197])
+              .setHTML('<h3>Office of Diversity</h3><p>The Office of Diversity is committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.”</p>')
+              .addTo(map);
+              }
+              
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
                   var x = document.getElementById('advanced-demo').value;
