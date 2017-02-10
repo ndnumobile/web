@@ -28,6 +28,7 @@
         <style>
             .mapboxgl-popup-content{
                 max-width: 400px;
+                min-width: 300px;
                 border-radius:25px;
                 padding-left:15px;
                 padding-right:10px;
@@ -199,7 +200,7 @@
               var map = new mapboxgl.Map({
                   container: 'map', // container id
                   // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
-                  style: 'mapbox://styles/seprothx/ciyqib2bt001a2snv8g2348u0', //map style location
+                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //map style location
                   center: [-122.285060, 37.517295], //starting map position.
                   zoom: 16.9, // starting zoom
                   maxBounds: bounds //sets boundry that the map will pan within.
@@ -207,7 +208,7 @@
 
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
-                      layers: ['ndnuz'] // replace this with the name of the layer
+                      layers: ['ndnuo'] // replace this with the name of the layer
                   });
 
                   if (!features.length) {
@@ -222,11 +223,17 @@
                   var feature = features[0];
                   
                   var history = feature.properties.history;
-                  var vid = feature.properties.vid;
+                  var vid = feature.properties.video;
                   
                   var div = window.document.createElement('div');
-                  div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p><br>'
-                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.vid + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
+                  
+                  if(history.length > 1){
+                      div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p><br>'
+                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.video + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
+                  }else{
+                      div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p>';
+                  }
+                  
                   
 
                   var popup = new mapboxgl.Popup({ offset: [0, -15] })
@@ -239,7 +246,7 @@
               function popUpModal(title,history,vid){
                  // $("#welcomeModal").modal();
                   modal2.style.display = "block";
-                  document.getElementById("modalPrime").innerHTML = "<p>"+title+"<p><div class='row'><div class='col-md-6 breaks '><p1><strong>History</strong><br></p1><p3>blah blah history blah blahb lahhis tory blahb lahbla hhi story blah blah blahhi story blah</p3></div><div class='col-md-6'><iframe class='vid' width='500' height='300' src='https://www.youtube.com/embed/wcF3hWxleFg' frameborder='0' allowfullscreen></iframe></div></div>";
+                  document.getElementById("modalPrime").innerHTML = "<p>"+title+"<p><div class='row'><div class='col-md-6 breaks '><p1><strong>History</strong><br></p1><p3>"+ history +"</p3></div><div class='col-md-6'><iframe width='500' height='300' src=\""+vid+"\" frameborder='0' allowfullscreen></iframe></div></div>";
               }
 
               //adds map navigation controls for zoom and reset north. Default position in upper right.
