@@ -80,10 +80,10 @@
             <li><a id="button_press4" onclick="pressBtn4()">Business Office</a></li>
             <li><a id="button_press5" onclick="pressBtn5()">Public Safety</a></li>
             <li><a id="button_press6" onclick="pressBtn6()">Cafeteria</a></li>
-            <li><a href="/">The Carl and Celia Berta Gellert Library</a></li>
-            <li><a href="/">Library Lawn</a></li>
-            <li><a href="/">Walter Gleason Gym </a></li>
-            <li><a href="/">Campus Center</a></li>
+            <li><a id="button_press7" onclick="pressBtn7()">The Carl and Celia Berta Gellert Library</a></li>
+            <li><a id="button_press8" onclick="pressBtn8()">Library Lawn</a></li>
+            <li><a id="button_press9" onclick="pressBtn9()">Walter Gleason Gym </a></li>
+            <li><a id="button_press10" onclick="pressBtn10()">Campus Center</a></li>
             <li><a href="/">Academic Success Center</a></li>
             <li><a href="/">International Student Office</a></li>
             <li><a href="/">Student Life & Leadership Office</a></li>
@@ -287,6 +287,41 @@
               .addTo(map);
               }
               
+              function pressBtn7(){
+              var u = document.getElementById('button_press7').value;
+ 			  map.flyTo({center: [-122.284719, 37.51755], speed: 0.3});
+ 			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284719, 37.51755])
+              .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
+              .addTo(map);
+              }
+              
+              function pressBtn8(){
+              var u = document.getElementById('button_press8').value;
+ 			  map.flyTo({center: [-122.284331,37.517219], speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+			  .setLngLat([-122.284331,37.517219])
+              .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
+              .addTo(map);
+              }
+              
+              function pressBtn9(){
+              var u = document.getElementById('button_press9').value;
+			  map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284331,37.518310])
+              .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
+              .addTo(map); 
+              }
+              
+              function pressBtn10(){
+              var u = document.getElementById('button_press10').value;
+              map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+			  var popup10 = new mapboxgl.Popup({closeOnClick: true};
+			  .setLngLat([-122.284934,37.517124])
+              .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
+    		  .addTo(map);
+              }
               
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
