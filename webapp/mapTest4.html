@@ -25,23 +25,40 @@
             }
         }
         </script>
+        <!-- mapbox css overrides -->
         <style>
-          .mapboxgl-popup-content{
-            max-width: 400px;
-            border-radius:25px;
-            padding-left:15px;
-            padding-right:10px;
-          }
-          .popup-image{
-            width:100px;
-            height:100px;
-            float:left;
-            margin:5px 10px 10px 0px;
-          }
-          .popup-desc{
-            margin-top:10px;
-            float:left;
-          }
+            .mapboxgl-popup-content{
+                max-width: 600px;
+                border-radius:25px;
+                border:10px solid #f8c460;
+                padding-left:15px;
+                padding-right:10px;
+                background-color:#006699;
+                color:white;
+            }
+            .mapboxgl-popup-close-button{
+              color:#889911;
+              float:right;
+              font-size:28px;
+              padding:8px;
+              font-size:50px;
+            }
+            .mapboxgl-popup-tip{
+              border-top-color:#f8c460 !important;
+            }
+            .popup-image{
+                width:280px;
+                height:158px;
+                float:left;
+                margin:5px 10px 10px 0px;
+            }
+            .popup-desc{
+                margin-top:10px;
+                float:left;
+            }
+            .breaks{
+                word-wrap: break-word;
+            }
         </style>
     </head>
 
@@ -74,12 +91,12 @@
           <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/">St. Mary’s Hall</a></li>
-            <li><a href="/">Financial Aid</a></li>
-            <li><a href="/">Registrar</a></li>
-            <li><a href="/">Business Office</a></li>
-            <li><a href="/">Public Safety</a></li>
-            <li><a href="/">Cafeteria</a></li>
+            <li><a id="button_press1" onclick="pressBtn1()">St. Mary’s Hall</a></li>
+            <li><a id="button_press2" onclick="pressBtn2()">Financial Aid</a></li>
+            <li><a id="button_press3" onclick="pressBtn3()">Registrar</a></li>
+            <li><a id="button_press4" onclick="pressBtn4()">Business Office</a></li>
+            <li><a id="button_press5" onclick="pressBtn5()">Public Safety</a></li>
+            <li><a id="button_press6" onclick="pressBtn6()">Cafeteria</a></li>
             <li><a href="/">The Carl and Celia Berta Gellert Library</a></li>
             <li><a href="/">Library Lawn</a></li>
             <li><a href="/">Walter Gleason Gym </a></li>
@@ -125,10 +142,6 @@
             <li><a href="/">Didn't find an answer?</a></li>
           </ul>
         </li>
-
-
-
-
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Documents <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -136,7 +149,6 @@
             <li><a href="/"><i class="glyphicon glyphicon-plus"></i> Doc2</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-cog"></i> Doc3</a></li>
             <li><a href="/"><i class="glyphicon glyphicon-comment"></i> Doc4</a></li>
-
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/direct-deposit-form.pdf">Direct Deposit Form</a></li>
             <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/NDNU-Emergency-Contact-Form.pdf">Emergency Contact Form</a></li>
             <li><a href="http://www.ndnu.edu/giving/files/2013/06/payroll-deduction-form.pdf">Payroll Deduction Form</a></li>
@@ -156,14 +168,14 @@
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/application-for-ndnu-certificate.pdf">Application NDNU Certificate</a></li>
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/change-of-major-form.pdf">Change of Major Form</a></li>
     		<li><a href="http://www.ndnu.edu/academics/files/2013/06/student-registration-form.pdf">Student Registration Form</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/transcript-request.pdf">Unofficial Transcript Request</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/undergraduate-change-of-program-form.pdf">Undergraduate Change of Program</a></li>
+    		<li><a href="http://www.ndnu.edu/academics/files/2013/06/authorization-to-release-information-to-a-third-party.pdf">Authorization Info Release</a></li>
           </ul>
         </li>
         </ul>
       </nav><!--/.navbar -->
-
-
     </div><!--/.sidebar-nav -->
-
 
     <!-- Page Content -->
    <!-- <main id="page-wrapper6"> -->
@@ -193,7 +205,7 @@
               var map = new mapboxgl.Map({
                   container: 'map', // container id
                   // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location
-                  style: 'mapbox://styles/seprothx/ciyqib2bt001a2snv8g2348u0', //map style location
+                  style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //map style location
                   center: [-122.285060, 37.517295], //starting map position.
                   zoom: 16.9, // starting zoom
                   maxBounds: bounds //sets boundry that the map will pan within.
@@ -201,7 +213,7 @@
 
               map.on('click', function(e) {
                   var features = map.queryRenderedFeatures(e.point, {
-                      layers: ['ndnuz'] // replace this with the name of the layer
+                      layers: ['ndnuo'] // replace this with the name of the layer
                   });
 
                   if (!features.length) {
@@ -215,15 +227,92 @@
 
                   var feature = features[0];
 
+                  var history = feature.properties.history;
+                  var vid = feature.properties.video;
+
+                  var div = window.document.createElement('div');
+                  div.innerHTML = '<h3>' + feature.properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + feature.properties.image + '"></iframe><p>' + feature.properties.description + '</p><br>'
+                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.vid + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
+                  /*if(history.length > 1){
+                      div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p><br>'
+                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.video + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
+                  }else{
+                      div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p>';
+                  }*/
                   var popup = new mapboxgl.Popup({ offset: [0, -15] })
                   .setLngLat(feature.geometry.coordinates)
-                  .setHTML('<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p>')
+                  .setDOMContent(div)
                   .setLngLat(feature.geometry.coordinates)
                   .addTo(map);
               });
 
+              function popUpModal(title,history,vid){
+                 // $("#welcomeModal").modal();
+                  modal2.style.display = "block";
+                  document.getElementById("modalPrime").innerHTML = "<p>"+title+"<p><div class='row'><div class='col-md-6 breaks '><p1><strong>History</strong><br></p1><p3>"+ history +"</p3></div><div class='col-md-6'><iframe width='500' height='300' src=\""+vid+"\" frameborder='0' allowfullscreen></iframe></div></div>";
+              }
+
               //adds map navigation controls for zoom and reset north. Default position in upper right.
               map.addControl(new mapboxgl.NavigationControl());
+
+              function pressBtn1(){
+              var y = document.getElementById('button_press1').value;
+
+              	map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              	var popup1 = new mapboxgl.Popup({closeOnClick: true})
+              	.setLngLat([-122.2849, 37.51675])
+              	.setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+              	.addTo(map);
+              }
+
+              function pressBtn2(){
+              var z = document.getElementById('button_press2').value;
+
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              var popup2 = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Financial Aid</h3><p>The Financial Aid Office at Notre Dame de Namur University offers a complete array of financial and support services which are designed to help you with the education-related expenses involved in obtaining your educational goal.</p>')
+              .addTo(map);
+              }
+
+              function pressBtn3(){
+              var u = document.getElementById('button_press3').value;
+
+              map.flyTo({center:[-122.2849, 37.51675], speed: 0.3});
+              var popup3 = new mapboxgl.Popup({closeOnClick:true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Registrar</h3><p>The Registrar’s Office is the official recorder and keeper of student academic records. Records are maintained in compliance with federal privacy regulations (FERPA). The office is charged to help maintain NDNU’s academic integrity through effective communication of, adherence to, and administration of university policies. Services provided by the office include registration, degree audit, enrollment verification and transcripts.</p>')
+              .addTo(map);
+              }
+
+              function pressBtn4(){
+              var u = document.getElementById('button_press4').value;
+
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+              var popup3 = new mapboxgl.Popup({closeOnClick:true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Business Office</h3><p>The Business Office is here to provide service to all students regarding their financial status. The office is located in St. Mary’s Hall, next to the Registrar. Business Office staff are available to assist with account payments, inquiries and payment plan options.</p>')
+              .addTo(map);
+              }
+
+              function pressBtn5(){
+              var u = document.getElementById('button_press5').value;
+              map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.2849, 37.51675])
+              .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+              .addTo(map);
+              }
+
+              function pressBtn6(){
+              var u = document.getElementById('button_press6').value;
+              map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285235,37.517219])
+              .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.</p>')
+              .addTo(map);
+              }
+
 
               function searchBtn(){
                    //this function authored by JohnPhilip Lahman
@@ -719,85 +808,85 @@
               });
 
           </script>
+      </div>
+      <!-- </main> -->
+        </div><!-- /#wrapper -->
+
+
+        <!-- The Intro Modal -->
+
+        <div id="welcomeModal" class="modal2 autoModal">
+
+            <!-- Modal content -->
+            <div class="modal-content2 autoModal">
+
+                <div class="modal-header2 autoModal">
+                    <span class="close2">&times;</span>
+                    <img src="http://i.imgur.com/A35ss2e.png" alt="argo">
+                </div>
+
+                <div id="modalPrime" class="modal-body2 autoModal">
+                    <p >Welcome to the NDNU Campus Tour!</p>
+                    <p1>This is an interactive map.</p1>
+                    <p2>Take a look around or search for campus locations in the search bar.</p2>
+                </div>
+                <div class="modal-footer2 autoModal">
+                </div>
+            </div>
+
         </div>
-   <!-- </main> -->
-  </div><!-- /#wrapper -->
+
+        <!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
+        <div class="modal" id="wifi">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">X</button>
+                    <h2 class="modal-title">Connect to NDNU Wifi </h2>
+                </div>
+                <div class="modal-body"></div>
+                <p>Basic Steps. (Wifi must be ON for your device)</p>
+                <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
+                <p>2) Type in the address 10.10.100.100</p>
+                <p>3) Proceed past any warning signs to Login page</p>
+                <p>4) Login credentials - Username = School email username.
+                    Password = First two letters of last name + last 4 numbers of StudentID.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="print">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">X</button>
+                    <h2 class="modal-title">Printing Locations and Cost</h2>
+                </div>
+                <div class="modal-body"></div>
+                <p> There are three known areas to print documents.</p>
+                <p>   1) The Library. </p>
+                <p>   2) The Mac Lab located in St. Mary's.</p>
+                <p>   3) The PC Lab located in St. Mary's.</p>
+
+            <p>   You must Log-In to one of the School Computers to Print.</p>
+
+            <p>   Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.</p>
+        </div>
+        </div>
+
+    <div class="modal" id="email">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">X</button>
+                <h2 class="modal-title">Email and Login </h2>
+            </div>
+            <div class="modal-body"></div>
+            <p> Your Student Email should be given at Registration</p>
+            <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu</p>
+            <p> 2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
+            <p> 3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab</p>
+            <p> 4) Password is the same as the password used for wifi.
 
 
-<!-- The Modal -->
-
-<div id="welcomeModal" class="modal2">
-
-  <!-- Modal content -->
-  <div class="modal-content2">
-
-    <div class="modal-header2">
-      <span class="close2">&times;</span>
-      <img src="http://i.imgur.com/A35ss2e.png" alt="argo">
-  </div>
-
-    <div class="modal-body2">
-      <p>Welcome to the NDNU Campus Tour!</p>
-      <p1>This is an interactive map.</p1>
-      <p2>Take a look around or search for campus locations in the search bar.</p2>
+        </div>
     </div>
-    <div class="modal-footer2">
-    </div>
-  </div>
-
-</div>
-
-<!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
-<div class="modal" id="wifi">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal">X</button>
-    <h2 class="modal-title">Connect to NDNU Wifi </h2>
-</div>
-    <div class="modal-body"></div>
-    <p>Basic Steps. (Wifi must be ON for your device)</p>
-    <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
-    <p>2) Type in the address 10.10.100.100</p>
-    <P>3) Proceed past any warning signs to Login page</p>
-    <p>4) Login credentials - Username = School email username.
-                           Password = First two letters of last name + last 4 numbers of StudentID.</p>
-  </div>
-</div>
-
-<div class="modal" id="print">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal">X</button>
-    <h2 class="modal-title">Printing Locations and Cost</h2>
-</div>
-    <div class="modal-body"></div>
-    <p> There are three known areas to print documents.</p>
-    <p>   1) The Library. </p>
-    <p>   2) The Mac Lab located in St. Mary's.</p>
-    <p>   3) The PC Lab located in St. Mary's.</P>
-
-    <p>   You must Log-In to one of the School Computers to Print.</p>
-
-    <p>   Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.</p>
-  </div>
-</div>
-
-<div class="modal" id="email">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <button class="close" type="button" data-dismiss="modal">X</button>
-    <h2 class="modal-title">Email and Login </h2>
-</div>
-    <div class="modal-body"></div>
-    <p> Your Student Email should be given at Registration</p>
-    <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu</p>
-    <p> 2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
-    <p> 3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab</p>
-    <p> 4) Password is the same as the password used for wifi.
-
-
-  </div>
-</div>
 
 <!--End of Modal Popups for FAQ's Still in Production.-->
     </body>

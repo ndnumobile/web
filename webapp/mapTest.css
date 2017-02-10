@@ -12,22 +12,6 @@
     border-color: lightgray;
 }
 
-div.col-sm-3 {
-    background-color: #333;
-}
-
-div.col-sm-3 a {
-    display: inline-block;
-    color: white;
-    padding: 1px;
-    text-decoration: none;
-}
-
-div.col-sm-3 a:hover {
-    background-color: rgb(41, 222, 29);
-}
-
-
 #custom-search-input{
     padding: 10px;
     border-radius: 6px;
@@ -158,9 +142,18 @@ body{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+/*This should be changed to blue color*/
+/*Save this green color rgb(35, 160, 0), put blue color*/
+.slidebar-nav .open .dropdown-menu:hover {
+  background-color: #006699;
+}
+
 .slidebar-nav .open .dropdown-menu > li > a {
   padding: 5px 15px 5px 25px;
+  background-color: rgb(35, 160, 0);
 }
+
 .slidebar-nav .navbar-brand {
   width: 100%;
 }
@@ -224,7 +217,7 @@ body{
   margin-top: 8px;
   margin-left: 15px;
   margin-bottom: 8px;
- /* background-color: transparent; */
+  background-color: transparent;
   background-image: none;
   background-color: white;
   border: 1px solid transparent;
@@ -440,6 +433,11 @@ body{
     color:#f8c460;
     text-align: center;
     font-size: 45px;
+    overflow-y: auto;
+   
+}
+.autoModal.modal .modal-body{
+    max-height: 100%;
 }
 
 p1{
@@ -450,6 +448,11 @@ p1{
 p2{
     padding: 1px;
     font-size: 35px;
+}
+
+p3{
+    padding: 1px;
+    font-size: 25px;
 }
 
 .fqmodal{
