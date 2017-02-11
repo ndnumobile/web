@@ -120,8 +120,8 @@
             <li><a id="button_koret" onclick="pressKoret()">Koret Athletic Field</a></li>
             <li><a id="botton_toso" onclick="pressToso()">Toso Residence (Compiegne)</a></li>
             <li><a id="button_humanresources" onclick= "pressHumanResources()">Human Resources</a></li>
-            <li><a id="administration" onclick="pressBtnAdmin()">Administration</a></li>
-            <li><a href="/">New Hall</a></li>
+            <li><a id="button_administration" onclick="pressBtnAdmin()">Administration</a></li>
+            <li><a id="button_newhall" onclick="pressNewHall()">New Hall</a></li>
             <li><a id="conseling_health" onclick="pressBtnHealthCounseling()">Counseling and Health Services</a></li>
             <li><a id="taube_center" onclick="pressBtnTaube()">Taube Center</a></li>
             <li><a id="ralston_hall" onclick="pressBtnRalston()">Ralston Hall</a></li>
@@ -130,7 +130,7 @@
             <li><a id="button_pressCuvilly" onclick="pressBtnCuvilly()">Cuvilly Hall</a></li>
             <li><a href="/">Tabard</a></li>
             <li><a id="button_bookstore" onclick="pressBtnBookStore()">Bookstore</a></li>
-            <li><a href="/">Gavin Hall</a></li>
+            <li><a id="button_gavin" onclick="pressBtnGavinHall()">Gavin Hall</a></li>
           </ul>
         </li>
 
@@ -556,6 +556,22 @@
               .setLngLat([-122.286516,37.518052])
               .setHTML('<h3>Toso Residence (Compiegne)</h3><p>Staff offices including human resources and administration.</p>')
               .addTo(map);
+              }
+              
+              function pressBtnGavinHall(){
+              map.flyTo({center: [-122.286697,37.518547],speed: 0.3});
+              var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.286697,37.518547])
+              .setHTML('<h3>Gavin Hall</h3><p>The smallest of the three main instructional buildings. Located up the hill from the bookstore</p>')
+              .addTo(map);
+              }
+              
+              function pressNewHall(){
+              map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
+              var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.285694,37.517938])
+              .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
+              .addTo(map); 
               }
               
               
