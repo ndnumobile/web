@@ -144,14 +144,14 @@ body{
 }
 
 /*This should be changed to blue color*/
-/*Save this green color rgb(35, 160, 0), put blue color*/
+/*Save this green color rgb(35, 160, 0), put blue color #006699*/
 .slidebar-nav .open .dropdown-menu:hover {
-  background-color: #006699;
+  background-color: rgb(35, 160, 0);
 }
 
 .slidebar-nav .open .dropdown-menu > li > a {
   padding: 5px 15px 5px 25px;
-  background-color: rgb(35, 160, 0);
+  background-color: #006699;
 }
 
 .slidebar-nav .navbar-brand {
