@@ -145,9 +145,6 @@ body{
 
 /*This should be changed to blue color*/
 /*Save this green color rgb(35, 160, 0), put blue color #006699*/
-.slidebar-nav .open .dropdown-menu:hover {
-  background-color: rgb(35, 160, 0);
-}
 
 .slidebar-nav .open .dropdown-menu > li > a {
   padding: 5px 15px 5px 25px;
@@ -274,8 +271,8 @@ body{
   background-color:#006699;
 }
 #navbar-white.navbar-default .navbar-nav>li>ul>li>a:hover{
-  color:#889911;
-  background-color:#006699;
+  color:#006699;
+  background-color:gold; /*Hovering with gold color*/
 }
 #navbar-white.navbar-default .navbar-nav>li>ul>li>a:focus{
   color:#889911;
