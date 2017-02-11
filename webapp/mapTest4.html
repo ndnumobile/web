@@ -974,6 +974,9 @@
 
     //Get Hamburger Menu element in order to close modal when clicked
     var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0];
+    
+    //Get Search Bar element in order to close modal when clicked
+    var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
 
     // Modal opens on page load
     function welcomeModal() {
@@ -992,6 +995,10 @@
 
     // When the user clicks on <Hamburger Menu> Modal is closed
     hamburgerClose.onclick = function(){
+      modal2.style.display ="none";
+    }
+    // When the user clicks on <Search Bar> Modal is closed
+    searchBarClose.onclick = function(){
       modal2.style.display ="none";
     }
 
