@@ -858,15 +858,16 @@
             <!-- Modal content -->
             <div class="modal-content2 autoModal">
 
-                <div class="modal-header2 autoModal">
-                    <span class="close2">&times;</span>
-                    <img src="http://i.imgur.com/A35ss2e.png" alt="argo">
-                </div>
+              <div class="modal-header2 autoModal">
+                <div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>
+                <div class="modal-title2">Welcome to the NDNU Campus Tour!</div>
+                <span class="close2">&times;</span>
+              </div>
 
-                <div id="modalPrime" class="modal-body2 autoModal">
-                    <p >Welcome to the NDNU Campus Tour!</p>
-                    <p1>This is an interactive map.</p1>
-                    <p2>Take a look around or search for campus locations in the search bar.</p2>
+              <div id="modalPrime" class="modal-body2 autoModal">
+                  <h4>This is an interactive map.</h4>
+                  <p><u>Helpful Hints</u></p>
+                  <p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
@@ -964,6 +965,9 @@
 
     //Get Hamburger Menu element in order to close modal when clicked
     var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0];
+    
+    //Get Search Bar element in order to close modal when clicked
+    var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
 
     // Modal opens on page load
     function welcomeModal() {
@@ -982,6 +986,10 @@
 
     // When the user clicks on <Hamburger Menu> Modal is closed
     hamburgerClose.onclick = function(){
+      modal2.style.display ="none";
+    }
+    // When the user clicks on <Search Bar> Modal is closed
+    searchBarClose.onclick = function(){
       modal2.style.display ="none";
     }
 
