@@ -72,7 +72,7 @@
         </style>
     </head>
 
-    <body onload="validateSession();">
+    <body>
         <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" style="width: 0%" role="navigation">
     <div class="navbar-header">
       <button href="#menu-toggle" class="slidebar-toggle" id="menu-toggle">
@@ -324,7 +324,7 @@
               .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.</p>')
               .addTo(map);
               }
-           
+
               function pressBtn7(){
               var u = document.getElementById('button_press7').value;
  			  map.flyTo({center: [-122.284719, 37.51755], speed: 0.3});
@@ -333,7 +333,7 @@
               .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
               .addTo(map);
               }
-              
+
               function pressBtn8(){
               var u = document.getElementById('button_press8').value;
  			  map.flyTo({center: [-122.284331,37.517219], speed: 0.3});
@@ -342,16 +342,26 @@
               .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
               .addTo(map);
               }
-              
+
               function pressBtn9(){
               var u = document.getElementById('button_press9').value;
 			  map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
 			  var popup = new mapboxgl.Popup({closeOnClick: true})
               .setLngLat([-122.284331,37.518310])
               .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
-              .addTo(map); 
+              .addTo(map);
               }
-              
+
+              function pressBtn9(){
+              var u = document.getElementById('button_press9').value;
+			  map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
+			  var popup = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.284331,37.518310])
+              .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
+              .addTo(map);
+              }
+
+
               function pressBtnA(){
               var u = document.getElementById('button_pressA').value;
               map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -1206,6 +1216,7 @@
                 <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
             ';
         }*/
+
     //Modal Functions - authored by Anthony Piquette
     // Get the modal
     var modal2 = document.getElementById('welcomeModal');
@@ -1215,7 +1226,7 @@
 
     //Get Hamburger Menu element in order to close modal when clicked
     var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0];
-    
+
     //Get Search Bar element in order to close modal when clicked
     var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
 
@@ -1252,4 +1263,5 @@
 
 
     </script>
+<!-- Test -->
 </html>
