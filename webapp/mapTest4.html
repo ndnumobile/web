@@ -16,15 +16,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="./scripts/auto-complete.js"></script>
         <script e.src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
-        <script>
-        if(typeof(Storage) !== "undefined"){
-            if(sessionStorage.getItem("siteVisits") == null){
-                sessionStorage.setItem("siteVisits",1);
-            } else {
-                sessionStorage.siteVisits = Number(sessionStorage.siteVisits)+1;
-            }
-        }
-        </script>
+        <script src="./scripts/session.js"></script>
         <!-- mapbox css overrides -->
         <style>
             .mapboxgl-popup-content{
