@@ -128,7 +128,7 @@
             <li><a id="button_weigand" onclick="pressBtnWeigand()">Weigand Gallery</a></li>
             <li><a id="madison_art" onclick="pressBtnMadisonArt()">Madison Art Center</a></li>
             <li><a id="button_pressCuvilly" onclick="pressBtnCuvilly()">Cuvilly Hall</a></li>
-            <li><a href="/">Tabard</a></li>
+            <li><a id="button_pressTabard" onclick="pressBtnTabard()">Tabard Inn</a></li>
             <li><a id="button_bookstore" onclick="pressBtnBookStore()">Bookstore</a></li>
             <li><a id="button_gavin" onclick="pressBtnGavinHall()">Gavin Hall</a></li>
           </ul>
@@ -572,6 +572,14 @@
               .setLngLat([-122.285694,37.517938])
               .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
               .addTo(map); 
+              }
+              
+              function pressBtnTabard(){
+              map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
+              var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
+              .setLngLat([-122.286909,37.518083])
+              .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
+              .addTo(map);
               }
               
               
