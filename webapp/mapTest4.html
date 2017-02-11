@@ -229,12 +229,11 @@
 
                   var feature = features[0];
 
-                  var history = feature.properties.history;
-                  var vid = feature.properties.video;
+                  
 
                   var div = window.document.createElement('div');
                   div.innerHTML = '<h3>' + feature.properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + feature.properties.image + '"></iframe><p>' + feature.properties.description + '</p><br>'
-                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.vid + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
+                  + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.video + '\',\'' + feature.properties.image + '\',\'' + feature.properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
                   /*if(history.length > 1){
                       div.innerHTML = '<h3>' + feature.properties.title + '</h3><img class="popup-image" src="'+feature.properties.image+'"><p>' + feature.properties.description + '</p><br>'
                   + '<a href="#" onClick="popUpModal(\'' + feature.properties.title + '\',\'' + feature.properties.history + '\',\'' + feature.properties.video + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>';
@@ -248,10 +247,10 @@
                   .addTo(map);
               });
 
-              function popUpModal(title,history,vid){
+              function popUpModal(title,history,vid,image,description){
                  // $("#welcomeModal").modal();
                   modal2.style.display = "block";
-                  document.getElementById("modalPrime").innerHTML = "<p>"+title+"<p><div class='row'><div class='col-md-6 breaks '><p1><strong>History</strong><br></p1><p3>"+ history +"</p3></div><div class='col-md-6'><iframe width='500' height='300' src=\""+vid+"\" frameborder='0' allowfullscreen></iframe></div></div>";
+                  document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
               }
 
               //adds map navigation controls for zoom and reset north. Default position in upper right.
@@ -856,7 +855,7 @@
         <div id="welcomeModal" class="modal2 autoModal">
 
             <!-- Modal content -->
-            <div class="modal-content2 autoModal">
+            <div id="modalContent" class="modal-content2 autoModal">
 
               <div class="modal-header2 autoModal">
                 <div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>
@@ -956,7 +955,7 @@
             }
         });
 
-        if (~window.location.href.indexOf('http')) {
+        /*if (~window.location.href.indexOf('http')) {
             (function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
             (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=114593902037957";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
@@ -964,7 +963,7 @@
                 <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
                 <iframe style="float:left;margin-right:15px" src="//ghbtns.com/github-btn.html?user=Pixabay&repo=JavaScript-autoComplete&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>\
             ';
-        }
+        }*/
     //Modal Functions - authored by Anthony Piquette
     // Get the modal
     var modal2 = document.getElementById('welcomeModal');
