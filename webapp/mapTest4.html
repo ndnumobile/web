@@ -143,6 +143,7 @@
                                 <li><a href="/" data-toggle="modal" data-target="#wifi">Wifi Connection</a></li>
                                 <li><a href="/" data-toggle="modal" data-target="#print">Printing Areas</a></li>
                                 <li><a href="/" data-toggle="modal" data-target="#email">Email and Login</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#commute">Commuters</a></li>
                                 <li><a href="/">Didn't find an answer?</a></li>
                             </ul>
                         </li>
@@ -227,59 +228,91 @@
 
         </div>
 
-        <!--Modal Popups for FAQ's By Crisanto Pineda Need to fix CSS issues.-->
-        <div class="modal" id="wifi">
-            <div class="modal-dialog">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal">X</button>
-                    <h2 class="modal-title">Connect to NDNU Wifi </h2>
-                </div>
-                <div class="modal-body"></div>
-                <p>Basic Steps. (Wifi must be ON for your device)</p>
-                <p>1) Open up any browser (Safari,Chrome,Firefox)</p>
-                <p>2) Type in the address 10.10.100.100</p>
-                <p>3) Proceed past any warning signs to Login page</p>
-                <p>4) Login credentials - Username = School email username.
-                    Password = First two letters of last name + last 4 numbers of StudentID.</p>
-            </div>
-        </div>
-
-        <div class="modal" id="print">
-            <div class="modal-dialog">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal">X</button>
-                    <h2 class="modal-title">Printing Locations and Cost</h2>
-                </div>
-                <div class="modal-body"></div>
-                <p> There are three known areas to print documents.</p>
-                <p>   1) The Library. </p>
-                <p>   2) The Mac Lab located in St. Mary's.</p>
-                <p>   3) The PC Lab located in St. Mary's.</p>
-
-                <p>   You must Log-In to one of the School Computers to Print.</p>
-
-                <p>   Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.</p>
-            </div>
-        </div>
-
-        <div class="modal" id="email">
-            <div class="modal-dialog">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal">X</button>
-                    <h2 class="modal-title">Email and Login </h2>
-                </div>
-                <div class="modal-body"></div>
-                <p> Your Student Email should be given at Registration</p>
-                <p> 1) The NDNU Student Email log-in page is: https://mymail.ndnu.edu</p>
-                <p> 2) Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).
-                <p> 3) This username is not what you use to access Campus Portal. Please see the Campus Portal tab</p>
-                <p> 4) Password is the same as the password used for wifi.
+        <!--Modal Popups for FAQ's By Crisanto Pineda Used CSS of Anthony Piquette.-->
+        <div class="modal modal2"  role="dialog" id="wifi">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content2">
+      <div class="modal-header2">
+        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        <div class="modal-title2">How can I connect to NDNU wifi?</div>
+      </div>
+      <div class="modal-body2">
+         <h2>Basic Steps. (Wifi must be ON for your device)</h2>
+               <ol>
+                <li>Open up any browser (Safari,Chrome,Firefox)</li>
+                <li>Type in the address 10.10.100.100</li>
+                <li>Proceed past any warning signs to Login page</li>
+                <li>Login credentials - Username = School email username.
+                    Password = First two letters of last name + last 4 numbers of StudentID.</li>
+        </ol>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
-            </div>
-        </div>
 
-        <!--End of Modal Popups for FAQ's Still in Production.-->
+<div class="modal modal2"  role="dialog" id="print">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content2">
+      <div class="modal-header2">
+        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        <div class="modal-title2">Where can I print documents?</div>
+      </div>
+      <div class="modal-body2">
+         <ul>
+                <li> There are three known areas to print documents.</li>
+                <li> The Library. </li>
+                <li> The Mac Lab located in St. Mary's.</li>
+                <li> The PC Lab located in St. Mary's.</li>
+                <li> You must Log-In to one of the School Computers to Print.</li>
+                <li> Each Document takes .10 to print. Each student has a $15 credit to print. Anything over $15 will be charged to your account.</li>
+        </ul>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal modal2"  role="dialog" id="email">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content2">
+      <div class="modal-header2">
+        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        <div class="modal-title2">What is my email login?</div>
+      </div>
+      <div class="modal-body2">
+        <ul> <li> Your Student Email should be given at Registration</li>
+         <li>The NDNU Student Email log-in page is: https://mymail.ndnu.edu</li>
+         <li>Usernames are created by taking the first initial of the first name followed by the entire last name (Mary Jones = mjones). If that username is already in use, the middle initial is included (Mary S. Jones = “msjones”).</li>
+         <li>This username is NOT what you use to access Campus Portal. Please see the Campus Portal tab</li>
+         <li>Password is the same as the password used for wifi.</li>
+       </ul>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal modal2"  role="dialog" id="commute">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content2">
+      <div class="modal-header2">
+        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+        <div class="modal-title2">Where is the Commuter's Lounge?</div>
+      </div>
+      <div class="modal-body2">
+        <ul>
+         <li> There is a Commuter's Lounge located next to the cafeteria</li>
+         <li> It is equipped with lockers, microwave, and a refrigerator</li>
+         <li> Though it is very small, it is a great place to stay for some downtime</li>
+       </ul>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+        <!--End of Modal Popups for FAQ's.-->
+
     </body>
 
     <script src="./scripts/mapbox.js"></script>
@@ -287,6 +320,8 @@
     <script src="./scripts/modalFunctions.js"></script>
 
     <script src="./scripts/locationSearch.js"></script>
+
+    
   
 <!-- Test -->
 
