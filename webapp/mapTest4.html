@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta charset='utf-8' />
         <title>NDNU Campus Guide</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <link rel="stylesheet" type="text/css" href="css/default.css">
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
         <link rel="stylesheet" type="text/css" href="mapTest.css">
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
@@ -312,17 +313,40 @@
 </div><!-- /.modal -->
 
         <!--End of Modal Popups for FAQ's.-->
+        <!-- Start of Footer -->
+        <footer>
+            <div class="footer-left">
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_google_plus"></a>
+                <a class="a2a_button_linkedin"></a>
+                <a class="a2a_button_email"></a>
+                <a class="a2a_button_copy_link"></a>
+                </div>
+                <!-- AddToAny END -->
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+            <div class="footer-right">
+                <div id="google_translate_element"></div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                var clearBody = document.getElementsByTagName('Body')[0];
+                clearBody.removeAttribute('style');
+            }
+        </script>
+        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 
     <script src="./scripts/mapbox.js"></script>
-
     <script src="./scripts/modalFunctions.js"></script>
-
     <script src="./scripts/locationSearch.js"></script>
-
-    
-  
-<!-- Test -->
 
 </html>
