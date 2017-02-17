@@ -25,7 +25,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the founders of the Gellert Foundation which funded necessary renovations on campus.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d9/Mario_(New_Super_Mario_Bros._2).png/revision/latest?cb=20120709145048&path-prefix=en"
+                    "icon": "./customIcons/openBook.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284719,37.51755],
