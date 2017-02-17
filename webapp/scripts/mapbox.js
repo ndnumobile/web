@@ -11,7 +11,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                    "icon": "./customIcons/gradCap.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.2849,37.51675],
@@ -27,7 +27,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the founders of the Gellert Foundation which funded necessary renovations on campus.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d9/Mario_(New_Super_Mario_Bros._2).png/revision/latest?cb=20120709145048&path-prefix=en"
+                    // "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d9/Mario_(New_Super_Mario_Bros._2).png/revision/latest?cb=20120709145048&path-prefix=en"
+                    "icon":"./customIcons/openBook.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284719,37.51755],
@@ -43,7 +44,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan. It is a National Historic Monument as well as a California Historic one. It is listed in the same category as the Statue Of Liberty in New York.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://pngimg.com/upload/water_PNG3290.png"
+                    "icon": "./customIcons/mansion.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.286784,37.517380],
@@ -59,7 +60,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://pngimg.com/upload/grass_PNG4930.png"
+                    "icon": "./customIcons/theatreB.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.283010,37.516661],
@@ -75,7 +76,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/1999/12/Screen-shot-2012-04-19-at-10.17.34-PM.png"
+                    "icon": "./customIcons/swimm.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285473,37.516289],
@@ -91,7 +92,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built in the 50s for the Highschool, it was repurposed for NDNU when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette4.wikia.nocookie.net/disney/images/5/5c/Mike_Wazowski_Render_(1).png/revision/latest?cb=20130802231319"
+                    "icon": "./customIcons/theatreB.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285244,37.515499],
@@ -107,7 +108,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Built in 2004, New Hall has proven to be a popular choice among students.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette1.wikia.nocookie.net/nintendo3ds/images/5/56/Boomerang_Mario_(Super_Mario_3D_Land).png/revision/latest?cb=20111012233149"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285694,37.517938],
@@ -123,7 +124,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Dedicated in 1962, the chapel was named for Sister Catharine Julie Cunningham, president of the college from 1956 to 1980",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "https://www.toastmasters.org/Resources/Logos-Images-and-Templates/~/media/96C2C63A571C4D12A4D5BEDF73716BC7.ashx"
+                    "icon": "./customIcons/chapel.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284900,37.518090],
@@ -139,7 +140,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://vignette3.wikia.nocookie.net/creepypasta/images/9/94/Yoshi_(Universal-X).png/revision/latest?cb=20140423133413"
+                    "icon": "./customIcons/forkAndKnife.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285235,37.517219],
@@ -155,7 +156,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://www.queness.com/resources/images/png/apple_ex.png"
+                    "icon": "./customIcons/lawnFlower.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285082,37.517643],
@@ -171,7 +172,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Walter Gleason who was a prominent San Franciscan and a very generous benefactor.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette2.wikia.nocookie.net/zelda/images/5/56/Link_Artwork_7_(The_Minish_Cap).png/revision/latest?cb=20090805033855"
+                    "icon": "./customIcons/bballHoop.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284331,37.518310],
@@ -187,7 +188,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Renovated in 2015, the Campus Center contains the day-student lounge, tutorial center, writing center, several administrative offices, and is connected to the cafeteria.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d3/Mario_Pinball.png/revision/latest?cb=20120809152422&path-prefix=en"
+                    "icon": "./customIcons/gradCap.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284934,37.517124],
@@ -203,7 +204,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/b/b3/Bombette_(Paper_Mario).png/revision/latest?cb=20121202003930&path-prefix=en"
+                    "icon": "./customIcons/quadBuilding.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285009,37.516948],
@@ -219,7 +220,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://vignette4.wikia.nocookie.net/fanon/images/9/9d/Mario_(CGW).png/revision/latest?cb=20130428185628"
+                    "icon": "./customIcons/chapel.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285286,37.518197],
@@ -235,7 +236,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the Foundress of the Sisters of Notre Dame who founded the college.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "https://pngquant.org/pngquant-logo.png"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285396,37.517010],
@@ -251,7 +252,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the Co-Foundress of the Sisters of Notre Dame, Sister St. Joseph Blin de Bourdon.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://mail.rsgc.on.ca/~ldevir/ICS3U/Chapter4/Images/tux.png"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.285579,37.517475],
@@ -267,7 +268,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Recently rebuilt and turfed in 2007, Koret field is located east of the high school, near the main entrance to the high school.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette4.wikia.nocookie.net/pokemon/images/7/75/Pikachu_(Pokk%C3%A9n_Tournament).png/revision/latest?cb=20160115231611"
+                    "icon": "./customIcons/soccerFieldIcon.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.284287,37.515561],
@@ -283,7 +284,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built to house members of the Sisters of Notre Dame, they are now shared with school administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette3.wikia.nocookie.net/streetfighter/images/a/a8/Guile_(CFE).png/revision/latest?cb=20100515084517"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.286516,37.518052],
@@ -299,7 +300,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "The Weigand Gallery is part of the Madison Art Center, a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried in the area. The upper story, where the Gallery and small theater are located, was harness room, grain section and hay loft. It was named for the E.L. Wiegand Foundation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://pngimg.com/upload/star_PNG1585.png"
+                    "icon": "./customIcons/artGalleryB.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.287751,37.518191],
@@ -315,7 +316,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Mrs. Elena Madison who was a major donor towards the building and a member of the Governance Board of the College.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette4.wikia.nocookie.net/pokemon/images/c/ca/Charizard_(Pokk%C3%A9n_Tournament).png/revision/latest?cb=20160115232249"
+                    "icon": "./customIcons/artPalette.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.287697,37.517974],
@@ -331,7 +332,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named after a small village in Picardy, France, where St. Julie Billiart was Born in 1751.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_(2011).png"
+                    "icon": "./customIcons/gradCap.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.287009,37.517927],
@@ -347,7 +348,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "https://upload.wikimedia.org/wikipedia/en/1/1f/Green_Arrow_Up(new).png"
+                    "icon": "./customIcons/bookstoreB.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.287091,37.518277],
@@ -363,7 +364,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Rosemarie Julie Gavin who was Academic Dean / Vice President from 1968 to 1983. Sr. Rosemarie started the Evening Division program, the Credential Program, and was instrumental in starting the Graduate programs of the university.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://orig13.deviantart.net/e291/f/2013/362/3/9/red_lips__png_by_milevip-d6zr6yy.png"
+                    "icon": "./customIcons/gradCap.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.286697,37.518547],
@@ -379,7 +380,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built and still remains as housing for retired Sisters of Notre Dame",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "https://i.stack.imgur.com/7htye.png"
+                    "icon": "./customIcons/nun.svg"
                 },
                 "geometry": {
                     "coordinates": [-122.287378,37.516547],
@@ -396,7 +397,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://www.gamesdiner.com/sites/gamesdiner.com/files/images/Crosshairs[1].png"
+                    "icon": "./customIcons/cross.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -415,7 +416,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://vignette2.wikia.nocookie.net/phineasandferb/images/9/99/Mission_Marvel_-_Hulk_.png/revision/latest?cb=20140309010711"
+                    "icon": "./customIcons/peopleTalk.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -453,7 +454,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://orig00.deviantart.net/db3f/f/2013/145/b/2/pikachu_png_by_xyeddanishali-d66jrfr.png"
+                    "icon": "./customIcons/tennisIconB.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -472,7 +473,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://bin.smwcentral.net/u/17672/megaman-capcom.png"
+                    "icon": "./customIcons/parking.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -491,7 +492,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "http://4.bp.blogspot.com/-zDeqFh7zirQ/UhuEQVnNtII/AAAAAAAABFk/wyMjRrDXXms/s1600/fegeh.png"
+                    "icon": "./customIcons/carB.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -510,7 +511,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/1/10/Sciurus_vulgaris_in_snow_-_Helsinki,_Finland_(white_BG).png"
+                    "icon": "./customIcons/carB.svg",
+                    "iconSize": [10,10]
                 },
                 "geometry": {
                     "coordinates": [
@@ -529,7 +531,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "https://upload.wikimedia.org/wikipedia/en/7/78/Philadelphia_Athletics_Cap_(1902_-_1954).png"
+                    "icon": "./customIcons/carB.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -548,7 +550,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Helen Benedict Wilkie, beloved Dean of Students from 1956-1965.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://pngimg.com/upload/banana_PNG842.png"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -567,7 +569,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame in Belmont at the time of the building of the upper campus when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette1.wikia.nocookie.net/logopedia/images/0/0c/474px-Fc_barcelona.png/revision/latest?cb=20140507131428"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -586,7 +588,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Loretta Julia Carroll, first American General Superior of the Congregation of the Sisters on Fotre Dame world-wide.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette2.wikia.nocookie.net/p__/images/0/09/Joy_(Inside_Out).png/revision/latest?cb=20150405005253&path-prefix=protagonist"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -605,7 +607,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "The Oaks Lounge was originally used as the counseling center. After the counseling center was moved to new hall, Oaks lounge has been repurposed as office space.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "http://vignette2.wikia.nocookie.net/kirby/images/7/73/Kirby_Artwork_(Wii).png/revision/latest?cb=20110607215331"
+                    "icon": "./customIcons/homeResidences.svg"
                 },
                 "geometry": {
                     "coordinates": [
@@ -669,8 +671,8 @@
     });
 
     function popUpModal(title,history,vid,image,description){
-        
-        
+
+
         modal2.style.display = "block";
         document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
         document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
