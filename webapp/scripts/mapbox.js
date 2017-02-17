@@ -1014,6 +1014,24 @@
         .addTo(map);
     }
 
+	//this functions is for listing the university locations in alphabetical order
+	var locations = ["St. Mary’s Hall", "Financial Aid", "Registrar", "Business Office",
+					"Public Safety", "Cafeteria", "The Carl and Celia Berta Gellert Library", "Library Lawn",
+					"Walter Gleason Gym", "Campus Center", "Academic Success Center", "International Student Office",
+					"Student Life & Leadership Office", "The Quad", "Writing Center", "Cunningham Chapel Annex",
+					"Center for Spirituality", "Office of Diversity", "Dorothy Stang Center", "Julie Billiart Hall",
+					"Dean of Students/Student Affairs", "Career Services", "St. Joseph Hall", "Housing",
+					"The Apartments", "Koret Athletic Field", "Toso Residence (Compiegne)", "Human Resources",
+					"Administration", "New Hall", "Counseling and Health Services", "Taube Center",
+					"Ralston Hall", "Weigand Gallery", "Madison Art Center", "Cuvilly Hall",
+					"Tabard Inn", "Bookstore", "Gavin Hall"];
+	document.getElementById("demo").innerHTML = locations;
+
+	function myFunction() 
+	{
+    locations.sort();
+    document.getElementById("demo").innerHTML = locations;
+	}
 
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
