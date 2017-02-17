@@ -1,0 +1,25 @@
+/* Footer Bar */
+footer{
+    background-color:#006699; /*NDNU Blue*/
+    border-top:6px solid #f8c460;
+    bottom:0;
+    color:white;
+    font-weight:bold;
+    height:50px;
+    position:absolute;
+    text-align:center;
+    width:100%;
+}
+.footer-left{
+    float:left;
+    margin:6px 20px 0 20px;
+    top:30%;
+    z-index:1;
+}
+.footer-right{
+    float:right;
+    margin:-4px 20px 0 20px;
+    position:relative;
+    top:30%;
+    z-index:1;
+}
