@@ -153,6 +153,8 @@ body{
 
 .slidebar-nav .navbar-brand {
   width: 100%;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .slidebar-nav .open > a > b.caret {
   border-top: none;
