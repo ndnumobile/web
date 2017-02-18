@@ -115,7 +115,7 @@
                     "history": "Built in 2004, New Hall has proven to be a popular choice among students.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [-122.285694,37.517938],
@@ -251,7 +251,7 @@
                     "history": "Named for the Foundress of the Sisters of Notre Dame who founded the college.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [-122.285396,37.517010],
@@ -268,7 +268,7 @@
                     "history": "Named for the Co-Foundress of the Sisters of Notre Dame, Sister St. Joseph Blin de Bourdon.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [-122.285579,37.517475],
@@ -301,7 +301,7 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built to house members of the Sisters of Notre Dame, they are now shared with school administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg",
+                    "icon": "./customIcons/adminBuilding.svg",
                     "iconSize":[25,25]
                 },
                 "geometry": {
@@ -422,7 +422,7 @@
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/cross.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[10,10]
                 },
                 "geometry": {
                     "coordinates": [
@@ -521,8 +521,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/carB.svg",
-                    "iconSize":[15,15]
+                    "icon": "./customIcons/carNew.svg",
+                    "iconSize":[35,35]
                 },
                 "geometry": {
                     "coordinates": [
@@ -541,8 +541,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/carB.svg",
-                    "iconSize": [15,15]
+                    "icon": "./customIcons/carNew.svg",
+                    "iconSize": [35,35]
                 },
                 "geometry": {
                     "coordinates": [
@@ -561,8 +561,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/carB.svg",
-                    "iconSize":[15,15]
+                    "icon": "./customIcons/carNew.svg",
+                    "iconSize":[35,35]
                 },
                 "geometry": {
                     "coordinates": [
@@ -582,7 +582,7 @@
                     "history": "Named for Sister Helen Benedict Wilkie, beloved Dean of Students from 1956-1965.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
@@ -602,7 +602,7 @@
                     "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame in Belmont at the time of the building of the upper campus when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
@@ -622,7 +622,7 @@
                     "history": "Named for Sister Loretta Julia Carroll, first American General Superior of the Congregation of the Sisters on Fotre Dame world-wide.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
@@ -642,7 +642,7 @@
                     "history": "The Oaks Lounge was originally used as the counseling center. After the counseling center was moved to new hall, Oaks lounge has been repurposed as office space.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
-                    "iconSize":[25,25]
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
