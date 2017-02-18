@@ -11,7 +11,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/gradCap.svg"
+                    "icon": "./customIcons/gradCap.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.2849,37.51675],
@@ -28,7 +29,8 @@
                     "history": "Named for the founders of the Gellert Foundation which funded necessary renovations on campus.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     // "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d9/Mario_(New_Super_Mario_Bros._2).png/revision/latest?cb=20120709145048&path-prefix=en"
-                    "icon":"./customIcons/openBook.svg"
+                    "icon":"./customIcons/libraryNew.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.284719,37.51755],
@@ -44,7 +46,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan. It is a National Historic Monument as well as a California Historic one. It is listed in the same category as the Statue Of Liberty in New York.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/mansion.svg"
+                    "icon": "./customIcons/mansion.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.286784,37.517380],
@@ -60,7 +63,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/theatreB.svg"
+                    "icon": "./customIcons/theatreB.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.283010,37.516661],
@@ -76,7 +80,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/swimm.svg"
+                    "icon": "./customIcons/swimNew.svg",
+                    "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [-122.285473,37.516289],
@@ -92,7 +97,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built in the 50s for the Highschool, it was repurposed for NDNU when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/theatreB.svg"
+                    "icon": "./customIcons/theatreB.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285244,37.515499],
@@ -108,7 +114,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Built in 2004, New Hall has proven to be a popular choice among students.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285694,37.517938],
@@ -124,7 +131,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Dedicated in 1962, the chapel was named for Sister Catharine Julie Cunningham, president of the college from 1956 to 1980",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/chapel.svg"
+                    "icon": "./customIcons/chapel.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.284900,37.518090],
@@ -140,7 +148,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/forkAndKnife.svg"
+                    "icon": "./customIcons/forkAndKnife.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285235,37.517219],
@@ -156,7 +165,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/lawnFlower.svg"
+                    "icon": "./customIcons/lawnFlower.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285082,37.517643],
@@ -172,7 +182,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Walter Gleason who was a prominent San Franciscan and a very generous benefactor.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bballHoop.svg"
+                    "icon": "./customIcons/bballHoop.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.284331,37.518310],
@@ -188,7 +199,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Renovated in 2015, the Campus Center contains the day-student lounge, tutorial center, writing center, several administrative offices, and is connected to the cafeteria.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/gradCap.svg"
+                    "icon": "./customIcons/gradCap.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.284934,37.517124],
@@ -204,7 +216,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/quadBuilding.svg"
+                    "icon": "./customIcons/quadBuilding.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285009,37.516948],
@@ -220,7 +233,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/chapel.svg"
+                    "icon": "./customIcons/chapel.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285286,37.518197],
@@ -236,7 +250,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the Foundress of the Sisters of Notre Dame who founded the college.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285396,37.517010],
@@ -252,7 +267,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for the Co-Foundress of the Sisters of Notre Dame, Sister St. Joseph Blin de Bourdon.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.285579,37.517475],
@@ -268,7 +284,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Recently rebuilt and turfed in 2007, Koret field is located east of the high school, near the main entrance to the high school.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/soccerFieldIcon.svg"
+                    "icon": "./customIcons/soccerBall.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.284287,37.515561],
@@ -284,7 +301,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built to house members of the Sisters of Notre Dame, they are now shared with school administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.286516,37.518052],
@@ -300,7 +318,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "The Weigand Gallery is part of the Madison Art Center, a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried in the area. The upper story, where the Gallery and small theater are located, was harness room, grain section and hay loft. It was named for the E.L. Wiegand Foundation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/artGalleryB.svg"
+                    "icon": "./customIcons/artGalleryB.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.287751,37.518191],
@@ -316,7 +335,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Mrs. Elena Madison who was a major donor towards the building and a member of the Governance Board of the College.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/artPalette.svg"
+                    "icon": "./customIcons/artPalette.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.287697,37.517974],
@@ -332,7 +352,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named after a small village in Picardy, France, where St. Julie Billiart was Born in 1751.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/gradCap.svg"
+                    "icon": "./customIcons/gradCap.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.287009,37.517927],
@@ -348,7 +369,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/bookstoreB.svg"
+                    "icon": "./customIcons/smallBook.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.287091,37.518277],
@@ -364,7 +386,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Rosemarie Julie Gavin who was Academic Dean / Vice President from 1968 to 1983. Sr. Rosemarie started the Evening Division program, the Credential Program, and was instrumental in starting the Graduate programs of the university.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/gradCap.svg"
+                    "icon": "./customIcons/gradCap.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.286697,37.518547],
@@ -380,7 +403,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Originally built and still remains as housing for retired Sisters of Notre Dame",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/nun.svg"
+                    "icon": "./customIcons/nun.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [-122.287378,37.516547],
@@ -397,7 +421,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/cross.svg"
+                    "icon": "./customIcons/cross.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -416,7 +441,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/peopleTalk.svg"
+                    "icon": "./customIcons/peopleTalk.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -435,7 +461,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Built when NDNU was still an all-girls school, it was originally a recreational building where students could enjoy coffee or tea. It is named after Chaucer's Tales.",
                     "video": "",
-                    "icon": "http://img13.deviantart.net/0ccb/i/2012/238/a/5/mark__png_by_ninja_pony-d5cj4up.png"
+                    "icon": "./customIcons/adviceTabard.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -454,7 +481,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/tennisIconB.svg"
+                    "icon": "./customIcons/tennisBalls.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -473,7 +501,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/parking.svg"
+                    "icon": "./customIcons/parking.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -492,7 +521,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/carB.svg"
+                    "icon": "./customIcons/carB.svg",
+                    "iconSize":[15,15]
                 },
                 "geometry": {
                     "coordinates": [
@@ -512,7 +542,7 @@
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/carB.svg",
-                    "iconSize": [10,10]
+                    "iconSize": [15,15]
                 },
                 "geometry": {
                     "coordinates": [
@@ -531,7 +561,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/carB.svg"
+                    "icon": "./customIcons/carB.svg",
+                    "iconSize":[15,15]
                 },
                 "geometry": {
                     "coordinates": [
@@ -550,7 +581,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Helen Benedict Wilkie, beloved Dean of Students from 1956-1965.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -569,7 +601,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame in Belmont at the time of the building of the upper campus when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -588,7 +621,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "Named for Sister Loretta Julia Carroll, first American General Superior of the Congregation of the Sisters on Fotre Dame world-wide.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -607,7 +641,8 @@
                     "image": "https://www.youtube.com/embed/0oiWSImRNEw",
                     "history": "The Oaks Lounge was originally used as the counseling center. After the counseling center was moved to new hall, Oaks lounge has been repurposed as office space.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/homeResidences.svg"
+                    "icon": "./customIcons/homeResidences.svg",
+                    "iconSize":[25,25]
                 },
                 "geometry": {
                     "coordinates": [
@@ -668,6 +703,11 @@
             .setLngLat(marker.geometry.coordinates)
             .setPopup(popup)
             .addTo(map);
+
+        //test icon size stuff
+        marker.properties.iconSize.join('/') + '/)';
+        el.style.width = marker.properties.iconSize[0] + 'px';
+        el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
     function popUpModal(title,history,vid,image,description){
