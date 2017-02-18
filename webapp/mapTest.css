@@ -67,8 +67,7 @@
 
 #map { 
     position:absolute; top:0; left:0; bottom:0; width:100%;
-
-
+    z-index:-1;
 }
 
 /* CSS used here will be applied after bootstrap.css */
@@ -153,6 +152,8 @@ body{
 
 .slidebar-nav .navbar-brand {
   width: 100%;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .slidebar-nav .open > a > b.caret {
   border-top: none;
@@ -251,6 +252,10 @@ body{
 /*
  * White navbar style
  */
+
+#navbar-white{
+    width: 0%;
+}
 
 #navbar-white.navbar-default { /* #efffff - #ffffff */
    font-size: 20px;
@@ -536,8 +541,44 @@ p{
     font-size: 20px;
 }
 
+#mainContainer{
+    height: 100%;
+}
 
+#searchDiv{
+    width: 25%;
+}
 
+.marker {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.breaks{
+    word-wrap: break-word;
+}
+.modModal{
+    max-width: 600px;
+    overflow-y: auto;
+    border-radius:25px;
+    border:10px solid #f8c460;
+    padding-left:15px;
+    padding-right:10px;
+    background-color:#006699;
+    color:white;
+}
+.popup-image{
+    width:280px;
+    height:158px;
+    float:left;
+    margin:5px 10px 10px 0px;
+}
+.popup-desc{
+    margin-top:10px;
+    float:left;
+}
 
 
 
