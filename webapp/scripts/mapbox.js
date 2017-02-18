@@ -713,14 +713,6 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    function popUpModal(title,history,vid,image,description){
-
-
-        modal2.style.display = "block";
-        document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
-        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
-    }
-
 
     function pressBtn1(){
         var y = document.getElementById('button_press1').value;
