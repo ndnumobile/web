@@ -720,342 +720,882 @@
 
     //adds map navigation controls for zoom and reset north. Default position in upper right.
     map.addControl(new mapboxgl.NavigationControl());
+    
+    //this function is for listing the university locations in alphabetical order
+
+	function myFunctionSort() 
+	{
+	var locations = ["St. Mary’s Hall", "Financial Aid", "Registrar", "Business Office",
+					"Public Safety", "Cafeteria", "The Carl and Celia Berta Gellert Library", "Library Lawn",
+					"Walter Gleason Gym", "Campus Center", "Academic Success Center", "International Student Office",
+					"Student Life & Leadership Office", "The Quad", "Writing Center", "Cunningham Chapel Annex",
+					"Center for Spirituality", "Office of Diversity", "Dorothy Stang Center", "Julie Billiart Hall",
+					"Dean of Students/Student Affairs", "Career Services", "St. Joseph Hall", "Housing",
+					"The Apartments", "Koret Athletic Field", "Toso Residence (Compiegne)", "Human Resources",
+					"Administration", "New Hall", "Counseling and Health Services", "Taube Center",
+					"Ralston Hall", "Weigand Gallery", "Madison Art Center", "Cuvilly Hall",
+					"Tabard Inn", "Bookstore", "Gavin Hall"];
+    locations.sort();
+  
+      document.getElementById("location0").innerHTML  = locations[0];
+      document.getElementById("location1").innerHTML  = locations[1];
+      document.getElementById("location2").innerHTML  = locations[2];
+      document.getElementById("location3").innerHTML  = locations[3];
+      document.getElementById("location4").innerHTML  = locations[4];
+      document.getElementById("location5").innerHTML  = locations[5];
+      document.getElementById("location6").innerHTML  = locations[6];
+      document.getElementById("location7").innerHTML  = locations[7];
+      document.getElementById("location8").innerHTML  = locations[8];
+      document.getElementById("location9").innerHTML  = locations[9];
+      document.getElementById("location10").innerHTML = locations[10];
+      document.getElementById("location11").innerHTML = locations[11];
+      document.getElementById("location12").innerHTML = locations[12];
+      document.getElementById("location13").innerHTML = locations[13];
+      document.getElementById("location14").innerHTML = locations[14];
+      document.getElementById("location15").innerHTML = locations[15];
+      document.getElementById("location16").innerHTML = locations[16];
+      document.getElementById("location17").innerHTML = locations[17];
+      document.getElementById("location18").innerHTML = locations[18];
+      document.getElementById("location19").innerHTML = locations[19];
+      document.getElementById("location20").innerHTML = locations[20];
+      document.getElementById("location21").innerHTML = locations[21];
+      document.getElementById("location22").innerHTML = locations[22];
+      document.getElementById("location23").innerHTML = locations[23];
+      document.getElementById("location24").innerHTML = locations[24];
+      document.getElementById("location25").innerHTML = locations[25];
+      document.getElementById("location26").innerHTML = locations[26];
+      document.getElementById("location27").innerHTML = locations[27];
+      document.getElementById("location28").innerHTML = locations[28];
+      document.getElementById("location29").innerHTML = locations[29];
+      document.getElementById("location30").innerHTML = locations[30];
+      document.getElementById("location31").innerHTML = locations[31];
+      document.getElementById("location32").innerHTML = locations[32];
+      document.getElementById("location33").innerHTML = locations[33];
+      document.getElementById("location34").innerHTML = locations[34];
+      document.getElementById("location35").innerHTML = locations[35];
+      document.getElementById("location36").innerHTML = locations[36];
+      document.getElementById("location37").innerHTML = locations[37];
+      document.getElementById("location38").innerHTML = locations[38];
+      
+	  //Academic Success Center location0
+	  //Administration location1
+      //Bookstore	location2
+	  //Business Office location3
+	  //Cafeteria location4
+	  //Campus Center location5
+      //Career Services location6
+      //Center for Spirituality location7
+      //Counseling and Health Services location8
+	  //Cunningham Chapel Annex location9
+	  //Cuvilly Hall location10
+	  //Dean of Students/Student Affairs location11
+      //Dorothy Stang Center location12
+      //Financial Aid location13
+      //Gavin Hall location14
+      //Housing location15
+      //Human Resources location16
+      //International Student Office location17
+      //Julie Billiart Hall location18
+      //Koret Athletic Field location19
+	  //Library Lawn location20
+	  //Madison Art Center location21
+	  //New Hall location22
+	  //Office of Diversity location23
+	  //Public Safety location24
+	  //Ralston Hall location25
+      //Registrar location26
+      //St. Joseph Hall location27
+	  //St. Mary’s Hall location28
+      //Student Life & Leadership Office location29
+      //Tabard Inn location30
+      //Taube Center location31
+      //The Apartments location32
+	  //The Carl and Celia Berta Gellert Library location33
+	  //The Quad location34
+      //Toso Residence (Compiegne) location35
+	  //Walter Gleason Gym location36
+      //Weigand Gallery location37
+	  //Writing Center location38
+	}
 
     function pressBtn1(){
-        var y = document.getElementById('button_press1').value;
+        var y = document.getElementById('location0').innerHTML;
 
+        if (y == "St. Mary’s Hall")
+        {
         map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
         var popup1 = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.2849, 37.51675])
         .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
         .addTo(map);
-    }
-
-    function pressBtn2(){
-        var z = document.getElementById('button_press2').value;
-
-        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
-        var popup2 = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.2849, 37.51675])
-        .setHTML('<h3>Financial Aid</h3><p>The Financial Aid Office at Notre Dame de Namur University offers a complete array of financial and support services which are designed to help you with the education-related expenses involved in obtaining your educational goal.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn3(){
-        var u = document.getElementById('button_press3').value;
-
-        map.flyTo({center:[-122.2849, 37.51675], speed: 0.3});
-        var popup3 = new mapboxgl.Popup({closeOnClick:true})
-        .setLngLat([-122.2849, 37.51675])
-        .setHTML('<h3>Registrar</h3><p>The Registrar’s Office is the official recorder and keeper of student academic records. Records are maintained in compliance with federal privacy regulations (FERPA). The office is charged to help maintain NDNU’s academic integrity through effective communication of, adherence to, and administration of university policies. Services provided by the office include registration, degree audit, enrollment verification and transcripts.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn4(){
-        var u = document.getElementById('button_press4').value;
-
-        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
-        var popup3 = new mapboxgl.Popup({closeOnClick:true})
-        .setLngLat([-122.2849, 37.51675])
-        .setHTML('<h3>Business Office</h3><p>The Business Office is here to provide service to all students regarding their   financial status. The office is located in St. Mary’s Hall, next to the Registrar. Business Office staff are available to assist with account payments, inquiries and payment plan options.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn5(){
-        var u = document.getElementById('button_press5').value;
-        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.2849, 37.51675])
-        .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn6(){
-        var u = document.getElementById('button_press6').value;
-        map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285235,37.517219])
-        .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There    are vegetarian, vegan, and gluten-free options.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn7(){
-        var u = document.getElementById('button_press7').value;
-        map.flyTo({center: [-122.284719, 37.51755], speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284719, 37.51755])
-        .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
-        .addTo(map);
-    }
-
-    function pressBtn8(){
-        var u = document.getElementById('button_press8').value;
-        map.flyTo({center: [-122.284331,37.517219], speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284331,37.517219])
-        .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn9(){
-        var u = document.getElementById('button_press9').value;
-        map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284331,37.518310])
-        .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
-        .addTo(map);
-    }
-
-    function pressBtn9(){
-        var u = document.getElementById('button_press9').value;
-        map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284331,37.518310])
-        .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
-        .addTo(map);
-    }
-
-
-    function pressBtnA(){
-        var u = document.getElementById('button_pressA').value;
-        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284934,37.517124])
-        .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
-        .addTo(map);
-    }
-
-    function pressBtnB(){
-        var u = document.getElementById('button_pressB').value;
+        }
+        
+        if (y == "Academic Success Center")
+        {
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.284934,37.517124])
         .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
         .addTo(map);
+        }
     }
 
-    function pressBtnC(){
-        var u = document.getElementById('button_pressC').value;
-        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284934,37.517124])
-        .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+    function pressBtn2(){
+        var z = document.getElementById('location1').innerHTML;
+
+        if (z == "Financial Aid")
+        {
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+        var popup2 = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Financial Aid</h3><p>The Financial Aid Office at Notre Dame de Namur University offers a complete array of financial and support services which are designed to help you with the education-related expenses involved in obtaining your educational goal.</p>')
         .addTo(map);
-    }
-
-    function pressBtnD(){
-        var u = document.getElementById('button_pressD').value;
-        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284934,37.517124])
-        .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnE(){
-        var u = document.getElementById('button_pressE').value;
-        map.flyTo({center: [-122.285009,37.516948],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285009,37.516948])
-        .setHTML('<h3>The Quad</h3><p>Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnF(){
-        var u = document.getElementById('button_pressF').value;
-        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284934,37.517124])
-        .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnG(){
-        var u = document.getElementById('button_pressG').value;
-        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284900,37.518090])
-        .setHTML('<h3>Cunningham Chapel Annex</h3><p>The chapel was dedicated to the memory of sister Catherine Julie Cunningham, a former university president. Its windows are made of sculpted glass, created by well known artist Gabriel Loire. The chapel hosts weekly services and other events.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnH(){
-        var u = document.getElementById('button_pressH').value;
-        map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285286,37.518197])
-        .setHTML('<h3>Center for Spirituality</h3><p>Guided by the spirit of the Sisters of Notre Dame, the Office of     Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnJulie(){
-        map.flyTo({center: [-122.285396,37.517010],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285396,37.517010])
-        .setHTML('<h3>Julie Billiart Hall</h3><p>Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnDean(){
-  map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.2849,37.51675])
-        .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnCareer(){
-        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284934,37.517124])
-        .setHTML('<h3>Career Services</h3><p>Career Services provides career counseling, for-credit classes, information resources and tools, and on-campus events aimed at fostering the career development of students and alumni.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnCuvilly(){
-        map.flyTo({center: [-122.287009,37.517927],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.287009,37.517927])
-        .setHTML('<h3>Cuvilly Hall</h3><p>Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnWeigand(){
-        map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.287751,37.518191])
-        .setHTML('<h3>Weigand Gallery</h3><p>Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnBookStore(){
-        map.flyTo({center: [-122.287091,37.518277],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.287091,37.518277])
-        .setHTML('<h3>Bookstore</h3><p>Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We\'ve got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnDorothy(){
-        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284900,37.518090])
-        .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
-        .addTo(map);
-    }
-
-    function pressBtnRalston(){
-        map.flyTo({center: [-122.286784, 37.517380],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.286784, 37.517380])
-        .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnMadisonArt(){
-        map.flyTo({center: [-122.287697,37.517974],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.287697,37.517974])
-        .setHTML('<h3>Madison Art Center</h3><p>Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnTaube(){
-        map.flyTo({center: [-122.283010,37.516661],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.283010,37.516661])
-        .setHTML('<h3>Taube Center</h3><p>Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnHealthCounseling(){
-        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285694,37.517938])
-        .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
-        .addTo(map);
-    }
-
-    function pressApartments(){
-        map.flyTo({center: [-122.285437,37.516540],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285437,37.516540])
-        .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
-        .addTo(map);
-    }
-
-    function pressBtnAdmin(){
+        }
+        if (z == "Administration")
+        {
         map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.286516,37.518052])
         .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
         .addTo(map);
+        }
     }
 
-    function pressKoret(){
-        map.flyTo({center: [-122.284287,37.515561],speed: 0.3});
-        var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.284287,37.515561])
-        .setHTML('<h3>Koret Athletic Field</h3><p>Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.</p>')
+    function pressBtn3(){
+        var u = document.getElementById('location2').innerHTML;
+	    if (u == "Registrar")
+	    {
+        map.flyTo({center:[-122.2849, 37.51675], speed: 0.3});
+        var popup3 = new mapboxgl.Popup({closeOnClick:true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Registrar</h3><p>The Registrar’s Office is the official recorder and keeper of student academic records. Records are maintained in compliance with federal privacy regulations (FERPA). The office is charged to help maintain NDNU’s academic integrity through effective communication of, adherence to, and administration of university policies. Services provided by the office include registration, degree audit, enrollment verification and transcripts.</p>')
         .addTo(map);
-    }
-
-    function pressHousing(){
-        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+        }
+        if (u == "Bookstore")
+        {
+        map.flyTo({center: [-122.287091,37.518277],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285579,37.517475])
-        .setHTML('<h3>Housing</h3><p>The residence community values the uniqueness and potential of each individual and strives to create an environment which encourages respect, understanding and concern for others. Our on-campus residence facilities offer students three different residence community environments</p>')
+        .setLngLat([-122.287091,37.518277])
+        .setHTML('<h3>Bookstore</h3><p>Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We\'ve got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.</p>')
         .addTo(map);
+        }
     }
 
-    function pressBtnStJoseph(){
-        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+    function pressBtn4(){
+        var u = document.getElementById('location3').innerHTML;
+		
+		if(u == "Business Office")
+		{
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+        var popup3 = new mapboxgl.Popup({closeOnClick:true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Business Office</h3><p>The Business Office is here to provide service to all students regarding their   financial status. The office is located in St. Mary’s Hall, next to the Registrar. Business Office staff are available to assist with account payments, inquiries and payment plan options.</p>')
+        .addTo(map);
+        }
+        //No need to fix, business office it is
+    }
+
+    function pressBtn5(){
+        var u = document.getElementById('location4').innerHTML;
+        
+        if(u == "Public Safety")
+        {
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285579,37.517475])
-        .setHTML('<h3>St. Joseph Hall</h3><p>St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor</p>')
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
         .addTo(map);
-    }
-
-    function pressHumanResources(){
-        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        }
+        if(u == "Cafeteria")
+        {
+        map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.286516,37.518052])
-        .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+        .setLngLat([-122.285235,37.517219])
+        .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.</p>')
         .addTo(map);
+        }
     }
 
-    function pressToso(){
-        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+    function pressBtn6(){
+        var u = document.getElementById('location5').innerHTML;
+        if(u == "Cafeteria")
+        {
+        map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.286516,37.518052])
-        .setHTML('<h3>Toso Residence (Compiegne)</h3><p>Staff offices including human resources and administration.</p>')
+        .setLngLat([-122.285235,37.517219])
+        .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.</p>')
         .addTo(map);
+        }
+        if(u == "Campus Center")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
+        .addTo(map);
+        }
     }
 
-    function pressBtnGavinHall(){
+    function pressBtn7(){
+        var u = document.getElementById('location6').innerHTML;
+        
+        if(u == "The Carl and Celia Berta Gellert Library")
+        {
+        map.flyTo({center: [-122.284719, 37.51755], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284719, 37.51755])
+        .setHTML('<h3>The Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
+        .addTo(map);
+        }
+        if(u == "Career Services")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Career Services</h3><p>Career Services provides career counseling, for-credit classes, information resources and tools, and on-campus events aimed at fostering the career development of students and alumni.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtn8(){
+        var u = document.getElementById('location7').innerHTML;
+        
+        if(u == "Library Lawn")
+        {
+        map.flyTo({center: [-122.284331,37.517219], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284331,37.517219])
+        .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
+        .addTo(map);
+        }
+        if(u == "Center for Spirituality")
+        {
+        map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285286,37.518197])
+        .setHTML('<h3>Center for Spirituality</h3><p>Guided by the spirit of the Sisters of Notre Dame, the Office of     Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.</p>')
+        .addTo(map);
+        }
+        
+    }
+
+    function pressBtn9(){
+        var u = document.getElementById('location8').innerHTML;
+        if(u == "Walter Gleason Gym")
+        {
+        map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284331,37.518310])
+        .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
+        .addTo(map);
+        }
+        if(u == "Counseling and Health Services")
+        {
+        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285694,37.517938])
+        .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
+        .addTo(map);
+        }
+    }
+    
+    function pressBtnA(){
+        var u = document.getElementById('location9').innerHTML;
+        if(u == "Campus Center")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
+        .addTo(map);
+        }
+        if(u == "Cunningham Chapel Annex")
+        {
+		map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284900,37.518090])
+        .setHTML('<h3>Cunningham Chapel Annex</h3><p>The chapel was dedicated to the memory of sister Catherine Julie Cunningham, a former university president. Its windows are made of sculpted glass, created by well known artist Gabriel Loire. The chapel hosts weekly services and other events.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnB(){
+        var u = document.getElementById('location10').innerHTML;
+        if(u == "Academic Success Center")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
+        .addTo(map);
+        }
+        if(u == "Cuvilly Hall")
+        {
+        map.flyTo({center: [-122.287009,37.517927],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287009,37.517927])
+        .setHTML('<h3>Cuvilly Hall</h3><p>Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.</p>')
+        .addTo(map);
+        }
+        
+    }
+
+    function pressBtnC(){
+        var u = document.getElementById('location11').innerHTML;
+        if(u == "International Student Office")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+        .addTo(map);
+        }
+        if(u == "Dean of Students/Student Affairs")
+        {
+        map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849,37.51675])
+        .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
+        .addTo(map); 
+        }
+    }
+
+    function pressBtnD(){
+        var u = document.getElementById('location12').innerHTML;
+        if(u == "Student Life & Leadership Office")   //might be problem here
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+        .addTo(map);
+        }
+        if(u == "Dorothy Stang Center")
+        {
+        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284900,37.518090])
+        .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnE(){
+        var u = document.getElementById('location13').innerHTML;
+        if(u == "The Quad")
+        {
+        map.flyTo({center: [-122.285009,37.516948],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285009,37.516948])
+        .setHTML('<h3>The Quad</h3><p>Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.</p>')
+        .addTo(map);
+        }
+        if(u == "Financial Aid")
+        {
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+        var popup2 = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Financial Aid</h3><p>The Financial Aid Office at Notre Dame de Namur University offers a complete array of financial and support services which are designed to help you with the education-related expenses involved in obtaining your educational goal.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnF(){
+        var u = document.getElementById('location14').innerHTML;
+        if(u == "Writing Center")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
+        .addTo(map);
+        }
+        if(u == "Gavin Hall")
+        {
         map.flyTo({center: [-122.286697,37.518547],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.286697,37.518547])
         .setHTML('<h3>Gavin Hall</h3><p>The smallest of the three main instructional buildings. Located up the hill from the bookstore</p>')
         .addTo(map);
+        }
     }
 
-    function pressNewHall(){
-        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
-        var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
-        .setLngLat([-122.285694,37.517938])
-        .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
+    function pressBtnG(){
+        var u = document.getElementById('location15').innerHTML;
+        if(u == "Cunningham Chapel Annex")
+        {
+        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284900,37.518090])
+        .setHTML('<h3>Cunningham Chapel Annex</h3><p>The chapel was dedicated to the memory of sister Catherine Julie Cunningham, a former university president. Its windows are made of sculpted glass, created by well known artist Gabriel Loire. The chapel hosts weekly services and other events.</p>')
         .addTo(map);
+        }
+        if(u == "Housing")
+        {
+        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285579,37.517475])
+        .setHTML('<h3>Housing</h3><p>The residence community values the uniqueness and potential of each individual and strives to create an environment which encourages respect, understanding and concern for others. Our on-campus residence facilities offer students three different residence community environments</p>')
+        .addTo(map);
+        }
     }
 
-    function pressBtnTabard(){
+    function pressBtnH(){
+        var u = document.getElementById('location16').innerHTML;
+        if (u == "Center for Spirituality")
+        {
+        map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285286,37.518197])
+        .setHTML('<h3>Center for Spirituality</h3><p>Guided by the spirit of the Sisters of Notre Dame, the Office of     Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.</p>')
+        .addTo(map);
+        }
+        if (u == "Human Resources")
+        {
+        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286516,37.518052])
+        .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+        .addTo(map);
+        }
+    }
+    
+    function pressBtnI(){
+    	var u = document.getElementById('location17').innerHTML;
+    	if(u == "Office of Diversity")
+    	{
+    		map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+			var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.284900,37.518090])
+            .setHTML('<h3>Office of Diversity</h3><p>Committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
+            .addTo(map);
+    	}
+    	if(u == "International Student Office")
+    	{
+    	  map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+		  var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.284934,37.517124])
+          .setHTML('<h3>International Student Office</h3><p>The International Student Office is located in the Campus Center</p>')
+          .addTo(map);
+    	}
+    }
+
+    function pressBtnJulie(){
+        var u = document.getElementById('location19').innerHTML;
+        if(u == "Julie Billiart Hall")
+        {
+        map.flyTo({center: [-122.285396,37.517010],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285396,37.517010])
+        .setHTML('<h3>Julie Billiart Hall</h3><p>Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.</p>')
+        .addTo(map);
+        }
+        if(u == "Koret Athletic Field")
+        {
+        map.flyTo({center: [-122.284287,37.515561],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284287,37.515561])
+        .setHTML('<h3>Koret Athletic Field</h3><p>Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnDean(){
+        var u = document.getElementById('location20').innerHTML;
+        if(u == "Dean of Students/Student Affairs")
+        {
+  		map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849,37.51675])
+        .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
+        .addTo(map);
+        }
+        if(u == "Library Lawn")
+        {
+        map.flyTo({center: [-122.284331,37.517219], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284331,37.517219])
+        .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
+        .addTo(map);
+        }
+        
+    }
+
+    function pressBtnCareer(){
+        var u = document.getElementById('location21').innerHTML;
+        if(u == "Career Services")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Career Services</h3><p>Career Services provides career counseling, for-credit classes, information resources and tools, and on-campus events aimed at fostering the career development of students and alumni.</p>')
+        .addTo(map);
+        }
+        if(u == "Madison Art Center")
+        {
+        map.flyTo({center: [-122.287697,37.517974],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287697,37.517974])
+        .setHTML('<h3>Madison Art Center</h3><p>Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnCuvilly(){
+        var u = document.getElementById('location35').innerHTML;
+        if(u == "Cuvilly Hall")
+        {
+        map.flyTo({center: [-122.287009,37.517927],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287009,37.517927])
+        .setHTML('<h3>Cuvilly Hall</h3><p>Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.</p>')
+        .addTo(map);
+        }
+        if(u == "Toso Residence (Compiegne)")
+        {
+        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286516,37.518052])
+        .setHTML('<h3>Toso Residence (Compiegne)</h3><p>Staff offices including human resources and administration.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnWeigand(){
+        var u = document.getElementById('location33').innerHTML;
+        if(u == "Weigand Gallery")
+        {
+        map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287751,37.518191])
+        .setHTML('<h3>Weigand Gallery</h3><p>Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.</p>')
+        .addTo(map);
+        }
+        if(u == "The Carl and Celia Berta Gellert Library")
+        {
+        map.flyTo({center: [-122.284719, 37.51755], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284719, 37.51755])
+        .setHTML('<h3>The Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
+        .addTo(map);
+        }
+        
+    }
+
+    function pressBtnBookStore(){
+        var u = document.getElementById('location37').innerHTML;
+        if(u == "Bookstore")
+        {
+        map.flyTo({center: [-122.287091,37.518277],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287091,37.518277])
+        .setHTML('<h3>Bookstore</h3><p>Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We\'ve got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.</p>')
+        .addTo(map);
+        }
+        if(u == "Weigand Gallery")
+        {
+        map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287751,37.518191])
+        .setHTML('<h3>Weigand Gallery</h3><p>Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnDorothy(){
+        var u = document.getElementById('location18').innerHTML;
+        if(u == "Dorothy Stang Center")
+        { 
+        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284900,37.518090])
+        .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
+        .addTo(map);
+        }
+        if(u == "Julie Billiart Hall")
+        {
+        map.flyTo({center: [-122.285396,37.517010],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285396,37.517010])
+        .setHTML('<h3>Julie Billiart Hall</h3><p>Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnRalston(){
+    	var u = document.getElementById('location32').innerHTML;
+    	if(u == "Ralston Hall")
+    	{
+        map.flyTo({center: [-122.286784, 37.517380],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286784, 37.517380])
+        .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
+        .addTo(map);
+        }
+        if(u == "The Apartments")
+        {
+        map.flyTo({center: [-122.285437,37.516540],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285437,37.516540])
+        .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
+        .addTo(map);
+        }   
+    }
+
+    function pressBtnMadisonArt(){
+        var u = document.getElementById('location34').innerHTML;
+        if(u == "Madison Art Center")
+        {
+        map.flyTo({center: [-122.287697,37.517974],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.287697,37.517974])
+        .setHTML('<h3>Madison Art Center</h3><p>Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.</p>')
+        .addTo(map);
+        }
+        if(u == "The Quad")
+        {
+        map.flyTo({center: [-122.285009,37.516948],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285009,37.516948])
+        .setHTML('<h3>The Quad</h3><p>Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnTaube(){
+    	var u = document.getElementById('location31').innerHTML;
+    	if(u == "Taube Center")
+    	{
+        map.flyTo({center: [-122.283010,37.516661],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.283010,37.516661])
+        .setHTML('<h3>Taube Center</h3><p>Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.</p>')
+        .addTo(map);
+        }
+        //no need, same location kept
+    }
+
+    function pressBtnHealthCounseling(){
+        var u = document.getElementById('location30').innerHTML;
+        if(u == "Counseling and Health Services")
+        {
+        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285694,37.517938])
+        .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
+        .addTo(map);
+        }
+        if(u == "Tabard Inn")
+        {
         map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
         var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.286909,37.518083])
         .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
         .addTo(map);
+        }
     }
 
+    function pressApartments(){
+        var u = document.getElementById('location24').innerHTML;
+        if(u == "The Apartments")
+        {
+        map.flyTo({center: [-122.285437,37.516540],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285437,37.516540])
+        .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
+        .addTo(map);
+        }
+        if(u == "Public Safety")
+        {
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnAdmin(){
+        var u = document.getElementById('location28').innerHTML;
+        if(u == "Administration")
+        {
+        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286516,37.518052])
+        .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
+        .addTo(map);
+        }
+        if(u == "St. Mary’s Hall")
+        {
+        map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
+        var popup1 = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>St.Mary\'s hall</h3><p>Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.</p>')
+        .addTo(map);
+        }
+        
+    }
+
+    function pressKoret(){
+    	var u = document.getElementById('location25').innerHTML;
+    	if(u == "Koret Athletic Field")
+    	{
+        map.flyTo({center: [-122.284287,37.515561],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284287,37.515561])
+        .setHTML('<h3>Koret Athletic Field</h3><p>Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.</p>')
+        .addTo(map);
+        }
+        if(u == "Ralston Hall")
+        {
+        map.flyTo({center: [-122.286784, 37.517380],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286784, 37.517380])
+        .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressHousing(){
+        var u = document.getElementById('location23').innerHTML;
+        if(u == "Housing")
+        {
+        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285579,37.517475])
+        .setHTML('<h3>Housing</h3><p>The residence community values the uniqueness and potential of each individual and strives to create an environment which encourages respect, understanding and concern for others. Our on-campus residence facilities offer students three different residence community environments</p>')
+        .addTo(map);
+        }
+        if(u == "Office of Diversity")
+        {
+        map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+			var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.284900,37.518090])
+            .setHTML('<h3>Office of Diversity</h3><p>Committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
+            .addTo(map);
+        }
+    }
+
+    function pressBtnStJoseph(){
+    	var u = document.getElementById('location22').innerHTML;
+    	if(u == "St. Joseph Hall")
+    	{
+        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285579,37.517475])
+        .setHTML('<h3>St. Joseph Hall</h3><p>St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor</p>')
+        .addTo(map);
+        }
+        if(u == "New Hall")
+        {
+        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
+        var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285694,37.517938])
+        .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressHumanResources(){
+        var u = document.getElementById('location27').innerHTML;
+        if(u == "Human Resources")
+        {
+        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286516,37.518052])
+        .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+        .addTo(map);
+        }
+        if(u == "St. Joseph Hall")
+        {
+        map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285579,37.517475])
+        .setHTML('<h3>St. Joseph Hall</h3><p>St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressToso(){
+        var u = document.getElementById('location26').innerHTML;
+        if(u == "Toso Residence (Compiegne)")
+        {
+        map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286516,37.518052])
+        .setHTML('<h3>Toso Residence (Compiegne)</h3><p>Staff offices including human resources and administration.</p>')
+        .addTo(map);
+        }
+        if(u == "Registrar")
+        {
+        map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.2849, 37.51675])
+        .setHTML('<h3>Registrar</h3><p>The Registrar is located in the administration wing of St. Mary Hall.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnGavinHall(){
+        var u = document.getElementById('location38').innerHTML;
+        if(u == "Gavin Hall")
+        {
+        map.flyTo({center: [-122.286697,37.518547],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286697,37.518547])
+        .setHTML('<h3>Gavin Hall</h3><p>The smallest of the three main instructional buildings. Located up the hill from the bookstore</p>')
+        .addTo(map);
+        }
+        if(u == "Writing Center")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressNewHall(){
+        var u = document.getElementById('location29').innerHTML;
+        if(u == "New Hall")
+        {
+        map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
+        var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.285694,37.517938])
+        .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
+        .addTo(map);
+        }
+        if(u == "Student Life & Leadership Office")
+        {
+        map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284934,37.517124])
+        .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+        .addTo(map);
+        }
+    }
+
+    function pressBtnTabard(){
+        var u = document.getElementById('location36').innerHTML;
+        if(u == "Tabard Inn")
+        {
+        map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
+        var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.286909,37.518083])
+        .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
+        .addTo(map);
+        }
+        if(u == "Walter Gleason Gym")
+        {
+        map.flyTo({center: [-122.284331,37.518310],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([-122.284331,37.518310])
+        .setHTML('<h3>' + geojson.features[10].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[10].properties.image + '"></iframe><p>' + geojson.features[10].properties.description + '</p><br>'
+         + '<a href="#" onClick="popUpModal(\'' + geojson.features[10].properties.title + '\',\'' +   geojson.features[10].properties.history + '\',\'' + geojson.features[10].properties.video + '\',\'' + geojson.features[10].properties.image  + '\',\'' + geojson.features[10].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+        .addTo(map);
+        }  
+    }
 
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
