@@ -675,7 +675,11 @@
     var nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'bottom-right');
 
-
+    //center map button
+    var ctrMap = document.getElementById('ctrMapBtn');
+    ctrMap.onclick = function(){
+        map.flyTo({center: [-122.285060, 37.517295], speed: 0.3});
+    }
 
     // add markers to map
     geojson.features.forEach(function(marker) {

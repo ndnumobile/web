@@ -52,6 +52,12 @@
 
 }
 
+#ctrMapBtn{
+  position:absolute;
+  top:12px;
+  right:30px
+}
+
 .boxy{
     text-align: center;
     height: 800px;
