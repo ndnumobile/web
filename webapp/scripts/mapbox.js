@@ -670,7 +670,10 @@
         zoom: 16.9, // starting zoom
         maxBounds: bounds //sets boundry that the map will pan within.
     });
-
+    //adds map navigation controls for zoom and reset north. Default position in upper right.
+    // map.addControl(new mapboxgl.NavigationControl());
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'bottom-right');
 
 
 
@@ -718,8 +721,6 @@
         document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
     }
 
-    //adds map navigation controls for zoom and reset north. Default position in upper right.
-    map.addControl(new mapboxgl.NavigationControl());
 
     function pressBtn1(){
         var y = document.getElementById('button_press1').value;
