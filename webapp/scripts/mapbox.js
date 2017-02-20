@@ -675,7 +675,11 @@
     var nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'bottom-right');
 
-
+    //center map button
+    var ctrMap = document.getElementById('ctrMapBtn');
+    ctrMap.onclick = function(){
+        map.flyTo({center: [-122.285060, 37.517295], speed: 0.3});
+    }
 
     // add markers to map
     geojson.features.forEach(function(marker) {
@@ -721,46 +725,6 @@
         document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
     }
 
-	  //Academic Success Center location0
-	  //Administration location1
-      //Bookstore	location2
-	  //Business Office location3
-	  //Cafeteria location4
-	  //Campus Center location5
-      //Career Services location6
-      //Center for Spirituality location7
-      //Counseling and Health Services location8
-	  //Cunningham Chapel Annex location9
-	  //Cuvilly Hall location10
-	  //Dean of Students/Student Affairs location11
-      //Dorothy Stang Center location12
-      //Financial Aid location13
-      //Gavin Hall location14
-      //Housing location15
-      //Human Resources location16
-      //International Student Office location17
-      //Julie Billiart Hall location18
-      //Koret Athletic Field location19
-	  //Library Lawn location20
-	  //Madison Art Center location21
-	  //New Hall location22
-	  //Office of Diversity location23
-	  //Public Safety location24
-	  //Ralston Hall location25
-      //Registrar location26
-      //St. Joseph Hall location27
-	  //St. Mary’s Hall location28
-      //Student Life & Leadership Office location29
-      //Tabard Inn location30
-      //Taube Center location31
-      //The Apartments location32
-	  //The Carl and Celia Berta Gellert Library location33
-	  //The Quad location34
-      //Toso Residence (Compiegne) location35
-	  //Walter Gleason Gym location36
-      //Weigand Gallery location37
-	  //Writing Center location38
-
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 	
@@ -772,7 +736,7 @@
         	.setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
         	.addTo(map);
         }
-    }
+	}
     
     function pressBtnAdmin() {
     	var y = document.getElementById('location1').innerHTML;
