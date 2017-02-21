@@ -3,11 +3,9 @@
   margin-bottom: 50px;
 }
 
-#mainSearch{
-    background-color: white;
-    border: 1px solid;
+#searchDiv{
     z-index: 2;
-    border-color: lightgray;
+    margin-top: 50px
 }
 
 #mainSearchBtn{
