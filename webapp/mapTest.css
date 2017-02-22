@@ -3,11 +3,9 @@
   margin-bottom: 50px;
 }
 
-#mainSearch{
-    background-color: white;
-    border: 1px solid;
+#searchDiv{
     z-index: 2;
-    border-color: lightgray;
+    margin-top: 50px
 }
 
 #mainSearchBtn{
@@ -54,8 +52,11 @@
 
 #ctrMapBtn{
   position:absolute;
-  top:12px;
-  right:30px
+  top:70px;
+  right:10px;
+  color: white;
+  background-color: #006699;
+  border: 4px solid #f8c460
 }
 
 .boxy{
