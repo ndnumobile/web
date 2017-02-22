@@ -94,7 +94,7 @@ body{
 .slidebar-nav {
   left: 250px;
   list-style: none;
-  height: 100%;
+  height: calc(100vh - 50px);
   margin: 0;
   margin-left: -250px;
   overflow-y: auto;
@@ -102,6 +102,7 @@ body{
   position: fixed;
   top: 50px;
   width: 0;
+  
   z-index: 1000;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -153,6 +154,8 @@ body{
 .slidebar-nav .open .dropdown-menu > li > a {
   padding: 5px 15px 5px 25px;
   background-color: #006699;
+  width: 225px;
+  white-space: normal;
 }
 
 .slidebar-nav .navbar-brand {
@@ -163,10 +166,11 @@ body{
 .slidebar-nav .open > a > b.caret {
   border-top: none;
   border-bottom: 4px solid;
-  background-color:red;
+  
 }
 .slidebar-nav .navbar-nav {
   margin: 0;
+
 }
 
 #wrapper {
