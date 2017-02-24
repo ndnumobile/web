@@ -270,34 +270,37 @@ body{
  */
 
 #navbar-white{
-    width: 0%;
+    width: 100%;
+    border: 6px;
+    border-bottom: solid;
+    border-color: #f8c460;
+   /* border-radius: 0; */
+    background-color:#006699;
 }
 
 #navbar-white.navbar-default { /* #efffff - #ffffff */
-   font-size: 20px;
-   /* background-color: rgba(255, 255, 255, 1);
-    background: -webkit-linear-gradient(top, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    font-size: 20px;
+    /* background-color: rgba(255, 255, 255, 1);
+    background: -webkit-linear-gradient(top, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1)  100%);
     background: linear-gradient(to bottom, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
     */
-   border: 0px;
-   border-radius: 0;
-   background-color:#006699;
+    
 }
 
 #navbar-white.navbar-default .navbar-nav>li>a:hover{
-  color:#889911;
+    color:#889911;
 }
 #navbar-white.navbar-default .navbar-nav>li>a:focus{
-  color:#889911;
-  background-color:#006699;
+    color:#889911;
+    background-color:#006699;
 }
 #navbar-white.navbar-default .navbar-nav>li>ul>li>a:hover{
-  color:#006699;
-  background-color:gold; /*Hovering with gold color*/
+    color:#006699;
+    background-color:gold; /*Hovering with gold color*/
 }
 #navbar-white.navbar-default .navbar-nav>li>ul>li>a:focus{
-  color:#889911;
-  background-color:#006699;
+    color:#889911;
+    background-color:#006699;
 }
 #navbar-white.navbar-default .navbar-nav>.active>a{
   color:#889911;
