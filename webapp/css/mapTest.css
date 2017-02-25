@@ -376,22 +376,6 @@ body{
 
 }
 
-
-.modalfq {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 10%;
-    top: 0;
-    width: 75%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    /*background-color: rgb(0,0,0); /* Fallback color */
-    /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    /*background-color:transparent; */
-
-}
 /* Modal Content */
 .modal-content2 {
     position: relative;
@@ -409,22 +393,6 @@ body{
     animation-duration: 0.4s
 }
 
-
-.modal-contentfq{
-    position: relative;
-    background-color: #006699;
-    margin: auto;
-    padding: 0;
-    border: 14px solid #f8c460;
-    border-radius: 25px;
-
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -438,21 +406,6 @@ body{
 
 /* The Close Button */
 .close2{
-  position: absolute;
-  top: 0;
-  right: 0.8em; /*horizontal location of entire ribbon*/
-  z-index: 1;
-  color: #eee;
-  font-size: 3em;  /*size of close ribbon*/
-  font-weight: bold;
-  cursor: default;
-  width: 1.03em;  /*horizontal location of close 'x' */
-  line-height: 0em; /*vertical location of close 'x' */
-  -webkit-transition: line-height 0.5s;
-  transition: line-height 0.5s;
-}
-
-.closefq{
   position: absolute;
   top: 0;
   right: 0.8em; /*horizontal location of entire ribbon*/
@@ -480,34 +433,7 @@ body{
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
-
-
-.closefq:after {
-  content: "";
-  font-size: 0.5em;
-  position: absolute;
-  height: 4.3em;   /*length of ribbon/height*/
-  border: 1.5em solid #F44336;
-  z-index: -1;
-  top: -1.5em; /* how far ribbon extends above modal border*/
-  border-top-width: 1.5em;
-  border-bottom-color: transparent;
-  right: 0;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
-}
 .close2:before {
-  content: "";
-  font-size: 0.4em;   /*ribbon shadow size*/
-  position: absolute;
-  border-style: solid;
-  border-color: transparent transparent #B71C1C transparent;
-  top: -1.9em;  /*vertical location of ribbon shadow*/
-  right: 3.6em; /*horizontal location of ribbon shadow*/
-  border-width: 0 0 1.1em 0.7em;  /*ribbon shadow design*/
-  z-index: -1;
-}
-.closefq:before {
   content: "";
   font-size: 0.4em;   /*ribbon shadow size*/
   position: absolute;
@@ -531,19 +457,7 @@ body{
   -webkit-transition: line-height 0.5s;
   transition: line-height 0.5s;
 }
-.closefq:hover:after{
-  border: 1.5em solid #EF5350;
-  border-bottom-color: transparent;
-  height: 5em;   /*length of ribbon when user hovers*/
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
-}
-.closefq:hover{
-  line-height: 0.9em;
-  color: #333;
-  -webkit-transition: line-height 0.5s;
-  transition: line-height 0.5s;
-}
+
 /*.close2 {
     color: #889911 ;
     float: right;
@@ -563,14 +477,6 @@ body{
 }*/
 
 .modal-header2 {
-    padding: 10px;
-    background-color: #006699;
-    color: white;
-    border-radius: 0px 10px 0px 0px
-
-}
-
-.modal-headerfq {
     padding: 10px;
     background-color: #006699;
     color: white;
@@ -613,21 +519,7 @@ body{
   display: inline-block;
   vertical-align: bottom;
 }
-.modal-titlefq{
-    padding: 50px 50px;
-    color:#f8c460;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
-    overflow-y: auto;
 
-}
-
-.modal-imagefq,
-.modal-titlefq{
-  display: inline-block;
-  vertical-align: bottom;
-}
 .modal-body2 {
     padding: 10px 16px;
     color:#f8c460;
@@ -636,15 +528,6 @@ body{
     overflow-y: auto;
 
 }
-
-
-.modal-bodyfq {
-    padding: 10px 16px;
-    color:#f8c460;
-
-    font-size: 30px;
-    overflow-y: auto;
-
 
 /*.modal-footer2 {
     background-color: #f8c460;
