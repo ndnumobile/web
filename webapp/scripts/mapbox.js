@@ -678,7 +678,7 @@
     //center map button
     var ctrMap = document.getElementById('ctrMapBtn');
     ctrMap.onclick = function(){
-        map.flyTo({center: [-122.285060, 37.517295], speed: 0.3});
+        map.flyTo({center: [-122.285060, 37.517295], speed: 0.3, zoom: 16.9, bearing: 0, pitch: 0});
     }
 
     // add markers to map
@@ -727,7 +727,7 @@
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
-	
+
 		if(y == "Academic Success Center")
 		{
         	map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -737,10 +737,10 @@
         	.addTo(map);
         }
 	}
-    
+
     function pressBtnAdmin() {
     	var y = document.getElementById('location1').innerHTML;
-    	
+
     	if(y == "Administration")
     	{
         	map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
@@ -750,10 +750,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnBookStore() {
     	var u = document.getElementById('location2').innerHTML;
-    	
+
     	if(u == "Bookstore")
     	{
         	map.flyTo({center: [-122.287091,37.518277],speed: 0.3});
@@ -763,10 +763,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnBusiness() {
         var u = document.getElementById('location3').innerHTML;
-    	
+
     	if(u == "Business Office")
     	{
         	map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
@@ -776,10 +776,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnCafeteria() {
         var u = document.getElementById('location4').innerHTML;
-        
+
         if(u == "Cafeteria")
         {
         	map.flyTo({center: [-122.285235,37.517219], speed: 0.3});
@@ -802,10 +802,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnCareer() {
     	var z = document.getElementById('location6').innerHTML;
-    	
+
     	if(z == "Career Services")
     	{
         	map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -815,10 +815,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnSpirituality() {
         var u = document.getElementById('location7').innerHTML;
-        
+
         if(u == "Center for Spirituality")
         {
         	map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
@@ -828,10 +828,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnCounseling() {
     	var u = document.getElementById('location8').innerHTML;
-    	
+
     	if(u == "Counseling and Health Services")
     	{
     		map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
@@ -841,11 +841,11 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnCunningham() {
         var u = document.getElementById('location9').innerHTML;
-        
-        if(u == "Cunningham Chapel Annex") 
+
+        if(u == "Cunningham Chapel Annex")
         {
         	map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
         	var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -854,10 +854,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnCuvilly() {
     	var u = document.getElementById('location10').innerHTML;
-    	
+
     	if(u == "Cuvilly Hall")
     	{
         	map.flyTo({center: [-122.287009,37.517927],speed: 0.3});
@@ -867,7 +867,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnDean() {
     	var u = document.getElementById('location11').innerHTML;
     	if(u == "Dean of Students/Student Affairs")
@@ -879,7 +879,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnDorothy() {
     	var u = document.getElementById('location12').innerHTML;
     	if(u == "Sister Dorothy Stang Center")
@@ -891,7 +891,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnFinancial() {
     	var u = document.getElementById('location13').innerHTML;
     	if(u == "Financial Aid")
@@ -903,7 +903,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnGavinHall() {
     	var u = document.getElementById('location14').innerHTML;
     	if(u == "Gavin Hall")
@@ -915,7 +915,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressHousing() {
     	var u = document.getElementById('location15').innerHTML;
     	if (u == "Housing")
@@ -927,7 +927,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressHumanResources() {
     	var c = document.getElementById('location16').innerHTML;
     	if(c == "Human Resources")
@@ -939,7 +939,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnInternational() {
     	var u = document.getElementById('location17').innerHTML;
     	if(u == "International Student Office")
@@ -949,9 +949,9 @@
         	.setLngLat([-122.284934,37.517124])
         	.setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
         	.addTo(map);
-    	} 
+    	}
     }
-    
+
     function pressBtnJulie() {
     	var u = document.getElementById('location18').innerHTML;
     	if(u == "Julie Billiart Hall")
@@ -963,7 +963,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressKoret() {
     	var u = document.getElementById('location19').innerHTML;
     	if(u == "Koret Athletic Field")
@@ -975,7 +975,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnLibraryLawn() {
     	var d = document.getElementById('location20').innerHTML;
     	if(d == "Library Lawn")
@@ -987,7 +987,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnMadisonArt() {
     	var d = document.getElementById('location21').innerHTML;
     	if(d == "Madison Art Center")
@@ -999,10 +999,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressNewHall() {
     	var n = document.getElementById('location22').innerHTML;
-    	
+
     	if(n == "New Hall")
     	{
         	map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
@@ -1012,10 +1012,10 @@
         	.addTo(map);
         }
     }
-    
+
     function pressOfficeDiversity() {
     	var o = document.getElementById('location23').innerHTML;
-    	
+
     	if(o == "Office of Diversity")
     	{
     		map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
@@ -1025,7 +1025,7 @@
         	.addTo(map);
     	}
     }
-    
+
 
     function pressPublicSafety() {
         var u = document.getElementById('location24').innerHTML;
@@ -1038,7 +1038,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnRalston() {
         var u = document.getElementById('location25').innerHTML;
         if(u == "Ralston Hall Mansion")
@@ -1050,7 +1050,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnRegistrar() {
     	var u = document.getElementById('location26').innerHTML;
     	if(u == "Registrar")
@@ -1062,7 +1062,7 @@
             .addTo(map);
     	}
     }
-    
+
     function pressBtnStJoseph() {
     	var u = document.getElementById('location27').innerHTML;
     	if(u == "St. Joseph Hall")
@@ -1074,7 +1074,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnStMary() {
     	var u = document.getElementById('location28').innerHTML;
     	if(u == "St. Mary’s Hall")
@@ -1087,7 +1087,7 @@
             .addTo(map);
     	}
     }
-    
+
     function pressBtnStudentLife() {
     	var u = document.getElementById('location29').innerHTML;
     	if(u == "Student Life and Leadership Office")
@@ -1099,7 +1099,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnTabard() {
     	var u = document.getElementById('location30').innerHTML;
     	if(u == "Tabard Inn")
@@ -1111,7 +1111,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnTaube() {
     	var u = document.getElementById('location31').innerHTML;
     	if(u == "Taube Center")
@@ -1123,7 +1123,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnTheApartments() {
     	var u = document.getElementById('location32').innerHTML;
     	if(u == "The Apartments")
@@ -1132,10 +1132,10 @@
         	var popup = new mapboxgl.Popup({closeOnClick: true})
         	.setLngLat([-122.285437,37.516540])
         	.setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
-        	.addTo(map);	
+        	.addTo(map);
     	}
     }
-    
+
     function pressBtnLibrary() {
     	var d = document.getElementById('location33').innerHTML;
     	if(d == "The Carl and Celia Berta Gellert Library")
@@ -1147,7 +1147,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressBtnQuad() {
     	var e = document.getElementById('location34').innerHTML;
     	if(e == "The Quad")
@@ -1159,7 +1159,7 @@
         	.addTo(map);
     	}
     }
-    
+
     function pressToso() {
     	var e= document.getElementById('location35').innerHTML;
     	if (e == "Toso Residence (Compiegne)")
@@ -1183,9 +1183,9 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnWeigand() {
-    	var u = document.getElementById('location37').innerHTML;	
+    	var u = document.getElementById('location37').innerHTML;
     	if(u == "Weigand Gallery")
     	{
     		map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
@@ -1195,7 +1195,7 @@
         	.addTo(map);
         }
     }
-    
+
     function pressBtnWriting() {
         var u = document.getElementById('location38').innerHTML;
         if(u == "Writing Center")
