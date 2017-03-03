@@ -108,7 +108,7 @@ body{
   padding: 0;
   position: fixed;
   top: 50px;
-  width: 0;
+  width: 250px;            /*This is how much of the sidebar shows AFTER clicking the hamburger menu*/
   
   z-index: 1000;
   -webkit-transition: all 0.5s ease;
@@ -118,19 +118,13 @@ body{
 
 
 }
-#wrapper.toggled .slidebar-nav {
-    width: 250px;
+#wrapper.toggled .slidebar-nav { /*This is how much of the sidebar shows BEFORE clicking the hamburger menu*/
+    width: 0px;
 }
-.slidebar-nav .navbar-collapse {
-  padding: 0;
-  max-height: none;
 
-}
 .slidebar-nav ul {
   float: none;
   width: 100%;
-
-
 }
 .slidebar-nav ul:not {
   display: block;
@@ -170,6 +164,7 @@ body{
   font-size: 25px;
   font-weight: bolder;
 }
+
 .slidebar-nav .open > a > b.caret {
   border-top: none;
   border-bottom: 4px solid;
@@ -181,47 +176,34 @@ body{
 }
 
 #wrapper {
-    padding-left: 0;
+    padding-left: 100;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
 }
+
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 150px;
 }
+
 #page-wrapper6 {
     width: 100%;
     position: absolute;
     padding: 15px;
   top: 50px;
 }
+
 #wrapper.toggled #page-wrapper6 {
     position: absolute;
     margin-right: -250px;
 }
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-    #page-wrapper6 {
-        padding: 20px;
-        position: relative;
-    }
-    #wrapper.toggled #page-wrapper6 {
-        position: relative;
-        margin-right: 0;
-    }
-  .slidebar-nav {
-    width: 250px;;
+
+@media(min-width: 768px){
+  .slidebar-nav{
+    width: 250px;
   }
-  #wrapper.toggled .slidebar-nav {
-    width: 0px;;
-    }
 }
 
 .slidebar-toggle {
@@ -357,8 +339,6 @@ body{
 
 
 
-
-
 /* The Modal (background) */
 .modal2 {
     display: none; /* Hidden by default */
@@ -458,23 +438,6 @@ body{
   transition: line-height 0.5s;
 }
 
-/*.close2 {
-    color: #889911 ;
-    float: right;
-    font-weight: bold;
-    padding: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
-    font-size: 50px;
-
-}*/
-
-/*.close2:hover,
-.close2:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}*/
 
 .modal-header2 {
     padding: 10px;
@@ -483,17 +446,6 @@ body{
     border-radius: 0px 10px 0px 0px
 
 }
-
-/*.modal-header h2 {
-    //float: right;
-    //text-align: center:;
-    color: black;
-    //margin-right: 800px;
-    position: relative;
-    margin-left:0;
-}*/
-
-
 
 .modal-header2 img {
     border-top: 0px
@@ -529,12 +481,6 @@ body{
 
 }
 
-/*.modal-footer2 {
-    background-color: #f8c460;
-    color: white;
-    border-radius: 0px 0px 10px 10px
-    float:center;
-}*/
 .autoModal.modal .modal-body{
     max-height: 100%;
 }
