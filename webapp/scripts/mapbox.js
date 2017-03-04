@@ -704,6 +704,7 @@
             });
         });
 
+        //this is a test
 
         // add marker to map
         new mapboxgl.Marker(el, {offset: [-20, -20]})
