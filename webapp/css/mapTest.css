@@ -5,9 +5,9 @@
 
 #searchDiv{
     z-index: 2;
-    margin-top: 50px;
+    margin-top: 55px;
     width: 30%;
-    
+
 }
 
 #mainSearchBtn{
@@ -54,7 +54,7 @@
 
 #ctrMapBtn{
   position:absolute;
-  top:70px;
+  top:72px;
   right:10px;
   color: white;
   background-color: #006699;
@@ -111,7 +111,7 @@ body{
   position: fixed;
   top: 50px;
   width: 250px;            /*This is how much of the sidebar shows AFTER clicking the hamburger menu*/
-  
+
   z-index: 1000;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -170,7 +170,7 @@ body{
 .slidebar-nav .open > a > b.caret {
   border-top: none;
   border-bottom: 4px solid;
-  
+
 }
 .slidebar-nav .navbar-nav {
   margin: 0;
@@ -271,7 +271,7 @@ body{
     background: -webkit-linear-gradient(top, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1)  100%);
     background: linear-gradient(to bottom, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
     */
-    
+
 }
 
 #navbar-white.navbar-default .navbar-nav>li>a:hover{
