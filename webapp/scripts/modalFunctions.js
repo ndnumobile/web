@@ -48,6 +48,7 @@ hamburgerClose.onclick = function(){
 // When the user clicks on <Search Bar> Modal is closed
 searchBarClose.onclick = function(){
     modalopen.style.display ="none";
+    $("#wrapper").toggleClass("toggled",true);
 }
 
 // When the user clicks anywhere outside of the modal, close it
