@@ -8,7 +8,8 @@
                 "properties": {
                     "title": "St. Mary Hall",
                     "description": "Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
@@ -25,10 +26,10 @@
                 "properties": {
                     "title": "Carl and Celia Berta Gellert Library",
                     "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for the founders of the Gellert Foundation which funded necessary renovations on campus.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    // "icon": "http://vignette3.wikia.nocookie.net/nintendo/images/d/d9/Mario_(New_Super_Mario_Bros._2).png/revision/latest?cb=20120709145048&path-prefix=en"
                     "icon":"./customIcons/libraryNew.svg",
                     "iconSize":[25,25]
                 },
@@ -43,7 +44,8 @@
                 "properties": {
                     "title": "Ralston Hall Mansion",
                     "description": "In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan. It is a National Historic Monument as well as a California Historic one. It is listed in the same category as the Statue Of Liberty in New York.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mansion.svg",
@@ -60,7 +62,8 @@
                 "properties": {
                     "title": "Taube Center",
                     "description": "The Taube Center is used for performances and art showings.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/theatreB.svg",
@@ -77,7 +80,8 @@
                 "properties": {
                     "title": "Pool",
                     "description": "A refreshing recreational pool for students.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/swimNew.svg",
@@ -94,7 +98,8 @@
                 "properties": {
                     "title": "NDNU Theatre",
                     "description": "The NDNU Theatre Arts department frequently puts on performances here.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally built in the 50s for the Highschool, it was repurposed for NDNU when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/theatreB.svg",
@@ -111,7 +116,8 @@
                 "properties": {
                     "title": "New Hall",
                     "description": "The New Hall, a suite-style residence hall. Each student has an individual room in a four-person suite, the modular designed furniture allows flexibility in rearranging the living space. Each suite consists of four rooms that share a common area, one bathroom and two sinks. Each individual room is furnished with a long twin bed, dresser, desk and wardrobe closet. All rooms are wheel-chair accessible. New Hall features an open inner quad, and laundry room with eight washers and dryers along with snack and soda machines",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Built in 2004, New Hall has proven to be a popular choice among students.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -128,7 +134,8 @@
                 "properties": {
                     "title": "Chapel",
                     "description": "The Chapel holds two baby grand pianos and one harpsichord. There are no restrooms available for guest use in the Chapel facility, however, there are restrooms open to the public in the gymnasium next door. There is a sacristy but there is no dressing area specifically for a bridal party. The chapel is equipped with 130 Breaking Bread worship aid/hymnals.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Dedicated in 1962, the chapel was named for Sister Catharine Julie Cunningham, president of the college from 1956 to 1980",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/chapel.svg",
@@ -145,7 +152,8 @@
                 "properties": {
                     "title": "Cafeteria",
                     "description": "Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/forkAndKnife.svg",
@@ -162,7 +170,8 @@
                 "properties": {
                     "title": "Library Lawn",
                     "description": "School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/lawnFlower.svg",
@@ -179,7 +188,8 @@
                 "properties": {
                     "title": "Walter Gleason Gym",
                     "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Walter Gleason who was a prominent San Franciscan and a very generous benefactor.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/bballHoop.svg",
@@ -196,7 +206,8 @@
                 "properties": {
                     "title": "Campus Center",
                     "description": "Including the Academic Success Center, Admissions, Writing Center, Welcome Center, International Student Office, and the Student Life & Leadership Office, the Campus Center earns its name acting as the hub of the campus.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Renovated in 2015, the Campus Center contains the day-student lounge, tutorial center, writing center, several administrative offices, and is connected to the cafeteria.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
@@ -213,7 +224,8 @@
                 "properties": {
                     "title": "The Quad",
                     "description": "Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/quadBuilding.svg",
@@ -230,7 +242,8 @@
                 "properties": {
                     "title": "Center for Spirituality",
                     "description": "Guided by the spirit of the Sisters of Notre Dame, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/chapel.svg",
@@ -247,7 +260,8 @@
                 "properties": {
                     "title": "Julie Billiart Hall",
                     "description": "Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for the Foundress of the Sisters of Notre Dame who founded the college.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -264,7 +278,8 @@
                 "properties": {
                     "title": "St. Joseph Hall",
                     "description": "St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for the Co-Foundress of the Sisters of Notre Dame, Sister St. Joseph Blin de Bourdon.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -281,7 +296,8 @@
                 "properties": {
                     "title": "Koret Field",
                     "description": "Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Recently rebuilt and turfed in 2007, Koret field is located east of the high school, near the main entrance to the high school.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/soccerBall.svg",
@@ -298,7 +314,8 @@
                 "properties": {
                     "title": "Toso Residences",
                     "description": "Staff offices including human resources and administration.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally built to house members of the Sisters of Notre Dame, they are now shared with school administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/adminBuilding.svg",
@@ -315,7 +332,8 @@
                 "properties": {
                     "title": "Weigand Art Gallery",
                     "description": "Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "The Weigand Gallery is part of the Madison Art Center, a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried in the area. The upper story, where the Gallery and small theater are located, was harness room, grain section and hay loft. It was named for the E.L. Wiegand Foundation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/artGalleryB.svg",
@@ -332,7 +350,8 @@
                 "properties": {
                     "title": "Madison Art Center",
                     "description": "Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Mrs. Elena Madison who was a major donor towards the building and a member of the Governance Board of the College.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/artPalette.svg",
@@ -349,7 +368,8 @@
                 "properties": {
                     "title": "Cuvilly Hall",
                     "description": "Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named after a small village in Picardy, France, where St. Julie Billiart was Born in 1751.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
@@ -366,7 +386,8 @@
                 "properties": {
                     "title": "NDNU Bookstore",
                     "description": "Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We have got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/smallBook.svg",
@@ -383,7 +404,8 @@
                 "properties": {
                     "title": "Gavin Hall",
                     "description": "The smallest of the three main instructional buildings. Located up the hill from the bookstore.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Sister Rosemarie Julie Gavin who was Academic Dean / Vice President from 1968 to 1983. Sr. Rosemarie started the Evening Division program, the Credential Program, and was instrumental in starting the Graduate programs of the university.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
@@ -400,7 +422,8 @@
                 "properties": {
                     "title": "Province Center",
                     "description": "Residence of the Sisters of Notre Dame.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally built and still remains as housing for retired Sisters of Notre Dame",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/nun.svg",
@@ -418,7 +441,8 @@
                 "properties": {
                     "title": "Chapel Annex",
                     "description": "An annex of the chapel, housing the Office of Spirituality.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/cross.svg",
@@ -438,7 +462,8 @@
                 "properties": {
                     "title": "Sr. Dorothy Stang Center",
                     "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement will be nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Housed in a facility that is organized to encourage open communication, dialogue, and activism – including community art exhibits and performances, seminars, public speaking events, and community action gatherings – the Center will become a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/peopleTalk.svg",
@@ -458,7 +483,8 @@
                 "properties": {
                     "title": "Tabard Inn",
                     "description": "Tabard Inn contains administrative offices and advisors for the School of Business and Management.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Built when NDNU was still an all-girls school, it was originally a recreational building where students could enjoy coffee or tea. It is named after Chaucer's Tales.",
                     "video": "",
                     "icon": "./customIcons/adviceTabard.svg",
@@ -478,7 +504,8 @@
                 "properties": {
                     "title": "Tennis Courts",
                     "description": "Lets go down to the tennis court, and talk it up like yeah!",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/tennisBalls.svg",
@@ -498,7 +525,8 @@
                 "properties": {
                     "title": "Parking Pass Machine",
                     "description": "2 dollars in coin or one dollar bills gets you a day use parking pass at this parking pass machine. The only one for the main, commuter parking lot.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/parking.svg",
@@ -518,7 +546,8 @@
                 "properties": {
                     "title": "Commuter Student Parking",
                     "description": "Commuter and Day Use or Guest parking is (sometimes) available here.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/carNew.svg",
@@ -538,7 +567,8 @@
                 "properties": {
                     "title": "Faculty Parking",
                     "description": "Faculty parking only.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/carNew.svg",
@@ -558,7 +588,8 @@
                 "properties": {
                     "title": "Overflow Parking Lot",
                     "description": "Additional parking. A bus can pick you up at the bottom of the driveway. Not well lit, it is recommended to bring a flashlight, and a friend when heading here at night.",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
                     "icon": "./customIcons/carNew.svg",
@@ -578,7 +609,8 @@
                 "properties": {
                     "title": "Wilkie Apartments",
                     "description": "Wilkie Apartments",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Sister Helen Benedict Wilkie, beloved Dean of Students from 1956-1965.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -598,7 +630,8 @@
                 "properties": {
                     "title": "Kane Apartments",
                     "description": "Kane Apartments",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame in Belmont at the time of the building of the upper campus when the college became a four year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -618,7 +651,8 @@
                 "properties": {
                     "title": "Carroll Apartments",
                     "description": "Carroll Apartments",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Named for Sister Loretta Julia Carroll, first American General Superior of the Congregation of the Sisters on Fotre Dame world-wide.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -638,7 +672,8 @@
                 "properties": {
                     "title": "Oaks",
                     "description": "Oaks Lounge",
-                    "image": "https://www.youtube.com/embed/0oiWSImRNEw",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "The Oaks Lounge was originally used as the counseling center. After the counseling center was moved to new hall, Oaks lounge has been repurposed as office space.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
@@ -655,7 +690,6 @@
 
         ]
     };
-
 
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
@@ -685,7 +719,6 @@
     geojson.features.forEach(function(marker) {
 
         var imgS = marker.properties.icon;
-
         var popup = new mapboxgl.Popup({offset: 25})
         .setHTML('<h3>' + marker.properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + marker.properties.image + '"></iframe><p>' + marker.properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>');
@@ -704,8 +737,6 @@
             });
         });
 
-        //this is a test
-
         // add marker to map
         new mapboxgl.Marker(el, {offset: [-20, -20]})
             .setLngLat(marker.geometry.coordinates)
@@ -719,8 +750,6 @@
     });
 
     function popUpModal(title,history,vid,image,description){
-
-
         modal2.style.display = "block";
         document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
         document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
