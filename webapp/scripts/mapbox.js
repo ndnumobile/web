@@ -154,8 +154,8 @@
                     "description": "Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.",
                     "image": "./img/placeholder.gif",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "",
-                    "video": "",
+                    "history": "Test test test",
+                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/forkAndKnife.svg",
                     "iconSize":[25,25]
                 },
@@ -506,7 +506,7 @@
                     "description": "Lets go down to the tennis court, and talk it up like yeah!",
                     "image": "./img/placeholder.gif",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "",
+                    "history": "Tennis is a racket sport that can be played individually against a single opponent singles or between two teams of two players each doubles.",
                     "video": "",
                     "icon": "./customIcons/tennisBalls.svg",
                     "iconSize":[25,25]
@@ -720,8 +720,8 @@
 
         var imgS = marker.properties.icon;
         var popup = new mapboxgl.Popup({offset: 25})
-        .setHTML('<h3>' + marker.properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + marker.properties.image + '"></iframe><p>' + marker.properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>');
+        .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
 
         // create a DOM element for the marker
         var el = document.createElement('div');
@@ -749,10 +749,10 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    function popUpModal(title,history,vid,image,description){
+    function popUpModal(title,history,vid,image,description,audio){
         modal2.style.display = "block";
         document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
-        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + image + '"></iframe><p>' + history + '</p>';
+        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + vid + '"></iframe><p>' + history + '</p>';
     }
 
     function pressBtnAcademic() {
