@@ -15,9 +15,7 @@ var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0]
 
 //Get Search Bar element in order to close modal when clicked
 var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
-
 var openWelcomeModal = document.getElementById('reopenWelcomeModal');
-
 var closeSideBar = document.getElementById('slidebar-white');
 
 // Modal opens on page load
@@ -57,10 +55,10 @@ window.onclick = function(event) {
     }
 }
 
-// When user clicks on welcome button in navigation menu, the welcome modal is displayed 
+// When user clicks on welcome button in navigation menu, the welcome modal is displayed
 openWelcomeModal.onclick = function(){
     modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
-    
+
                 +'<div class="modal-header2 autoModal">'
                     +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
                     +'<div class="modal-title2">Welcome to the NDNU Campus Tour!</div>'
@@ -77,13 +75,13 @@ openWelcomeModal.onclick = function(){
             +'</div>';
     modalopen.className = "modal2 autoModal";
     modalopen.style.display = "block";
-    
+
     $("#wrapper").toggleClass("toggled");
 }
 
 // When the user clicks on the more info button, displays a modal
-function popUpModal(title,history,vid,image,description){
+function popUpModal(title,history,vid,image,description,audio){
     modal2.style.display = "block";
     document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
-    document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe  class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + image + '"></iframe><p>' + history + '</p>';
+    document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="vid-frame" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + vid + '"></iframe><p>' + history + '</p><audio controls id="audio-panel"><source src="'+ audio +'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
 }
