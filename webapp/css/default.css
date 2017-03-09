@@ -23,3 +23,21 @@ footer{
     top:30%;
     z-index:1;
 }
+
+/* Modal */
+.btn-more{
+    float:right;
+}
+.vid-frame{
+    width:325px;
+    height:158px;
+}
+#audio-panel{
+    margin:5px 5px 15px 5px;
+}
+audio::-webkit-media-controls-panel{
+    /*background-color:transparent;*/
+    border-radius:25px;
+    border: 2px solid #f8c460;
+    padding: 5px;
+}
