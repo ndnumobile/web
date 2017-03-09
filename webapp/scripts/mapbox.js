@@ -713,6 +713,7 @@
     var ctrMap = document.getElementById('ctrMapBtn');
     ctrMap.onclick = function(){
         map.flyTo({center: [-122.285060, 37.517295], speed: 0.3, zoom: 16.9, bearing: 0, pitch: 0});
+        $("#wrapper").toggleClass("toggled",true);
     }
 
     // add markers to map
