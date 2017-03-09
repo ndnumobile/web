@@ -5,7 +5,7 @@
 
 #searchDiv{
     z-index: 2;
-    margin-top: 55px;
+    margin-top: 60px;
     width: 30%;
 
 }
@@ -257,21 +257,28 @@ body{
  * White navbar style
  */
 
+#site-header{
+    width: 100%;
+    border: 6px;
+    border-bottom: solid;
+    border-color: #f8c460;
+    background-color:#011121;
+    background-image:url(../img/masthead.jpg);
+    height: 6.8%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #navbar-white{
     width: 100%;
     border: 6px;
     border-bottom: solid;
     border-color: #f8c460;
-   /* border-radius: 0; */
     background-color:#006699;
 }
 
 #navbar-white.navbar-default { /* #efffff - #ffffff */
     font-size: 20px;
-    /* background-color: rgba(255, 255, 255, 1);
-    background: -webkit-linear-gradient(top, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1)  100%);
-    background: linear-gradient(to bottom, rgba(239, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    */
 
 }
 
@@ -549,4 +556,72 @@ p{
 .welcomePad{
     padding-top: 5px;
     z-index: 3
+}
+
+#site-header.navbar-default { /* #efffff - #ffffff */
+    font-size: 20px;
+
+}
+
+#site-header.navbar-default .navbar-nav>li>a:hover{
+    color:#889911;
+}
+#site-header.navbar-default .navbar-nav>li>a:focus{
+    color:#889911;
+    background-color:#006699;
+}
+#site-header.navbar-default .navbar-nav>li>ul>li>a:hover{
+    color:#006699;
+    background-color:gold; /*Hovering with gold color*/
+}
+#site-header.navbar-default .navbar-nav>li>ul>li>a:focus{
+    color:#889911;
+    background-color:#006699;
+}
+#site-header.navbar-default .navbar-nav>.active>a{
+  color:#889911;
+  background-color:#006699;
+}
+#site-header.navbar-default .navbar-nav>.active>a:hover{
+  color:white;
+}
+#site-header.navbar-default .navbar-nav>.active>a:focus {
+    color: #f8c460;
+    background-color: rgba(255, 255, 255, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+}
+#site-header.navbar-default .navbar-toggle,
+#site-header.navbar-default .slidebar-toggle {
+    border-color: #f8c460;
+    background-color:#006699;
+    border-width: 5px;
+
+}
+/*Hamburger Menu Lines*/
+#site-header.navbar-default .navbar-toggle .icon-bar,
+#site-header.navbar-default .navbar-toggle:hover .icon-bar,
+#site-header.navbar-default .navbar-toggle:focus .icon-bar,
+#site-header.navbar-default .slidebar-toggle .icon-bar,
+#site-header.navbar-default .slidebar-toggle:hover .icon-bar,
+#site-header.navbar-default .slidebar-toggle:focus .icon-bar {
+    background-color: #f8c460;
+
+}
+/*Hamburger Menu On Mouse Hover*/
+#site-header.navbar-default .navbar-toggle:hover,
+#site-header.navbar-default .navbar-toggle:focus,
+#site-header.navbar-default .slidebar-toggle:hover,
+#site-header.navbar-default .slidebar-toggle:focus {
+    background-color: #006699;
+    border-color:white;
+
+}
+
+/*Hamburger Font DropDown Menu*/
+#site-header.navbar-default .navbar-nav>li>a,
+#site-header.navbar-default .navbar-nav>li>ul>li>a,
+#site-header.navbar-default .navbar-brand {
+    color: #f8c460;
 }
