@@ -586,7 +586,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Tennis Courts",
-                    "description": "Lets go down to the tennis court, and talk it up like yeah!",
+                    "description": "Two tennis courts available to all students for purposes of exercise and recreation.",
                     "image": "./img/placeholder.gif",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Tennis is a racket sport that can be played individually against a single opponent singles or between two teams of two players each doubles.",
