@@ -16,6 +16,7 @@ var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0]
 //Get Search Bar element in order to close modal when clicked
 var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
 var openWelcomeModal = document.getElementById('reopenWelcomeModal');
+var openGeneralHistoryModal = document.getElementById('reopenGeneralHistoryModal');
 var closeSideBar = document.getElementById('slidebar-white');
 
 // Modal opens on page load
@@ -70,6 +71,28 @@ openWelcomeModal.onclick = function(){
                     +'<h4>This is an interactive map.</h4>'
                     +'<p><u>Helpful Hints</u></p>'
                     +'<p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ\'s.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>'
+                +'</div>'
+                +'<div class="modal-footer2 autoModal">'
+                +'</div>'
+            +'</div>';
+    modalopen.className = "modal2 autoModal";
+    modalopen.style.display = "block";
+
+    $("#wrapper").toggleClass("toggled");
+}
+
+openGeneralHistoryModal.onclick = function(){
+    modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
+
+                +'<div class="modal-header2 autoModal">'
+                    +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
+                    +'<div class="modal-title2">Notre Dame de Namur University</div>'
+                    +'<span onClick="ribbonClose()" class="close2">&times;</span>'
+                +'</div>'
+
+                +'<div id="modalPrime" class="modal-body2 autoModal">'
+                    +'<h4>General History</h4>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span>  In 1851, the Sisters of Notre Dame de Namur came to the San Francisco Bay Area from their mission schools in Oregon and established College of Notre Dame in San Jose, CA<br> <span class="glyphicon glyphicon-check"></span> Founded more than 160 years ago, we are the third oldest college in California. NDNU is a fully accredited, private, Catholic, co-educational master’s university, located on the San Francisco Peninsula in Silicon Valley. With 2,000 students from 28 states and 23 different countries, NDNU broadens the perspective and outlook of its students by exposing them to peers with very different backgrounds, cultures and world views.<br><span class="glyphicon glyphicon-check"></span> College of Notre Dame was chartered as the first college in the state of California authorized to grant the baccalaureate degree to women. </p2>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
