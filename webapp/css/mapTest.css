@@ -264,7 +264,8 @@ body{
     border-color: #f8c460;
     background-color:#011121;
     background-image:url(../img/masthead.jpg);
-    height: 6.8%;
+    /*height: 6.8%;*/
+    height: 60px;
     background-position: center;
     background-repeat: no-repeat;
 }
