@@ -495,6 +495,21 @@ body{
 
 }
 
+.faq-modal .modal-header2 .modal-title2{
+  font-size: 25px;
+  color: white;
+
+}
+.faq-modal .modal-body2 h2{
+font-size: 20px;
+color: white;
+}
+.faq-modal .modal-body2 li{
+font-size: 15px;
+color: white;
+
+}
+
 .autoModal.modal .modal-body{
     max-height: 100%;
 }
