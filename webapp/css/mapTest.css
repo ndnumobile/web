@@ -357,7 +357,7 @@ body{
 .modal2 {
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 10%;
     top: 0;
