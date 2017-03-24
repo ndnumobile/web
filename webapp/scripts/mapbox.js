@@ -844,6 +844,7 @@
         el.style.height = '40px';
 
         el.addEventListener('click', function() {
+            $("#wrapper").toggleClass("toggled",true);
             map.flyTo({
                 center: marker.geometry.coordinates,
                 speed: 0.5
