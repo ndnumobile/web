@@ -4,8 +4,8 @@
 }
 
 #searchDiv{
-    z-index: 2;
-    margin-top: 60px;
+    z-index: 2000;
+    margin-top: -5px;
     width: 30%;
 
 }
@@ -53,8 +53,9 @@
 }
 
 #ctrMapBtn{
+  z-index: 2000;
   position: absolute;
-  top: 72px;
+  top: 10px;
   right: 30px;
   color: white;
   background-color: #006699;
@@ -263,11 +264,12 @@ body{
     border-bottom: solid;
     border-color: #f8c460;
     background-color:#011121;
-    background-image:url(../img/masthead.jpg);
+    background-image:url(../img/masthead4.png);
     /*height: 6.8%;*/
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
+    float: right;
 }
 
 #navbar-white{
