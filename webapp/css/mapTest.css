@@ -345,6 +345,13 @@ body{
     border-color:white;
 
 }
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #889911;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color:#006699;
+    background-color:gold;
+}
 
 /*Hamburger Font DropDown Menu*/
 #navbar-white.navbar-default .navbar-nav>li>a,
