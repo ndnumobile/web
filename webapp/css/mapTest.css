@@ -209,7 +209,12 @@ body{
     width: 250px;
   }
   #searchDiv{
-    display:inline-flex;
+    width: 50%;
+  }
+}
+@media(max-width: 991px){
+  #searchDiv{
+    margin-left:90px;
   }
 }
 
