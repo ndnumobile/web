@@ -793,7 +793,32 @@
                     ],
                     "type": "Point"
                 }
-            }
+            },
+            
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "37",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "Mailing Center",
+                    "description": "The center for all mailing needs",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
+                    "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
+                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
+                    "icon": "./customIcons/bookstore.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+                        -122.2878337,37.517000
+                    ],
+                    "type": "Point"
+                }
+            },
+            
+            
 
         ]
     };
@@ -1766,6 +1791,18 @@
           .setHTML('<h3>Administration</h3><p>Administration is located in Compiegne Hall.</p>')
           .addTo(map);
 
+      }else if(x == "Interfaith Prayer Space"){
+          map.flyTo({
+              center: [-122.284719,37.51755],
+              speed: 0.3,
+
+          });
+
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.284719,37.51755])
+          .setHTML('<h3>Interfaith Prayer Space</h3><p>A space for all faiths to pray together.</p>')
+          .addTo(map);
+
       }else if(x == "New Hall"){
           map.flyTo({
               center: [-122.285694,37.517938],
@@ -1893,6 +1930,19 @@
           .setLngLat([-122.285244,37.515499])
           .setHTML('<h3>' + geojson.features[5].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[5].properties.image + '"></iframe><p>' + geojson.features[5].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[5].properties.title + '\',\'' +   geojson.features[5].properties.history + '\',\'' + geojson.features[5].properties.video + '\',\'' + geojson.features[5].properties.image  + '\',\'' + geojson.features[5].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+
+      }else if(x == "Mailing Center"){
+          map.flyTo({
+              center: [-122.2878337,37.517000],
+              speed: 0.3,
+
+          });
+
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.2878337,37.517000])
+          .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[36].properties.image + '"></iframe><p>' + geojson.features[36].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[36].properties.title + '\',\'' +   geojson.features[36].properties.history + '\',\'' + geojson.features[36].properties.video + '\',\'' + geojson.features[36].properties.image  + '\',\'' + geojson.features[36].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
       }
