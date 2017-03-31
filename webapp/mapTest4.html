@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
         <meta charset='utf-8' />
         <title>NDNU Campus Guide</title>
@@ -19,6 +19,7 @@
         <script src="./scripts/auto-complete.js"></script>
         <script e.src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
         <script src="./scripts/session.js"></script>
+        <script src="./scripts/translate.js"></script>
         <!-- mapbox css overrides -->
         <style>
             .mapboxgl-popup-content{
@@ -42,6 +43,29 @@
                 border-bottom-color:#f8c460 !important;
             }
         </style>
+        <!-- Dynamically Change the Application Language -->
+        <script>
+            var params = getSearchParameters();
+            var siteLang;
+            console.log(params.lang);
+            if (params.lang !== null){
+                siteLang = params.lang;
+            } else {
+                siteLang = document.documentElement.lang;
+            }
+
+            var script = document.createElement('script');
+            script.type='text/javascript';
+
+            if (siteLang == "es") {
+                script.src = './scripts/mapbox-es.js';
+                document.title = "NDNU Campus Guía";
+            } else {
+                script.src = './scripts/mapbox.js';
+            }
+
+            document.head.appendChild(script);
+        </script>
     </head>
 
     <body>
@@ -61,7 +85,6 @@
         <div>
             <button id="ctrMapBtn" onclick="mapCtrBtn()">Center Map</button>
         </div>
-
 
         <div id="wrapper" class="toggled">
             <!-- Sidebar -->
@@ -316,18 +339,16 @@
                 <!-- AddToAny END -->
             </div>
             <div class="footer-right">
-                <div id="google_translate_element"></div>
+                <div id="translate">
+                    <select id="select-lang" onchange="translateSite(this)">
+                        <option>Select a Language</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
             </div>
         </footer>
         <!-- End of Footer -->
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                var clearBody = document.getElementsByTagName('Body')[0];
-                clearBody.removeAttribute('style');
-            }
-        </script>
-        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script>
         $(document).ready(function(){
           $('.dropdown-submenu .dropdown-sublink').on("click", function(e){
@@ -339,7 +360,7 @@
         </script>
     </body>
 
-    <script src="./scripts/mapbox.js"></script>
+    <!--<script src="./scripts/mapbox.js"></script>-->
     <script src="./scripts/modalFunctions.js"></script>
     <script src="./scripts/locationSearch.js"></script>
 

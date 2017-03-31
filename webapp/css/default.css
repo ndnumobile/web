@@ -3,7 +3,7 @@ footer{
     background-color:#006699; /*NDNU Blue*/
     border-top:5px solid #f8c460;
     bottom:0;
-    color:white;
+    /*color:white;*/
     font-weight:bold;
     height:50px;
     position:absolute;
@@ -22,6 +22,9 @@ footer{
     position:relative;
     top:30%;
     z-index:1;
+}
+.select-lang{
+    color:black;
 }
 
 /* Modal */
