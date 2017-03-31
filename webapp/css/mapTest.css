@@ -260,13 +260,12 @@ body{
 
 #site-header{
     width: 100%;
-    border: 6px;
-    border-bottom: solid;
+    border-width: 0px 0px 5px 0px;
     border-color: #f8c460;
     background-color:#011121;
     background-image:url(../img/masthead4.png);
     /*height: 6.8%;*/
-    height: 60px;
+    height: 63px;
     background-position: center;
     background-repeat: no-repeat;
     float: right;
@@ -344,6 +343,13 @@ body{
     background-color: #006699;
     border-color:white;
 
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #889911;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color:#006699;
+    background-color:gold;
 }
 
 /*Hamburger Font DropDown Menu*/
