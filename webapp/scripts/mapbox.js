@@ -34,7 +34,7 @@
                     "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs.",
                     "image": "./img/library.JPG",
                     "audio": "./audio/libraryHistory.mp3",
-                    "history": "Named for the founders of the Gellert Foundation which funded necessary renovations on campus.",
+                    "history": "The library is named for the founders of the Gellert Foundation, which funded several renovations on campus.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon":"./customIcons/libraryNew.svg",
                     "iconSize":[25,25]
@@ -156,8 +156,8 @@
                     "id": "8",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Chapel",
-                    "description": "The Chapel holds two baby grand pianos and one harpsichord. There are no restrooms available for guest use in the Chapel facility, however, there are restrooms open to the public in the gymnasium next door. There is a sacristy but there is no dressing area specifically for a bridal party. The chapel is equipped with 130 Breaking Bread worship aid/hymnals.",
+                    "title": "Cunningham Memorial Chapel",
+                    "description": "Cunningham Memorial Chapel is dedicated to the memory of Sister Catherine Julie Cunningham, a former NDNU president. Its windows are made of sculpted glass, created by renowned artist Gabriel Loire. The chapel was completed in 1961 and hosts weekly services and other events.",
                     "image": "./img/chapel.JPG",
                     "audio": "./audio/chapelHistory.mp3",
                     "history": "Dedicated in 1962, the chapel was named for Sister Catharine Julie Cunningham, president of the college from 1956 to 1980",
@@ -181,7 +181,7 @@
                     "description": "Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There are vegetarian, vegan, and gluten-free options.",
                     "image": "./img/cafeteria.JPG",
                     "audio": "./audio/cafeteria.mp3",
-                    "history": "Test test test",
+                    "history": "",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/forkAndKnife.svg",
                     "iconSize":[25,25]
@@ -199,7 +199,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Library Lawn",
-                    "description": "School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.",
+                    "description": "University and student events are held on the Library Lawn throughout the year. Here you can see the Chapel, Library, Cafeteria, and Saint Joseph’s Residence Hall.",
                     "image": "./img/libraryLawn.JPG",
                     "audio": "./audio/libraryLawn.mp3",
                     "history": "",
@@ -223,7 +223,7 @@
                     "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.",
                     "image": "./img/gleasonGym.JPG",
                     "audio": "./audio/gleasonGymHistory.mp3",
-                    "history": "Named for Walter Gleason who was a prominent San Franciscan and a very generous benefactor.",
+                    "history": "The gym is named for Walter Gleason, prominent San Franciscan and generous benefactor to the university.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/bballHoop.svg",
                     "iconSize":[25,25]
@@ -241,10 +241,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Campus Center",
-                    "description": "Including the Academic Success Center, Admissions, Writing Center, Welcome Center, International Student Office, and the Student Life & Leadership Office, the Campus Center earns its name acting as the hub of the campus.",
+                    "description": "The Campus Center houses the Academic Success Center, Admissions, the Writing Center, the Welcome Center, the International Student Office, and the Student Life & Leadership Office.",
                     "image": "./img/campusCenter.JPG",
                     "audio": "./audio/campusCenterHistory.mp3",
-                    "history": "Renovated in 2015, the Campus Center contains the day-student lounge, tutorial center, writing center, several administrative offices, and is connected to the cafeteria.",
+                    "history": "The Campus Center also includes the Commuter Lounge, the tutorial center, and several administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -282,11 +282,11 @@
                     "id": "14",
                     "parentId": "",
                     "locType": "poi",
-                    "title": "Center for Spirituality",
-                    "description": "Guided by the spirit of the Sisters of Notre Dame, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.",
+                    "title": "Office of Spirituality",
+                    "description": "Guided by the spirit of the Sisters of Notre Dame, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacred in ourselves, each other and the world.",
                     "image": "./img/centerForSpirituality.JPG",
                     "audio": "./audio/centerForSpirituality.mp3",
-                    "history": "",
+                    "history": "The Office of Spirituality works and learns collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.",
                     "video": "",
                     "icon": "./customIcons/chapel.svg",
                     "iconSize":[25,25]
@@ -538,10 +538,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Sr. Dorothy Stang Center",
-                    "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement will be nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Housed in a facility that is organized to encourage open communication, dialogue, and activism – including community art exhibits and performances, seminars, public speaking events, and community action gatherings – the Center will become a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good.",
+                    "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement is nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Activities include community art exhibits and performances, seminars, public speaking events, and community action gatherings.",
                     "image": "./img/srDorothyStangCenter2.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "",
+                    "history": "The Center is a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good.",
                     "video": "",
                     "icon": "./customIcons/peopleTalk.svg",
                     "iconSize":[25,25]
@@ -818,7 +818,32 @@
                 }
             },
             
+<<<<<<< HEAD
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "38",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "Campanile",
+                    "description": "The statue on the Campanile was designed by Sister Margaret Hoffman and was completed in 1962. The Campanile is the symbol of the university.",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
+                    "history": "",
+                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
+                    "icon": "./customIcons/bookstore.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+                        -122.2846963,37.5181250
+                    ],
+                    "type": "Point"
+                }
+            }
+=======
             
+>>>>>>> 91d8ff18e11728073f4568523f7d805350d754c9
 
         ]
     };
