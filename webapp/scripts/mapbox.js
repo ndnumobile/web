@@ -794,7 +794,7 @@
                     "type": "Point"
                 }
             },
-            
+
             {
                 "type": "Feature",
                 "properties": {
@@ -817,8 +817,7 @@
                     "type": "Point"
                 }
             },
-            
-<<<<<<< HEAD
+
             {
                 "type": "Feature",
                 "properties": {
@@ -841,10 +840,6 @@
                     "type": "Point"
                 }
             }
-=======
-            
->>>>>>> 91d8ff18e11728073f4568523f7d805350d754c9
-
         ]
     };
 
@@ -923,7 +918,7 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    
+
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
