@@ -898,11 +898,7 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    function popUpModal(title,history,vid,image,description,audio){
-        modal2.style.display = "block";
-        document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
-        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + vid + '"></iframe><p>' + history + '</p>';
-    }
+    
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
