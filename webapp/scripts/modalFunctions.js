@@ -113,7 +113,7 @@ function popUpModal(title,history,vid,image,description,audio){
     closeSummaryModal[0].style.display = "none";
     modal2.style.display = "block";
     document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
-    document.getElementById("modalContent").innerHTML = '<button onClick="moreInfoClose()" data-dismiss="modalContent" class="close"><strong>X</strong></button><h3>' + title + '</h3><iframe class="vid-frame" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + vid + '"></iframe><p>' + history + '</p><audio controls id="audio-panel"><source src="'+ audio +'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+    document.getElementById("modalContent").innerHTML = '<button onClick="moreInfoClose()" data-dismiss="modalContent" class="mapboxgl-popup-close-button">x</button><h3>' + title + '</h3><iframe class="vid-frame" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + vid + '"></iframe><p>' + history + '</p><audio controls id="audio-panel"><source src="'+ audio +'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
 }
 
 function moreInfoClose(){
