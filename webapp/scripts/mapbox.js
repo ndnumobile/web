@@ -515,7 +515,7 @@
                     "locType": "building",
                     "title": "Chapel Annex",
                     "description": "An annex of the chapel, housing the Office of Spirituality.",
-                    "image": "./img/chapel2.JPG",
+                    "image": "./img/ChapelAnnexResize.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "",
