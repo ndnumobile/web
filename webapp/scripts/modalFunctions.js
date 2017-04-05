@@ -119,3 +119,128 @@ function popUpModal(title,history,vid,image,description,audio){
 function moreInfoClose(){
     modal2.style.display = "none";
 }
+
+//The Following functions prevent the Campus Location list from closing when the loaction is selected
+$('#location0').click(function (e) {
+  e.stopPropagation()      
+});
+
+
+$('#location1').click(function (e) {
+  e.stopPropagation()
+});
+$('#location2').click(function (e) {
+  e.stopPropagation()
+});
+$('#location3').click(function (e) {
+  e.stopPropagation()
+});
+$('#location4').click(function (e) {
+  e.stopPropagation()
+});
+$('#location5').click(function (e) {
+  e.stopPropagation()
+});
+$('#location6').click(function (e) {
+  e.stopPropagation()
+});
+$('#location7').click(function (e) {
+  e.stopPropagation()
+});
+$('#location8').click(function (e) {
+  e.stopPropagation()
+});
+$('#location9').click(function (e) {
+  e.stopPropagation()
+});
+$('#location10').click(function (e) {
+  e.stopPropagation()
+});
+$('#location11').click(function (e) {
+  e.stopPropagation()
+});
+$('#location12').click(function (e) {
+  e.stopPropagation()
+});
+$('#location13').click(function (e) {
+  e.stopPropagation()
+});
+$('#location14').click(function (e) {
+  e.stopPropagation()
+});
+$('#location15').click(function (e) {
+  e.stopPropagation()
+});
+$('#location16').click(function (e) {
+  e.stopPropagation()
+});
+$('#location17').click(function (e) {
+  e.stopPropagation()
+});
+$('#location18').click(function (e) {
+  e.stopPropagation()
+});
+$('#location19').click(function (e) {
+  e.stopPropagation()
+});
+$('#location20').click(function (e) {
+  e.stopPropagation()
+});
+$('#location21').click(function (e) {
+  e.stopPropagation()
+});
+$('#location22').click(function (e) {
+  e.stopPropagation()
+});
+$('#location23').click(function (e) {
+  e.stopPropagation()
+});
+$('#location24').click(function (e) {
+  e.stopPropagation()
+});
+$('#location25').click(function (e) {
+  e.stopPropagation()
+});
+$('#location26').click(function (e) {
+  e.stopPropagation()
+});
+$('#location27').click(function (e) {
+  e.stopPropagation()
+});
+$('#location28').click(function (e) {
+  e.stopPropagation()
+});
+$('#location29').click(function (e) {
+  e.stopPropagation()
+});
+$('#location30').click(function (e) {
+  e.stopPropagation()
+});
+$('#location31').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32').click(function (e) {
+  e.stopPropagation()
+});
+$('#location33').click(function (e) {
+  e.stopPropagation()
+});
+
+$('#location34').click(function (e) {
+  e.stopPropagation()
+});
+$('#location35').click(function (e) {
+  e.stopPropagation()
+});
+$('#location36').click(function (e) {
+  e.stopPropagation()
+});
+$('#location37').click(function (e) {
+  e.stopPropagation()
+});
+$('#location38').click(function (e) {
+  e.stopPropagation()
+});
+$('#location39').click(function (e) {
+  e.stopPropagation()
+});
