@@ -794,7 +794,7 @@
                     "type": "Point"
                 }
             },
-            
+
             {
                 "type": "Feature",
                 "properties": {
@@ -817,7 +817,6 @@
                     "type": "Point"
                 }
             },
-            
 
             {
                 "type": "Feature",
@@ -841,7 +840,6 @@
                     "type": "Point"
                 }
             }
-
         ]
     };
 
@@ -869,6 +867,15 @@
         map.flyTo({center: [-122.285060, 37.517295], speed: 0.3, zoom: 16.9, bearing: 0, pitch: 0});
         $("#wrapper").toggleClass("toggled",true);
     }
+
+    ctrMap.onmouseover = function(){
+        $('button[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
+    }
+
+
 
     // add markers to map
     geojson.features.forEach(function(marker) {
@@ -920,7 +927,478 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    
+    map.on('load', function() {
+        //begin adding one layer for each walkway/pathway.
+    map.addLayer({
+    "id": "route1",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28709101676941,37.517872217216606],
+                    [-122.28722780942915,37.517780737668296]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route2",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.2857901453972,37.51632981448863],
+                    [-122.28582769632338,37.516300029846334],
+                    [-122.28588402271271,37.516291519946364],
+                    [-122.28594839572905,37.51629577489646],
+                    [-122.28601276874542,37.516319177117744],
+                    [-122.28604227304459,37.51628088257001]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route3",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28518933057785,37.51659787573432],
+                    [-122.28528052568436,37.51638087384775],
+                    [-122.28563457727432,37.516470227642166],
+                    [-122.28576332330704,37.516472355112164],
+                    [-122.28560775518417,37.51666595462751],
+                    [-122.28554874658586,37.51672126868252]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route4",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28672087192535,37.51840407283425],
+                    [-122.28705883026123,37.51814452776643],
+                    [-122.286117374897,37.51747651417773],
+                    [-122.28608787059784,37.51733397547225]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route5",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28240251541136,37.517157397295385],
+                    [-122.28252053260802,37.517114848274616],
+                    [-122.28279143571854,37.51712974043463],
+                    [-122.28289872407913,37.517099956111615]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route6",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28315487504005,37.516873382122306],
+                    [-122.28318974375723,37.51686912720513],
+                    [-122.28322729468344,37.51685529872262],
+                    [-122.28325277566911,37.516829769209735],
+                    [-122.28336676955223,37.51670956763583],
+                    [-122.2833828628063,37.516699994050825],
+                    [-122.28340432047844,37.51670212151426],
+                    [-122.2833962738514,37.51676275419684],
+                    [-122.28339225053787,37.516806367148575],
+                    [-122.2833976149559,37.516845725156315],
+                    [-122.28341102600096,37.51690529399343],
+                [-122.28342309594153,37.516954225502595],
+                    [-122.28344053030013,37.51696486278298],
+                    [-122.28346601128577,37.51695316177448],
+                    [-122.28353843092918,37.516835087858965],
+                    [-122.28359878063202,37.516757435542445],
+                    [-122.28364303708076,37.51670956763583],
+                    [-122.28390723466873,37.51676700912007]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route7",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28488355875015,37.51779988455977],
+                    [-122.28479772806168,37.51777648280285],
+                    [-122.28474408388139,37.517780737668296],
+                    [-122.28469043970107,37.51779775712763],
+                    [-122.28462338447572,37.51781903144636]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route8",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28455901145935,37.51727227953023],
+                    [-122.28438466787338,37.51765947390813],
+                    [-122.28480041027069,37.51777435537002]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route9",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28455364704132,37.51727015208306],
+                    [-122.28507667779922,37.51743183789637]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route10",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28609055280685,37.51733610291762],
+                    [-122.28606909513472,37.51730419123076],
+                    [-122.28604227304459,37.51728291676527],
+                    [-122.28599667549133,37.51727015208306],
+                    [-122.28466361761095,37.516893592975606],
+                    [-122.28468239307404,37.51686380855831],
+                    [-122.28468775749205,37.51682125937017],
+                    [-122.28467434644699,37.51678722000217],
+                    [-122.28464484214783,37.51676594538928],
+                    [-122.2845831513405,37.51675105315667],
+                    [-122.28433370590209,37.51666808209191]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route11",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28452280163766,37.51799773548414],
+                    [-122.28472128510474,37.518047729989505],
+                    [-122.28481918573378,37.518076450222125]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route12",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28503376245499,37.51747438673638],
+                    [-122.28507399559021,37.51743183789637],
+                    [-122.28511154651642,37.517410563467266],
+                    [-122.28517323732375,37.51738716158824],
+                    [-122.28522151708601,37.51737014203524],
+                    [-122.28525638580321,37.51736588714639]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route13",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.285036444664,37.51747438673638],
+                    [-122.28508472442627,37.51748289650147],
+                    [-122.2851249575615,37.51750842579091],
+                    [-122.28514373302458,37.51754246482993],
+                    [-122.28514373302458,37.517627562359536],
+                    [-122.28513836860655,37.51770415005321],
+                    [-122.28514373302458,37.51781052171959],
+                    [-122.28516519069672,37.51789136408462],
+                    [-122.28521615266799,37.517923275520396],
+                    [-122.28530198335646,37.517946677231286],
+                    [-122.28539317846298,37.51797007893482]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route14",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.2848218679428,37.51806794052472],
+                    [-122.28486210107802,37.517974333789226],
+                    [-122.28487819433212,37.517908383518716],
+                    [-122.2848728299141,37.51786158006559],
+                    [-122.28487819433212,37.51781264915137],
+                    [-122.28489696979521,37.51775733590537],
+                    [-122.28502839803696,37.51747651417773]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route15",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28668332099915,37.51772755183283],
+                    [-122.28674232959747,37.517723296964355],
+                    [-122.28683620691298,37.51768500313719],
+                    [-122.28690862655638,37.51764245441724]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+    });
+    //end map layers for walking paths.
+
+
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
@@ -932,7 +1410,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -946,7 +1424,7 @@
             .setLngLat([-122.286516,37.518052])
             .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -960,7 +1438,7 @@
             .setLngLat([-122.287091,37.518277])
             .setHTML('<h3>Bookstore</h3><p>Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We\'ve got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -974,7 +1452,7 @@
             .setLngLat([-122.2849, 37.51675])
             .setHTML('<h3>Business Office</h3><p>The Business Office is here to provide service to all students regarding their   financial status. The office is located in St. Mary’s Hall, next to the Registrar. Business Office staff are available to assist with account payments, inquiries and payment plan options.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -988,7 +1466,7 @@
             .setLngLat([-122.285235,37.517219])
             .setHTML('<h3>Cafeteria</h3><p>Our cafeteria provides a variety of meals and snacks prepared by Bon Appetit. There    are vegetarian, vegan, and gluten-free options.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1002,7 +1480,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>Campus Center</h3><p>The Campus center is comprised of the Academic Success Center, Admissions Office, International Student Office, and Student Life and Leadership Office</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1016,7 +1494,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>Career Services</h3><p>Career Services provides career counseling, for-credit classes, information resources and tools, and on-campus events aimed at fostering the career development of students and alumni.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1030,7 +1508,7 @@
             .setLngLat([-122.285286,37.518197])
             .setHTML('<h3>Center for Spirituality</h3><p>Guided by the spirit of the Sisters of Notre Dame, the Office of     Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacredness in ourselves, each other and the world, and work and learn collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1044,7 +1522,7 @@
             .setLngLat([-122.285694,37.517938])
             .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1058,7 +1536,7 @@
             .setLngLat([-122.284900,37.518090])
             .setHTML('<h3>Cunningham Chapel Annex</h3><p>The chapel was dedicated to the memory of sister Catherine Julie Cunningham, a former university president. Its windows are made of sculpted glass, created by well known artist Gabriel Loire. The chapel hosts weekly services and other events.</p>')
             .addTo(map);
-          
+
         }
     }
 
@@ -1072,7 +1550,7 @@
             .setLngLat([-122.287009,37.517927])
             .setHTML('<h3>Cuvilly Hall</h3><p>Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1085,7 +1563,7 @@
             .setLngLat([-122.2849,37.51675])
             .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1098,7 +1576,7 @@
             .setLngLat([-122.284900,37.518090])
             .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1111,7 +1589,7 @@
             .setLngLat([-122.2849, 37.51675])
             .setHTML('<h3>Financial Aid</h3><p>Financial Aid is located in the administration wing of St. Mary Hall.</p>')
             .addTo(map);
-          
+
         }
     }
 
@@ -1124,7 +1602,7 @@
             .setLngLat([-122.286697,37.518547])
             .setHTML('<h3>Gavin Hall</h3><p>The smallest of the three main instructional buildings. Located up the hill from the bookstore</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1137,7 +1615,7 @@
             .setLngLat([-122.285579,37.517475])
             .setHTML('<h3>Housing</h3><p>The residence community values the uniqueness and potential of each individual and strives to create an environment which encourages respect, understanding and concern for others. Our on-campus residence facilities offer students three different residence community environments</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1150,7 +1628,7 @@
             .setLngLat([-122.286516,37.518052])
             .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1163,7 +1641,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
             .addTo(map);
-        
+
         }
     }
 
@@ -1176,7 +1654,7 @@
             .setLngLat([-122.285396,37.517010])
             .setHTML('<h3>Julie Billiart Hall</h3><p>Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1189,7 +1667,7 @@
             .setLngLat([-122.284287,37.515561])
             .setHTML('<h3>Koret Athletic Field</h3><p>Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1202,7 +1680,7 @@
             .setLngLat([-122.284331,37.517219])
             .setHTML('<h3>Library Lawn</h3><p>School and Student events are held on the library lawn throughout the year. Here you have a view of the chapel, library, cafeteria, and Saint Joe’s residence hall.</p>')
             .addTo(map);
-        
+
         }
     }
 
@@ -1215,7 +1693,7 @@
             .setLngLat([-122.287697,37.517974])
             .setHTML('<h3>Madison Art Center</h3><p>Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.</p>')
             .addTo(map);
-        
+
         }
     }
 
@@ -1229,7 +1707,7 @@
             .setLngLat([-122.285694,37.517938])
             .setHTML('<h3>New Hall</h3><p>New hall is one of the student residence buildings. Students that live in suites with four separate rooms surrounding a small common area and a single bathroom.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1243,7 +1721,7 @@
             .setLngLat([-122.284900,37.518090])
             .setHTML('<h3>Office of Diversity</h3><p>Is committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1257,7 +1735,7 @@
             .setLngLat([-122.2849, 37.51675])
             .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1270,7 +1748,7 @@
             .setLngLat([-122.286784, 37.517380])
             .setHTML('<h3>Ralston Hall Mansion</h3><p>In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1283,7 +1761,7 @@
             .setLngLat([-122.2849, 37.51675])
             .setHTML('<h3>Registrar</h3><p>The Registrar is located in the administration wing of St. Mary Hall.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1296,7 +1774,7 @@
             .setLngLat([-122.285579,37.517475])
             .setHTML('<h3>St. Joseph Hall</h3><p>St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1310,7 +1788,7 @@
             .setHTML('<h3>' + geojson.features[0].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[0].properties.image + '"></iframe><p>' + geojson.features[0].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[0].properties.title + '\',\'' +   geojson.features[0].properties.history + '\',\'' + geojson.features[0].properties.video + '\',\'' + geojson.features[0].properties.image  + '\',\'' + geojson.features[0].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1323,7 +1801,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
             .addTo(map);
-           
+
         }
     }
 
@@ -1336,7 +1814,7 @@
             .setLngLat([-122.286909,37.518083])
             .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1349,7 +1827,7 @@
             .setLngLat([-122.283010,37.516661])
             .setHTML('<h3>Taube Center</h3><p>Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1362,7 +1840,7 @@
             .setLngLat([-122.285437,37.516540])
             .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1375,7 +1853,7 @@
             .setLngLat([-122.284719, 37.51755])
             .setHTML('<h3>Carl and Celia Berta Gellert Library</h3><p>The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs</p>')
             .addTo(map);
-        
+
         }
     }
 
@@ -1388,7 +1866,7 @@
             .setLngLat([-122.285009,37.516948])
             .setHTML('<h3>The Quad</h3><p>Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1401,7 +1879,7 @@
             .setLngLat([-122.286516,37.518052])
             .setHTML('<h3>Toso Residence (Compiegne)</h3><p>Staff offices including human resources and administration.</p>')
             .addTo(map);
-          
+
         }
     }
 
@@ -1414,7 +1892,7 @@
             .setLngLat([-122.284331,37.518310])
             .setHTML('<h3>Walter Gleason Gym</h3><p>The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.</p>')
             .addTo(map);
-            
+
         }
     }
 
@@ -1427,7 +1905,7 @@
             .setLngLat([-122.287751,37.518191])
             .setHTML('<h3>Weigand Gallery</h3><p>Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.</p>')
             .addTo(map);
-          
+
         }
     }
 
@@ -1440,7 +1918,7 @@
             .setLngLat([-122.284934,37.517124])
             .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
             .addTo(map);
-          
+
         }
     }
 

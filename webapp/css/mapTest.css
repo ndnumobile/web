@@ -53,15 +53,18 @@
 }
 
 #ctrMapBtn{
+  padding: 14px 14px;
   z-index: 2000;
+  background-image: url("../customIcons/centerMap.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  top: 785px;
-  right: 10px;
+  bottom: 18%;
+  right: 0.5%;
   color: white;
-  background-color: #006699;
-  border: 4px solid #f8c460
+  background-color: #f9f9f9;
+  border: 1px solid #8c8c8c;
 }
-
 
 .boxy{
     text-align: center;
