@@ -46,29 +46,7 @@
                 border-bottom-color:#f8c460 !important;
             }
         </style>
-        <!-- Dynamically Change the Application Language -->
-        <script>
-            var params = getSearchParameters();
-            var siteLang;
-            console.log(params.lang);
-            if (params.lang !== null){
-                siteLang = params.lang;
-            } else {
-                siteLang = document.documentElement.lang;
-            }
 
-            var script = document.createElement('script');
-            script.type='text/javascript';
-
-            if (siteLang == "es") {
-                script.src = './scripts/mapbox-es.js';
-                document.title = "NDNU Campus Guía";
-            } else {
-                script.src = './scripts/mapbox.js';
-            }
-
-            document.head.appendChild(script);
-        </script>
     </head>
 
     <body>
@@ -90,7 +68,7 @@
         </div>
 
         <div id="wrapper" class="toggled">
-            <!-- Sidebar -->
+            <!-- Sidebar - English -->
             <div id="slidebar-white" class="slidebar-nav">
                 <nav id="navbar-white" class="navbar navbar-default" role="navigation">
                     <ul class="nav navbar-nav">
@@ -214,7 +192,130 @@
                     </ul>
                 </nav><!--/.navbar -->
             </div><!--/.sidebar-nav -->
-
+            <!-- Sidebar - Spanish -->
+            <div id="slidebar-white-es" class="slidebar-nav">
+                <nav id="navbar-white" class="navbar navbar-default" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenWelcomeModal">Bienvenido</a></li>
+                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenGeneralHistoryModal">Historia General</a></li>
+                        <li class="sidebar-form">
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Ubicaciones <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="location0"  onclick="pressBtnAcademic()">Centro de Éxito Académico</a></li>
+                                <li><a id="location1"  onclick="pressBtnAdmin()">Administración</a></li>
+                                <li><a id="location2"  onclick="pressBtnBookStore()">Librería</a></li>
+                                <li><a id="location3"  onclick="pressBtnBusiness()">Oficina de negocios</a></li>
+                                <li><a id="location4"  onclick="pressBtnCafeteria()">Cafetería</a></li>
+                                <li><a id="location5"  onclick="pressBtnCampus()">Campus Center</a></li>
+                                <li><a id="location6"  onclick="pressBtnCareer()">Servicios de carrera</a></li>
+                                <li><a id="location7"  onclick="pressBtnSpirituality()">Centro de Espiritualidad</a></li>
+                                <li><a id="location8"  onclick="pressBtnCounseling()">Servicios de Consejería y Salud</a></li>
+                                <li><a id="location9"  onclick="pressBtnCunningham()">Anexo de la Capilla de Cunningham</a></li>
+                                <li><a id="location10" onclick="pressBtnCuvilly()">Salón Cuvilly</a></li>
+                                <li><a id="location11" onclick="pressBtnDean()">Decano de Estudiantes / Asuntos Estudiantiles</a></li>
+                                <li><a id="location13" onclick="pressBtnFinancial()">Ayuda financiera</a></li>
+                                <li><a id="location14" onclick="pressBtnGavinHall()">Gavin Hall</a></li>
+                                <li><a id="location15" onclick="pressHousing()">Alojamiento</a></li>
+                                <li><a id="location16" onclick="pressHumanResources()">Recursos humanos</a></li>
+                                <li><a id="location17" onclick="pressBtnInternational()">Oficina Internacional de Estudiantes</a></li>
+                                <li><a id="location18" onclick="pressBtnJulie()">Julie Billiart Hall</a></li>
+                                <li><a id="location19" onclick="pressKoret()">Campo Atlético de Koret</a></li>
+                                <li><a id="location20" onclick="pressBtnLibraryLawn()">Biblioteca de césped</a></li>
+                                <li><a id="location21" onclick="pressBtnMadisonArt()">Madison Art Center</a></li>
+                                <li><a id="location22" onclick="pressNewHall()">New Hall</a></li>
+                                <li><a id="location23" onclick="pressOfficeDiversity()">Oficina de Diversidad</a></li>
+                                <li><a id="location24" onclick="pressPublicSafety()">Seguridad Pública</a></li>
+                                <li><a id="location25" onclick="pressBtnRalston()">Mansión Ralston Hall</a></li>
+                                <li><a id="location26" onclick="pressBtnRegistrar()">Registrador</a></li>
+                                <li><a id="location12" onclick="pressBtnDorothy()">Hermana Dorothy Stang Center</a></li>
+                                <li><a id="location27" onclick="pressBtnStJoseph()">St. Joseph Hall</a></li>
+                                <li><a id="location28" onclick="pressBtnStMary()">St. Mary’s Hall</a></li>
+                                <li><a id="location29" onclick="pressBtnStudentLife()">Oficina de Vida y Liderazgo Estudiantil</a></li>
+                                <li><a id="location30" onclick="pressBtnTabard()">Tabard Inn</a></li>
+                                <li><a id="location31" onclick="pressBtnTaube()">Taube Centro</a></li>
+                                <li><a id="location32" onclick="pressBtnTheApartments()">Los apartamentos</a></li>
+                                <li><a id="location33" onclick="pressBtnLibrary()">La Biblioteca Carl y Celia Berta Gellert</a></li>
+                                <li><a id="location34" onclick="pressBtnQuad()">El Quad</a></li>
+                                <li><a id="location35" onclick="pressBtnToso()">Residencia Toso (Compiegne)</a></li>
+                                <li><a id="location36" onclick="pressBtnGym()">Gimnasio Walter Gleason</a></li>
+                                <li><a id="location37" onclick="pressBtnWeigand()">Galería Weigand</a></li>
+                                <li><a id="location38" onclick="pressBtnWriting()">Centro de escritura</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i>   Preguntas frecuentes y sugerencias <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/" data-toggle="modal" data-target="#wifi">Conexión wifi</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#print">Áreas de impresión</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#email">Correo electrónico y acceso</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#commute">Viajeros</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i <span class="glyphicon glyphicon-briefcase"></span></i> Oficinas principales <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/" data-toggle="modal" data-target="#buisoff">Oficina de negocios</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#finoff">Ayuda financiera</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#regisoff">Oficina de Registro</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#pubsafe">Seguridad Pública</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i <span class="glyphicon glyphicon-duplicate"></span></i> Documentos <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-sublink">Negocios / Finanzas<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/direct-deposit-form.pdf">Deposito directo</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/NDNU-Emergency-Contact-Form.pdf">Contacto de emergencia</a></li>
+                                        <li><a href="http://www.ndnu.edu/giving/files/2013/06/payroll-deduction-form.pdf">Deducción de paga </a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/tuition-remission-form.pdf">Remisión de la matrícula</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Tuition-Exchange-Program-Application.pdf">Aplicación del Programa de Intercambio de Matrícula</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-sublink">Formularios del personal / Facultad<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                       <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Application-For-Employment.pdf">Aplicación de Empleo</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Authorization-for-Background-Check.pdf">Autorización para la verificación de antecedentes</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Personnel-Requisition-Form.pdf">Requisición de Personal</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/Staff-Adjunct-Form.pdf">Adjunto del personal</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2015/03/Student-Employment-Requisition-Form.pdf">Requisición de Empleo Estudiantil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-sublink">Formularios del Estudiante<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/employee-handbook.pdf">Manual del Empleado</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/faculty-handbook-part-1.pdf">Manual de la Facultad</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/part-time-faculty-guidebook.pdf">Manual de la Facultad de Tiempo Parcial</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/governance-handbook.pdf">Manual de Gobernanza</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/add-drop-form.pdf">Agregar o dejar caer</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/request-for-administrative-course-withdrawal.pdf">Retirada</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/application-for-ndnu-certificate.pdf">Certificado NDNU de aplicación</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/change-of-major-form.pdf">Cambio de Mayor</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/student-registration-form.pdf">Registro de estudiantes</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/transcript-request.pdf">Solicitud de transcripción no oficial</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/undergraduate-change-of-program-form.pdf">Cambio de Programa de Pregrado</a></li>
+                                        <li><a href="http://www.ndnu.edu/academics/files/2013/06/authorization-to-release-information-to-a-third-party.pdf">Liberación de información de autorización</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-sublink">Manuales<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/employee-handbook.pdf">Manual del Empleado</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/faculty-handbook-part-1.pdf">Manual de la Facultad</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/part-time-faculty-guidebook.pdf">Manual de la Facultad de Tiempo Parcial</a></li>
+                                        <li><a href="http://www.ndnu.edu/human-resources/files/2013/01/governance-handbook.pdf">Manual de Gobernanza</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav><!--/.navbar -->
+            </div><!--/.sidebar-nav -->
             <!-- Page Content -->
 
 
@@ -433,8 +534,6 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-
-
         <!-- Start of Footer -->
         <footer>
             <div class="footer-left">
@@ -443,12 +542,6 @@
                     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                     <a class="a2a_button_copy_link"></a>
                 </div>
-                <script>
-                    var a2a_config = a2a_config || {};
-                    a2a_config.onclick = 1;
-                    a2a_config.num_services = 8;
-                </script>
-                <script async src="https://static.addtoany.com/menu/page.js"></script>
                 <!-- AddToAny END -->
             </div>
             <div class="footer-right">
@@ -471,9 +564,47 @@
           });
         });
         </script>
+        <!-- Dynamically Change the Application Language -->
+        <script>
+            var params = getSearchParameters();
+            var siteLang;
+            console.log(params.lang);
+            if (params.lang != null){
+                siteLang = params.lang;
+            } else {
+                siteLang = document.documentElement.lang;
+            }
+
+            var script = document.createElement('script');
+            script.type='text/javascript';
+
+            if (siteLang == "es") {
+                script.src = './scripts/mapbox-es.js';
+                document.documentElement.lang = 'es';
+                document.getElementById('select-lang').value = 'es';
+                document.title = "NDNU Campus Guía";
+                document.getElementById("slidebar-white-es").style.display = "block";
+                document.getElementById("slidebar-white").style.display = "none";
+            } else {
+                script.src = './scripts/mapbox.js';
+                document.documentElement.lang = 'en';
+                document.getElementById('select-lang').value = 'en';
+                document.getElementById("slidebar-white").style.display = "block";
+                document.getElementById("slidebar-white-es").style.display = "none";
+            }
+
+            document.head.appendChild(script);
+        </script>
+        <script>
+            var lang = document.documentElement.lang;
+            var a2a_config = a2a_config || {};
+            a2a_config.onclick = 1;
+            a2a_config.num_services = 8;
+            a2a_config.locale = lang;
+        </script>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
     </body>
 
-    <!--<script src="./scripts/mapbox.js"></script>-->
     <script src="./scripts/modalFunctions.js"></script>
     <script src="./scripts/locationSearch.js"></script>
 

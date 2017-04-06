@@ -1,13 +1,7 @@
 function translateSite(language){
-    //var lang = document.getElementById("lang-select");
     var lang = language.value;
-    var url = window.location.href;
+    var url = location.hostname+'?lang='+lang;
 
-    if (url.indexOf('?') > -1){
-       url = location.hostname+'?lang='+lang
-    }else{
-       url += '?lang='+lang
-    }
     window.open(url,"_self");
 }
 
