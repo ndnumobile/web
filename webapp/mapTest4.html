@@ -339,7 +339,7 @@
         <!-- The Intro Modal -->
         <div id="welcomeModal" class="modal2 autoModal">
 
-            <!-- Modal content -->
+            <!-- Modal content - English-->
             <div id="modalContent" class="modal-content2 autoModal ">
                 <div class="modal-header2 autoModal">
                     <div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>
@@ -350,6 +350,22 @@
                     <h4>This is an interactive map.</h4>
                     <p><u>Helpful Hints</u></p>
                     <p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>
+                </div>
+                <div class="modal-footer2 autoModal">
+                </div>
+            </div>
+
+            <!-- Modal content - Spanish-->
+            <div id="modalContent-es" class="modal-content2 autoModal ">
+                <div class="modal-header2 autoModal">
+                    <div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>
+                    <div class="modal-title2">¡Bienvenido al Tour del Campus NDNU!</div>
+                    <span class="close2">&times;</span>
+                </div>
+                <div id="modalPrime" class="modal-body2 autoModal">
+                    <h4>Este es un mapa interactivo.</h4>
+                    <p><u>Consejos útiles</u></p>
+                    <p2><span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br> <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa. </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
@@ -585,12 +601,16 @@
                 document.title = "NDNU Campus Guía";
                 document.getElementById("slidebar-white-es").style.display = "block";
                 document.getElementById("slidebar-white").style.display = "none";
+                document.getElementById("modalContent-es").style.display = "block";
+                document.getElementById("modalContent").style.display = "none";
             } else {
                 script.src = './scripts/mapbox.js';
                 document.documentElement.lang = 'en';
                 document.getElementById('select-lang').value = 'en';
                 document.getElementById("slidebar-white").style.display = "block";
                 document.getElementById("slidebar-white-es").style.display = "none";
+                document.getElementById("modalContent-es").style.display = "none";
+                document.getElementById("modalContent").style.display = "block";
             }
 
             document.head.appendChild(script);
