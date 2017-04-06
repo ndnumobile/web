@@ -1,7 +1,8 @@
 function translateSite(language){
     var lang = language.value;
-    var url = location.hostname+'?lang='+lang;
-
+    var domainPath = location.href.split("?");
+    var url = domainPath[0]+'?lang='+lang;
+    console.log("domainPath: "+url);
     window.open(url,"_self");
 }
 
