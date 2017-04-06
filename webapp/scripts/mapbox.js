@@ -868,6 +868,15 @@
         $("#wrapper").toggleClass("toggled",true);
     }
 
+    ctrMap.onmouseover = function(){
+        $('button[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
+    }
+
+
+
     // add markers to map
     geojson.features.forEach(function(marker) {
 
