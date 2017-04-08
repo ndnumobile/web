@@ -2,6 +2,8 @@ $("#menu-toggle").click(function(e){
     e.preventDefault();$("#wrapper").toggleClass("toggled");
 });
 
+window.onload =welcomeModal, $("#wrapper").toggleClass("toggled",false);
+
 //Modal Functions - authored by Anthony Piquette
 // Get the modal
 var modalopen = document.getElementById('welcomeModal');
@@ -27,7 +29,8 @@ function welcomeModal() {
         modalopen.style.display = "block";
     }
 }
-window.onload =welcomeModal;
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
