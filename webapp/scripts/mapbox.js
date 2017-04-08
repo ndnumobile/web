@@ -839,6 +839,29 @@
                     ],
                     "type": "Point"
                 }
+            },
+            
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "39",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "Ralston Hall Annex",
+                    "description": "The Ralston Hall Annex houses the offices of the Clinical Psychology program.",
+                    "image": "./img/placeholder.gif",
+                    "audio": "./audio/PinkNoise_15min.mp3",
+                    "history": "",
+                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
+                    "icon": "./customIcons/bookstore.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+                        -122.286468, 37.517468
+                    ],
+                    "type": "Point"
+                }
             }
         ]
     };
@@ -2468,6 +2491,19 @@
           .setLngLat([-122.2846963,37.5181250])
           .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[37].properties.image + '"></iframe><p>' + geojson.features[37].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[37].properties.title + '\',\'' +   geojson.features[37].properties.history + '\',\'' + geojson.features[37].properties.video + '\',\'' + geojson.features[37].properties.image  + '\',\'' + geojson.features[37].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+
+      }else if(x == "Ralston Hall Annex"){
+          map.flyTo({
+              center: [-122.286468,37.517468],
+              speed: 0.3,
+
+          });
+
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.286468,37.517468])
+          .setHTML('<h3>' + geojson.features[38].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[38].properties.image + '"></iframe><p>' + geojson.features[38].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[38].properties.title + '\',\'' +   geojson.features[38].properties.history + '\',\'' + geojson.features[38].properties.video + '\',\'' + geojson.features[38].properties.image  + '\',\'' + geojson.features[38].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
       }
