@@ -19,6 +19,8 @@ var hamburgerClose = document.getElementsByClassName("navbar navbar-default")[0]
 var searchBarClose = document.getElementsByClassName("input-group col-md-3 col-md-offset-4 floatburger front ")[0];
 var openWelcomeModal = document.getElementById('reopenWelcomeModal');
 var openGeneralHistoryModal = document.getElementById('reopenGeneralHistoryModal');
+var openWelcomeModal_es = document.getElementById('reopenWelcomeModal_es');
+var openGeneralHistoryModal_es = document.getElementById('reopenGeneralHistoryModal_es');
 var closeSideBar = document.getElementById('slidebar-white');
 
 // Modal opens on page load
@@ -29,8 +31,6 @@ function welcomeModal() {
         modalopen.style.display = "block";
     }
 }
-
-
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -110,6 +110,49 @@ openGeneralHistoryModal.onclick = function(){
     $("#wrapper").toggleClass("toggled");
 }
 
+openWelcomeModal_es.onclick = function(){
+    modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
+                +'<div class="modal-header2 autoModal">'
+                    +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
+                    +'<div class="modal-title2">¡Bienvenido al Campus Tour de NDNU!</div>'
+                    +'<span onClick="ribbonClose()" class="close2">&times;</span>'
+                +'</div>'
+
+                +'<div id="modalPrime" class="modal-body2 autoModal">'
+                    +'<h4>Este es un mapa interactivo.</h4>'
+                    +'<p><u>Consejos útiles</u></p>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br> <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa. </p2>'
+                +'</div>'
+                +'<div class="modal-footer2 autoModal">'
+                +'</div>'
+            +'</div>';
+    modalopen.className = "modal2 autoModal";
+    modalopen.style.display = "block";
+
+    $("#wrapper").toggleClass("toggled");
+}
+
+openGeneralHistoryModal_es.onclick = function(){
+    modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
+                +'<div class="modal-header2 autoModal">'
+                    +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
+                    +'<div class="modal-title2">Universidad de Notre Dame de Namur</div>'
+                    +'<span onClick="ribbonClose()" class="close2">&times;</span>'
+                +'</div>'
+
+                +'<div id="modalPrime" class="modal-body2 autoModal">'
+                    +'<h4>Historia General</h4>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span>  En 1851, las Hermanas de Notre Dame de Namur llegaron al Área de la Bahía de San Francisco de sus escuelas misioneras en Oregon y establecieron el Colegio de Notre Dame en San José, CA<br> <span class="glyphicon glyphicon-check"></span> Fundada hace más de 160 años, somos la tercera universidad más antigua de California. NDNU es una universidad de maestría privada, católica y coeducacional totalmente acreditada, ubicada en la Península de San Francisco en Silicon Valley. Con 2.000 estudiantes de 28 estados y 23 países diferentes, NDNU amplía la perspectiva y la perspectiva de sus estudiantes exponiéndolos a sus pares con antecedentes, culturas y visiones de mundo muy diferentes.<br><span class="glyphicon glyphicon-check"></span> La universidad de Notre Dame fue fundada como la primera universidad en el estado de California autorizada para conceder el grado de bachillerato a las mujeres. </p2>'
+                +'</div>'
+                +'<div class="modal-footer2 autoModal">'
+                +'</div>'
+            +'</div>';
+    modalopen.className = "modal2 autoModal";
+    modalopen.style.display = "block";
+
+    $("#wrapper").toggleClass("toggled");
+}
+
 // When the user clicks on the more info button, displays a modal
 function popUpModal(title,history,vid,image,description,audio){
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
@@ -125,10 +168,8 @@ function moreInfoClose(){
 
 //The Following functions prevent the Campus Location list from closing when the loaction is selected
 $('#location0').click(function (e) {
-  e.stopPropagation()      
+  e.stopPropagation()
 });
-
-
 $('#location1').click(function (e) {
   e.stopPropagation()
 });
@@ -228,7 +269,6 @@ $('#location32').click(function (e) {
 $('#location33').click(function (e) {
   e.stopPropagation()
 });
-
 $('#location34').click(function (e) {
   e.stopPropagation()
 });
@@ -245,5 +285,125 @@ $('#location38').click(function (e) {
   e.stopPropagation()
 });
 $('#location39').click(function (e) {
+  e.stopPropagation()
+});
+$('#location0es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location1es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location2es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location3es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location4es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location5es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location6es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location7es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location8es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location9es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location10es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location11es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location12es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location13es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location14es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location15es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location16es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location17es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location18es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location19es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location20es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location21es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location22es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location23es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location24es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location25es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location26es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location27es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location28es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location29es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location30es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location31es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location33es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location34es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location35es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location36es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location37es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location38es').click(function (e) {
+  e.stopPropagation()
+});
+$('#location39es').click(function (e) {
   e.stopPropagation()
 });
