@@ -157,7 +157,7 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Cunningham Memorial Chapel",
-                    "description": "Cunningham Memorial Chapel is dedicated to the memory of Sister Catherine Julie Cunningham, who served as president of NDNU from 1956 to 1980. The chapel was completed in 1961 and hosts weekly services and other events.",        
+                    "description": "Cunningham Memorial Chapel is dedicated to the memory of Sister Catherine Julie Cunningham, who served as president of NDNU from 1956 to 1980. The chapel was completed in 1961 and hosts weekly services and other events.",
                     "image": "./img/chapel.JPG",
                     "audio": "./audio/chapelHistory.mp3",
                     "history": "The chapel windows are made of sculpted glass, created by renowned artist Gabriel Loire.",
@@ -220,8 +220,7 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Walter Gleason Gym",
-                    "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms. NDNU basketball and volleyball teams play their home games in the gym.
-",
+                    "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms. NDNU basketball and volleyball teams play their home games in the gym.",
                     "image": "./img/gleasonGym.JPG",
                     "audio": "./audio/gleasonGymHistory.mp3",
                     "history": "The gym is named for Walter Gleason, prominent San Franciscan and generous benefactor to the university.",
@@ -841,7 +840,7 @@
                     "type": "Point"
                 }
             },
-            
+
             {
                 "type": "Feature",
                 "properties": {
