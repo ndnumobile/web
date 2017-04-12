@@ -839,6 +839,30 @@
                     ],
                     "type": "Point"
                 }
+            },
+
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "39",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "McGraw's Bar & Grill",
+                    "description": "A great place to study, with better wifi than on campus.",
+                    "image": "",
+                    "audio": "",
+                    "history": "Previously known as Ausiello's, McGraw's offers great service and selection of food and drinks.",
+                    "video": "",
+                    "icon": "./customIcons/beerBottle.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+                        -122.277581,
+                        37.521535
+                    ],
+                    "type": "Point"
+                }
             }
         ]
     };

@@ -793,6 +793,30 @@
                     ],
                     "type": "Point"
                 }
+            },
+
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "37",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "Bar y parrilla de McGraw",
+                    "description": "Un gran lugar para estudiar, con mejor wifi que en el campus.",
+                    "image": "",
+                    "audio": "",
+                    "history": "Anteriormente conocido como Ausiello, McGraw's ofrece un gran servicio.",
+                    "video": "",
+                    "icon": "./customIcons/beerBottle.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+                        -122.277581,
+                        37.521535
+                    ],
+                    "type": "Point"
+                }
             }
 
         ]
