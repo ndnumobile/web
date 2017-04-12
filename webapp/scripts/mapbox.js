@@ -929,16 +929,6 @@
             });
         });
 
-        //Adds on hover capability.
-        el.addEventListener('mousemove', function(e) {
-            //test print to console (dev tools).
-            console.log('Mouse Hover!!');
-            //attempt to show building summary modal onmouseover, currently the modal is not showing.
-            var popup = new mapboxgl.Popup({offset: 25, anchor:'bottom'})
-            .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                     + '<a href="#" onmouseover="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
-        })
-
         // add marker to map
         new mapboxgl.Marker(el, {offset: [-20, -20]})
             .setLngLat(marker.geometry.coordinates)
@@ -1964,7 +1954,7 @@
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
         var x = document.getElementById('advanced-demo').value;
-        
+
         if(x == "St. Mary's Hall"){
             map.flyTo({
                 center: [-122.2849, 37.51675],

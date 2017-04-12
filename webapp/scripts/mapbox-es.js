@@ -873,6 +873,477 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
+    map.on('load', function() {
+        //begin adding one layer for each walkway/pathway.
+    map.addLayer({
+    "id": "route1",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28709101676941,37.517872217216606],
+                    [-122.28722780942915,37.517780737668296]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route2",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.2857901453972,37.51632981448863],
+                    [-122.28582769632338,37.516300029846334],
+                    [-122.28588402271271,37.516291519946364],
+                    [-122.28594839572905,37.51629577489646],
+                    [-122.28601276874542,37.516319177117744],
+                    [-122.28604227304459,37.51628088257001]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route3",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28518933057785,37.51659787573432],
+                    [-122.28528052568436,37.51638087384775],
+                    [-122.28563457727432,37.516470227642166],
+                    [-122.28576332330704,37.516472355112164],
+                    [-122.28560775518417,37.51666595462751],
+                    [-122.28554874658586,37.51672126868252]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route4",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28672087192535,37.51840407283425],
+                    [-122.28705883026123,37.51814452776643],
+                    [-122.286117374897,37.51747651417773],
+                    [-122.28608787059784,37.51733397547225]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route5",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28240251541136,37.517157397295385],
+                    [-122.28252053260802,37.517114848274616],
+                    [-122.28279143571854,37.51712974043463],
+                    [-122.28289872407913,37.517099956111615]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route6",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28315487504005,37.516873382122306],
+                    [-122.28318974375723,37.51686912720513],
+                    [-122.28322729468344,37.51685529872262],
+                    [-122.28325277566911,37.516829769209735],
+                    [-122.28336676955223,37.51670956763583],
+                    [-122.2833828628063,37.516699994050825],
+                    [-122.28340432047844,37.51670212151426],
+                    [-122.2833962738514,37.51676275419684],
+                    [-122.28339225053787,37.516806367148575],
+                    [-122.2833976149559,37.516845725156315],
+                    [-122.28341102600096,37.51690529399343],
+                [-122.28342309594153,37.516954225502595],
+                    [-122.28344053030013,37.51696486278298],
+                    [-122.28346601128577,37.51695316177448],
+                    [-122.28353843092918,37.516835087858965],
+                    [-122.28359878063202,37.516757435542445],
+                    [-122.28364303708076,37.51670956763583],
+                    [-122.28390723466873,37.51676700912007]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route7",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28488355875015,37.51779988455977],
+                    [-122.28479772806168,37.51777648280285],
+                    [-122.28474408388139,37.517780737668296],
+                    [-122.28469043970107,37.51779775712763],
+                    [-122.28462338447572,37.51781903144636]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route8",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28455901145935,37.51727227953023],
+                    [-122.28438466787338,37.51765947390813],
+                    [-122.28480041027069,37.51777435537002]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route9",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28455364704132,37.51727015208306],
+                    [-122.28507667779922,37.51743183789637]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route10",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28609055280685,37.51733610291762],
+                    [-122.28606909513472,37.51730419123076],
+                    [-122.28604227304459,37.51728291676527],
+                    [-122.28599667549133,37.51727015208306],
+                    [-122.28466361761095,37.516893592975606],
+                    [-122.28468239307404,37.51686380855831],
+                    [-122.28468775749205,37.51682125937017],
+                    [-122.28467434644699,37.51678722000217],
+                    [-122.28464484214783,37.51676594538928],
+                    [-122.2845831513405,37.51675105315667],
+                    [-122.28433370590209,37.51666808209191]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route11",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28452280163766,37.51799773548414],
+                    [-122.28472128510474,37.518047729989505],
+                    [-122.28481918573378,37.518076450222125]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route12",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28503376245499,37.51747438673638],
+                    [-122.28507399559021,37.51743183789637],
+                    [-122.28511154651642,37.517410563467266],
+                    [-122.28517323732375,37.51738716158824],
+                    [-122.28522151708601,37.51737014203524],
+                    [-122.28525638580321,37.51736588714639]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route13",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.285036444664,37.51747438673638],
+                    [-122.28508472442627,37.51748289650147],
+                    [-122.2851249575615,37.51750842579091],
+                    [-122.28514373302458,37.51754246482993],
+                    [-122.28514373302458,37.517627562359536],
+                    [-122.28513836860655,37.51770415005321],
+                    [-122.28514373302458,37.51781052171959],
+                    [-122.28516519069672,37.51789136408462],
+                    [-122.28521615266799,37.517923275520396],
+                    [-122.28530198335646,37.517946677231286],
+                    [-122.28539317846298,37.51797007893482]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route14",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.2848218679428,37.51806794052472],
+                    [-122.28486210107802,37.517974333789226],
+                    [-122.28487819433212,37.517908383518716],
+                    [-122.2848728299141,37.51786158006559],
+                    [-122.28487819433212,37.51781264915137],
+                    [-122.28489696979521,37.51775733590537],
+                    [-122.28502839803696,37.51747651417773]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+
+    map.addLayer({
+    "id": "route15",
+    "type": "line",
+    "source": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.28668332099915,37.51772755183283],
+                    [-122.28674232959747,37.517723296964355],
+                    [-122.28683620691298,37.51768500313719],
+                    [-122.28690862655638,37.51764245441724]
+                ]
+            }
+        }
+    },
+    "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+    },
+    "paint": {
+        "line-color": "#f9e904",
+        "line-width": 2
+    }
+    });
+    });
+    //end map layers for walking paths.
+
     function popUpModal(title,history,vid,image,description,audio){
         modal2.style.display = "block";
         document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
