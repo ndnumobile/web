@@ -33,9 +33,9 @@ function welcomeModal() {
 
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modalopen.style.display = "none";
-}
+// span.onclick = function() {
+//     modalopen.style.display = "none";
+// }
 
 // closes the welcome modal on reset
 function ribbonClose(){
@@ -121,6 +121,7 @@ function popUpModal(title,history,vid,image,description,audio){
 
 function moreInfoClose(){
     modal2.style.display = "none";
+    ctrMapFunc();
 }
 
 //The Following functions prevent the Campus Location list from closing when the loaction is selected
@@ -245,5 +246,8 @@ $('#location38').click(function (e) {
   e.stopPropagation()
 });
 $('#location39').click(function (e) {
+  e.stopPropagation()
+});
+$('#location40').click(function (e) {
   e.stopPropagation()
 });
