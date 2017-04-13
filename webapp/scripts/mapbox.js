@@ -849,7 +849,7 @@
                     "locType": "building",
                     "title": "McGraw's Bar & Grill",
                     "description": "A great place to study, with better wifi than on campus.",
-                    "image": "",
+                    "image": "./img/mcgraws.jpg",
                     "audio": "",
                     "history": "Previously known as Ausiello's, McGraw's offers great service and selection of food and drinks.",
                     "video": "",
@@ -863,7 +863,7 @@
                     ],
                     "type": "Point"
                 }
-            }
+            },
         ]
     };
 
@@ -1112,7 +1112,7 @@
                     [-122.28339225053787,37.516806367148575],
                     [-122.2833976149559,37.516845725156315],
                     [-122.28341102600096,37.51690529399343],
-                [-122.28342309594153,37.516954225502595],
+                    [-122.28342309594153,37.516954225502595],
                     [-122.28344053030013,37.51696486278298],
                     [-122.28346601128577,37.51695316177448],
                     [-122.28353843092918,37.516835087858965],
@@ -1426,6 +1426,17 @@
             .addTo(map);
 
         }
+    }
+
+    //test for campus location onhover show tooltip.
+    //currently tooltip shows above the link, researching how to relocate the tooltip.
+    var asc = document.getElementById('location0');
+    asc.onmouseover = function(){
+        // console.log("hovering on academic success center in campus locations sidebar.");
+        $('a[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
     }
 
     function pressBtnAdmin() {
