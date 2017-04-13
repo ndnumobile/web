@@ -33,9 +33,9 @@ function welcomeModal() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modalopen.style.display = "none";
-}
+// span.onclick = function() {
+//     modalopen.style.display = "none";
+// }
 
 // closes the welcome modal on reset
 function ribbonClose(){
@@ -77,7 +77,7 @@ openWelcomeModal.onclick = function(){
                 +'<div id="modalPrime" class="modal-body2 autoModal">'
                     +'<h4>This is an interactive map.</h4>'
                     +'<p><u>Helpful Hints</u></p>'
-                    +'<p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ\'s.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ\'s.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map.<br> <span class="glyphicon glyphicon-check"></span>  In the lower right corner, you can center the map, zoom in and out, and reset the map to North.<br> <span class="glyphicon glyphicon-check"></span>  Hold the \'Control\' key and drag the mouse to enter 3D mode. Click the \'Center Map\' button to exit.<br> </p2>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
@@ -164,6 +164,7 @@ function popUpModal(title,history,vid,image,description,audio){
 
 function moreInfoClose(){
     modal2.style.display = "none";
+    ctrMapFunc();
 }
 
 //The Following functions prevent the Campus Location list from closing when the loaction is selected
@@ -285,6 +286,9 @@ $('#location38').click(function (e) {
   e.stopPropagation()
 });
 $('#location39').click(function (e) {
+  e.stopPropagation()
+});
+$('#location40').click(function (e) {
   e.stopPropagation()
 });
 $('#location0es').click(function (e) {

@@ -847,22 +847,24 @@
                     "id": "39",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Ralston Hall Annex",
-                    "description": "The Ralston Hall Annex houses the offices of the Clinical Psychology program.",
-                    "image": "./img/placeholder.gif",
-                    "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "",
-                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "title": "McGraw's Bar & Grill",
+                    "description": "A great place to study, with better wifi than on campus.",
+                    "image": "./img/mcgraws.jpg",
+                    "audio": "",
+                    "history": "Previously known as Ausiello's, McGraw's offers great service and selection of food and drinks.",
+                    "video": "",
+                    "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
-                        -122.286468, 37.517468
+
+                        -122.277581,
+                        37.521535
                     ],
                     "type": "Point"
                 }
-            }
+            },
         ]
     };
 
@@ -898,6 +900,11 @@
         });
     }
 
+    function ctrMapFunc(){
+        map.flyTo({center: [-122.285060, 37.517295], speed: 0.8, zoom: 16.9, bearing: 0, pitch: 0});
+        $("#wrapper").toggleClass("toggled",true);
+    }
+
 
 
     // add markers to map
@@ -924,7 +931,8 @@
             $("#wrapper").toggleClass("toggled",true);
             map.flyTo({
                 center: marker.geometry.coordinates,
-                speed: 0.5
+                speed: 0.5,
+                offset: [0,400]
             });
         });
 
@@ -1111,7 +1119,7 @@
                     [-122.28339225053787,37.516806367148575],
                     [-122.2833976149559,37.516845725156315],
                     [-122.28341102600096,37.51690529399343],
-                [-122.28342309594153,37.516954225502595],
+                    [-122.28342309594153,37.516954225502595],
                     [-122.28344053030013,37.51696486278298],
                     [-122.28346601128577,37.51695316177448],
                     [-122.28353843092918,37.516835087858965],
@@ -1425,6 +1433,17 @@
             .addTo(map);
 
         }
+    }
+
+    //test for campus location onhover show tooltip.
+    //currently tooltip shows above the link, researching how to relocate the tooltip.
+    var asc = document.getElementById('location0');
+    asc.onmouseover = function(){
+        // console.log("hovering on academic success center in campus locations sidebar.");
+        $('a[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
     }
 
     function pressBtnAdmin() {
@@ -1958,7 +1977,7 @@
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1971,7 +1990,7 @@
             map.flyTo({
                 center: [-122.284719, 37.51755],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1984,7 +2003,7 @@
             map.flyTo({
                 center: [-122.286784, 37.517380],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1997,7 +2016,7 @@
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2009,7 +2028,7 @@
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2021,7 +2040,7 @@
           map.flyTo({
               center: [-122.2849, 37.51675],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2033,7 +2052,7 @@
           map.flyTo({
               center: [-122.2849, 37.51675],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2045,7 +2064,7 @@
           map.flyTo({
               center: [-122.285235,37.517219],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2058,7 +2077,7 @@
           map.flyTo({
               center: [-122.285082,37.517643],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2071,7 +2090,7 @@
           map.flyTo({
               center: [-122.284331,37.518310],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2084,7 +2103,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2097,7 +2116,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2109,7 +2128,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2121,7 +2140,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2133,7 +2152,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2145,7 +2164,7 @@
           map.flyTo({
               center: [-122.285009,37.516948],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2158,7 +2177,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2170,7 +2189,7 @@
           map.flyTo({
               center: [-122.284900,37.518090],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2183,7 +2202,7 @@
           map.flyTo({
               center: [-122.285286,37.518197],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2196,7 +2215,7 @@
           map.flyTo({
               center: [-122.285396,37.517010],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2209,7 +2228,7 @@
           map.flyTo({
               center: [-122.285396,37.517010],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2221,7 +2240,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2233,7 +2252,7 @@
           map.flyTo({
               center: [-122.285579,37.517475],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2246,7 +2265,7 @@
           map.flyTo({
               center: [-122.285579,37.517475],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2258,7 +2277,7 @@
           map.flyTo({
               center: [-122.285437,37.516540],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2270,7 +2289,7 @@
           map.flyTo({
               center: [-122.284287,37.515561],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2283,7 +2302,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2296,7 +2315,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2308,7 +2327,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2320,7 +2339,7 @@
           map.flyTo({
               center: [-122.284719,37.51755],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2332,7 +2351,7 @@
           map.flyTo({
               center: [-122.285694,37.517938],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2345,7 +2364,7 @@
           map.flyTo({
               center: [-122.285694,37.517938],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2357,7 +2376,7 @@
           map.flyTo({
               center: [-122.283010,37.516661],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2370,7 +2389,7 @@
           map.flyTo({
               center: [-122.287751,37.518191],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2383,7 +2402,7 @@
           map.flyTo({
               center: [-122.287697,37.517974],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2396,7 +2415,7 @@
           map.flyTo({
               center: [-122.287009,37.517927],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2409,7 +2428,7 @@
           map.flyTo({
               center: [-122.287091,37.518277],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2422,7 +2441,7 @@
           map.flyTo({
               center: [-122.286697,37.518547],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2435,7 +2454,7 @@
           map.flyTo({
               center: [-122.287378,37.516547],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2448,7 +2467,7 @@
           map.flyTo({
               center: [-122.285244,37.515499],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2461,7 +2480,7 @@
           map.flyTo({
               center: [-122.2878337,37.517000],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2474,7 +2493,7 @@
           map.flyTo({
               center: [-122.2846963,37.5181250],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
