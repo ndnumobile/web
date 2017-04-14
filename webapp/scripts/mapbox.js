@@ -807,7 +807,7 @@
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/mail1.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
@@ -830,7 +830,7 @@
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/campanile.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
@@ -878,7 +878,7 @@
                     "audio": "",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/RalAnnex.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
