@@ -865,7 +865,7 @@
                     "type": "Point"
                 }
             },
-            
+
             {
                 "type": "Feature",
                 "properties": {
@@ -892,7 +892,7 @@
             }
         ]
     };
-    
+
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
         [-122.274592, 37.527414]  // Northeast coordinates
@@ -900,14 +900,12 @@
 
     var map = new mapboxgl.Map({
         container: 'map', // container id
-        // style: 'mapbox://styles/seprothx/ciypcnvrv000m2rpj08pi5jgy', //stylesheet location for staging 'ndnuZ' mapbox style.
         style: 'mapbox://styles/seprothx/ciz1d7tzs00172rqbzvwq71wp', //map style location for production 'ndnuZ-copy' mapbox style.
         center: [-122.285060, 37.517295], //starting map position.
         zoom: 16.9, // starting zoom
         maxBounds: bounds //sets boundry that the map will pan within.
     });
     //adds map navigation controls for zoom and reset north. Default position in upper right.
-    // map.addControl(new mapboxgl.NavigationControl());
     var nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'bottom-right');
 
@@ -936,11 +934,7 @@
     geojson.features.forEach(function(marker) {
 
         var imgS = marker.properties.icon;
-
-
         // Adds popups to map. Content of each popup is added with the below .setHTML call.
-
-
         var popup = new mapboxgl.Popup({offset: 15, anchor:'bottom'})
         .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
@@ -957,7 +951,7 @@
             map.flyTo({
                 center: marker.geometry.coordinates,
                 speed: 0.5,
-                offset: [0,400]
+                offset: [0,300]
             });
         });
 
@@ -1441,7 +1435,7 @@
         "line-width": 2
     }
     });
-        
+
     map.addSource('buildings', {
         type: 'vector',
         url: 'mapbox://seprothx.cj1hjeu8o003n33pjr4dpjhj1-5g54h'
