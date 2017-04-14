@@ -826,7 +826,7 @@
                     "locType": "building",
                     "title": "Campanile",
                     "description": "The statue of Notre Dame (Our Lady) on the Campanile was designed by Sister Margaret Hoffman and was completed in 1962. The Campanile is the symbol of the university.",
-                    "image": "./img/placeholder.gif",
+                    "image": "./img/campanile.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
@@ -851,7 +851,7 @@
                     "description": "A great place to study, with better wifi than on campus.",
                     "image": "./img/mcgraws.jpg",
                     "audio": "",
-                    "history": "Previously known as Ausiello's, McGraw's offers great service and selection of food and drinks.",
+                    "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks.",
                     "video": "",
                     "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
@@ -865,9 +865,34 @@
                     "type": "Point"
                 }
             },
+            
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "40",
+                    "parentId": "",
+                    "locType": "building",
+                    "title": "Ralston Hall Annex",
+                    "description": "The Ralston Hall Annex houses the offices for the clinical psychology program.",
+                    "image": "./img/ralstonHallAnnex.jpg",
+                    "audio": "",
+                    "history": "",
+                    "video": "",
+                    "icon": "./customIcons/bookstore.svg",
+                    "iconSize":[20,20]
+                },
+                "geometry": {
+                    "coordinates": [
+
+                        -122.286468,
+                        37.517468
+                    ],
+                    "type": "Point"
+                }
+            }
         ]
     };
-
+    
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
         [-122.274592, 37.527414]  // Northeast coordinates
@@ -1418,8 +1443,6 @@
     });
     });
     //end map layers for walking paths.
-
-
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
@@ -2511,8 +2534,8 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286468,37.517468])
-          .setHTML('<h3>' + geojson.features[38].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[38].properties.image + '"></iframe><p>' + geojson.features[38].properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[38].properties.title + '\',\'' +   geojson.features[38].properties.history + '\',\'' + geojson.features[38].properties.video + '\',\'' + geojson.features[38].properties.image  + '\',\'' + geojson.features[38].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[39].properties.image + '"></iframe><p>' + geojson.features[39].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[39].properties.title + '\',\'' +   geojson.features[39].properties.history + '\',\'' + geojson.features[39].properties.video + '\',\'' + geojson.features[39].properties.image  + '\',\'' + geojson.features[39].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
       }
