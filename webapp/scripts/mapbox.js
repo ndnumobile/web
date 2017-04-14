@@ -951,7 +951,7 @@
             map.flyTo({
                 center: marker.geometry.coordinates,
                 speed: 0.5,
-                offset: [0,400]
+                offset: [0,300]
             });
         });
 
