@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Mary Hall",
-                    "description": "Saint Mary’s hall houses the majority of classrooms. Newly remodeled, the science and computer labs are located in this building along with public safety, financial aid, the registrar, and the business office.",
+                    "title": "St. Mary's Hall",
+                    "description": "St. Mary’s Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "Named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Mary’s Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -30,7 +30,7 @@
                     "id": "2",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Carl and Celia Berta Gellert Library",
+                    "title": "Carl Gellert and Celia Berta Gellert Library",
                     "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs.",
                     "image": "./img/library.JPG",
                     "audio": "./audio/libraryHistory.mp3",
@@ -52,10 +52,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Ralston Hall Mansion",
-                    "description": "In 1966, the U.S. Department of the Interior designated Ralston Hall a National Historic Landmark, it is also a designated California Historic Landmark. The mansion is currently undergoing a massive renovation and is currently closed.",
+                    "description": "Ralston Hall a National Historic Landmark and a California Historic Landmark. Completed in 1868, this exquisite Victorian mansion is currently closed for renovation and seismic retrofitting. Once reopened, the hall will once again house the university’s main administrative offices, as well as a new student learning commons.",
                     "image": "./img/ralstonHall.JPG",
                     "audio": "./audio/ralstonHallHistory.mp3",
-                    "history": "Named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan. It is a National Historic Monument as well as a California Historic one. It is listed in the same category as the Statue Of Liberty in New York.",
+                    "history": "The hall is named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mansion.svg",
                     "iconSize":[25,25]
@@ -115,10 +115,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "NDNU Theatre",
-                    "description": "The NDNU Theatre Arts department frequently puts on performances here.",
+                    "description": "The theatre provides a venue for student performances of musical and dramatic productions.",
                     "image": "./img/ndnuTheatre2.JPG",
                     "audio": "./audio/theatreHistory.mp3",
-                    "history": "Originally built in the 50s for the Highschool, it was repurposed for NDNU when the college became a four year institution.",
+                    "history": "Originally built in the 1950s for Notre Dame High School, it was repurposed for NDNU when the college became a four-year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/theatreB.svg",
                     "iconSize":[25,25]
@@ -136,10 +136,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "New Hall",
-                    "description": "The New Hall, a suite-style residence hall. Each student has an individual room in a four-person suite, the modular designed furniture allows flexibility in rearranging the living space. Each suite consists of four rooms that share a common area, one bathroom and two sinks. Each individual room is furnished with a long twin bed, dresser, desk and wardrobe closet. All rooms are wheel-chair accessible. New Hall features an open inner quad, and laundry room with eight washers and dryers along with snack and soda machines",
+                    "description": "New Hall is a suite-style residence hall. Each student has an individual room in a four-person suite. Each suite consists of four rooms that share a common area, one bathroom and two sinks. All rooms are wheelchair accessible. New Hall features an open inner quad, and a laundry room with eight washers and dryers, along with snack and soda machines.",
                     "image": "./img/NewHallPhoto1.jpg",
                     "audio": "./audio/newHallHistory.mp3",
-                    "history": "Built in 2004, New Hall has proven to be a popular choice among students.",
+                    "history": "Built in 2004, New Hall has proved to be a popular choice among students.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -157,10 +157,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Cunningham Memorial Chapel",
-                    "description": "Cunningham Memorial Chapel is dedicated to the memory of Sister Catherine Julie Cunningham, a former NDNU president. Its windows are made of sculpted glass, created by renowned artist Gabriel Loire. The chapel was completed in 1961 and hosts weekly services and other events.",
+                    "description": "Cunningham Memorial Chapel is dedicated to the memory of Sister Catherine Julie Cunningham, who served as president of NDNU from 1956 to 1980. The chapel was completed in 1961 and hosts weekly services and other events.",
                     "image": "./img/chapel.JPG",
                     "audio": "./audio/chapelHistory.mp3",
-                    "history": "Dedicated in 1962, the chapel was named for Sister Catharine Julie Cunningham, president of the college from 1956 to 1980",
+                    "history": "The chapel windows are made of sculpted glass, created by renowned artist Gabriel Loire.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/chapel.svg",
                     "iconSize":[25,25]
@@ -220,7 +220,7 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Walter Gleason Gym",
-                    "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms.",
+                    "description": "The gym is equipped with a weight room, an athletic training room, and men’s and women’s locker rooms. NDNU basketball and volleyball teams play their home games in the gym.",
                     "image": "./img/gleasonGym.JPG",
                     "audio": "./audio/gleasonGymHistory.mp3",
                     "history": "The gym is named for Walter Gleason, prominent San Franciscan and generous benefactor to the university.",
@@ -241,10 +241,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Campus Center",
-                    "description": "The Campus Center houses the Academic Success Center, Admissions, the Writing Center, the Welcome Center, the International Student Office, and the Student Life & Leadership Office.",
+                    "description": "The Campus Center houses Admissions, the STEAM Virtual Reality Lab, the Academic Success Center, the Writing Center, the Welcome Center, the International Student Office, and the Student Life & Leadership Office.",
                     "image": "./img/campusCenter.JPG",
                     "audio": "./audio/campusCenterHistory.mp3",
-                    "history": "The Campus Center also includes the Commuter Lounge, the tutorial center, and several administrative offices.",
+                    "history": "The Campus Center also includes the commuter lounge, the tutorial center, and several administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -262,10 +262,10 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "The Quad",
-                    "description": "Many student organizations host events in the quad. Here you have a view of Saint Mary’s Hall, an academic building, and the Campus Center, which houses the Welcome Center, Academic Success Center, Writing Center, and the Student Life and Leadership Office.",
+                    "description": "The Quad is a popular gathering place, the center of student life on campus. It consists of the central open space between Saint Mary’s Hall and the Campus Center, which houses the Welcome Center, the Academic Success Center, the Writing Center, and the Student Life and Leadership Office.",
                     "image": "./img/quad.JPG",
                     "audio": "./audio/quadDescription.mp3",
-                    "history": "",
+                    "history": "Many student organizations host events in The Quad, and it is often the site of tables publicizing campus events, as well as charitable and social justice campaigns.",
                     "video": "",
                     "icon": "./customIcons/quadBuilding.svg",
                     "iconSize":[25,25]
@@ -283,7 +283,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Office of Spirituality",
-                    "description": "Guided by the spirit of the Sisters of Notre Dame, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacred in ourselves, each other and the world.",
+                    "description": "Guided by the spirit of the Sisters of Notre Dame de Namur, the Office of Spirituality seeks to honor the many religious traditions and spiritual paths in our community by providing diverse opportunities for tending the sacred in ourselves, each other and the world.",
                     "image": "./img/centerForSpirituality.JPG",
                     "audio": "./audio/centerForSpirituality.mp3",
                     "history": "The Office of Spirituality works and learns collaboratively with community partners to bring about a more just society and positive social change. We are a community of students, staff and faculty who work together to support this vision.",
@@ -304,10 +304,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Julie Billiart Hall",
-                    "description": "Julie Billiart Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. Julie Billiart includes a student lounge on the 2nd floor and a gym on the bottom floor.",
+                    "description": "Julie Billiart Hall is a student residence. Students live in singles, doubles, or triples. The hall is named for the foundress of the Sisters of Notre Dame de Namur.",
                     "image": "./img/jbHall.JPG",
                     "audio": "./audio/julieBilliartHistory.mp3",
-                    "history": "Named for the Foundress of the Sisters of Notre Dame who founded the college.",
+                    "history": "Julie Billiart Hall includes a student lounge on the second floor and an exercise room on the ground floor.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -325,10 +325,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "St. Joseph Hall",
-                    "description": "St. Joseph Hall is one of the student residence buildings. Students live in single, double, or triple dorm rooms. St. Joes Hall includes a student lounge on the 2nd floor.",
+                    "description": "St. Joseph Hall contains student residences and faculty offices, including the offices of the School of Education and Psychology. Students live in singles, doubles, or triples. Often called “St. Joe’s,” the building includes a student lounge on the second floor and a public space on the ground floor.",
                     "image": "./img/stJoseph.JPG",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "Named for the Co-Foundress of the Sisters of Notre Dame, Sister St. Joseph Blin de Bourdon.",
+                    "history": "St. Joseph Hall is named for the co-foundress of the Sisters of Notre Dame de Namur, Françoise Blin de Bourdon, later known as Sister St. Joseph.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -346,10 +346,10 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Koret Field",
-                    "description": "Our field is located along Ralston Ave. and is where lacrosse and soccer teams practice and host games. There is a tennis court situated right next to the field.",
+                    "description": "Koret Field is the site of Notre Dame de Namur University’s lacrosse and soccer games. NDNU sports teams are called the Argonauts.",
                     "image": "./img/koretField.JPG",
                     "audio": "./audio/koretFieldHistory.mp3",
-                    "history": "Recently rebuilt and turfed in 2007, Koret field is located east of the high school, near the main entrance to the high school.",
+                    "history": "Rebuilt and turfed in 2007, Koret Field is located east of Notre Dame High School.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/soccerBall.svg",
                     "iconSize":[25,25]
@@ -366,11 +366,11 @@
                     "id": "18",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Toso Residences",
-                    "description": "Staff offices including human resources and administration.",
+                    "title": "Toso Compiègne, Courtrai and Namur Buildings",
+                    "description": "The three Toso buildings house staff offices, including human resources, administration, OIT, and marketing, as well as TALK ESL offices and classrooms.",
                     "image": "./img/toso1.JPG",
                     "audio": "./audio/tosoHistory.mp3",
-                    "history": "Originally built to house members of the Sisters of Notre Dame, they are now shared with school administrative offices.",
+                    "history": "Originally built to house members of the Sisters of Notre Dame, these buildings are now shared with university administrative offices.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/adminBuilding.svg",
                     "iconSize":[25,25]
@@ -387,11 +387,11 @@
                     "id": "19",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Weigand Art Gallery",
-                    "description": "Students work in the gallery helping to install exhibits and gain experience the gallery hosts many nationally known artists and student art shows.",
+                    "title": "Weigand Gallery",
+                    "description": "The Wiegand Gallery is NDNU’s arts exhibition space. The gallery is located in a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried on campus. The Wiegand Gallery hosts many nationally known artists and student art shows. Students work in the gallery helping to install exhibits.",
                     "image": "./img/wiegandGallery.JPG",
                     "audio": "./audio/weigandHistory.mp3",
-                    "history": "The Weigand Gallery is part of the Madison Art Center, a magnificent stone building that was originally built as carriage house on the site of the country estate of 19th century financier William Chapman Ralston. Built in 1874, the carriage house walls are four feet thick and made of native stone quarried in the area. The upper story, where the Gallery and small theater are located, was harness room, grain section and hay loft. It was named for the E.L. Wiegand Foundation.",
+                    "history": "The upper story of the building where the gallery and small theater are located was originally the harness room, grain section and hay loft. The gallery is named for the E.L. Wiegand Foundation, which provided funding toward the building’s renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/artGalleryB.svg",
                     "iconSize":[25,25]
@@ -409,10 +409,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Madison Art Center",
-                    "description": "Beneath the Weigand Gallery is a fully furnished complex of art classrooms dedicated to teaching students a spectrum of disciplines.",
+                    "description": "Adjacent to the Wiegand Gallery is a complex of spacious and well-lit art studios.",
                     "image": "./img/madisonArtCenter.JPG",
                     "audio": "./audio/madisonArtCenterHistory.mp3",
-                    "history": "Named for Mrs. Elena Madison who was a major donor towards the building and a member of the Governance Board of the College.",
+                    "history": "The Madison Art Center is named for Mrs. Elena Madison, a major donor to the renovation of the building who was also a member of the university’s board of trustees.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/artPalette.svg",
                     "iconSize":[25,25]
@@ -430,10 +430,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Cuvilly Hall",
-                    "description": "Cuvilly Hall houses a minority of classrooms. It is located up the hill from Ralston Manor and the Weigand Gallery.",
+                    "description": "Cuvilly Hall houses classrooms and offices of the School of Business and Management.",
                     "image": "./img/cuvillyHall.JPG",
                     "audio": "./audio/cuvillyHistory.mp3",
-                    "history": "Named after a small village in Picardy, France, where St. Julie Billiart was Born in 1751.",
+                    "history": "Cuvilly Hall is named after a small village in Picardy, France, where St. Julie Billiart was born in 1751.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -451,7 +451,7 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "NDNU Bookstore",
-                    "description": "Show your Notre Dame De Namur University pride all year long with our authentic assortment of Notre Dame De Namur University collegiate apparel - including Notre Dame De Namur University t-shirts, sweatshirts, hats and more. Join the ranks of your fellow Notre Dame De Namur University students, alumni and team fanatics by sporting the ultimate Notre Dame De Namur University game day gear. With sizes available for men and women, the whole family can cheer on Notre Dame De Namur University in style, every season. Looking for more than Notre Dame De Namur University apparel? We have got Notre Dame De Namur University gift ideas covered, with options ranging from drinkware to Notre Dame De Namur University gift cards. Plus, our selection of textbooks, computers, and supplies will ensure every Notre Dame De Namur University student is prepared for success.",
+                    "description": "The NDNU Bookstore offers an authentic assortment of NDNU collegiate apparel, including t-shirts, sweatshirts, hats and more. The bookstore also features gifts, with options ranging from mugs and water bottles to NDNU gift cards. The store also offers a selection of textbooks, computers and school supplies.",
                     "image": "./img/bookstore.JPG",
                     "audio": "./audio/bookstore.mp3",
                     "history": "",
@@ -472,10 +472,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Gavin Hall",
-                    "description": "The smallest of the three main instructional buildings. Located up the hill from the bookstore.",
+                    "description": "The smallest of the three main instructional buildings, Gavin Hall houses the Art Therapy programs.",
                     "image": "./img/gavinHall.JPG",
                     "audio": "./audio/gavinHistory.mp3",
-                    "history": "Named for Sister Rosemarie Julie Gavin who was Academic Dean / Vice President from 1968 to 1983. Sr. Rosemarie started the Evening Division program, the Credential Program, and was instrumental in starting the Graduate programs of the university.",
+                    "history": "Named for Sister Rosemarie Julie Gavin, academic dean/vice president from 1968 to 1983. Sr. Rosemarie started the evening division and the credential programs, and was instrumental in founding the university’s graduate program.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -493,10 +493,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Province Center",
-                    "description": "Residence of the Sisters of Notre Dame.",
+                    "description": "The Province Center is a residence for retired Sisters of Notre Dame de Namur.",
                     "image": "./img/provinceCenter.JPG",
                     "audio": "./audio/provinceCenterHistory.mp3",
-                    "history": "Originally built and still remains as housing for retired Sisters of Notre Dame",
+                    "history": "Originally built in the 1950s for Notre Dame High School, it was repurposed for NDNU when the college became a four-year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/nun.svg",
                     "iconSize":[25,25]
@@ -538,10 +538,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Sr. Dorothy Stang Center",
-                    "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement is nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice. Activities include community art exhibits and performances, seminars, public speaking events, and community action gatherings.",
+                    "description": "The Sr. Dorothy Stang Center for Social Justice and Community Engagement is nationally recognized for its leadership in fostering community engagement programs, and events that inspire social and environmental justice.",
                     "image": "./img/srDorothyStangCenter2.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "The Center is a dynamic hub that encourages efforts and fosters enthusiasm and creativity for education for the common good.",
+                    "history": "Activities at the Sr. Dorothy Stang Center include community art exhibits and performances, seminars, public speaking events and community action gatherings.",
                     "video": "",
                     "icon": "./customIcons/peopleTalk.svg",
                     "iconSize":[25,25]
@@ -562,10 +562,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Tabard Inn",
-                    "description": "Tabard Inn contains administrative offices and advisors for the School of Business and Management.",
+                    "description": "The Tabard Inn contains administrative offices and advisors for the School of Business and Management.",
                     "image": "./img/tabardInn.JPG",
                     "audio": "./audio/tabardHistory.mp3",
-                    "history": "Built when NDNU was still an all-girls school, it was originally a recreational building where students could enjoy coffee or tea. It is named after Chaucer's Tales.",
+                    "history": "The Tabard Inn was originally an English tea house.",
                     "video": "",
                     "icon": "./customIcons/adviceTabard.svg",
                     "iconSize":[25,25]
@@ -586,10 +586,10 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Tennis Courts",
-                    "description": "Two tennis courts available to all students for purposes of exercise and recreation.",
+                    "description": "These two tennis courts are available to all students",
                     "image": "./img/tennisCourts.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "Tennis is a racket sport that can be played individually against a single opponent singles or between two teams of two players each doubles.",
+                    "history": "",
                     "video": "",
                     "icon": "./customIcons/tennisBalls.svg",
                     "iconSize":[25,25]
@@ -706,10 +706,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Wilkie Apartments",
-                    "description": "Wilkie Apartments",
+                    "description": "The Wilkie Apartments are student residences for junior and senior undergraduates.",
                     "image": "./img/WilkieResized.jpg",
                     "audio": "./audio/wilkieHistory.mp3",
-                    "history": "Named for Sister Helen Benedict Wilkie, beloved Dean of Students from 1956-1965.",
+                    "history": "Named for Sister Helen Benedict Wilkie, dean of students from 1956 to 1965.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -730,10 +730,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Kane Apartments",
-                    "description": "Kane Apartments",
+                    "description": "The Kane Apartments are student residences for junior and senior undergraduates.",
                     "image": "./img/KaneResized.jpg",
                     "audio": "./audio/kaneHistory.mp3",
-                    "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame in Belmont at the time of the building of the upper campus when the college became a four year institution.",
+                    "history": "Named for Sister Frederica Kane, the superior of the Sisters of Notre Dame de Namur in Belmont at the time of the building of the upper campus, when the college became a four-year institution.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -754,10 +754,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Carroll Apartments",
-                    "description": "Carroll Apartments",
+                    "description": "The Carroll Apartments are student residences for junior and senior undergraduates.",
                     "image": "./img/carroll.JPG",
                     "audio": "./audio/carollHistory.mp3",
-                    "history": "Named for Sister Loretta Julia Carroll, first American General Superior of the Congregation of the Sisters on Fotre Dame world-wide.",
+                    "history": "Named for Sister Loretta Julia Carroll, first American general superior of the Congregation of the Sisters of Notre Dame de Namur worldwide.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -781,7 +781,7 @@
                     "description": "Oaks Lounge",
                     "image": "./img/OaksPhoto2.jpg",
                     "audio": "./audio/oakHistory.mp3",
-                    "history": "The Oaks Lounge was originally used as the counseling center. After the counseling center was moved to new hall, Oaks lounge has been repurposed as office space.",
+                    "history": "Oaks Lounge was originally the university’s counseling center. After the counseling center was moved to New Hall, Oaks lounge was repurposed as office space.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/homeResidences.svg",
                     "iconSize":[20,20]
@@ -825,7 +825,7 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Campanile",
-                    "description": "The statue on the Campanile was designed by Sister Margaret Hoffman and was completed in 1962. The Campanile is the symbol of the university.",
+                    "description": "The statue of Notre Dame (Our Lady) on the Campanile was designed by Sister Margaret Hoffman and was completed in 1962. The Campanile is the symbol of the university.",
                     "image": "./img/placeholder.gif",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
@@ -840,29 +840,31 @@
                     "type": "Point"
                 }
             },
-            
+
             {
                 "type": "Feature",
                 "properties": {
                     "id": "39",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Ralston Hall Annex",
-                    "description": "The Ralston Hall Annex houses the offices of the Clinical Psychology program.",
-                    "image": "./img/placeholder.gif",
-                    "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "",
-                    "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "title": "McGraw's Bar & Grill",
+                    "description": "A great place to study, with better wifi than on campus.",
+                    "image": "./img/mcgraws.jpg",
+                    "audio": "",
+                    "history": "Previously known as Ausiello's, McGraw's offers great service and selection of food and drinks.",
+                    "video": "",
+                    "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
-                        -122.286468, 37.517468
+
+                        -122.277581,
+                        37.521535
                     ],
                     "type": "Point"
                 }
-            }
+            },
         ]
     };
 
@@ -898,6 +900,11 @@
         });
     }
 
+    function ctrMapFunc(){
+        map.flyTo({center: [-122.285060, 37.517295], speed: 0.8, zoom: 16.9, bearing: 0, pitch: 0});
+        $("#wrapper").toggleClass("toggled",true);
+    }
+
 
 
     // add markers to map
@@ -924,19 +931,10 @@
             $("#wrapper").toggleClass("toggled",true);
             map.flyTo({
                 center: marker.geometry.coordinates,
-                speed: 0.5
+                speed: 0.5,
+                offset: [0,400]
             });
         });
-
-        //Adds on hover capability.
-        el.addEventListener('mousemove', function(e) {
-            //test print to console (dev tools).
-            console.log('Mouse Hover!!');
-            //attempt to show building summary modal onmouseover, currently the modal is not showing.
-            var popup = new mapboxgl.Popup({offset: 25, anchor:'bottom'})
-            .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                     + '<a href="#" onmouseover="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
-        })
 
         // add marker to map
         new mapboxgl.Marker(el, {offset: [-20, -20]})
@@ -1121,7 +1119,7 @@
                     [-122.28339225053787,37.516806367148575],
                     [-122.2833976149559,37.516845725156315],
                     [-122.28341102600096,37.51690529399343],
-                [-122.28342309594153,37.516954225502595],
+                    [-122.28342309594153,37.516954225502595],
                     [-122.28344053030013,37.51696486278298],
                     [-122.28346601128577,37.51695316177448],
                     [-122.28353843092918,37.516835087858965],
@@ -1435,6 +1433,17 @@
             .addTo(map);
 
         }
+    }
+
+    //test for campus location onhover show tooltip.
+    //currently tooltip shows above the link, researching how to relocate the tooltip.
+    var asc = document.getElementById('location0');
+    asc.onmouseover = function(){
+        // console.log("hovering on academic success center in campus locations sidebar.");
+        $('a[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
     }
 
     function pressBtnAdmin() {
@@ -1963,12 +1972,12 @@
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
         var x = document.getElementById('advanced-demo').value;
-        
+
         if(x == "St. Mary's Hall"){
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1981,7 +1990,7 @@
             map.flyTo({
                 center: [-122.284719, 37.51755],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1994,7 +2003,7 @@
             map.flyTo({
                 center: [-122.286784, 37.517380],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2007,7 +2016,7 @@
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2019,7 +2028,7 @@
             map.flyTo({
                 center: [-122.2849, 37.51675],
                 speed: 0.3,
-
+                offset: [0,400]
             });
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2031,7 +2040,7 @@
           map.flyTo({
               center: [-122.2849, 37.51675],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2043,7 +2052,7 @@
           map.flyTo({
               center: [-122.2849, 37.51675],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2055,7 +2064,7 @@
           map.flyTo({
               center: [-122.285235,37.517219],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2068,7 +2077,7 @@
           map.flyTo({
               center: [-122.285082,37.517643],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2081,7 +2090,7 @@
           map.flyTo({
               center: [-122.284331,37.518310],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2094,7 +2103,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2107,7 +2116,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2119,7 +2128,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2131,7 +2140,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2143,7 +2152,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2155,7 +2164,7 @@
           map.flyTo({
               center: [-122.285009,37.516948],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2168,7 +2177,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2180,7 +2189,7 @@
           map.flyTo({
               center: [-122.284900,37.518090],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2193,7 +2202,7 @@
           map.flyTo({
               center: [-122.285286,37.518197],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2206,7 +2215,7 @@
           map.flyTo({
               center: [-122.285396,37.517010],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2219,7 +2228,7 @@
           map.flyTo({
               center: [-122.285396,37.517010],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2231,7 +2240,7 @@
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2243,7 +2252,7 @@
           map.flyTo({
               center: [-122.285579,37.517475],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2256,7 +2265,7 @@
           map.flyTo({
               center: [-122.285579,37.517475],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2268,7 +2277,7 @@
           map.flyTo({
               center: [-122.285437,37.516540],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2280,7 +2289,7 @@
           map.flyTo({
               center: [-122.284287,37.515561],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2293,7 +2302,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2306,7 +2315,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2318,7 +2327,7 @@
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2330,7 +2339,7 @@
           map.flyTo({
               center: [-122.284719,37.51755],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2342,7 +2351,7 @@
           map.flyTo({
               center: [-122.285694,37.517938],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2355,7 +2364,7 @@
           map.flyTo({
               center: [-122.285694,37.517938],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2367,7 +2376,7 @@
           map.flyTo({
               center: [-122.283010,37.516661],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2380,7 +2389,7 @@
           map.flyTo({
               center: [-122.287751,37.518191],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2393,7 +2402,7 @@
           map.flyTo({
               center: [-122.287697,37.517974],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2406,7 +2415,7 @@
           map.flyTo({
               center: [-122.287009,37.517927],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2419,7 +2428,7 @@
           map.flyTo({
               center: [-122.287091,37.518277],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2432,7 +2441,7 @@
           map.flyTo({
               center: [-122.286697,37.518547],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2445,7 +2454,7 @@
           map.flyTo({
               center: [-122.287378,37.516547],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2458,7 +2467,7 @@
           map.flyTo({
               center: [-122.285244,37.515499],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2471,7 +2480,7 @@
           map.flyTo({
               center: [-122.2878337,37.517000],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2484,7 +2493,7 @@
           map.flyTo({
               center: [-122.2846963,37.5181250],
               speed: 0.3,
-
+              offset: [0,400]
           });
 
           var popup = new mapboxgl.Popup({closeOnClick: true})

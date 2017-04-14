@@ -64,7 +64,7 @@
 
         <!-- center map button. -->
         <div>
-            <button id="ctrMapBtn" onclick="mapCtrBtn()" onmouseover="mapCtrHover()" data-toggle="tooltip" title="Center Map"> </button>
+            <button id="ctrMapBtn" onclick="mapCtrBtn()" data-toggle="tooltip" title="Center Map"> </button>
         </div>
 
         <div id="wrapper" class="toggled">
@@ -79,7 +79,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a id="location0"  onclick="pressBtnAcademic()">Academic Success Center</a></li>
+                                <li><a id="location0"  onclick="pressBtnAcademic()" data-toggle="tooltip" title="Academic Success Center">Academic Success Center</a></li>
                                 <li><a id="location1"  onclick="pressBtnAdmin()">Administration</a></li>
                                 <li><a id="location2"  onclick="pressBtnBookStore()">Bookstore</a></li>
                                 <li><a id="location3"  onclick="pressBtnBusiness()">Business Office</a></li>
@@ -192,74 +192,75 @@
                     </ul>
                 </nav><!--/.navbar -->
             </div><!--/.sidebar-nav -->
+
             <!-- Sidebar - Spanish -->
             <div id="slidebar-white-es" class="slidebar-nav">
                 <nav id="navbar-white" class="navbar navbar-default" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenWelcomeModal">Bienvenido</a></li>
-                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenGeneralHistoryModal">Historia General</a></li>
+                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenWelcomeModal_es">Bienvenido</a></li>
+                        <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenGeneralHistoryModal_es">Historia General</a></li>
                         <li class="sidebar-form">
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Ubicaciones <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a id="location0"  onclick="pressBtnAcademic()">Centro de Éxito Académico</a></li>
-                                <li><a id="location1"  onclick="pressBtnAdmin()">Administración</a></li>
-                                <li><a id="location2"  onclick="pressBtnBookStore()">Librería</a></li>
-                                <li><a id="location3"  onclick="pressBtnBusiness()">Oficina de negocios</a></li>
-                                <li><a id="location4"  onclick="pressBtnCafeteria()">Cafetería</a></li>
-                                <li><a id="location5"  onclick="pressBtnCampus()">Campus Center</a></li>
-                                <li><a id="location6"  onclick="pressBtnCareer()">Servicios de carrera</a></li>
-                                <li><a id="location7"  onclick="pressBtnSpirituality()">Centro de Espiritualidad</a></li>
-                                <li><a id="location8"  onclick="pressBtnCounseling()">Servicios de Consejería y Salud</a></li>
-                                <li><a id="location9"  onclick="pressBtnCunningham()">Anexo de la Capilla de Cunningham</a></li>
-                                <li><a id="location10" onclick="pressBtnCuvilly()">Salón Cuvilly</a></li>
-                                <li><a id="location11" onclick="pressBtnDean()">Decano de Estudiantes / Asuntos Estudiantiles</a></li>
-                                <li><a id="location13" onclick="pressBtnFinancial()">Ayuda financiera</a></li>
-                                <li><a id="location14" onclick="pressBtnGavinHall()">Gavin Hall</a></li>
-                                <li><a id="location15" onclick="pressHousing()">Alojamiento</a></li>
-                                <li><a id="location16" onclick="pressHumanResources()">Recursos humanos</a></li>
-                                <li><a id="location17" onclick="pressBtnInternational()">Oficina Internacional de Estudiantes</a></li>
-                                <li><a id="location18" onclick="pressBtnJulie()">Julie Billiart Hall</a></li>
-                                <li><a id="location19" onclick="pressKoret()">Campo Atlético de Koret</a></li>
-                                <li><a id="location20" onclick="pressBtnLibraryLawn()">Biblioteca de césped</a></li>
-                                <li><a id="location21" onclick="pressBtnMadisonArt()">Madison Art Center</a></li>
-                                <li><a id="location22" onclick="pressNewHall()">New Hall</a></li>
-                                <li><a id="location23" onclick="pressOfficeDiversity()">Oficina de Diversidad</a></li>
-                                <li><a id="location24" onclick="pressPublicSafety()">Seguridad Pública</a></li>
-                                <li><a id="location25" onclick="pressBtnRalston()">Mansión Ralston Hall</a></li>
-                                <li><a id="location26" onclick="pressBtnRegistrar()">Registrador</a></li>
-                                <li><a id="location12" onclick="pressBtnDorothy()">Hermana Dorothy Stang Center</a></li>
-                                <li><a id="location27" onclick="pressBtnStJoseph()">St. Joseph Hall</a></li>
-                                <li><a id="location28" onclick="pressBtnStMary()">St. Mary’s Hall</a></li>
-                                <li><a id="location29" onclick="pressBtnStudentLife()">Oficina de Vida y Liderazgo Estudiantil</a></li>
-                                <li><a id="location30" onclick="pressBtnTabard()">Tabard Inn</a></li>
-                                <li><a id="location31" onclick="pressBtnTaube()">Taube Centro</a></li>
-                                <li><a id="location32" onclick="pressBtnTheApartments()">Los apartamentos</a></li>
-                                <li><a id="location33" onclick="pressBtnLibrary()">La Biblioteca Carl y Celia Berta Gellert</a></li>
-                                <li><a id="location34" onclick="pressBtnQuad()">El Quad</a></li>
-                                <li><a id="location35" onclick="pressBtnToso()">Residencia Toso (Compiegne)</a></li>
-                                <li><a id="location36" onclick="pressBtnGym()">Gimnasio Walter Gleason</a></li>
-                                <li><a id="location37" onclick="pressBtnWeigand()">Galería Weigand</a></li>
-                                <li><a id="location38" onclick="pressBtnWriting()">Centro de escritura</a></li>
+                                <li><a id="location0es"  onclick="pressBtnAcademic()">Centro de Éxito Académico</a></li>
+                                <li><a id="location1es"  onclick="pressBtnAdmin()">Administración</a></li>
+                                <li><a id="location2es"  onclick="pressBtnBookStore()">Librería</a></li>
+                                <li><a id="location3es"  onclick="pressBtnBusiness()">Oficina de negocios</a></li>
+                                <li><a id="location4es"  onclick="pressBtnCafeteria()">Cafetería</a></li>
+                                <li><a id="location5es"  onclick="pressBtnCampus()">Campus Center</a></li>
+                                <li><a id="location6es"  onclick="pressBtnCareer()">Servicios de carrera</a></li>
+                                <li><a id="location7es"  onclick="pressBtnSpirituality()">Centro de Espiritualidad</a></li>
+                                <li><a id="location8es"  onclick="pressBtnCounseling()">Servicios de Consejería y Salud</a></li>
+                                <li><a id="location9es"  onclick="pressBtnCunningham()">Anexo de la Capilla de Cunningham</a></li>
+                                <li><a id="location10es" onclick="pressBtnCuvilly()">Salón Cuvilly</a></li>
+                                <li><a id="location11es" onclick="pressBtnDean()">Decano de Estudiantes / Asuntos Estudiantiles</a></li>
+                                <li><a id="location13es" onclick="pressBtnFinancial()">Ayuda financiera</a></li>
+                                <li><a id="location14es" onclick="pressBtnGavinHall()">Gavin Hall</a></li>
+                                <li><a id="location15es" onclick="pressHousing()">Alojamiento</a></li>
+                                <li><a id="location16es" onclick="pressHumanResources()">Recursos humanos</a></li>
+                                <li><a id="location17es" onclick="pressBtnInternational()">Oficina Internacional de Estudiantes</a></li>
+                                <li><a id="location18es" onclick="pressBtnJulie()">Julie Billiart Hall</a></li>
+                                <li><a id="location19es" onclick="pressKoret()">Campo Atlético de Koret</a></li>
+                                <li><a id="location20es" onclick="pressBtnLibraryLawn()">Biblioteca de césped</a></li>
+                                <li><a id="location21es" onclick="pressBtnMadisonArt()">Madison Art Center</a></li>
+                                <li><a id="location22es" onclick="pressNewHall()">New Hall</a></li>
+                                <li><a id="location23es" onclick="pressOfficeDiversity()">Oficina de Diversidad</a></li>
+                                <li><a id="location24es" onclick="pressPublicSafety()">Seguridad Pública</a></li>
+                                <li><a id="location25es" onclick="pressBtnRalston()">Mansión Ralston Hall</a></li>
+                                <li><a id="location26es" onclick="pressBtnRegistrar()">Registrador</a></li>
+                                <li><a id="location12es" onclick="pressBtnDorothy()">Hermana Dorothy Stang Center</a></li>
+                                <li><a id="location27es" onclick="pressBtnStJoseph()">St. Joseph Hall</a></li>
+                                <li><a id="location28es" onclick="pressBtnStMary()">St. Mary’s Hall</a></li>
+                                <li><a id="location29es" onclick="pressBtnStudentLife()">Oficina de Vida y Liderazgo Estudiantil</a></li>
+                                <li><a id="location30es" onclick="pressBtnTabard()">Tabard Inn</a></li>
+                                <li><a id="location31es" onclick="pressBtnTaube()">Taube Centro</a></li>
+                                <li><a id="location32es" onclick="pressBtnTheApartments()">Los apartamentos</a></li>
+                                <li><a id="location33es" onclick="pressBtnLibrary()">La Biblioteca Carl y Celia Berta Gellert</a></li>
+                                <li><a id="location34es" onclick="pressBtnQuad()">El Quad</a></li>
+                                <li><a id="location35es" onclick="pressBtnToso()">Residencia Toso (Compiegne)</a></li>
+                                <li><a id="location36es" onclick="pressBtnGym()">Gimnasio Walter Gleason</a></li>
+                                <li><a id="location37es" onclick="pressBtnWeigand()">Galería Weigand</a></li>
+                                <li><a id="location38es" onclick="pressBtnWriting()">Centro de escritura</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tags"></i>   Preguntas frecuentes y sugerencias <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/" data-toggle="modal" data-target="#wifi">Conexión wifi</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#print">Áreas de impresión</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#email">Correo electrónico y acceso</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#commute">Viajeros</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#wifi-es">Conexión wifi</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#print-es">Áreas de impresión</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#email-es">Correo electrónico y acceso</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#commute-es">Viajeros</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i <span class="glyphicon glyphicon-briefcase"></span></i> Oficinas principales <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/" data-toggle="modal" data-target="#buisoff">Oficina de negocios</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#finoff">Ayuda financiera</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#regisoff">Oficina de Registro</a></li>
-                                <li><a href="/" data-toggle="modal" data-target="#pubsafe">Seguridad Pública</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#buisoff-es">Oficina de negocios</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#finoff-es">Ayuda financiera</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#regisoff-es">Oficina de Registro</a></li>
+                                <li><a href="/" data-toggle="modal" data-target="#pubsafe-es">Seguridad Pública</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -316,14 +317,12 @@
                     </ul>
                 </nav><!--/.navbar -->
             </div><!--/.sidebar-nav -->
+
             <!-- Page Content -->
-
-
             <div id="mainContainer" class="container-fluid" >
-
                 <div id='map'></div>
-
             </div><!-- </main> -->
+
         </div><!-- /#wrapper -->
 
         <!-- Search bar -->
@@ -349,7 +348,12 @@
                 <div id="modalPrime" class="modal-body2 autoModal">
                     <h4>This is an interactive map.</h4>
                     <p><u>Helpful Hints</u></p>
-                    <p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>
+                    <p2>
+                        <span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br>
+                        <span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map.<br>
+                        <span class="glyphicon glyphicon-check"></span>  In the lower right corner, you can center the map, zoom in and out, and reset the map to North.<br>
+                        <span class="glyphicon glyphicon-check"></span>  Hold the 'Control' key and drag the mouse to enter 3D mode. Click the 'Center Map' button to exit.<br>
+                    </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
@@ -365,15 +369,21 @@
                 <div id="modalPrime" class="modal-body2 autoModal">
                     <h4>Este es un mapa interactivo.</h4>
                     <p><u>Consejos útiles</u></p>
-                    <p2><span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br> <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa. </p2>
+                    <p2>
+                        <span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br>
+                        <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br>
+                        <span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa.<br>
+                        <span class="glyphicon glyphicon-check"></span>  En la esquina inferior derecha, puede centrar el mapa, acercar y alejar, y restablecer el mapa a Norte.<br>
+                        <span class="glyphicon glyphicon-check"></span>  Mantenga pulsada la tecla 'Control' y arrastre el ratón para entrar en el modo 3D. Haga clic en el botón 'Center Map' para salir.<br>
+                    </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
             </div>
         </div>
 
-        <!--Modal Popups for FAQ's By Crisanto Pineda Used CSS of Anthony Piquette.-->
-       <div class="modal modal2 faq-modal"  role="dialog" id="wifi">
+        <!-- Left Navigation FAQs - English -->
+        <div class="modal modal2 faq-modal"  role="dialog" id="wifi">
             <div class="modal-dialog" role="document">
                 <div class="modal-content2">
                     <div class="modal-header2">
@@ -449,9 +459,7 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!--End of Modal Popups for FAQ's.-->
-<!-- Start of Modals for Main Offices -->
-<div class="modal modal2 faq-modal"  role="dialog" id="buisoff">
+        <div class="modal modal2 faq-modal"  role="dialog" id="buisoff">
             <div class="modal-dialog" role="document">
                 <div class="modal-content2">
                     <div class="modal-header2">
@@ -485,7 +493,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
         <div class="modal modal2 faq-modal"  role="dialog" id="regisoff">
             <div class="modal-dialog" role="document">
                 <div class="modal-content2">
@@ -503,7 +510,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
         <div class="modal modal2 faq-modal"  role="dialog" id="pubsafe">
             <div class="modal-dialog" role="document">
                 <div class="modal-content2">
@@ -524,6 +530,155 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+        <!-- Left Navigation FAQs - Spanish -->
+        <div class="modal modal2 faq-modal"  role="dialog" id="wifi-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">¿Cómo puedo conectarme a NDNU WiFi?</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <li>Pasos básicos. (WiFi debe estar activado para su dispositivo)</li>
+                        <ol>
+                            <li>Abre cualquier navegador (Safari, Chrome, Firefox, etc.)</li>
+                            <li>Escriba la dirección 10.10.100.100</li>
+                            <li>Pasar las señales de advertencia a la página de inicio de sesión</li>
+                            <li>Credenciales de inicio de sesión - Nombre de usuario = Nombre de usuario de correo electrónico de la escuela.
+                                Contraseña = Las primeras dos letras de apellido + los últimos 4 números de StudentID.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="print-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">¿Dónde puedo imprimir documentos?</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <li>Existen tres áreas conocidas para imprimir documentos.</li>
+                        <ul>
+                            <li>La biblioteca.</li>
+                            <li>El Laboratorio de Mac ubicado en St. Mary's Hall</li>
+                            <li>El PC Lab ubicado en St. Mary's Hall</li>
+                            <li>Debe iniciar sesión en una de las computadoras de la universidad para imprimir.</li>
+                            <li>Hay un cargo por imprimir. Cada estudiante tiene un crédito de $ 15 para imprimir. Cualquier cantidad superior a $ 15 se cargará en su cuenta.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="email-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">¿Qué es mi cuenta de correo electrónico?</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Recibirá su dirección de correo electrónico de estudiante cuando se registre por primera vez.</li>
+                            <li>La página de inicio de sesión de correo electrónico del estudiante NDNU es: https://mymail.ndnu.edu.</li>
+                            <li>Los nombres de usuario se crean tomando la primera inicial de su nombre seguido de su apellido completo (Mary Jones = mjones). Si ese nombre de usuario ya está en uso, se incluye la inicial del medio (Mary S. Jones = "msjones").</li>
+                            <li>Este nombre de usuario NO es lo que usas para acceder al Portal del Campus. Por favor vea la pestaña Portal del Campus.</li>
+                            <li>Su contraseña es la misma que la utilizada para WiFi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="commute-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">¿Dónde está el Commuter Lounge?</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Hay un Comedor Lounge situado junto a la cafetería.</li>
+                            <li>El salón está equipado con armarios, un microondas y un refrigerador.</li>
+                            <li>El salón es un lugar estupendo para alojarse durante el tiempo de inactividad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="buisoff-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">La oficina de negocios</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Situado en St. Mary's Hall</li>
+                            <li>Para preguntas de la oficina de negocios o una cita, llame al (650) 508-3565 o envíe un correo electrónico a businessoffice@ndnu.edu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="finoff-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">La Oficina de Ayuda Financiera</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Situado en St. Mary's Hall, habitación 107</li>
+                            <li>Teléfono: (800) 263-0545 o (650) 508-3741</li>
+                            <li>Correo electrónico: finaid@ndnu.edu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal2 faq-modal"  role="dialog" id="regisoff-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">Oficina de Registro</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Situado en St. Mary's Hall, sala 110</li>
+                            <li>Teléfono: (650) 508-3521</li>
+                            <li>Correo electrónico: registrar@ndnu.edu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2 faq-modal"  role="dialog" id="pubsafe-es">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content2">
+                    <div class="modal-header2">
+                        <span type="button" class="close2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+                        <div class="modal-title2">Oficina de Seguridad Pública</div>
+                    </div>
+                    <div class="modal-body2 faq-modal">
+                        <ul>
+                            <li>Seguridad pública está disponible 24/7</li>
+                            <li>Emergencia: (policía, fuego, médico): 911</li>
+                            <li>Teléfonos celulares de Seguridad Pública: (650) 504-0656 y (650)740-1483</li>
+                            <li>Número principal de la universidad: (650) 508-3500</li>
+                            <li>Oficina de Seguridad Pública: (650) 508-3502</li>
+                            <li>Correo electrónico: security@ndnu.edu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Start of Footer -->
         <footer>
