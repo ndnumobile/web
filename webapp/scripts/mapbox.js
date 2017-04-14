@@ -1441,8 +1441,34 @@
         "line-width": 2
     }
     });
+        
+    map.addSource('buildings', {
+        type: 'vector',
+        url: 'mapbox://seprothx.cj1hjeu8o003n33pjr4dpjhj1-5g54h'
+    });
+    map.addLayer({
+        id: 'bNames',
+        type: 'symbol',
+        source: 'buildings',
+        layout: {
+            'text-field': '{Name}',
+            visibility: 'none'
+        },
+        'source-layer': 'buildingNames'
+    });
     });
     //end map layers for walking paths.
+
+
+    //Get building names on zoom
+    map.on('zoom', function(){
+       if(map.getZoom() >= 17.8){
+           map.setLayoutProperty('bNames','visibility', 'visible');
+        }
+       if(map.getZoom() < 17.8){
+           map.setLayoutProperty('bNames','visibility', 'none');
+       }
+    });
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
