@@ -868,7 +868,8 @@
             $("#wrapper").toggleClass("toggled",true);
             map.flyTo({
                 center: marker.geometry.coordinates,
-                speed: 0.5
+                speed: 0.5,
+                offset: [0,300]
             });
         });
 

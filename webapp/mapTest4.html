@@ -75,6 +75,7 @@
                     <ul class="nav navbar-nav">
                         <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenWelcomeModal">Welcome </a></li>
                         <li class="welcomePad"><a href="#" class="navbar-brand" id="reopenGeneralHistoryModal">General History </a></li>
+                        <li class="welcomePad"><a href="http://www.circavistavirtualtours.com/NDNU/Intro.html" target="_blank" class="navbar-brand" id="reopenGeneralHistoryModal">Virtual Tour </a></li>
                         <li class="sidebar-form">
                         </li>
                         <li class="dropdown">
@@ -85,9 +86,10 @@
                                 <li><a id="location2"  onclick="pressBtnBookStore()">Bookstore</a></li>
                                 <li><a id="location3"  onclick="pressBtnBusiness()">Business Office</a></li>
                                 <li><a id="location4"  onclick="pressBtnCafeteria()">Cafeteria</a></li>
+                                <li><a id="location5a" onclick="pressBtnCampanile()">Campanile</a></li>
                                 <li><a id="location5"  onclick="pressBtnCampus()">Campus Center</a></li>
                                 <li><a id="location6"  onclick="pressBtnCareer()">Career Services</a></li>
-                                <li><a id="location7"  onclick="pressBtnSpirituality()">Center for Spirituality</a></li>
+
                                 <li><a id="location8"  onclick="pressBtnCounseling()">Counseling and Health Services</a></li>
                                 <li><a id="location9"  onclick="pressBtnCunningham()">Cunningham Chapel Annex</a></li>
                                 <li><a id="location10" onclick="pressBtnCuvilly()">Cuvilly Hall</a></li>
@@ -101,9 +103,13 @@
                                 <li><a id="location19" onclick="pressKoret()">Koret Athletic Field</a></li>
                                 <li><a id="location20" onclick="pressBtnLibraryLawn()">Library Lawn</a></li>
                                 <li><a id="location21" onclick="pressBtnMadisonArt()">Madison Art Center</a></li>
+                    			<li><a id="location21b" onclick="pressBtnMailingCenter()">Mailing Center</a></li>
                                 <li><a id="location22" onclick="pressNewHall()">New Hall</a></li>
                                 <li><a id="location23" onclick="pressOfficeDiversity()">Office of Diversity</a></li>
+                                <li><a id="location23b" onclick="pressBtnSpirituality()">Office of Spirituality</a></li>
+
                                 <li><a id="location24" onclick="pressPublicSafety()">Public Safety</a></li>
+                                <li><a id="location25a" onclick="pressBtnRalstonAnnex()">Ralston Hall Annex</a></li>
                                 <li><a id="location25" onclick="pressBtnRalston()">Ralston Hall Mansion</a></li>
                                 <li><a id="location26" onclick="pressBtnRegistrar()">Registrar</a></li>
                                 <li><a id="location12" onclick="pressBtnDorothy()">Sister Dorothy Stang Center</a></li>
@@ -113,12 +119,12 @@
                                 <li><a id="location30" onclick="pressBtnTabard()">Tabard Inn</a></li>
                                 <li><a id="location31" onclick="pressBtnTaube()">Taube Center</a></li>
                                 <li><a id="location32" onclick="pressBtnTheApartments()">The Apartments</a></li>
-                                <li><a id="location33" onclick="pressBtnLibrary()">The Carl and Celia Berta Gellert Library</a></li>
+                                <li><a id="location33" onclick="pressBtnLibrary()">The Carl Gellert and Celia Berta Gellert Library</a></li>
                                 <li><a id="location34" onclick="pressBtnQuad()">The Quad</a></li>
-                                <li><a id="location35" onclick="pressBtnToso()">Toso Residence (Compiegne)</a></li>
+                                <li><a id="location35" onclick="pressBtnToso()">Toso Buildings (Compiegne, Courtrai, Namur)</a></li>
                                 <li><a id="location36" onclick="pressBtnGym()">Walter Gleason Gym</a></li>
-                                <li><a id="location37" onclick="pressBtnWeigand()">Weigand Gallery</a></li>
-                                <li><a id="location38" onclick="pressBtnWriting()">Writing Center</a></li>
+                                <li><a id="location37" onclick="pressBtnWiegand()">Wiegand Gallery</a></li>
+
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -350,6 +356,13 @@
                     <h4>This is an interactive map.</h4>
                     <p><u>Helpful Hints</u></p>
                     <p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>
+                    <p2>
+                        <span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br>
+                        <span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map.<br>
+                        <span class="glyphicon glyphicon-check"></span>  In the lower right corner, you can center the map, zoom in and out, and reset the map to North.<br>
+                        <span class="glyphicon glyphicon-check"></span>  Hold the 'Control' key and drag the mouse to enter 3D mode. Click the 'Center Map' button to exit.<br>
+                        <span class="glyphicon glyphicon-check"></span> As you zoom in, the names of the buildings will automatically show on the map.<br>
+                    </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
@@ -366,6 +379,14 @@
                     <h4>Este es un mapa interactivo.</h4>
                     <p><u>Consejos útiles</u></p>
                     <p2><span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br> <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa. </p2>
+                    <p2>
+                        <span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br>
+                        <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br>
+                        <span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa.<br>
+                        <span class="glyphicon glyphicon-check"></span>  En la esquina inferior derecha, puede centrar el mapa, acercar y alejar, y restablecer el mapa a Norte.<br>
+                        <span class="glyphicon glyphicon-check"></span>  Mantenga pulsada la tecla 'Control' y arrastre el ratón para entrar en el modo 3D. Haga clic en el botón 'Center Map' para salir.<br>
+                        <span class="glyphicon glyphicon-check"></span> Al acercar, los nombres de los edificios se mostrarán automáticamente en el mapa.<br>
+                    </p2>
                 </div>
                 <div class="modal-footer2 autoModal">
                 </div>
