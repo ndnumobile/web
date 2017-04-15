@@ -2002,7 +2002,7 @@
 
     function pressBtnToso() {
         var e= document.getElementById('location35').innerHTML;
-        if (e == "Toso Residence (Compiegne)")
+        if (e == "Toso Buildings (Compiegne, Courtrai, Namur)")
         {
           map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
           var popup = new mapboxgl.Popup({closeOnClick: true})
