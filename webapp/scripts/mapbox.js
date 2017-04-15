@@ -1497,7 +1497,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
+            .setHTML('<h3>'+ poi.poi[3].title+'</h3><p>' + poi.poi[3].details+'</p>'+ '<img src="'+poi.poi[3].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[3].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[3].video + '"type="video/Ogg"></video>')
             .addTo(map);
 
         }
