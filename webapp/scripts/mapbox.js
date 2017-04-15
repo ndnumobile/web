@@ -1573,6 +1573,20 @@
 
         }
     }
+    
+    function pressBtnCampanile() {
+    	var u = document.getElementById('location5a').innerHTML;
+    
+    	if(u == "Campanile")
+    	{
+    	  map.flyTo({center: [-122.2846963,37.5181250],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.2846963,37.5181250])
+          .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[37].properties.image + '"></iframe><p>' + geojson.features[37].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[37].properties.title + '\',\'' +   geojson.features[37].properties.history + '\',\'' + geojson.features[37].properties.video + '\',\'' + geojson.features[37].properties.image  + '\',\'' + geojson.features[37].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+    	}
+    }
 
     function pressBtnCareer() {
         var z = document.getElementById('location6').innerHTML;
@@ -1585,20 +1599,6 @@
           .setHTML('<h3>Career Services</h3><p>The Career Services Center is located in the Campus Center</p>')
           .addTo(map);
 
-        }
-    }
-
-    function pressBtnSpirituality() {
-        var u = document.getElementById('location7').innerHTML;
-
-        if(u == "Center for Spirituality")
-        {
-          map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
-		  var popup = new mapboxgl.Popup({closeOnClick: true})
-          .setLngLat([-122.285286,37.518197])
-          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
-          .addTo(map);
         }
     }
 
@@ -1816,6 +1816,20 @@
 
         }
     }
+    
+    function pressBtnSpirituality() {
+        var u = document.getElementById('location23b').innerHTML;
+
+        if(u == "Office of Spirituality")
+        {
+          map.flyTo({center: [-122.285286,37.518197],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.285286,37.518197])
+          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+        }
+    }
 
 
     function pressPublicSafety() {
@@ -1828,6 +1842,19 @@
             .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
             .addTo(map);
         }
+    }
+    
+    function pressBtnRalstonAnnex() {
+      var u = document.getElementById('location25a').innerHTML;
+      if(u == "Ralston Hall Annex")
+      {
+      	  map.flyTo({center: [-122.286468,37.517468],speed: 0.3});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.286468,37.517468])
+          .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[39].properties.image + '"></iframe><p>' + geojson.features[39].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[39].properties.title + '\',\'' +   geojson.features[39].properties.history + '\',\'' + geojson.features[39].properties.video + '\',\'' + geojson.features[39].properties.image  + '\',\'' + geojson.features[39].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+      }
     }
 
     function pressBtnRalston() {
@@ -1935,7 +1962,7 @@
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
-        if(d == "The Carl and Celia Berta Gellert Library")
+        if(d == "The Carl Gellert and Celia Berta Gellert Library")
         {
             map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1986,9 +2013,9 @@
         }
     }
 
-    function pressBtnWeigand() {
+    function pressBtnWiegand() {
         var u = document.getElementById('location37').innerHTML;
-        if(u == "Weigand Gallery")
+        if(u == "Wiegand Gallery")
         {
           map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1996,19 +2023,6 @@
           .setHTML('<h3>' + geojson.features[18].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[18].properties.image + '"></iframe><p>' + geojson.features[18].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[18].properties.title + '\',\'' +   geojson.features[18].properties.history + '\',\'' + geojson.features[18].properties.video + '\',\'' + geojson.features[18].properties.image  + '\',\'' + geojson.features[18].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
-        }
-    }
-
-    function pressBtnWriting() {
-        var u = document.getElementById('location38').innerHTML;
-        if(u == "Writing Center")
-        {
-            map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-            var popup = new mapboxgl.Popup({closeOnClick: true})
-            .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
-            .addTo(map);
-
         }
     }
 
