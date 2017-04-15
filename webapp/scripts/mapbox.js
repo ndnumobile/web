@@ -1890,7 +1890,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Registrar</h3><p>The Registrar is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[12].title+'</h3><p>' + poi.poi[12].details+'</p>'+ '<img src="'+poi.poi[12].image+'">')
             .addTo(map);
 
         }
