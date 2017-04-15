@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Mary's Hall",
-                    "description": "St. Mary’s Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
+                    "title": "St. Marys Hall",
+                    "description": "St. Marys Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "St. Mary’s Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Marys Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -937,7 +937,7 @@
         // Adds popups to map. Content of each popup is added with the below .setHTML call.
         var popup = new mapboxgl.Popup({offset: 15, anchor:'bottom'})
         .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
+                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\',\'' + marker.properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
 
         // create a DOM element for the marker
         var el = document.createElement('div');
@@ -1573,10 +1573,10 @@
 
         }
     }
-    
+
     function pressBtnCampanile() {
     	var u = document.getElementById('location5a').innerHTML;
-    
+
     	if(u == "Campanile")
     	{
     	  map.flyTo({center: [-122.2846963,37.5181250],speed: 0.3,offset: [0,400]});
@@ -1788,7 +1788,7 @@
           .addTo(map);
         }
     }
-    
+
     function pressBtnMailingCenter() {
     	var d = document.getElementById('location21b').innerHTML;
     	if (d == "Mailing Center")
@@ -1829,7 +1829,7 @@
 
         }
     }
-    
+
     function pressBtnSpirituality() {
         var u = document.getElementById('location23b').innerHTML;
 
@@ -1856,7 +1856,7 @@
             .addTo(map);
         }
     }
-    
+
     function pressBtnRalstonAnnex() {
       var u = document.getElementById('location25a').innerHTML;
       if(u == "Ralston Hall Annex")

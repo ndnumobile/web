@@ -20,6 +20,7 @@
         <script e.src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" async defer></script>
         <script src="./scripts/session.js"></script>
         <script src="./scripts/translate.js"></script>
+
         <!-- mapbox css overrides -->
         <style>
             .mapboxgl-popup-content{
@@ -64,7 +65,7 @@
 
         <!-- center map button. -->
         <div>
-            <button id="ctrMapBtn" onclick="mapCtrBtn()" data-toggle="tooltip" title="Center Map"> </button>
+            <button id="ctrMapBtn" onclick="mapCtrBtn()" onmouseover="mapCtrHover()" data-toggle="tooltip" title="Center Map"> </button>
         </div>
 
         <div id="wrapper" class="toggled">
@@ -80,15 +81,15 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Campus Locations <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a id="location0"  onclick="pressBtnAcademic()" data-toggle="tooltip" title="Academic Success Center">Academic Success Center</a></li>
+                                <li><a id="location0"  onclick="pressBtnAcademic()">Academic Success Center</a></li>
                                 <li><a id="location1"  onclick="pressBtnAdmin()">Administration</a></li>
                                 <li><a id="location2"  onclick="pressBtnBookStore()">Bookstore</a></li>
                                 <li><a id="location3"  onclick="pressBtnBusiness()">Business Office</a></li>
                                 <li><a id="location4"  onclick="pressBtnCafeteria()">Cafeteria</a></li>
                                 <li><a id="location5a" onclick="pressBtnCampanile()">Campanile</a></li>
                                 <li><a id="location5"  onclick="pressBtnCampus()">Campus Center</a></li>
-                                <li><a id="location6"  onclick="pressBtnCareer()">Career Services</a></li> 
-                        
+                                <li><a id="location6"  onclick="pressBtnCareer()">Career Services</a></li>
+
                                 <li><a id="location8"  onclick="pressBtnCounseling()">Counseling and Health Services</a></li>
                                 <li><a id="location9"  onclick="pressBtnCunningham()">Cunningham Chapel Annex</a></li>
                                 <li><a id="location10" onclick="pressBtnCuvilly()">Cuvilly Hall</a></li>
@@ -106,7 +107,7 @@
                                 <li><a id="location22" onclick="pressNewHall()">New Hall</a></li>
                                 <li><a id="location23" onclick="pressOfficeDiversity()">Office of Diversity</a></li>
                                 <li><a id="location23b" onclick="pressBtnSpirituality()">Office of Spirituality</a></li>
-                                
+
                                 <li><a id="location24" onclick="pressPublicSafety()">Public Safety</a></li>
                                 <li><a id="location25a" onclick="pressBtnRalstonAnnex()">Ralston Hall Annex</a></li>
                                 <li><a id="location25" onclick="pressBtnRalston()">Ralston Hall Mansion</a></li>
@@ -123,7 +124,7 @@
                                 <li><a id="location35" onclick="pressBtnToso()">Toso Buildings (Compiegne, Courtrai, Namur)</a></li>
                                 <li><a id="location36" onclick="pressBtnGym()">Walter Gleason Gym</a></li>
                                 <li><a id="location37" onclick="pressBtnWiegand()">Wiegand Gallery</a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -354,6 +355,7 @@
                 <div id="modalPrime" class="modal-body2 autoModal">
                     <h4>This is an interactive map.</h4>
                     <p><u>Helpful Hints</u></p>
+                    <p2><span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br><span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map. </p2>
                     <p2>
                         <span class="glyphicon glyphicon-check"></span>  Use the search bar above to search for a location, or click on map locations for a popup description.<br> <span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ's.<br>
                         <span class="glyphicon glyphicon-check"></span> To close a popup window: click the close button in the top right, or click anywhere on the map.<br>
@@ -376,6 +378,7 @@
                 <div id="modalPrime" class="modal-body2 autoModal">
                     <h4>Este es un mapa interactivo.</h4>
                     <p><u>Consejos útiles</u></p>
+                    <p2><span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br> <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa. </p2>
                     <p2>
                         <span class="glyphicon glyphicon-check"></span>  Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br>
                         <span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br>
@@ -731,9 +734,12 @@
 
             var script = document.createElement('script');
             script.type='text/javascript';
+            var poiScript = document.createElement('script');
+            poiScript.type='text/javascript';
 
             if (siteLang == "es") {
                 script.src = './scripts/mapbox-es.js';
+                poiScript.src = './scripts/points-of-interest-es.js';
                 document.documentElement.lang = 'es';
                 document.getElementById('select-lang').value = 'es';
                 document.title = "NDNU Campus Guía";
@@ -743,6 +749,7 @@
                 document.getElementById("modalContent").style.display = "none";
             } else {
                 script.src = './scripts/mapbox.js';
+                poiScript.src = './scripts/points-of-interest.js';
                 document.documentElement.lang = 'en';
                 document.getElementById('select-lang').value = 'en';
                 document.getElementById("slidebar-white").style.display = "block";
@@ -752,6 +759,7 @@
             }
 
             document.head.appendChild(script);
+            document.head.appendChild(poiScript);
         </script>
         <script>
             var lang = document.documentElement.lang;
@@ -762,7 +770,16 @@
         </script>
         <script async src="https://static.addtoany.com/menu/page.js"></script>
     </body>
+    <script>
 
+
+        if (document.documentElement.lang == "es") {
+
+        } else {
+            poiScript.src = './scripts/points-of-interest.js';
+        }
+    </script>
+    <!--<script src="./scripts/points-of-interest.js"></script>-->
     <script src="./scripts/modalFunctions.js"></script>
     <script src="./scripts/locationSearch.js"></script>
 

@@ -23,6 +23,9 @@ footer{
     top:30%;
     z-index:1;
 }
+.linky{
+    color:white;
+}
 .select-lang{
     color:black;
 }
