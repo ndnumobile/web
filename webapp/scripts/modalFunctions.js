@@ -154,12 +154,41 @@ openGeneralHistoryModal_es.onclick = function(){
 }
 
 // When the user clicks on the more info button, displays a modal
-function popUpModal(title,history,vid,image,description,audio){
+function popUpModal(title,history,vid,image,description,audio,id){
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
     closeSummaryModal[0].style.display = "none";
     modal2.style.display = "block";
     document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
-    document.getElementById("modalContent").innerHTML = '<button onClick="moreInfoClose()" data-dismiss="modalContent" class="mapboxgl-popup-close-button">x</button><h3>' + title + '</h3><iframe class="vid-frame" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + vid + '"></iframe><p>' + history + '</p><audio controls id="audio-panel"><source src="'+ audio +'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+
+    var detailModal = "<button onClick=\"moreInfoClose()\" data-dismiss=\"modalContent\" class=\"mapboxgl-popup-close-button\">x</button><h3>" + title + "</h3><div id=\"vid-section\" style=\"display:none;\"><iframe class=\"vid-frame\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" scrolling=\"auto\"  src=\"" + vid + "\"></iframe></div><p>" + history + "</p><div id=\"audio-section\" style=\"display:none;\"><audio controls id=\"audio-panel\"><source src=\""+ audio + "\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio></div><div id=\"link-section\" style=\"display:none;\"></div>";
+    document.getElementById("modalContent").innerHTML = detailModal;
+    if (audio != '') {
+        document.getElementById("audio-section").style.display = "block";
+    }
+    if (vid != '') {
+        document.getElementById("vid-section").style.display = "block";
+    }
+
+    var linkHeader;
+    if (document.documentElement.lang == 'es'){
+        linkHeader = "Puntos de interés";
+    } else {
+        linkHeader = "Points of Interest";
+    }
+    var linkList = "<h5 id=\"link-h\">" + linkHeader + "</h4><ul id=\"linky\">";
+    var i;
+    for (i in poi.poi) {
+        if (poi.poi[i].parentId == id) {
+            linkList += "<li><a class=\"linky\" href=\"#\" onClick=\"popUpModal('" + poi.poi[i].title + "','" + poi.poi[i].details + "','" + poi.poi[i].video
+                        + "','" + poi.poi[i].image + "','" + '' + "','" + poi.poi[i].audio + "','" + poi.poi[i].id + "')\">"
+                        + poi.poi[i].title + "</a></li>";
+        }
+    }
+    linkList += "</ul>";
+    document.getElementById("link-section").innerHTML = linkList;
+    if (document.getElementById('link-section').getElementsByTagName('li').length >= 1){
+        document.getElementById("link-section").style.display = "block";
+    }
 }
 
 function moreInfoClose(){

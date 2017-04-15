@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Mary's Hall",
-                    "description": "St. Mary’s Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
+                    "title": "St. Marys Hall",
+                    "description": "St. Marys Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "St. Mary’s Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Marys Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -864,7 +864,7 @@
                     ],
                     "type": "Point"
                 }
-            },
+            }
         ]
     };
 
@@ -918,7 +918,7 @@
 
         var popup = new mapboxgl.Popup({offset: 15, anchor:'bottom'})
         .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
+                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\',\'' + marker.properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
 
         // create a DOM element for the marker
         var el = document.createElement('div');

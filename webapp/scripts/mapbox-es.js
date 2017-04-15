@@ -1365,12 +1365,6 @@
     });
     //end map layers for walking paths.
 
-    function popUpModal(title,history,vid,image,description,audio){
-        modal2.style.display = "block";
-        document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
-        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + vid + '"></iframe><p>' + history + '</p>';
-    }
-
     function pressBtnAcademic() {
         var y = document.getElementById('location0es').innerHTML;
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
