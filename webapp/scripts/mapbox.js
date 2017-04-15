@@ -1788,6 +1788,19 @@
           .addTo(map);
         }
     }
+    
+    function pressBtnMailingCenter() {
+    	var d = document.getElementById('location21b').innerHTML;
+    	if (d == "Mailing Center")
+    	{
+    	  map.flyTo({center: [-122.2878337,37.517000],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.2878337,37.517000])
+          .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[36].properties.image + '"></iframe><p>' + geojson.features[36].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[36].properties.title + '\',\'' +   geojson.features[36].properties.history + '\',\'' + geojson.features[36].properties.video + '\',\'' + geojson.features[36].properties.image  + '\',\'' + geojson.features[36].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+    	}
+    }
 
     function pressNewHall() {
         var n = document.getElementById('location22').innerHTML;
