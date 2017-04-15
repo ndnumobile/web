@@ -1937,7 +1937,7 @@
         var d = document.getElementById('location33').innerHTML;
         if(d == "The Carl and Celia Berta Gellert Library")
         {
-            map.flyTo({center: [-122.284719, 37.51755],speed: 0.3});
+            map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284719, 37.51755])
             .setHTML('<h3>' + geojson.features[1].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[1].properties.image + '"></iframe><p>' + geojson.features[1].properties.description + '</p><br>'
