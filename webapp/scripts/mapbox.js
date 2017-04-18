@@ -1472,9 +1472,8 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
+            .setHTML('<h3>'+ poi.poi[2].title+'</h3><p>' + poi.poi[2].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1663,7 +1662,8 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
+            .setHTML('<h3>' + geojson.features[25].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[25].properties.image + '"></iframe><p>' + geojson.features[25].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[25].properties.title + '\',\'' +   geojson.features[25].properties.history + '\',\'' + geojson.features[25].properties.video + '\',\'' + geojson.features[25].properties.image  + '\',\'' + geojson.features[25].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
         }
     }
@@ -1927,7 +1927,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+            .setHTML('<h3>'+ poi.poi[13].title+'</h3><p>' + poi.poi[13].details+'</p>')
             .addTo(map);
 
         }
@@ -1940,7 +1940,8 @@
             map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
             var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286909,37.518083])
-            .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
+            .setHTML('<h3>' + geojson.features[26].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[26].properties.image + '"></iframe><p>' + geojson.features[26].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[26].properties.title + '\',\'' +   geojson.features[26].properties.history + '\',\'' + geojson.features[26].properties.video + '\',\'' + geojson.features[26].properties.image  + '\',\'' + geojson.features[26].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
         }
