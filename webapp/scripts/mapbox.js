@@ -1497,7 +1497,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>'+ poi.poi[3].title+'</h3><p>' + poi.poi[3].details+'</p>'+ '<img src="'+poi.poi[3].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[3].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[3].video + '"type="video/Ogg"></video>')
+            .setHTML('<h3>'+ poi.poi[3].title+'</h3><p>' + poi.poi[3].details+'</p>'+ '<img src="'+poi.poi[3].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[3].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[3].video + '"type="video/FLV"></video>')
             .addTo(map);
 
         }
@@ -1596,7 +1596,7 @@
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
 		  var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>Career Services</h3><p>The Career Services Center is located in the Campus Center</p>')
+          .setHTML('<h3>'+ poi.poi[5].title+'</h3><p>' + poi.poi[5].details+'</p>')
           .addTo(map);
 
         }
@@ -1610,7 +1610,7 @@
             map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.285694,37.517938])
-            .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
+            .setHTML('<h3>'+ poi.poi[6].title+'</h3><p>' + poi.poi[6].details+'</p>')
             .addTo(map);
 
         }
@@ -1651,9 +1651,8 @@
             map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849,37.51675])
-            .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
+            .setHTML('<h3>'+ poi.poi[7].title+'</h3><p>' + poi.poi[7].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1666,7 +1665,6 @@
             .setLngLat([-122.284900,37.518090])
             .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
             .addTo(map);
-
         }
     }
 
@@ -1677,7 +1675,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Financial Aid</h3><p>Financial Aid is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[1].title+'</h3><p>' + poi.poi[1].details+'</p>')
             .addTo(map);
 
         }
@@ -1716,7 +1714,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+            .setHTML('<h3>'+ poi.poi[8].title+'</h3><p>' + poi.poi[8].details+'</p>')
             .addTo(map);
 
         }
@@ -1729,7 +1727,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+            .setHTML('<h3>'+ poi.poi[9].title+'</h3><p>' + poi.poi[9].details+'</p>')
             .addTo(map);
 
         }
@@ -1824,7 +1822,7 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Office of Diversity</h3><p>Is committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
+            .setHTML('<h3>'+ poi.poi[10].title+'</h3><p>' + poi.poi[10].details+'</p>')
             .addTo(map);
 
         }
@@ -1852,7 +1850,7 @@
             map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+            .setHTML('<h3>'+ poi.poi[11].title+'</h3><p>' + poi.poi[11].details+'</p>')
             .addTo(map);
         }
     }
