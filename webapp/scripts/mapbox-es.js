@@ -855,7 +855,7 @@
         // Adds popups to map. Content of each popup is added with the below .setHTML call.
         var popup = new mapboxgl.Popup({offset: 15, anchor:'bottom'})
         .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">Más</a>');
+                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\',\'' + marker.properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">Más</a>');
 
         // create a DOM element for the marker
         var el = document.createElement('div');
@@ -1365,12 +1365,6 @@
     });
     });
     //end map layers for walking paths.
-
-    function popUpModal(title,history,vid,image,description,audio){
-        modal2.style.display = "block";
-        document.getElementById("modalContent").className = "modModal modal-content2 autoModal"
-        document.getElementById("modalContent").innerHTML = '<h3>' + title + '</h3><iframe class="" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + vid + '"></iframe><p>' + history + '</p>';
-    }
 
     function pressBtnAcademic() {
         var y = document.getElementById('location0es').innerHTML;

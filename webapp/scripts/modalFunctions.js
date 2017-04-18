@@ -32,11 +32,6 @@ function welcomeModal() {
     }
 }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modalopen.style.display = "none";
-// }
-
 // closes the welcome modal on reset
 function ribbonClose(){
     modalopen.style.display = "none";
@@ -67,7 +62,6 @@ window.onclick = function(event) {
 // When user clicks on welcome button in navigation menu, the welcome modal is displayed
 openWelcomeModal.onclick = function(){
     modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
-
                 +'<div class="modal-header2 autoModal">'
                     +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
                     +'<div class="modal-title2">Welcome to the NDNU Campus Tour!</div>'
@@ -90,7 +84,6 @@ openWelcomeModal.onclick = function(){
 
 openGeneralHistoryModal.onclick = function(){
     modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
-
                 +'<div class="modal-header2 autoModal">'
                     +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
                     +'<div class="modal-title2">Notre Dame de Namur University</div>'
@@ -99,7 +92,7 @@ openGeneralHistoryModal.onclick = function(){
 
                 +'<div id="modalPrime" class="modal-body2 autoModal">'
                     +'<h4>General History</h4>'
-                    +'<p2><span class="glyphicon glyphicon-check"></span>  In 1851, the Sisters of Notre Dame de Namur came to the San Francisco Bay Area from their mission schools in Oregon and established College of Notre Dame in San Jose, CA<br> <span class="glyphicon glyphicon-check"></span> Founded more than 160 years ago, we are the third oldest college in California. NDNU is a fully accredited, private, Catholic, co-educational master’s university, located on the San Francisco Peninsula in Silicon Valley. With 2,000 students from 28 states and 23 different countries, NDNU broadens the perspective and outlook of its students by exposing them to peers with very different backgrounds, cultures and world views.<br><span class="glyphicon glyphicon-check"></span> College of Notre Dame was chartered as the first college in the state of California authorized to grant the baccalaureate degree to women. </p2>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span>  In 1851, the Sisters of Notre Dame de Namur came to the San Francisco Bay Area from their mission schools in Oregon and established College of Notre Dame in San Jose, California<br> <span class="glyphicon glyphicon-check"></span>The College of Notre Dame was chartered as the first college in the state of California authorized to grant the baccalaureate degree to women. Now called Notre Dame de Namur University, the NDNU is a Catholic, not-for-profit, coeducational institution serving approximately 1,700 traditional-aged and adult students from diverse backgrounds. NDNU maintains a strong commitment to access for diverse populations, academic excellence, social justice and community engagement. <br><span class="glyphicon glyphicon-check"></span> The university is fully accredited and offers a rich variety of undergraduate, graduate and credential programs. The historic, 50-acre campus is located on the San Francisco Peninsula in Silicon Valley.</p2>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
@@ -154,12 +147,50 @@ openGeneralHistoryModal_es.onclick = function(){
 }
 
 // When the user clicks on the more info button, displays a modal
-function popUpModal(title,history,vid,image,description,audio){
+function popUpModal(title,history,vid,image,description,audio,id){
+    var lang = document.documentElement.lang;
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
     closeSummaryModal[0].style.display = "none";
     modal2.style.display = "block";
-    document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
-    document.getElementById("modalContent").innerHTML = '<button onClick="moreInfoClose()" data-dismiss="modalContent" class="mapboxgl-popup-close-button">x</button><h3>' + title + '</h3><iframe class="vid-frame" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto"  src="' + vid + '"></iframe><p>' + history + '</p><audio controls id="audio-panel"><source src="'+ audio +'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+    if (lang == 'es') {
+        document.getElementById("modalContent-es").className = "modModal modal-content2 autoModal";
+    } else {
+        document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
+    }
+
+    var detailModal = "<button onClick=\"moreInfoClose()\" data-dismiss=\"modalContent\" class=\"mapboxgl-popup-close-button\">x</button><h3>" + title + "</h3><div id=\"vid-section\" style=\"display:none;\"><iframe class=\"vid-frame\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" scrolling=\"auto\"  src=\"" + vid + "\"></iframe></div><p>" + history + "</p><div id=\"audio-section\" style=\"display:none;\"><audio controls id=\"audio-panel\"><source src=\""+ audio + "\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio></div><div id=\"link-section\" style=\"display:none;\"></div>";
+    if (lang == 'es') {
+        document.getElementById("modalContent-es").innerHTML = detailModal;
+    } else {
+        document.getElementById("modalContent").innerHTML = detailModal;
+    }
+    if (audio != '') {
+        document.getElementById("audio-section").style.display = "block";
+    }
+    if (vid != '') {
+        document.getElementById("vid-section").style.display = "block";
+    }
+
+    var linkHeader;
+    if (document.documentElement.lang == 'es'){
+        linkHeader = "Puntos de interés";
+    } else {
+        linkHeader = "Points of Interest";
+    }
+    var linkList = "<h5 id=\"link-h\">" + linkHeader + "</h4><ul id=\"linky\">";
+    var i;
+    for (i in poi.poi) {
+        if (poi.poi[i].parentId == id) {
+            linkList += "<li><a class=\"linky\" href=\"#\" onClick=\"popUpModal('" + poi.poi[i].title + "','" + poi.poi[i].details + "','" + poi.poi[i].video
+                        + "','" + poi.poi[i].image + "','" + '' + "','" + poi.poi[i].audio + "','" + poi.poi[i].id + "')\">"
+                        + poi.poi[i].title + "</a></li>";
+        }
+    }
+    linkList += "</ul>";
+    document.getElementById("link-section").innerHTML = linkList;
+    if (document.getElementById('link-section').getElementsByTagName('li').length >= 1){
+        document.getElementById("link-section").style.display = "block";
+    }
 }
 
 function moreInfoClose(){

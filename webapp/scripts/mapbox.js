@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Mary's Hall",
-                    "description": "St. Mary’s Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
+                    "title": "St. Marys Hall",
+                    "description": "St. Marys Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "St. Mary’s Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Marys Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -803,11 +803,11 @@
                     "locType": "building",
                     "title": "Mailing Center",
                     "description": "The center for all mailing needs",
-                    "image": "./img/placeholder.gif",
+                    "image": "./img/mailingCenterAdjusted.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/mail1.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
@@ -830,7 +830,7 @@
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/campanile.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
@@ -878,7 +878,7 @@
                     "audio": "",
                     "history": "",
                     "video": "",
-                    "icon": "./customIcons/bookstore.svg",
+                    "icon": "./customIcons/RalAnnex.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
@@ -928,8 +928,6 @@
         $("#wrapper").toggleClass("toggled",true);
     }
 
-
-
     // add markers to map
     geojson.features.forEach(function(marker) {
 
@@ -937,7 +935,7 @@
         // Adds popups to map. Content of each popup is added with the below .setHTML call.
         var popup = new mapboxgl.Popup({offset: 15, anchor:'bottom'})
         .setHTML('<h3>' + marker.properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + marker.properties.image + '"></img><p>' + marker.properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
+                 + '<a href="#" onClick="popUpModal(\'' + marker.properties.title + '\',\'' +   marker.properties.history + '\',\'' + marker.properties.video + '\',\'' + marker.properties.image  + '\',\'' + marker.properties.description + '\',\'' + marker.properties.audio + '\',\'' + marker.properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>');
 
         // create a DOM element for the marker
         var el = document.createElement('div');
@@ -1472,9 +1470,8 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
+            .setHTML('<h3>'+ poi.poi[2].title+'</h3><p>' + poi.poi[2].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1504,7 +1501,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
+            .setHTML('<h3>'+ poi.poi[3].title+'</h3><p>' + poi.poi[3].details+'</p>'+ '<img src="'+poi.poi[3].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[3].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[3].video + '"type="video/FLV"></video>')
             .addTo(map);
 
         }
@@ -1571,7 +1568,7 @@
           });
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2849, 37.51675])
-          .setHTML('<h3>Business Office</h3><p>The Business Office is located in the administration wing of St. Mary Hall.</p>')
+          .setHTML('<h3>'+ poi.poi[0].title+'</h3><p>' + poi.poi[0].details+'</p>'+ '<img src="'+poi.poi[0].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[0].audio+'"type="audio/mp3"></audio>' + '<iframe width="320" height="240" src="' + poi.poi[0].video + '"></iframe>')
           .addTo(map);
 
         }
@@ -1649,6 +1646,7 @@
         }
     }
 
+
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleCampusCtr = document.getElementById('location5');
     var popupCampus = new mapboxgl.Popup({
@@ -1665,6 +1663,20 @@
     eleCampusCtr.onmouseout = function(){
         popupCampus.remove();
     }
+    function pressBtnCampanile() {
+    	var u = document.getElementById('location5a').innerHTML;
+
+    	if(u == "Campanile")
+    	{
+    	  map.flyTo({center: [-122.2846963,37.5181250],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.2846963,37.5181250])
+          .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[37].properties.image + '"></iframe><p>' + geojson.features[37].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[37].properties.title + '\',\'' +   geojson.features[37].properties.history + '\',\'' + geojson.features[37].properties.video + '\',\'' + geojson.features[37].properties.image  + '\',\'' + geojson.features[37].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+    	}
+
+    }
 
     function pressBtnCareer() {
         var z = document.getElementById('location6').innerHTML;
@@ -1674,7 +1686,7 @@
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
 		  var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>Career Services</h3><p>The Career Services Center is located in the Campus Center</p>')
+          .setHTML('<h3>'+ poi.poi[5].title+'</h3><p>' + poi.poi[5].details+'</p>')
           .addTo(map);
 
         }
@@ -1736,7 +1748,7 @@
             map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.285694,37.517938])
-            .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
+            .setHTML('<h3>'+ poi.poi[6].title+'</h3><p>' + poi.poi[6].details+'</p>')
             .addTo(map);
 
         }
@@ -1828,9 +1840,8 @@
             map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849,37.51675])
-            .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
+            .setHTML('<h3>'+ poi.poi[7].title+'</h3><p>' + poi.poi[7].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1858,9 +1869,9 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
+            .setHTML('<h3>' + geojson.features[25].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[25].properties.image + '"></iframe><p>' + geojson.features[25].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[25].properties.title + '\',\'' +   geojson.features[25].properties.history + '\',\'' + geojson.features[25].properties.video + '\',\'' + geojson.features[25].properties.image  + '\',\'' + geojson.features[25].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
-
         }
     }
 
@@ -1888,7 +1899,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Financial Aid</h3><p>Financial Aid is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[1].title+'</h3><p>' + poi.poi[1].details+'</p>')
             .addTo(map);
 
         }
@@ -1978,7 +1989,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+            .setHTML('<h3>'+ poi.poi[8].title+'</h3><p>' + poi.poi[8].details+'</p>')
             .addTo(map);
 
         }
@@ -2008,7 +2019,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+            .setHTML('<h3>'+ poi.poi[9].title+'</h3><p>' + poi.poi[9].details+'</p>')
             .addTo(map);
 
         }
@@ -2136,6 +2147,7 @@
         }
     }
 
+
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleMadArt = document.getElementById('location21');
     var popupMadArt = new mapboxgl.Popup({
@@ -2151,6 +2163,20 @@
     }
     eleMadArt.onmouseout = function(){
         popupMadArt.remove();
+    }
+    
+    function pressBtnMailingCenter() {
+    	var d = document.getElementById('location21b').innerHTML;
+    	if (d == "Mailing Center")
+    	{
+    	  map.flyTo({center: [-122.2878337,37.517000],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.2878337,37.517000])
+          .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[36].properties.image + '"></iframe><p>' + geojson.features[36].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[36].properties.title + '\',\'' +   geojson.features[36].properties.history + '\',\'' + geojson.features[36].properties.video + '\',\'' + geojson.features[36].properties.image  + '\',\'' + geojson.features[36].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+    	}
+
     }
 
     function pressNewHall() {
@@ -2192,11 +2218,12 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Office of Diversity</h3><p>Is committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
+            .setHTML('<h3>'+ poi.poi[10].title+'</h3><p>' + poi.poi[10].details+'</p>')
             .addTo(map);
 
         }
     }
+
 
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleDiverse = document.getElementById('location23');
@@ -2214,6 +2241,21 @@
     eleDiverse.onmouseout = function(){
         popupDiverse.remove();
     }
+    
+    function pressBtnSpirituality() {
+        var u = document.getElementById('location23b').innerHTML;
+
+        if(u == "Office of Spirituality")
+        {
+          map.flyTo({center: [-122.285286,37.518197],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.285286,37.518197])
+          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+        }
+
+    }
 
 
     function pressPublicSafety() {
@@ -2223,10 +2265,11 @@
             map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+            .setHTML('<h3>'+ poi.poi[11].title+'</h3><p>' + poi.poi[11].details+'</p>')
             .addTo(map);
         }
     }
+
 
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleSafe = document.getElementById('location24');
@@ -2243,6 +2286,19 @@
     }
     eleSafe.onmouseout = function(){
         popupSafe.remove();
+    }
+    function pressBtnRalstonAnnex() {
+      var u = document.getElementById('location25a').innerHTML;
+      if(u == "Ralston Hall Annex")
+      {
+      	  map.flyTo({center: [-122.286468,37.517468],speed: 0.3});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.286468,37.517468])
+          .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[39].properties.image + '"></iframe><p>' + geojson.features[39].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[39].properties.title + '\',\'' +   geojson.features[39].properties.history + '\',\'' + geojson.features[39].properties.video + '\',\'' + geojson.features[39].properties.image  + '\',\'' + geojson.features[39].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+      }
+
     }
 
     function pressBtnRalston() {
@@ -2282,7 +2338,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Registrar</h3><p>The Registrar is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[12].title+'</h3><p>' + poi.poi[12].details+'</p>'+ '<img src="'+poi.poi[12].image+'"height="150" width="400">')
             .addTo(map);
 
         }
@@ -2372,7 +2428,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+            .setHTML('<h3>'+ poi.poi[13].title+'</h3><p>' + poi.poi[13].details+'</p>')
             .addTo(map);
 
         }
@@ -2402,7 +2458,8 @@
             map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
             var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286909,37.518083])
-            .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
+            .setHTML('<h3>' + geojson.features[26].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[26].properties.image + '"></iframe><p>' + geojson.features[26].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[26].properties.title + '\',\'' +   geojson.features[26].properties.history + '\',\'' + geojson.features[26].properties.video + '\',\'' + geojson.features[26].properties.image  + '\',\'' + geojson.features[26].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
         }
@@ -2438,6 +2495,7 @@
         }
     }
 
+
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleTaube = document.getElementById('location31');
     var popupTaube = new mapboxgl.Popup({
@@ -2455,15 +2513,43 @@
         popupTaube.remove();
     }
 
-    function pressBtnTheApartments() {
+    function pressBtnTheApartmentsCarrol() {
+
         var u = document.getElementById('location32').innerHTML;
-        if(u == "The Apartments")
+        if(u == "The Apartments Carroll")
         {
-            map.flyTo({center: [-122.285437,37.516540],speed: 0.3});
+            map.flyTo({center: [-122.285015,37.516450],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
-            .setLngLat([-122.285437,37.516540])
-            .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
+            .setLngLat([-122.285015,37.516450])
+            .setHTML('<h3>' + geojson.features[34].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[34].properties.image + '"></iframe><p>' + geojson.features[34].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[34].properties.title + '\',\'' +   geojson.features[34].properties.history + '\',\'' + geojson.features[34].properties.video + '\',\'' + geojson.features[34].properties.image  + '\',\'' + geojson.features[34].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
+        }
+    }
+    
+    function pressBtnTheApartmentsKane() {
+    	var u = document.getElementById('location32a').innerHTML;
+        if(u == "The Apartments Kane")
+    	{
+    		map.flyTo({center: [-122.285434,37.516556],speed: 0.3});
+            var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.285434,37.516556])
+            .setHTML('<h3>' + geojson.features[33].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[33].properties.image + '"></iframe><p>' + geojson.features[33].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[33].properties.title + '\',\'' +   geojson.features[33].properties.history + '\',\'' + geojson.features[33].properties.video + '\',\'' + geojson.features[33].properties.image  + '\',\'' + geojson.features[33].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+            .addTo(map);
+    	}
+    }
+    
+    function pressBtnTheApartmentsWilkie() {
+    	var u = document.getElementById('location32b').innerHTML;
+        if(u == "The Apartments Wilkie")
+        {
+        	map.flyTo({center: [-122.285800,37.516752],speed: 0.3});
+            var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.285800,37.516752])
+            .setHTML('<h3>' + geojson.features[32].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[32].properties.image + '"></iframe><p>' + geojson.features[32].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[32].properties.title + '\',\'' +   geojson.features[32].properties.history + '\',\'' + geojson.features[32].properties.video + '\',\'' + geojson.features[32].properties.image  + '\',\'' + geojson.features[32].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+            .addTo(map); 
         }
     }
 
@@ -2473,22 +2559,12 @@
         closeButton: false,
         closeOnClick: false
     });
-    eleApts.onmouseover = function(){
-        map.flyTo({center: [-122.28543112834984,37.51653999997441],speed: 0.3});
-
-        popupApts.setLngLat([-122.28543112834984,37.51653999997441])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments</p>")
-        .addTo(map);
-    }
-    eleApts.onmouseout = function(){
-        popupApts.remove();
-    }
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
-        if(d == "The Carl and Celia Berta Gellert Library")
+        if(d == "The Carl Gellert and Celia Berta Gellert Library")
         {
-            map.flyTo({center: [-122.284719, 37.51755],speed: 0.3});
+            map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284719, 37.51755])
             .setHTML('<h3>' + geojson.features[1].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[1].properties.image + '"></iframe><p>' + geojson.features[1].properties.description + '</p><br>'
@@ -2547,7 +2623,7 @@
 
     function pressBtnToso() {
         var e= document.getElementById('location35').innerHTML;
-        if (e == "Toso Residence (Compiegne)")
+        if (e == "Toso Buildings (Compiegne, Courtrai, Namur)")
         {
           map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2588,6 +2664,7 @@
         }
     }
 
+
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
     var eleGym = document.getElementById('location36');
     var popupGym = new mapboxgl.Popup({
@@ -2605,9 +2682,10 @@
         popupGym.remove();
     }
 
-    function pressBtnWeigand() {
+    function pressBtnWiegand() {
+
         var u = document.getElementById('location37').innerHTML;
-        if(u == "Weigand Gallery")
+        if(u == "Wiegand Gallery")
         {
           map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
           var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2618,21 +2696,22 @@
         }
     }
 
+
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
-    var eleWeigand = document.getElementById('location37');
-    var popupWeigand = new mapboxgl.Popup({
+    var eleWiegand = document.getElementById('location37');
+    var popupWiegand = new mapboxgl.Popup({
         closeButton: false,
         closeOnClick: false
     });
-    eleWeigand.onmouseover = function(){
+    eleWiegand.onmouseover = function(){
         map.flyTo({center: [-122.28775099998789,37.51821594913548],speed: 0.3});
 
-        popupWeigand.setLngLat([-122.28775099998789,37.51821594913548])
-        .setHTML("<p style=\"font-size:12px;\">Weigand Gallery</p>")
+        popupWiegand.setLngLat([-122.28775099998789,37.51821594913548])
+        .setHTML("<p style=\"font-size:12px;\">Wiegand Gallery</p>")
         .addTo(map);
     }
-    eleWeigand.onmouseout = function(){
-        popupWeigand.remove();
+    eleWiegand.onmouseout = function(){
+        popupWiegand.remove();
     }
 
     function pressBtnWriting() {
@@ -2664,6 +2743,7 @@
     eleWrite.onmouseout = function(){
         popupWrite.remove();
     }
+
 
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
