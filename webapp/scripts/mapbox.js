@@ -1960,15 +1960,42 @@
         }
     }
 
-    function pressBtnTheApartments() {
+    function pressBtnTheApartmentsCarrol() {
         var u = document.getElementById('location32').innerHTML;
-        if(u == "The Apartments")
+        if(u == "The Apartments Carroll")
         {
-            map.flyTo({center: [-122.285437,37.516540],speed: 0.3});
+            map.flyTo({center: [-122.285015,37.516450],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
-            .setLngLat([-122.285437,37.516540])
-            .setHTML('<h3>The Apartments</h3><p>Located across from Julie Billiart and Saint Mary’s Hall, the apartments house    upperclassmen who prefer a more independent living environment. Each newly-renovated unit has one bedroom, one bathroom, and an open concept living room with a small kitchen.</p>')
+            .setLngLat([-122.285015,37.516450])
+            .setHTML('<h3>' + geojson.features[34].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[34].properties.image + '"></iframe><p>' + geojson.features[34].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[34].properties.title + '\',\'' +   geojson.features[34].properties.history + '\',\'' + geojson.features[34].properties.video + '\',\'' + geojson.features[34].properties.image  + '\',\'' + geojson.features[34].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
+        }
+    }
+    
+    function pressBtnTheApartmentsKane() {
+    	var u = document.getElementById('location32a').innerHTML;
+        if(u == "The Apartments Kane")
+    	{
+    		map.flyTo({center: [-122.285434,37.516556],speed: 0.3});
+            var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.285434,37.516556])
+            .setHTML('<h3>' + geojson.features[33].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[33].properties.image + '"></iframe><p>' + geojson.features[33].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[33].properties.title + '\',\'' +   geojson.features[33].properties.history + '\',\'' + geojson.features[33].properties.video + '\',\'' + geojson.features[33].properties.image  + '\',\'' + geojson.features[33].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+            .addTo(map);
+    	}
+    }
+    
+    function pressBtnTheApartmentsWilkie() {
+    	var u = document.getElementById('location32b').innerHTML;
+        if(u == "The Apartments Wilkie")
+        {
+        	map.flyTo({center: [-122.285800,37.516752],speed: 0.3});
+            var popup = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.285800,37.516752])
+            .setHTML('<h3>' + geojson.features[32].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[32].properties.image + '"></iframe><p>' + geojson.features[32].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[32].properties.title + '\',\'' +   geojson.features[32].properties.history + '\',\'' + geojson.features[32].properties.video + '\',\'' + geojson.features[32].properties.image  + '\',\'' + geojson.features[32].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+            .addTo(map); 
         }
     }
 
