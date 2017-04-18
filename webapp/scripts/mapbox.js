@@ -1470,9 +1470,8 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Academic Success Center</h3><p>The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.</p>')
+            .setHTML('<h3>'+ poi.poi[2].title+'</h3><p>' + poi.poi[2].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1495,7 +1494,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Administration</h3><p>Office of Administration is located in the Toso Residences</p>')
+            .setHTML('<h3>'+ poi.poi[3].title+'</h3><p>' + poi.poi[3].details+'</p>'+ '<img src="'+poi.poi[3].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[3].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[3].video + '"type="video/FLV"></video>')
             .addTo(map);
 
         }
@@ -1528,7 +1527,7 @@
           });
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2849, 37.51675])
-          .setHTML('<h3>Business Office</h3><p>The Business Office is located in the administration wing of St. Mary Hall.</p>')
+          .setHTML('<h3>'+ poi.poi[0].title+'</h3><p>' + poi.poi[0].details+'</p>'+ '<img src="'+poi.poi[0].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[0].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[0].video + '"type="video/Ogg"></video>')
           .addTo(map);
 
         }
@@ -1594,7 +1593,7 @@
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
 		  var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>Career Services</h3><p>The Career Services Center is located in the Campus Center</p>')
+          .setHTML('<h3>'+ poi.poi[5].title+'</h3><p>' + poi.poi[5].details+'</p>')
           .addTo(map);
 
         }
@@ -1608,7 +1607,7 @@
             map.flyTo({center: [-122.285694,37.517938],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.285694,37.517938])
-            .setHTML('<h3>Counseling and Health Services</h3><p>The overall mission is to promote and enhance the psychological and physical health of students so that they may reach their potential for personal growth and academic success. We believe that the psychological, physical, spiritual and social realms are interconnected and influence a student’s ability to thrive, learn, grow, and maintain healthy living in a collegiate environment. Counseling and Health Services provides opportunities to discuss with trained professionals a struggle or problem a student is facing, gain better coping skills to face life’s challenges, and to learn ways to find balance in order to live a healthy lifestyle.</p>')
+            .setHTML('<h3>'+ poi.poi[6].title+'</h3><p>' + poi.poi[6].details+'</p>')
             .addTo(map);
 
         }
@@ -1649,9 +1648,8 @@
             map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849,37.51675])
-            .setHTML('<h3>Dean of Students/Student Affairs</h3><p>The Division of Student Affairs provides services and programs which contribute to the mission of the university, supports the well-being of each student and nurtures the community aspects of campus life. In collaboration with our academic colleagues, community partners and other service providers, we focus on student development and the type of life-long learning which enriches the mind, body and spirit of all who are part of Notre Dame de Namur University.</p>')
+            .setHTML('<h3>'+ poi.poi[7].title+'</h3><p>' + poi.poi[7].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -1662,9 +1660,9 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Sister Dorothy Stang Center</h3><p>Center for Social Justice and Community Engagement</p>')
+            .setHTML('<h3>' + geojson.features[25].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[25].properties.image + '"></iframe><p>' + geojson.features[25].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[25].properties.title + '\',\'' +   geojson.features[25].properties.history + '\',\'' + geojson.features[25].properties.video + '\',\'' + geojson.features[25].properties.image  + '\',\'' + geojson.features[25].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
-
         }
     }
 
@@ -1675,7 +1673,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Financial Aid</h3><p>Financial Aid is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[1].title+'</h3><p>' + poi.poi[1].details+'</p>')
             .addTo(map);
 
         }
@@ -1714,7 +1712,7 @@
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286516,37.518052])
-            .setHTML('<h3>Human Resources</h3><p>Notre Dame de Namur University Human Resources Department is committed to the University mission and the Hallmarks of the Notre Dame de Namur Learning Communities.  We create and support an ethical community of employees, committed to diversity, social justice, and global peace.  While balancing what is best for the institution and for the employee/s, we act as facilitators that enable all employees to contribute to the success of the University community</p>')
+            .setHTML('<h3>'+ poi.poi[8].title+'</h3><p>' + poi.poi[8].details+'</p>')
             .addTo(map);
 
         }
@@ -1727,7 +1725,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>International Student Office</h3><p>The International Students Office at Notre Dame de Namur University provides important resources to our diverse population of international students.</p>')
+            .setHTML('<h3>'+ poi.poi[9].title+'</h3><p>' + poi.poi[9].details+'</p>')
             .addTo(map);
 
         }
@@ -1822,7 +1820,7 @@
             map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
             var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284900,37.518090])
-            .setHTML('<h3>Office of Diversity</h3><p>Is committed to encouraging the promotion of a thoughtful adherence to the Hallmarks of a Notre Dame de Namur Learning Community. In particular, the Office is guided by the fifth Hallmark: “We embrace the gift of diversity.</p>')
+            .setHTML('<h3>'+ poi.poi[10].title+'</h3><p>' + poi.poi[10].details+'</p>')
             .addTo(map);
 
         }
@@ -1850,7 +1848,7 @@
             map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Public Safety</h3><p>The mission of the Notre Dame de Namur University Department of Public Safety is the protection of life and property by providing a safe and secure living, learning and working environment for students, staff, faculty and visitors. The Department of Public Safety will achieve this through the enforcement of Notre Dame de Namur University policies, procedures and regulations as well as local, state and federal laws.</p>')
+            .setHTML('<h3>'+ poi.poi[11].title+'</h3><p>' + poi.poi[11].details+'</p>')
             .addTo(map);
         }
     }
@@ -1888,7 +1886,7 @@
             map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>Registrar</h3><p>The Registrar is located in the administration wing of St. Mary Hall.</p>')
+            .setHTML('<h3>'+ poi.poi[12].title+'</h3><p>' + poi.poi[12].details+'</p>'+ '<img src="'+poi.poi[12].image+'"height="150" width="400">')
             .addTo(map);
 
         }
@@ -1927,7 +1925,7 @@
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Student Life & Leadership Office</h3><p>The Student Life and Leadership Office develops and enhances students’ talents and potential to be effective leaders and citizens in their communities through student programming and involvement, living-learning communities, leadership retreats, conferences, trainings, and academic courses.</p>')
+            .setHTML('<h3>'+ poi.poi[13].title+'</h3><p>' + poi.poi[13].details+'</p>')
             .addTo(map);
 
         }
@@ -1940,7 +1938,8 @@
             map.flyTo({center: [-122.286909,37.518083],speed: 0.3});
             var popupTabardInn = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286909,37.518083])
-            .setHTML('<h3>Tabard Inn</h3><p>Tabard Inn contains administrative offices and advisors for the School of Business and Management.</p>')
+            .setHTML('<h3>' + geojson.features[26].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[26].properties.image + '"></iframe><p>' + geojson.features[26].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[26].properties.title + '\',\'' +   geojson.features[26].properties.history + '\',\'' + geojson.features[26].properties.video + '\',\'' + geojson.features[26].properties.image  + '\',\'' + geojson.features[26].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
         }
