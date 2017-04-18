@@ -154,7 +154,7 @@ openGeneralHistoryModal_es.onclick = function(){
 }
 
 // When the user clicks on the more info button, displays a modal
-function popUpModal(title,history,vid,image,description,audio,id){
+function popUpModal(title,history,vid,image,description,audio,id){  //If you do not have one elements, ''
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
     closeSummaryModal[0].style.display = "none";
     modal2.style.display = "block";
