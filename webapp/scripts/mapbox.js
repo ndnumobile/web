@@ -803,7 +803,7 @@
                     "locType": "building",
                     "title": "Mailing Center",
                     "description": "The center for all mailing needs",
-                    "image": "./img/placeholder.gif",
+                    "image": "./img/mailingCenterAdjusted.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
