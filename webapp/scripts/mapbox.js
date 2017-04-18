@@ -1527,7 +1527,7 @@
           });
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2849, 37.51675])
-          .setHTML('<h3>'+ poi.poi[0].title+'</h3><p>' + poi.poi[0].details+'</p>'+ '<img src="'+poi.poi[0].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[0].audio+'"type="audio/mp3"></audio>' + '<video width="320" height="240" controls>' + '<source src="' + poi.poi[0].video + '"type="video/Ogg"></video>')
+          .setHTML('<h3>'+ poi.poi[0].title+'</h3><p>' + poi.poi[0].details+'</p>'+ '<img src="'+poi.poi[0].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[0].audio+'"type="audio/mp3"></audio>' + '<iframe width="320" height="240" src="' + poi.poi[0].video + '"></iframe>')
           .addTo(map);
 
         }
