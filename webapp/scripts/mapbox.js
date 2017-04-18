@@ -928,8 +928,6 @@
         $("#wrapper").toggleClass("toggled",true);
     }
 
-
-
     // add markers to map
     geojson.features.forEach(function(marker) {
 
