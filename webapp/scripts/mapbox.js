@@ -965,6 +965,10 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
+    map.on('mousemove', function(e) {
+        console.log(e.lngLat);
+    })
+
     map.on('load', function() {
         //begin adding one layer for each walkway/pathway.
     map.addLayer({
@@ -1663,6 +1667,7 @@
     eleCampusCtr.onmouseout = function(){
         popupCampus.remove();
     }
+
     function pressBtnCampanile() {
     	var u = document.getElementById('location5a').innerHTML;
 
@@ -1676,6 +1681,22 @@
           .addTo(map);
     	}
 
+    }
+
+    var eleCamp = document.getElementById('location5a');
+    var popupCamp = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCamp.onmouseover = function(){
+        map.flyTo({center: [-122.28468931028763,37.51810320808755],speed: 0.3});
+
+        popupCamp.setLngLat([-122.28468931028763,37.51810320808755])
+        .setHTML("<p style=\"font-size:12px;\">Campanile</p>")
+        .addTo(map);
+    }
+    eleCamp.onmouseout = function(){
+        popupCamp.remove();
     }
 
     function pressBtnCareer() {
@@ -1709,36 +1730,6 @@
         popupCareer.remove();
     }
 
-    function pressBtnSpirituality() {
-        var u = document.getElementById('location7').innerHTML;
-
-        if(u == "Center for Spirituality")
-        {
-          map.flyTo({center: [-122.285286,37.518197],speed: 0.3});
-		  var popup = new mapboxgl.Popup({closeOnClick: true})
-          .setLngLat([-122.285286,37.518197])
-          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
-                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
-          .addTo(map);
-        }
-    }
-
-    //onhover of a campus location sidebar item, center map and display tooltip with building name.
-    var eleSpirit = document.getElementById('location7');
-    var popupSpirit = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-    eleSpirit.onmouseover = function(){
-        map.flyTo({center: [-122.2853121491566,37.51823588833953],speed: 0.3});
-
-        popupSpirit.setLngLat([-122.2853121491566,37.51823588833953])
-        .setHTML("<p style=\"font-size:12px;\">Office of Spirituality</p>")
-        .addTo(map);
-    }
-    eleSpirit.onmouseout = function(){
-        popupSpirit.remove();
-    }
 
     function pressBtnCounseling() {
         var u = document.getElementById('location8').innerHTML;
@@ -1952,35 +1943,6 @@
         popupGavin.remove();
     }
 
-    function pressHousing() {
-        var u = document.getElementById('location15').innerHTML;
-        if (u == "Housing")
-        {
-            map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
-            var popup = new mapboxgl.Popup({closeOnClick: true})
-            .setLngLat([-122.285579,37.517475])
-            .setHTML('<h3>Housing</h3><p>The residence community values the uniqueness and potential of each individual and strives to create an environment which encourages respect, understanding and concern for others. Our on-campus residence facilities offer students three different residence community environments</p>')
-            .addTo(map);
-
-        }
-    }
-
-    //onhover of a campus location sidebar item, center map and display tooltip with building name.
-    var eleHouse = document.getElementById('location15');
-    var popupHouse = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-    eleHouse.onmouseover = function(){
-        map.flyTo({center: [-122.28553651559221,37.51753212369337],speed: 0.3});
-
-        popupHouse.setLngLat([-122.28553651559221,37.51753212369337])
-        .setHTML("<p style=\"font-size:12px;\">Housing</p>")
-        .addTo(map);
-    }
-    eleHouse.onmouseout = function(){
-        popupHouse.remove();
-    }
 
     function pressHumanResources() {
         var c = document.getElementById('location16').innerHTML;
@@ -2164,7 +2126,7 @@
     eleMadArt.onmouseout = function(){
         popupMadArt.remove();
     }
-    
+
     function pressBtnMailingCenter() {
     	var d = document.getElementById('location21b').innerHTML;
     	if (d == "Mailing Center")
@@ -2241,7 +2203,7 @@
     eleDiverse.onmouseout = function(){
         popupDiverse.remove();
     }
-    
+
     function pressBtnSpirituality() {
         var u = document.getElementById('location23b').innerHTML;
 
@@ -2255,6 +2217,22 @@
           .addTo(map);
         }
 
+    }
+
+    var eleOfficeSprt = document.getElementById('location23');
+    var popupOfficeSprt = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleOfficeSprt.onmouseover = function(){
+        map.flyTo({center: [-122.28487539141474,37.51806072213127],speed: 0.3});
+
+        popupOfficeSprt.setLngLat([-122.28487539141474,37.51806072213127])
+        .setHTML("<p style=\"font-size:12px;\">Office of Spirituality</p>")
+        .addTo(map);
+    }
+    eleOfficeSprt.onmouseout = function(){
+        popupOfficeSprt.remove();
     }
 
 
@@ -2526,7 +2504,7 @@
             .addTo(map);
         }
     }
-    
+
     function pressBtnTheApartmentsKane() {
     	var u = document.getElementById('location32a').innerHTML;
         if(u == "The Apartments Kane")
@@ -2539,7 +2517,7 @@
             .addTo(map);
     	}
     }
-    
+
     function pressBtnTheApartmentsWilkie() {
     	var u = document.getElementById('location32b').innerHTML;
         if(u == "The Apartments Wilkie")
@@ -2549,7 +2527,7 @@
             .setLngLat([-122.285800,37.516752])
             .setHTML('<h3>' + geojson.features[32].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[32].properties.image + '"></iframe><p>' + geojson.features[32].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[32].properties.title + '\',\'' +   geojson.features[32].properties.history + '\',\'' + geojson.features[32].properties.video + '\',\'' + geojson.features[32].properties.image  + '\',\'' + geojson.features[32].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
-            .addTo(map); 
+            .addTo(map);
         }
     }
 
