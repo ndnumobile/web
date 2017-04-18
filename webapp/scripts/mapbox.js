@@ -1478,16 +1478,23 @@
         }
     }
 
-    //test for campus location onhover show tooltip.
-    //currently tooltip shows above the link, researching how to relocate the tooltip.
-    var asc = document.getElementById('location0');
-    asc.onmouseover = function(){
-        // console.log("hovering on academic success center in campus locations sidebar.");
-        $('a[data-toggle="tooltip"]').tooltip({
-            animated: 'fade',
-            placement: 'top',
-        });
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAsc = document.getElementById('location0');
+    var popupAsc = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAsc.onmouseover = function(){
+        map.flyTo({center: [-122.28495699776732,37.51718100361937],speed: 0.3});
+
+        popupAsc.setLngLat([-122.28495699776732,37.51718100361937])
+        .setHTML("<p style=\"font-size:12px;\">Academic Success Center</p>")
+        .addTo(map);
     }
+    eleAsc.onmouseout = function(){
+        popupAsc.remove();
+    }
+
 
     function pressBtnAdmin() {
         var y = document.getElementById('location1').innerHTML;
@@ -1503,6 +1510,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAdmin = document.getElementById('location1');
+    var popupAdmin = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAdmin.onmouseover = function(){
+        map.flyTo({center: [-122.28653324831744,37.51806340060595],speed: 0.3});
+
+        popupAdmin.setLngLat([-122.28653324831744,37.51806340060595])
+        .setHTML("<p style=\"font-size:12px;\">Administration</p>")
+        .addTo(map);
+    }
+    eleAdmin.onmouseout = function(){
+        popupAdmin.remove();
+    }
+
     function pressBtnBookStore() {
         var u = document.getElementById('location2').innerHTML;
 
@@ -1516,6 +1540,23 @@
           .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleBook = document.getElementById('location2');
+    var popupBook = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleBook.onmouseover = function(){
+        map.flyTo({center: [-122.28710837814339,37.51834362086791],speed: 0.3});
+
+        popupBook.setLngLat([-122.28710837814339,37.51834362086791])
+        .setHTML("<p style=\"font-size:12px;\">Bookstore</p>")
+        .addTo(map);
+    }
+    eleBook.onmouseout = function(){
+        popupBook.remove();
     }
 
     function pressBtnBusiness() {
@@ -1536,6 +1577,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleBiz = document.getElementById('location3');
+    var popupBiz = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleBiz.onmouseover = function(){
+        map.flyTo({center: [-122.28512466474535,37.51679702458031],speed: 0.3});
+
+        popupBiz.setLngLat([-122.28512466474535,37.51679702458031])
+        .setHTML("<p style=\"font-size:12px;\">Business Office</p>")
+        .addTo(map);
+    }
+    eleBiz.onmouseout = function(){
+        popupBiz.remove();
+    }
+
     function pressBtnCafeteria() {
         var u = document.getElementById('location4').innerHTML;
         if(u == "Cafeteria")
@@ -1552,6 +1610,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[8].properties.title + '\',\'' +   geojson.features[8].properties.history + '\',\'' + geojson.features[8].properties.video + '\',\'' + geojson.features[8].properties.image  + '\',\'' + geojson.features[8].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCafe = document.getElementById('location4');
+    var popupCafe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCafe.onmouseover = function(){
+        map.flyTo({center: [-122.2853098663542,37.51728980131068],speed: 0.3});
+
+        popupCafe.setLngLat([-122.2853098663542,37.51728980131068])
+        .setHTML("<p style=\"font-size:12px;\">Cafeteria</p>")
+        .addTo(map);
+    }
+    eleCafe.onmouseout = function(){
+        popupCafe.remove();
     }
 
     function pressBtnCampus() {
@@ -1574,6 +1649,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCampusCtr = document.getElementById('location5');
+    var popupCampus = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCampusCtr.onmouseover = function(){
+        map.flyTo({center: [-122.2849570363995,37.51717653145357],speed: 0.3});
+
+        popupCampus.setLngLat([-122.2849570363995,37.51717653145357])
+        .setHTML("<p style=\"font-size:12px;\">Campus Center</p>")
+        .addTo(map);
+    }
+    eleCampusCtr.onmouseout = function(){
+        popupCampus.remove();
+    }
+
     function pressBtnCareer() {
         var z = document.getElementById('location6').innerHTML;
 
@@ -1586,6 +1678,23 @@
           .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCareer = document.getElementById('location6');
+    var popupCareer = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCareer.onmouseover = function(){
+        map.flyTo({center: [-122.28483679020057,37.51709267649758],speed: 0.3});
+
+        popupCareer.setLngLat([-122.28483679020057,37.51709267649758])
+        .setHTML("<p style=\"font-size:12px;\">Career Center</p>")
+        .addTo(map);
+    }
+    eleCareer.onmouseout = function(){
+        popupCareer.remove();
     }
 
     function pressBtnSpirituality() {
@@ -1602,6 +1711,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleSpirit = document.getElementById('location7');
+    var popupSpirit = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleSpirit.onmouseover = function(){
+        map.flyTo({center: [-122.2853121491566,37.51823588833953],speed: 0.3});
+
+        popupSpirit.setLngLat([-122.2853121491566,37.51823588833953])
+        .setHTML("<p style=\"font-size:12px;\">Office of Spirituality</p>")
+        .addTo(map);
+    }
+    eleSpirit.onmouseout = function(){
+        popupSpirit.remove();
+    }
+
     function pressBtnCounseling() {
         var u = document.getElementById('location8').innerHTML;
 
@@ -1614,6 +1740,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCounsel = document.getElementById('location8');
+    var popupCounsel = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCounsel.onmouseover = function(){
+        map.flyTo({center: [-122.28568161117192,37.5179257170645],speed: 0.3});
+
+        popupCounsel.setLngLat([-122.28568161117192,37.5179257170645])
+        .setHTML("<p style=\"font-size:12px;\">Counseling and Health Services</p>")
+        .addTo(map);
+    }
+    eleCounsel.onmouseout = function(){
+        popupCounsel.remove();
     }
 
     function pressBtnCunningham() {
@@ -1630,6 +1773,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleChapAnx = document.getElementById('location9');
+    var popupChapAnx = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleChapAnx.onmouseover = function(){
+        map.flyTo({center: [-122.28525540781425,37.51829515969446],speed: 0.3});
+
+        popupChapAnx.setLngLat([-122.28525540781425,37.51829515969446])
+        .setHTML("<p style=\"font-size:12px;\">Cunningham Chapel Annex</p>")
+        .addTo(map);
+    }
+    eleChapAnx.onmouseout = function(){
+        popupChapAnx.remove();
+    }
+
     function pressBtnCuvilly() {
         var u = document.getElementById('location10').innerHTML;
 
@@ -1642,6 +1802,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[20].properties.title + '\',\'' +   geojson.features[20].properties.history + '\',\'' + geojson.features[20].properties.video + '\',\'' + geojson.features[20].properties.image  + '\',\'' + geojson.features[20].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCuv = document.getElementById('location10');
+    var popupCuv = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCuv.onmouseover = function(){
+        map.flyTo({center: [-122.2870274664667,37.51796849956045],speed: 0.3});
+
+        popupCuv.setLngLat([-122.2870274664667,37.51796849956045])
+        .setHTML("<p style=\"font-size:12px;\">Cuvilly Hall</p>")
+        .addTo(map);
+    }
+    eleCuv.onmouseout = function(){
+        popupCuv.remove();
     }
 
     function pressBtnDean() {
@@ -1657,6 +1834,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDean = document.getElementById('location11');
+    var popupDean = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDean.onmouseover = function(){
+        map.flyTo({center: [-122.28522540472824,37.51684496234989],speed: 0.3});
+
+        popupDean.setLngLat([-122.28522540472824,37.51684496234989])
+        .setHTML("<p style=\"font-size:12px;\">Dean of Students/Student Affairs</p>")
+        .addTo(map);
+    }
+    eleDean.onmouseout = function(){
+        popupDean.remove();
+    }
+
     function pressBtnDorothy() {
         var u = document.getElementById('location12').innerHTML;
         if(u == "Sister Dorothy Stang Center")
@@ -1668,6 +1862,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDor = document.getElementById('location12');
+    var popupDor = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDor.onmouseover = function(){
+        map.flyTo({center: [-122.28535477577394,37.518100869125135],speed: 0.3});
+
+        popupDor.setLngLat([-122.28535477577394,37.518100869125135])
+        .setHTML("<p style=\"font-size:12px;\">Sister Dorothy Stang Center</p>")
+        .addTo(map);
+    }
+    eleDor.onmouseout = function(){
+        popupDor.remove();
     }
 
     function pressBtnFinancial() {
@@ -1683,6 +1894,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleFinAid = document.getElementById('location13');
+    var popupFinAid = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleFinAid.onmouseover = function(){
+        map.flyTo({center: [-122.28507266483592,37.516856256925806],speed: 0.3});
+
+        popupFinAid.setLngLat([-122.28507266483592,37.516856256925806])
+        .setHTML("<p style=\"font-size:12px;\">Financial Aid</p>")
+        .addTo(map);
+    }
+    eleFinAid.onmouseout = function(){
+        popupFinAid.remove();
+    }
+
     function pressBtnGavinHall() {
         var u = document.getElementById('location14').innerHTML;
         if(u == "Gavin Hall")
@@ -1694,6 +1922,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[22].properties.title + '\',\'' +   geojson.features[22].properties.history + '\',\'' + geojson.features[22].properties.video + '\',\'' + geojson.features[22].properties.image  + '\',\'' + geojson.features[22].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleGavin = document.getElementById('location14');
+    var popupGavin = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleGavin.onmouseover = function(){
+        map.flyTo({center: [-122.28674644497949,37.51863109295236],speed: 0.3});
+
+        popupGavin.setLngLat([-122.28674644497949,37.51863109295236])
+        .setHTML("<p style=\"font-size:12px;\">Gavin Hall</p>")
+        .addTo(map);
+    }
+    eleGavin.onmouseout = function(){
+        popupGavin.remove();
     }
 
     function pressHousing() {
@@ -1709,6 +1954,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleHouse = document.getElementById('location15');
+    var popupHouse = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleHouse.onmouseover = function(){
+        map.flyTo({center: [-122.28553651559221,37.51753212369337],speed: 0.3});
+
+        popupHouse.setLngLat([-122.28553651559221,37.51753212369337])
+        .setHTML("<p style=\"font-size:12px;\">Housing</p>")
+        .addTo(map);
+    }
+    eleHouse.onmouseout = function(){
+        popupHouse.remove();
+    }
+
     function pressHumanResources() {
         var c = document.getElementById('location16').innerHTML;
         if(c == "Human Resources")
@@ -1720,6 +1982,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleHR = document.getElementById('location16');
+    var popupHR = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleHR.onmouseover = function(){
+        map.flyTo({center: [-122.2865159999931,37.51805962546834],speed: 0.3});
+
+        popupHR.setLngLat([-122.2865159999931,37.51805962546834])
+        .setHTML("<p style=\"font-size:12px;\">Human Resources</p>")
+        .addTo(map);
+    }
+    eleHR.onmouseout = function(){
+        popupHR.remove();
     }
 
     function pressBtnInternational() {
@@ -1735,6 +2014,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleIntl = document.getElementById('location17');
+    var popupIntl = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleIntl.onmouseover = function(){
+        map.flyTo({center: [-122.28492775733855,37.51713142726929],speed: 0.3});
+
+        popupIntl.setLngLat([-122.28492775733855,37.51713142726929])
+        .setHTML("<p style=\"font-size:12px;\">International Student Office</p>")
+        .addTo(map);
+    }
+    eleIntl.onmouseout = function(){
+        popupIntl.remove();
+    }
+
     function pressBtnJulie() {
         var u = document.getElementById('location18').innerHTML;
         if(u == "Julie Billiart Hall")
@@ -1746,6 +2042,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[14].properties.title + '\',\'' +   geojson.features[14].properties.history + '\',\'' + geojson.features[14].properties.video + '\',\'' + geojson.features[14].properties.image  + '\',\'' + geojson.features[14].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleJulie = document.getElementById('location18');
+    var popupJulie = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleJulie.onmouseover = function(){
+        map.flyTo({center: [-122.28546654603599,37.517075673913965],speed: 0.3});
+
+        popupJulie.setLngLat([-122.28546654603599,37.517075673913965])
+        .setHTML("<p style=\"font-size:12px;\">Julie Billiart Hall</p>")
+        .addTo(map);
+    }
+    eleJulie.onmouseout = function(){
+        popupJulie.remove();
     }
 
     function pressKoret() {
@@ -1762,6 +2075,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleKoret = document.getElementById('location19');
+    var popupKoret = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleKoret.onmouseover = function(){
+        map.flyTo({center: [-122.28431807034718,37.51564232721829],speed: 0.3});
+
+        popupKoret.setLngLat([-122.28431807034718,37.51564232721829])
+        .setHTML("<p style=\"font-size:12px;\">Koret Athletic Field</p>")
+        .addTo(map);
+    }
+    eleKoret.onmouseout = function(){
+        popupKoret.remove();
+    }
+
     function pressBtnLibraryLawn() {
         var d = document.getElementById('location20').innerHTML;
         if(d == "Library Lawn")
@@ -1776,6 +2106,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleLawn = document.getElementById('location20');
+    var popupLawn = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleLawn.onmouseover = function(){
+        map.flyTo({center: [-122.28512549848128,37.51770460980809],speed: 0.3});
+
+        popupLawn.setLngLat([-122.28512549848128,37.51770460980809])
+        .setHTML("<p style=\"font-size:12px;\">Library Lawn</p>")
+        .addTo(map);
+    }
+    eleLawn.onmouseout = function(){
+        popupLawn.remove();
+    }
+
     function pressBtnMadisonArt() {
         var d = document.getElementById('location21').innerHTML;
         if(d == "Madison Art Center")
@@ -1787,6 +2134,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[19].properties.title + '\',\'' +   geojson.features[19].properties.history + '\',\'' + geojson.features[19].properties.video + '\',\'' + geojson.features[19].properties.image  + '\',\'' + geojson.features[19].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleMadArt = document.getElementById('location21');
+    var popupMadArt = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleMadArt.onmouseover = function(){
+        map.flyTo({center: [-122.28773696149935,37.518081424376064],speed: 0.3});
+
+        popupMadArt.setLngLat([-122.28773696149935,37.518081424376064])
+        .setHTML("<p style=\"font-size:12px;\">Madison Art Center</p>")
+        .addTo(map);
+    }
+    eleMadArt.onmouseout = function(){
+        popupMadArt.remove();
     }
 
     function pressNewHall() {
@@ -1803,6 +2167,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleNewHall = document.getElementById('location22');
+    var popupNewHall = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleNewHall.onmouseover = function(){
+        map.flyTo({center: [-122.285708334043,37.51801419745058],speed: 0.3});
+
+        popupNewHall.setLngLat([-122.285708334043,37.51801419745058])
+        .setHTML("<p style=\"font-size:12px;\">New Hall</p>")
+        .addTo(map);
+    }
+    eleNewHall.onmouseout = function(){
+        popupNewHall.remove();
+    }
+
     function pressOfficeDiversity() {
         var o = document.getElementById('location23').innerHTML;
 
@@ -1815,6 +2196,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDiverse = document.getElementById('location23');
+    var popupDiverse = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDiverse.onmouseover = function(){
+        map.flyTo({center: [-122.28487539141474,37.51806072213127],speed: 0.3});
+
+        popupDiverse.setLngLat([-122.28487539141474,37.51806072213127])
+        .setHTML("<p style=\"font-size:12px;\">Office of Diversity</p>")
+        .addTo(map);
+    }
+    eleDiverse.onmouseout = function(){
+        popupDiverse.remove();
     }
 
 
@@ -1830,6 +2228,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleSafe = document.getElementById('location24');
+    var popupSafe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleSafe.onmouseover = function(){
+        map.flyTo({center: [-122.28490637662061,37.51677528887231],speed: 0.3});
+
+        popupSafe.setLngLat([-122.28490637662061,37.51677528887231])
+        .setHTML("<p style=\"font-size:12px;\">Public Safety</p>")
+        .addTo(map);
+    }
+    eleSafe.onmouseout = function(){
+        popupSafe.remove();
+    }
+
     function pressBtnRalston() {
         var u = document.getElementById('location25').innerHTML;
         if(u == "Ralston Hall Mansion")
@@ -1841,6 +2256,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[2].properties.title + '\',\'' +   geojson.features[2].properties.history + '\',\'' + geojson.features[2].properties.video + '\',\'' + geojson.features[2].properties.image  + '\',\'' + geojson.features[2].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleRalMan = document.getElementById('location25');
+    var popupRalMan = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleRalMan.onmouseover = function(){
+        map.flyTo({center: [-122.28679698106713,37.51739544427258],speed: 0.3});
+
+        popupRalMan.setLngLat([-122.28679698106713,37.51739544427258])
+        .setHTML("<p style=\"font-size:12px;\">Ralston Hall Mansion</p>")
+        .addTo(map);
+    }
+    eleRalMan.onmouseout = function(){
+        popupRalMan.remove();
     }
 
     function pressBtnRegistrar() {
@@ -1856,6 +2288,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleReg = document.getElementById('location26');
+    var popupReg = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleReg.onmouseover = function(){
+        map.flyTo({center: [-122.28491786818817,37.51676889680391],speed: 0.3});
+
+        popupReg.setLngLat([-122.28491786818817,37.51676889680391])
+        .setHTML("<p style=\"font-size:12px;\">Registrar</p>")
+        .addTo(map);
+    }
+    eleReg.onmouseout = function(){
+        popupReg.remove();
+    }
+
     function pressBtnStJoseph() {
         var u = document.getElementById('location27').innerHTML;
         if(u == "St. Joseph Hall")
@@ -1867,6 +2316,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[15].properties.title + '\',\'' +   geojson.features[15].properties.history + '\',\'' + geojson.features[15].properties.video + '\',\'' + geojson.features[15].properties.image  + '\',\'' + geojson.features[15].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleJoe = document.getElementById('location27');
+    var popupJoe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleJoe.onmouseover = function(){
+        map.flyTo({center: [-122.28559368507551,37.5174944873615],speed: 0.3});
+
+        popupJoe.setLngLat([-122.28559368507551,37.5174944873615])
+        .setHTML("<p style=\"font-size:12px;\">St. Joseph Hall</p>")
+        .addTo(map);
+    }
+    eleJoe.onmouseout = function(){
+        popupJoe.remove();
     }
 
     function pressBtnStMary() {
@@ -1882,6 +2348,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleMary = document.getElementById('location28');
+    var popupMary = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleMary.onmouseover = function(){
+        map.flyTo({center: [-122.28491746271777,37.51676846798853],speed: 0.3});
+
+        popupMary.setLngLat([-122.28491746271777,37.51676846798853])
+        .setHTML("<p style=\"font-size:12px;\">St. Mary's Hall</p>")
+        .addTo(map);
+    }
+    eleMary.onmouseout = function(){
+        popupMary.remove();
+    }
+
     function pressBtnStudentLife() {
         var u = document.getElementById('location29').innerHTML;
         if(u == "Student Life and Leadership Office")
@@ -1893,6 +2376,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleStuLife = document.getElementById('location29');
+    var popupStuLife = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleStuLife.onmouseover = function(){
+        map.flyTo({center: [-122.28494571319919,37.51714258115409],speed: 0.3});
+
+        popupStuLife.setLngLat([-122.28494571319919,37.51714258115409])
+        .setHTML("<p style=\"font-size:12px;\">Student Life and Leadership Office</p>")
+        .addTo(map);
+    }
+    eleStuLife.onmouseout = function(){
+        popupStuLife.remove();
     }
 
     function pressBtnTabard() {
@@ -1908,6 +2408,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleTabard = document.getElementById('location30');
+    var popupTabard = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleTabard.onmouseover = function(){
+        map.flyTo({center: [-122.28690900001132,37.51805952547706],speed: 0.3});
+
+        popupTabard.setLngLat([-122.28690900001132,37.51805952547706])
+        .setHTML("<p style=\"font-size:12px;\">Tabard Inn</p>")
+        .addTo(map);
+    }
+    eleTabard.onmouseout = function(){
+        popupTabard.remove();
+    }
+
     function pressBtnTaube() {
         var u = document.getElementById('location31').innerHTML;
         if(u == "Taube Center")
@@ -1919,6 +2436,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[3].properties.title + '\',\'' +   geojson.features[3].properties.history + '\',\'' + geojson.features[3].properties.video + '\',\'' + geojson.features[3].properties.image  + '\',\'' + geojson.features[3].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleTaube = document.getElementById('location31');
+    var popupTaube = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleTaube.onmouseover = function(){
+        map.flyTo({center: [-122.28301000000351,37.51667558324412],speed: 0.3});
+
+        popupTaube.setLngLat([-122.28301000000351,37.51667558324412])
+        .setHTML("<p style=\"font-size:12px;\">Taube Center</p>")
+        .addTo(map);
+    }
+    eleTaube.onmouseout = function(){
+        popupTaube.remove();
     }
 
     function pressBtnTheApartments() {
@@ -1933,6 +2467,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleApts = document.getElementById('location32');
+    var popupApts = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleApts.onmouseover = function(){
+        map.flyTo({center: [-122.28543112834984,37.51653999997441],speed: 0.3});
+
+        popupApts.setLngLat([-122.28543112834984,37.51653999997441])
+        .setHTML("<p style=\"font-size:12px;\">The Apartments</p>")
+        .addTo(map);
+    }
+    eleApts.onmouseout = function(){
+        popupApts.remove();
+    }
+
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
         if(d == "The Carl and Celia Berta Gellert Library")
@@ -1944,6 +2495,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[1].properties.title + '\',\'' +   geojson.features[1].properties.history + '\',\'' + geojson.features[1].properties.video + '\',\'' + geojson.features[1].properties.image  + '\',\'' + geojson.features[1].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleLib = document.getElementById('location33');
+    var popupLib = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleLib.onmouseover = function(){
+        map.flyTo({center: [-122.28473279056112,37.51756640732573],speed: 0.3});
+
+        popupLib.setLngLat([-122.28473279056112,37.51756640732573])
+        .setHTML("<p style=\"font-size:12px;\">The Carl and Celia Berta Gellert Library</p>")
+        .addTo(map);
+    }
+    eleLib.onmouseout = function(){
+        popupLib.remove();
     }
 
     function pressBtnQuad() {
@@ -1960,6 +2528,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleQuad = document.getElementById('location34');
+    var popupQuad = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleQuad.onmouseover = function(){
+        map.flyTo({center: [-122.28500899999409,37.51696315060589],speed: 0.3});
+
+        popupQuad.setLngLat([-122.28500899999409,37.51696315060589])
+        .setHTML("<p style=\"font-size:12px;\">The Quad</p>")
+        .addTo(map);
+    }
+    eleQuad.onmouseout = function(){
+        popupQuad.remove();
+    }
+
     function pressBtnToso() {
         var e= document.getElementById('location35').innerHTML;
         if (e == "Toso Residence (Compiegne)")
@@ -1971,6 +2556,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[17].properties.title + '\',\'' +   geojson.features[17].properties.history + '\',\'' + geojson.features[17].properties.video + '\',\'' + geojson.features[17].properties.image  + '\',\'' + geojson.features[17].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleToso = document.getElementById('location35');
+    var popupToso = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleToso.onmouseover = function(){
+        map.flyTo({center: [-122.28652220830261,37.51806184837365],speed: 0.3});
+
+        popupToso.setLngLat([-122.28652220830261,37.51806184837365])
+        .setHTML("<p style=\"font-size:12px;\">Toso Residence (Compiegne)</p>")
+        .addTo(map);
+    }
+    eleToso.onmouseout = function(){
+        popupToso.remove();
     }
 
     function pressBtnGym() {
@@ -1986,6 +2588,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleGym = document.getElementById('location36');
+    var popupGym = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleGym.onmouseover = function(){
+        map.flyTo({center: [-122.28431126551351,37.518283912366925],speed: 0.3});
+
+        popupGym.setLngLat([-122.28431126551351,37.518283912366925])
+        .setHTML("<p style=\"font-size:12px;\">Walter Gleason Gym</p>")
+        .addTo(map);
+    }
+    eleGym.onmouseout = function(){
+        popupGym.remove();
+    }
+
     function pressBtnWeigand() {
         var u = document.getElementById('location37').innerHTML;
         if(u == "Weigand Gallery")
@@ -1999,6 +2618,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleWeigand = document.getElementById('location37');
+    var popupWeigand = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleWeigand.onmouseover = function(){
+        map.flyTo({center: [-122.28775099998789,37.51821594913548],speed: 0.3});
+
+        popupWeigand.setLngLat([-122.28775099998789,37.51821594913548])
+        .setHTML("<p style=\"font-size:12px;\">Weigand Gallery</p>")
+        .addTo(map);
+    }
+    eleWeigand.onmouseout = function(){
+        popupWeigand.remove();
+    }
+
     function pressBtnWriting() {
         var u = document.getElementById('location38').innerHTML;
         if(u == "Writing Center")
@@ -2010,6 +2646,23 @@
             .addTo(map);
 
         }
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleWrite = document.getElementById('location38');
+    var popupWrite = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleWrite.onmouseover = function(){
+        map.flyTo({center: [-122.28492790207042,37.51713367338232],speed: 0.3});
+
+        popupWrite.setLngLat([-122.28492790207042,37.51713367338232])
+        .setHTML("<p style=\"font-size:12px;\">Writing Center</p>")
+        .addTo(map);
+    }
+    eleWrite.onmouseout = function(){
+        popupWrite.remove();
     }
 
     function searchBtn(){
