@@ -42,13 +42,18 @@ hamburgerClose.onclick = function(){
     modalopen.style.display ="none";
     closeSideBar.style.display = "block";
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
+    
 }
 // When the user clicks on <Search Bar> Modal is closed
 searchBarClose.onclick = function(){
     modalopen.style.display ="none";      //mapboxgl-popup mapboxgl-popup-anchor-bottom
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
     $("#wrapper").toggleClass("toggled",true);
 }
 

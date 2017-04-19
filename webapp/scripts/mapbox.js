@@ -2758,7 +2758,7 @@
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.2849, 37.51675])
-            .setHTML('<h3>' + geojson.features[0].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[0].properties.image + '"></iframe><p>' + geojson.features[0].properties.description + '</p><br>'
+            .setHTML('<h3>' + geojson.features[0].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[0].properties.image + '"></img><p>' + geojson.features[0].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[0].properties.title + '\',\'' +   geojson.features[0].properties.history + '\',\'' + geojson.features[0].properties.video + '\',\'' + geojson.features[0].properties.image  + '\',\'' + geojson.features[0].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
@@ -2771,7 +2771,7 @@
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.284719, 37.51755])
-            .setHTML('<h3>' + geojson.features[1].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[1].properties.image + '"></iframe><p>' + geojson.features[1].properties.description + '</p><br>'
+            .setHTML('<h3>' + geojson.features[1].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[1].properties.image + '"></img><p>' + geojson.features[1].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[1].properties.title + '\',\'' +   geojson.features[1].properties.history + '\',\'' + geojson.features[1].properties.video + '\',\'' + geojson.features[1].properties.image  + '\',\'' + geojson.features[1].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
@@ -2784,7 +2784,7 @@
 
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.286784, 37.517380])
-            .setHTML('<h3>' + geojson.features[2].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[2].properties.image + '"></iframe><p>' + geojson.features[2].properties.description + '</p><br>'
+            .setHTML('<h3>' + geojson.features[2].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[2].properties.image + '"></img><p>' + geojson.features[2].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[2].properties.title + '\',\'' +   geojson.features[2].properties.history + '\',\'' + geojson.features[2].properties.video + '\',\'' + geojson.features[2].properties.image  + '\',\'' + geojson.features[2].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
 
@@ -2845,7 +2845,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285235,37.517219])
-          .setHTML('<h3>' + geojson.features[8].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[8].properties.image + '"></iframe><p>' + geojson.features[8].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[8].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[8].properties.image + '"></img><p>' + geojson.features[8].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[8].properties.title + '\',\'' +   geojson.features[8].properties.history + '\',\'' + geojson.features[8].properties.video + '\',\'' + geojson.features[8].properties.image  + '\',\'' + geojson.features[8].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2858,7 +2858,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285082,37.517643])
-          .setHTML('<h3>' + geojson.features[9].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[9].properties.image + '"></iframe><p>' + geojson.features[9].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[9].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[9].properties.image + '"></img><p>' + geojson.features[9].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[9].properties.title + '\',\'' +   geojson.features[9].properties.history + '\',\'' + geojson.features[9].properties.video + '\',\'' + geojson.features[9].properties.image  + '\',\'' + geojson.features[9].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2871,7 +2871,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284331,37.518310])
-          .setHTML('<h3>' + geojson.features[10].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[10].properties.image + '"></iframe><p>' + geojson.features[10].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[10].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[10].properties.image + '"></img><p>' + geojson.features[10].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[10].properties.title + '\',\'' +   geojson.features[10].properties.history + '\',\'' + geojson.features[10].properties.video + '\',\'' + geojson.features[10].properties.image  + '\',\'' + geojson.features[10].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2884,7 +2884,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>' + geojson.features[11].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[11].properties.image + '"></iframe><p>' + geojson.features[11].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[11].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[11].properties.image + '"></img><p>' + geojson.features[11].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[11].properties.title + '\',\'' +   geojson.features[11].properties.history + '\',\'' + geojson.features[11].properties.video + '\',\'' + geojson.features[11].properties.image  + '\',\'' + geojson.features[11].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2945,7 +2945,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285009,37.516948])
-          .setHTML('<h3>' + geojson.features[12].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[12].properties.image + '"></iframe><p>' + geojson.features[12].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[12].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[12].properties.image + '"></img><p>' + geojson.features[12].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[12].properties.title + '\',\'' +   geojson.features[12].properties.history + '\',\'' + geojson.features[12].properties.video + '\',\'' + geojson.features[12].properties.image  + '\',\'' + geojson.features[12].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2970,7 +2970,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284900,37.518090])
-          .setHTML('<h3>' + geojson.features[7].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[7].properties.image + '"></iframe><p>' + geojson.features[7].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[7].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[7].properties.image + '"></img><p>' + geojson.features[7].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[7].properties.title + '\',\'' +   geojson.features[7].properties.history + '\',\'' + geojson.features[7].properties.video + '\',\'' + geojson.features[7].properties.image  + '\',\'' + geojson.features[7].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2983,7 +2983,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285286,37.518197])
-          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[13].properties.image + '"></img><p>' + geojson.features[13].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -2996,7 +2996,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285396,37.517010])
-          .setHTML('<h3>' + geojson.features[14].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[14].properties.image + '"></iframe><p>' + geojson.features[14].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[14].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[14].properties.image + '"></img><p>' + geojson.features[14].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[14].properties.title + '\',\'' +   geojson.features[14].properties.history + '\',\'' + geojson.features[14].properties.video + '\',\'' + geojson.features[14].properties.image  + '\',\'' + geojson.features[14].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3033,7 +3033,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285579,37.517475])
-          .setHTML('<h3>' + geojson.features[15].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[15].properties.image + '"></iframe><p>' + geojson.features[15].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[15].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[15].properties.image + '"></img><p>' + geojson.features[15].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[15].properties.title + '\',\'' +   geojson.features[15].properties.history + '\',\'' + geojson.features[15].properties.video + '\',\'' + geojson.features[15].properties.image  + '\',\'' + geojson.features[15].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3070,7 +3070,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284287,37.515561])
-          .setHTML('<h3>' + geojson.features[16].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[16].properties.image + '"></iframe><p>' + geojson.features[16].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[16].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[16].properties.image + '"></img><p>' + geojson.features[16].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[16].properties.title + '\',\'' +   geojson.features[16].properties.history + '\',\'' + geojson.features[16].properties.video + '\',\'' + geojson.features[16].properties.image  + '\',\'' + geojson.features[16].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3083,7 +3083,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286516,37.518052])
-          .setHTML('<h3>' + geojson.features[17].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[17].properties.image + '"></iframe><p>' + geojson.features[17].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[17].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[17].properties.image + '"></img><p>' + geojson.features[17].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[17].properties.title + '\',\'' +   geojson.features[17].properties.history + '\',\'' + geojson.features[17].properties.video + '\',\'' + geojson.features[17].properties.image  + '\',\'' + geojson.features[17].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3132,7 +3132,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285694,37.517938])
-          .setHTML('<h3>' + geojson.features[6].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[6].properties.image + '"></iframe><p>' + geojson.features[6].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[6].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[6].properties.image + '"></img><p>' + geojson.features[6].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[6].properties.title + '\',\'' +   geojson.features[6].properties.history + '\',\'' + geojson.features[6].properties.video + '\',\'' + geojson.features[6].properties.image  + '\',\'' + geojson.features[6].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3157,7 +3157,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.283010,37.516661])
-          .setHTML('<h3>' + geojson.features[3].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[3].properties.image + '"></iframe><p>' + geojson.features[3].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[3].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[3].properties.image + '"></img><p>' + geojson.features[3].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[3].properties.title + '\',\'' +   geojson.features[3].properties.history + '\',\'' + geojson.features[3].properties.video + '\',\'' + geojson.features[3].properties.image  + '\',\'' + geojson.features[3].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3170,7 +3170,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.287751,37.518191])
-          .setHTML('<h3>' + geojson.features[18].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[18].properties.image + '"></iframe><p>' + geojson.features[18].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[18].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[18].properties.image + '"></img><p>' + geojson.features[18].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[18].properties.title + '\',\'' +   geojson.features[18].properties.history + '\',\'' + geojson.features[18].properties.video + '\',\'' + geojson.features[18].properties.image  + '\',\'' + geojson.features[18].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3183,7 +3183,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.287697,37.517974])
-          .setHTML('<h3>' + geojson.features[19].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[19].properties.image + '"></iframe><p>' + geojson.features[19].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[19].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[19].properties.image + '"></img><p>' + geojson.features[19].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[19].properties.title + '\',\'' +   geojson.features[19].properties.history + '\',\'' + geojson.features[19].properties.video + '\',\'' + geojson.features[19].properties.image  + '\',\'' + geojson.features[19].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3196,7 +3196,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.287009,37.517927])
-          .setHTML('<h3>' + geojson.features[20].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[20].properties.image + '"></iframe><p>' + geojson.features[20].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[20].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[20].properties.image + '"></img><p>' + geojson.features[20].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[20].properties.title + '\',\'' +   geojson.features[20].properties.history + '\',\'' + geojson.features[20].properties.video + '\',\'' + geojson.features[20].properties.image  + '\',\'' + geojson.features[20].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3209,7 +3209,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.287091,37.518277])
-          .setHTML('<h3>' + geojson.features[21].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[21].properties.image + '"></iframe><p>' + geojson.features[21].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[21].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[21].properties.image + '"></img><p>' + geojson.features[21].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[21].properties.title + '\',\'' +   geojson.features[21].properties.history + '\',\'' + geojson.features[21].properties.video + '\',\'' + geojson.features[21].properties.image  + '\',\'' + geojson.features[21].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3222,7 +3222,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286697,37.518547])
-          .setHTML('<h3>' + geojson.features[22].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[22].properties.image + '"></iframe><p>' + geojson.features[22].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[22].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[22].properties.image + '"></img><p>' + geojson.features[22].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[22].properties.title + '\',\'' +   geojson.features[22].properties.history + '\',\'' + geojson.features[22].properties.video + '\',\'' + geojson.features[22].properties.image  + '\',\'' + geojson.features[22].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3235,7 +3235,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.287378,37.516547])
-          .setHTML('<h3>' + geojson.features[23].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[23].properties.image + '"></iframe><p>' + geojson.features[23].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[23].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[23].properties.image + '"></img><p>' + geojson.features[23].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[23].properties.title + '\',\'' +   geojson.features[23].properties.history + '\',\'' + geojson.features[23].properties.video + '\',\'' + geojson.features[23].properties.image  + '\',\'' + geojson.features[23].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3248,7 +3248,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285244,37.515499])
-          .setHTML('<h3>' + geojson.features[5].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[5].properties.image + '"></iframe><p>' + geojson.features[5].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[5].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[5].properties.image + '"></img><p>' + geojson.features[5].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[5].properties.title + '\',\'' +   geojson.features[5].properties.history + '\',\'' + geojson.features[5].properties.video + '\',\'' + geojson.features[5].properties.image  + '\',\'' + geojson.features[5].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3261,7 +3261,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2878337,37.517000])
-          .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[36].properties.image + '"></iframe><p>' + geojson.features[36].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[36].properties.image + '"></img><p>' + geojson.features[36].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[36].properties.title + '\',\'' +   geojson.features[36].properties.history + '\',\'' + geojson.features[36].properties.video + '\',\'' + geojson.features[36].properties.image  + '\',\'' + geojson.features[36].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3274,7 +3274,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2846963,37.5181250])
-          .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[37].properties.image + '"></iframe><p>' + geojson.features[37].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[37].properties.image + '"></img><p>' + geojson.features[37].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[37].properties.title + '\',\'' +   geojson.features[37].properties.history + '\',\'' + geojson.features[37].properties.video + '\',\'' + geojson.features[37].properties.image  + '\',\'' + geojson.features[37].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
@@ -3287,16 +3287,21 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286468,37.517468])
-          .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[39].properties.image + '"></iframe><p>' + geojson.features[39].properties.description + '</p><br>'
+          .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[39].properties.image + '"></img><p>' + geojson.features[39].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[39].properties.title + '\',\'' +   geojson.features[39].properties.history + '\',\'' + geojson.features[39].properties.video + '\',\'' + geojson.features[39].properties.image  + '\',\'' + geojson.features[39].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
 
+      }else{
+          map.flyTo({
+              center: [-122.284934,37.517124],
+              speed: 0.3,
+              offset: [0,400]
+          });
+          
+          var popup = new mapboxgl.Popup({closeOnClick: true}).addTo(map);
+          popup.remove();
       }
 
     }
 
-    $("#advanced-demo").keyup(function(event){
-        if(event.keyCode == 13){
-            $("#mainSearchBtn").click();
-        }
-    });
+   

@@ -713,6 +713,15 @@
             </div>
         </footer>
         <!-- End of Footer -->
+
+        <script>
+            $("#advanced-demo").keyup(function(event){
+                if(event.keyCode == 13){
+                    $("#mainSearchBtn").click();
+                }
+            });
+        </script>
+
         <script>
         $(document).ready(function(){
           $('.dropdown-submenu .dropdown-sublink').on("click", function(e){
