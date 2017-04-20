@@ -965,10 +965,6 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    map.on('mousemove', function(e) {
-        console.log(e.lngLat);
-    })
-
     map.on('load', function() {
         //begin adding one layer for each walkway/pathway.
     map.addLayer({
