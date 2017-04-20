@@ -1376,6 +1376,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAsc = document.getElementById('location0es');
+    var popupAsc = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAsc.onmouseover = function(){
+        map.flyTo({center: [-122.28495699776732,37.51718100361937],speed: 0.3});
+
+        popupAsc.setLngLat([-122.28495699776732,37.51718100361937])
+        .setHTML("<p style=\"font-size:12px;\">Centro de Éxito Académico</p>")
+        .addTo(map);
+    }
+    eleAsc.onmouseout = function(){
+        popupAsc.remove();
+    }
+
     function pressBtnAdmin() {
         var y = document.getElementById('location1es').innerHTML;
         map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
@@ -1384,6 +1401,23 @@
         .setHTML('<h3>Administración</h3><p>Oficina de Administración está ubicada en las Residencias Toso</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAdmin = document.getElementById('location1es');
+    var popupAdmin = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAdmin.onmouseover = function(){
+        map.flyTo({center: [-122.28653324831744,37.51806340060595],speed: 0.3});
+
+        popupAdmin.setLngLat([-122.28653324831744,37.51806340060595])
+        .setHTML("<p style=\"font-size:12px;\">Administración</p>")
+        .addTo(map);
+    }
+    eleAdmin.onmouseout = function(){
+        popupAdmin.remove();
     }
 
     function pressBtnBookStore() {
@@ -1396,6 +1430,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleBook = document.getElementById('location2es');
+    var popupBook = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleBook.onmouseover = function(){
+        map.flyTo({center: [-122.28710837814339,37.51834362086791],speed: 0.3});
+
+        popupBook.setLngLat([-122.28710837814339,37.51834362086791])
+        .setHTML("<p style=\"font-size:12px;\">Librería</p>")
+        .addTo(map);
+    }
+    eleBook.onmouseout = function(){
+        popupBook.remove();
+    }
+
     function pressBtnBusiness() {
         var u = document.getElementById('location3es').innerHTML;
         map.flyTo({center: [-122.2849, 37.51675], speed: 0.3});
@@ -1404,6 +1455,23 @@
         .setHTML('<h3>Oficina de negocios</h3><p>La Oficina de Negocios está ubicada en el ala de administración de St. Mary Hall.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleBiz = document.getElementById('location3es');
+    var popupBiz = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleBiz.onmouseover = function(){
+        map.flyTo({center: [-122.28512466474535,37.51679702458031],speed: 0.3});
+
+        popupBiz.setLngLat([-122.28512466474535,37.51679702458031])
+        .setHTML("<p style=\"font-size:12px;\">Oficina de negocios</p>")
+        .addTo(map);
+    }
+    eleBiz.onmouseout = function(){
+        popupBiz.remove();
     }
 
     function pressBtnCafeteria() {
@@ -1416,6 +1484,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCafe = document.getElementById('location4es');
+    var popupCafe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCafe.onmouseover = function(){
+        map.flyTo({center: [-122.2853098663542,37.51728980131068],speed: 0.3});
+
+        popupCafe.setLngLat([-122.2853098663542,37.51728980131068])
+        .setHTML("<p style=\"font-size:12px;\">Cafetería</p>")
+        .addTo(map);
+    }
+    eleCafe.onmouseout = function(){
+        popupCafe.remove();
+    }
+
     function pressBtnCampus() {
         var z = document.getElementById('location5es').innerHTML;
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -1426,6 +1511,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCampusCtr = document.getElementById('location5es');
+    var popupCampus = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCampusCtr.onmouseover = function(){
+        map.flyTo({center: [-122.2849570363995,37.51717653145357],speed: 0.3});
+
+        popupCampus.setLngLat([-122.2849570363995,37.51717653145357])
+        .setHTML("<p style=\"font-size:12px;\">Campus Center</p>")
+        .addTo(map);
+    }
+    eleCampusCtr.onmouseout = function(){
+        popupCampus.remove();
+    }
+
     function pressBtnCareer() {
         var z = document.getElementById('location6es').innerHTML;
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -1434,6 +1536,23 @@
         .setHTML('<h3>Servicios de carrera</h3><p>El Centro de Servicios Profesionales está ubicado en el Campus Center</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCareer = document.getElementById('location6es');
+    var popupCareer = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCareer.onmouseover = function(){
+        map.flyTo({center: [-122.28483679020057,37.51709267649758],speed: 0.3});
+
+        popupCareer.setLngLat([-122.28483679020057,37.51709267649758])
+        .setHTML("<p style=\"font-size:12px;\">Centro de carreras</p>")
+        .addTo(map);
+    }
+    eleCareer.onmouseout = function(){
+        popupCareer.remove();
     }
 
     function pressBtnSpirituality() {
@@ -1456,6 +1575,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCounsel = document.getElementById('location8es');
+    var popupCounsel = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCounsel.onmouseover = function(){
+        map.flyTo({center: [-122.28568161117192,37.5179257170645],speed: 0.3});
+
+        popupCounsel.setLngLat([-122.28568161117192,37.5179257170645])
+        .setHTML("<p style=\"font-size:12px;\">Servicios de Consejería y Salud</p>")
+        .addTo(map);
+    }
+    eleCounsel.onmouseout = function(){
+        popupCounsel.remove();
+    }
+
     function pressBtnCunningham() {
         var u = document.getElementById('location9es').innerHTML;
         map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
@@ -1464,6 +1600,23 @@
         .setHTML('<h3>Anexo de la Capilla de Cunningham</h3><p>La capilla fue dedicada al recuerdo de la hermana Catherine Julie Cunningham, ex presidenta de la universidad. Sus ventanas están hechas de vidrio esculpido, creado por el reconocido artista Gabriel Loire. La capilla alberga servicios semanales y otros eventos.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleChapAnx = document.getElementById('location9es');
+    var popupChapAnx = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleChapAnx.onmouseover = function(){
+        map.flyTo({center: [-122.28525540781425,37.51829515969446],speed: 0.3});
+
+        popupChapAnx.setLngLat([-122.28525540781425,37.51829515969446])
+        .setHTML("<p style=\"font-size:12px;\">Anexo de la Capilla de Cunningham</p>")
+        .addTo(map);
+    }
+    eleChapAnx.onmouseout = function(){
+        popupChapAnx.remove();
     }
 
     function pressBtnCuvilly() {
@@ -1476,6 +1629,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleCuv = document.getElementById('location10es');
+    var popupCuv = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleCuv.onmouseover = function(){
+        map.flyTo({center: [-122.2870274664667,37.51796849956045],speed: 0.3});
+
+        popupCuv.setLngLat([-122.2870274664667,37.51796849956045])
+        .setHTML("<p style=\"font-size:12px;\">Salón Cuvilly</p>")
+        .addTo(map);
+    }
+    eleCuv.onmouseout = function(){
+        popupCuv.remove();
+    }
+
     function pressBtnDean() {
         var u = document.getElementById('location11es').innerHTML;
         map.flyTo({center: [-122.2849,37.51675], speed: 0.3});
@@ -1484,6 +1654,23 @@
         .setHTML('<h3>Decano de Estudiantes / Asuntos Estudiantiles</h3><p>La División de Asuntos Estudiantiles ofrece servicios y programas que contribuyen a la misión de la universidad, apoya el bienestar de cada estudiante y nutre los aspectos comunitarios de la vida en el campus. En colaboración con nuestros colegas académicos, socios comunitarios y otros proveedores de servicios, nos centramos en el desarrollo de los estudiantes y el tipo de aprendizaje permanente que enriquece la mente, el cuerpo y el espíritu de todos los que forman parte de la Universidad Notre Dame de Namur.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDean = document.getElementById('location11es');
+    var popupDean = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDean.onmouseover = function(){
+        map.flyTo({center: [-122.28522540472824,37.51684496234989],speed: 0.3});
+
+        popupDean.setLngLat([-122.28522540472824,37.51684496234989])
+        .setHTML("<p style=\"font-size:12px;\">Decano de Estudiantes / Asuntos Estudiantiles</p>")
+        .addTo(map);
+    }
+    eleDean.onmouseout = function(){
+        popupDean.remove();
     }
 
     function pressBtnDorothy() {
@@ -1496,6 +1683,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDor = document.getElementById('location12es');
+    var popupDor = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDor.onmouseover = function(){
+        map.flyTo({center: [-122.28535477577394,37.518100869125135],speed: 0.3});
+
+        popupDor.setLngLat([-122.28535477577394,37.518100869125135])
+        .setHTML("<p style=\"font-size:12px;\">Hermana Dorothy Stang Center</p>")
+        .addTo(map);
+    }
+    eleDor.onmouseout = function(){
+        popupDor.remove();
+    }
+
     function pressBtnFinancial() {
         var u = document.getElementById('location13es').innerHTML;
         map.flyTo({center: [-122.2849, 37.51675],speed: 0.3});
@@ -1506,6 +1710,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleFinAid = document.getElementById('location13es');
+    var popupFinAid = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleFinAid.onmouseover = function(){
+        map.flyTo({center: [-122.28507266483592,37.516856256925806],speed: 0.3});
+
+        popupFinAid.setLngLat([-122.28507266483592,37.516856256925806])
+        .setHTML("<p style=\"font-size:12px;\">Ayuda financiera</p>")
+        .addTo(map);
+    }
+    eleFinAid.onmouseout = function(){
+        popupFinAid.remove();
+    }
+
     function pressBtnGavinHall() {
         var u = document.getElementById('location14es').innerHTML;
         map.flyTo({center: [-122.286697,37.518547],speed: 0.3});
@@ -1514,6 +1735,23 @@
         .setHTML('<h3>Gavin Hall</h3><p>El más pequeño de los tres principales edificios de instrucción. Ubicado en la colina de la librería</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleGavin = document.getElementById('location14es');
+    var popupGavin = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleGavin.onmouseover = function(){
+        map.flyTo({center: [-122.28674644497949,37.51863109295236],speed: 0.3});
+
+        popupGavin.setLngLat([-122.28674644497949,37.51863109295236])
+        .setHTML("<p style=\"font-size:12px;\">Gavin Hall</p>")
+        .addTo(map);
+    }
+    eleGavin.onmouseout = function(){
+        popupGavin.remove();
     }
 
     function pressHousing() {
@@ -1536,6 +1774,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleHR = document.getElementById('location16es');
+    var popupHR = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleHR.onmouseover = function(){
+        map.flyTo({center: [-122.2865159999931,37.51805962546834],speed: 0.3});
+
+        popupHR.setLngLat([-122.2865159999931,37.51805962546834])
+        .setHTML("<p style=\"font-size:12px;\">Recursos humanos</p>")
+        .addTo(map);
+    }
+    eleHR.onmouseout = function(){
+        popupHR.remove();
+    }
+
     function pressBtnInternational() {
         var u = document.getElementById('location17es').innerHTML;
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -1544,6 +1799,23 @@
         .setHTML('<h3>Oficina Internacional de Estudiantes</h3><p>La Oficina de Estudiantes Internacionales de la Universidad Notre Dame de Namur proporciona importantes recursos a nuestra diversa población de estudiantes internacionales.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleIntl = document.getElementById('location17es');
+    var popupIntl = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleIntl.onmouseover = function(){
+        map.flyTo({center: [-122.28492775733855,37.51713142726929],speed: 0.3});
+
+        popupIntl.setLngLat([-122.28492775733855,37.51713142726929])
+        .setHTML("<p style=\"font-size:12px;\">ficina Internacional de Estudiantes</p>")
+        .addTo(map);
+    }
+    eleIntl.onmouseout = function(){
+        popupIntl.remove();
     }
 
     function pressBtnJulie() {
@@ -1556,6 +1828,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleJulie = document.getElementById('location18es');
+    var popupJulie = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleJulie.onmouseover = function(){
+        map.flyTo({center: [-122.28546654603599,37.517075673913965],speed: 0.3});
+
+        popupJulie.setLngLat([-122.28546654603599,37.517075673913965])
+        .setHTML("<p style=\"font-size:12px;\">Julie Billiart Hall</p>")
+        .addTo(map);
+    }
+    eleJulie.onmouseout = function(){
+        popupJulie.remove();
+    }
+
     function pressKoret() {
         var u = document.getElementById('location19es').innerHTML;
         map.flyTo({center: [-122.284287,37.515561],speed: 0.3});
@@ -1564,6 +1853,23 @@
         .setHTML('<h3>Campo Atlético de Koret</h3><p>Nuestro campo está ubicado a lo largo de la avenida Ralston. Y es donde el lacrosse y los equipos de fútbol practican y reciben juegos. Hay una cancha de tenis situada justo al lado del campo.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleKoret = document.getElementById('location19es');
+    var popupKoret = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleKoret.onmouseover = function(){
+        map.flyTo({center: [-122.28431807034718,37.51564232721829],speed: 0.3});
+
+        popupKoret.setLngLat([-122.28431807034718,37.51564232721829])
+        .setHTML("<p style=\"font-size:12px;\">Campo Atlético de Koret</p>")
+        .addTo(map);
+    }
+    eleKoret.onmouseout = function(){
+        popupKoret.remove();
     }
 
     function pressBtnLibraryLawn() {
@@ -1576,6 +1882,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleLawn = document.getElementById('location20es');
+    var popupLawn = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleLawn.onmouseover = function(){
+        map.flyTo({center: [-122.28512549848128,37.51770460980809],speed: 0.3});
+
+        popupLawn.setLngLat([-122.28512549848128,37.51770460980809])
+        .setHTML("<p style=\"font-size:12px;\">iblioteca de césped</p>")
+        .addTo(map);
+    }
+    eleLawn.onmouseout = function(){
+        popupLawn.remove();
+    }
+
     function pressBtnMadisonArt() {
         var d = document.getElementById('location21es').innerHTML;
         map.flyTo({center: [-122.287697,37.517974],speed: 0.3});
@@ -1584,6 +1907,23 @@
         .setHTML('<h3>Madison Art Center</h3><p>Debajo de la Galería Weigand es un complejo completamente amueblado de aulas de arte dedicado a enseñar a los estudiantes un espectro de disciplinas.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleMadArt = document.getElementById('location21es');
+    var popupMadArt = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleMadArt.onmouseover = function(){
+        map.flyTo({center: [-122.28773696149935,37.518081424376064],speed: 0.3});
+
+        popupMadArt.setLngLat([-122.28773696149935,37.518081424376064])
+        .setHTML("<p style=\"font-size:12px;\">Madison Art Center</p>")
+        .addTo(map);
+    }
+    eleMadArt.onmouseout = function(){
+        popupMadArt.remove();
     }
 
     function pressNewHall() {
@@ -1596,6 +1936,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleNewHall = document.getElementById('location22es');
+    var popupNewHall = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleNewHall.onmouseover = function(){
+        map.flyTo({center: [-122.285708334043,37.51801419745058],speed: 0.3});
+
+        popupNewHall.setLngLat([-122.285708334043,37.51801419745058])
+        .setHTML("<p style=\"font-size:12px;\">New Hall</p>")
+        .addTo(map);
+    }
+    eleNewHall.onmouseout = function(){
+        popupNewHall.remove();
+    }
+
     function pressOfficeDiversity() {
         var o = document.getElementById('location23es').innerHTML;
         map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
@@ -1604,6 +1961,23 @@
         .setHTML('<h3>Oficina de Diversidad</h3><p>Se ha comprometido a fomentar la promoción de una adhesión reflexiva a las características de una comunidad de aprendizaje de Notre Dame de Namur. En particular, la Oficina está guiada por el quinto Hallmark: "Abrazamos el regalo de la diversidad".</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleDiverse = document.getElementById('location23es');
+    var popupDiverse = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleDiverse.onmouseover = function(){
+        map.flyTo({center: [-122.28487539141474,37.51806072213127],speed: 0.3});
+
+        popupDiverse.setLngLat([-122.28487539141474,37.51806072213127])
+        .setHTML("<p style=\"font-size:12px;\">ficina de Diversidad</p>")
+        .addTo(map);
+    }
+    eleDiverse.onmouseout = function(){
+        popupDiverse.remove();
     }
 
 
@@ -1617,6 +1991,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleSafe = document.getElementById('location24es');
+    var popupSafe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleSafe.onmouseover = function(){
+        map.flyTo({center: [-122.28490637662061,37.51677528887231],speed: 0.3});
+
+        popupSafe.setLngLat([-122.28490637662061,37.51677528887231])
+        .setHTML("<p style=\"font-size:12px;\">Seguridad Pública</p>")
+        .addTo(map);
+    }
+    eleSafe.onmouseout = function(){
+        popupSafe.remove();
+    }
+
     function pressBtnRalston() {
         var u = document.getElementById('location25es').innerHTML;
         map.flyTo({center: [-122.286784, 37.517380],speed: 0.3});
@@ -1625,6 +2016,23 @@
         .setHTML('<h3>Mansión Ralston Hall</h3><p>En 1966, el Departamento del Interior de los Estados Unidos designó a Ralston Hall un Monumento Histórico Nacional, también es un señalado Monumento Histórico de California. La mansión se encuentra actualmente en una renovación masiva y actualmente está cerrado.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleRalMan = document.getElementById('location25es');
+    var popupRalMan = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleRalMan.onmouseover = function(){
+        map.flyTo({center: [-122.28679698106713,37.51739544427258],speed: 0.3});
+
+        popupRalMan.setLngLat([-122.28679698106713,37.51739544427258])
+        .setHTML("<p style=\"font-size:12px;\">Mansión Ralston Hall</p>")
+        .addTo(map);
+    }
+    eleRalMan.onmouseout = function(){
+        popupRalMan.remove();
     }
 
     function pressBtnRegistrar() {
@@ -1637,6 +2045,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleReg = document.getElementById('location26es');
+    var popupReg = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleReg.onmouseover = function(){
+        map.flyTo({center: [-122.28491786818817,37.51676889680391],speed: 0.3});
+
+        popupReg.setLngLat([-122.28491786818817,37.51676889680391])
+        .setHTML("<p style=\"font-size:12px;\">Registrador</p>")
+        .addTo(map);
+    }
+    eleReg.onmouseout = function(){
+        popupReg.remove();
+    }
+
     function pressBtnStJoseph() {
         var u = document.getElementById('location27es').innerHTML;
         map.flyTo({center: [-122.285579,37.517475],speed: 0.3});
@@ -1645,6 +2070,23 @@
         .setHTML('<h3>St. Joseph Hall</h3><p>St. Joseph Hall es uno de los edificios residenciales de estudiantes. Los estudiantes viven en dormitorios individuales, dobles o triples. St. Joes Hall incluye un salón de estudiantes en el segundo piso</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleJoe = document.getElementById('location27es');
+    var popupJoe = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleJoe.onmouseover = function(){
+        map.flyTo({center: [-122.28559368507551,37.5174944873615],speed: 0.3});
+
+        popupJoe.setLngLat([-122.28559368507551,37.5174944873615])
+        .setHTML("<p style=\"font-size:12px;\">St. Joseph Hall</p>")
+        .addTo(map);
+    }
+    eleJoe.onmouseout = function(){
+        popupJoe.remove();
     }
 
     function pressBtnStMary() {
@@ -1658,6 +2100,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleMary = document.getElementById('location28es');
+    var popupMary = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleMary.onmouseover = function(){
+        map.flyTo({center: [-122.28491746271777,37.51676846798853],speed: 0.3});
+
+        popupMary.setLngLat([-122.28491746271777,37.51676846798853])
+        .setHTML("<p style=\"font-size:12px;\">St. Mary's Hall</p>")
+        .addTo(map);
+    }
+    eleMary.onmouseout = function(){
+        popupMary.remove();
+    }
+
     function pressBtnStudentLife() {
         var u = document.getElementById('location29es').innerHTML;
         map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
@@ -1666,6 +2125,23 @@
         .setHTML('<h3>Oficina de Liderazgo y Vida Estudiantil</h3><p>La Oficina de Vida y Liderazgo del Estudiante desarrolla y mejora el talento y el potencial de los estudiantes para ser líderes y ciudadanos efectivos en sus comunidades a través de la programación e involucramiento de los estudiantes, comunidades de aprendizaje en vivo, retiros de liderazgo, conferencias, entrenamientos y cursos académicos.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleStuLife = document.getElementById('location29es');
+    var popupStuLife = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleStuLife.onmouseover = function(){
+        map.flyTo({center: [-122.28494571319919,37.51714258115409],speed: 0.3});
+
+        popupStuLife.setLngLat([-122.28494571319919,37.51714258115409])
+        .setHTML("<p style=\"font-size:12px;\">Oficina de Liderazgo y Vida Estudiantil</p>")
+        .addTo(map);
+    }
+    eleStuLife.onmouseout = function(){
+        popupStuLife.remove();
     }
 
     function pressBtnTabard() {
@@ -1678,6 +2154,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleTabard = document.getElementById('location30es');
+    var popupTabard = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleTabard.onmouseover = function(){
+        map.flyTo({center: [-122.28690900001132,37.51805952547706],speed: 0.3});
+
+        popupTabard.setLngLat([-122.28690900001132,37.51805952547706])
+        .setHTML("<p style=\"font-size:12px;\">Tabard Inn</p>")
+        .addTo(map);
+    }
+    eleTabard.onmouseout = function(){
+        popupTabard.remove();
+    }
+
     function pressBtnTaube() {
         var u = document.getElementById('location31es').innerHTML;
         map.flyTo({center: [-122.283010,37.516661],speed: 0.3});
@@ -1686,6 +2179,23 @@
         .setHTML('<h3>Taube Centro</h3><p>Originalmente construido como iglesia, este edificio multi-propósito se utiliza para clases, recitales, actuaciones musicales, conferencias y reuniones.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleTaube = document.getElementById('location31es');
+    var popupTaube = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleTaube.onmouseover = function(){
+        map.flyTo({center: [-122.28301000000351,37.51667558324412],speed: 0.3});
+
+        popupTaube.setLngLat([-122.28301000000351,37.51667558324412])
+        .setHTML("<p style=\"font-size:12px;\">Taube Centro</p>")
+        .addTo(map);
+    }
+    eleTaube.onmouseout = function(){
+        popupTaube.remove();
     }
 
     function pressBtnTheApartments() {
@@ -1708,6 +2218,23 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleLib = document.getElementById('location33es');
+    var popupLib = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleLib.onmouseover = function(){
+        map.flyTo({center: [-122.28473279056112,37.51756640732573],speed: 0.3});
+
+        popupLib.setLngLat([-122.28473279056112,37.51756640732573])
+        .setHTML("<p style=\"font-size:12px;\">Biblioteca de Carl y Celia Berta Gellert</p>")
+        .addTo(map);
+    }
+    eleLib.onmouseout = function(){
+        popupLib.remove();
+    }
+
     function pressBtnQuad() {
         var e = document.getElementById('location34es').innerHTML;
         map.flyTo({center: [-122.285009,37.516948],speed: 0.3});
@@ -1718,14 +2245,48 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleQuad = document.getElementById('location34es');
+    var popupQuad = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleQuad.onmouseover = function(){
+        map.flyTo({center: [-122.28500899999409,37.51696315060589],speed: 0.3});
+
+        popupQuad.setLngLat([-122.28500899999409,37.51696315060589])
+        .setHTML("<p style=\"font-size:12px;\">El Quad</p>")
+        .addTo(map);
+    }
+    eleQuad.onmouseout = function(){
+        popupQuad.remove();
+    }
+
     function pressToso() {
         var e= document.getElementById('location35es').innerHTML;
         map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.286516,37.518052])
-        .setHTML('<h3>Residencia Toso (Compiegne)</h3><p>Oficinas del personal incluyendo recursos humanos y administración.</p>')
+        .setHTML('<h3>Residencias Toso</h3><p>Oficinas del personal incluyendo recursos humanos y administración.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleToso = document.getElementById('location35es');
+    var popupToso = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleToso.onmouseover = function(){
+        map.flyTo({center: [-122.28652220830261,37.51806184837365],speed: 0.3});
+
+        popupToso.setLngLat([-122.28652220830261,37.51806184837365])
+        .setHTML("<p style=\"font-size:12px;\">Residencias Toso</p>")
+        .addTo(map);
+    }
+    eleToso.onmouseout = function(){
+        popupToso.remove();
     }
 
     function pressBtnGym() {
@@ -1738,14 +2299,48 @@
         $("#wrapper").toggleClass("toggled");
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleGym = document.getElementById('location36es');
+    var popupGym = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleGym.onmouseover = function(){
+        map.flyTo({center: [-122.28431126551351,37.518283912366925],speed: 0.3});
+
+        popupGym.setLngLat([-122.28431126551351,37.518283912366925])
+        .setHTML("<p style=\"font-size:12px;\">Gimnasio Walter Gleason</p>")
+        .addTo(map);
+    }
+    eleGym.onmouseout = function(){
+        popupGym.remove();
+    }
+
     function pressBtnWeigand() {
         var u = document.getElementById('location37es').innerHTML;
         map.flyTo({center: [-122.287751,37.518191],speed: 0.3});
         var popup = new mapboxgl.Popup({closeOnClick: true})
         .setLngLat([-122.287751,37.518191])
-        .setHTML('<h3>Galería Weigand</h3><p>Los estudiantes trabajan en la galería ayudando a instalar exposiciones y ganar experiencia en la galería alberga muchos artistas conocidos a nivel nacional y muestra de arte estudiantil.</p>')
+        .setHTML('<h3>Galería Wiegand</h3><p>Los estudiantes trabajan en la galería ayudando a instalar exposiciones y ganar experiencia en la galería alberga muchos artistas conocidos a nivel nacional y muestra de arte estudiantil.</p>')
         .addTo(map);
         $("#wrapper").toggleClass("toggled");
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleWiegand = document.getElementById('location37es');
+    var popupWiegand = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleWiegand.onmouseover = function(){
+        map.flyTo({center: [-122.28775099998789,37.51821594913548],speed: 0.3});
+
+        popupWiegand.setLngLat([-122.28775099998789,37.51821594913548])
+        .setHTML("<p style=\"font-size:12px;\">Galería Wiegand</p>")
+        .addTo(map);
+    }
+    eleWiegand.onmouseout = function(){
+        popupWiegand.remove();
     }
 
     function pressBtnWriting() {

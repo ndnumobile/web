@@ -965,10 +965,6 @@
         el.style.height = marker.properties.iconSize[1] + 'px';
     });
 
-    map.on('mousemove', function(e) {
-        console.log(e.lngLat);
-    })
-
     map.on('load', function() {
         //begin adding one layer for each walkway/pathway.
     map.addLayer({
@@ -2141,6 +2137,23 @@
 
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleMail = document.getElementById('location21b');
+    var popupMail = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleMail.onmouseover = function(){
+        map.flyTo({center: [-122.28784073536893,37.51699441918596],speed: 0.3});
+
+        popupMail.setLngLat([-122.28784073536893,37.51699441918596])
+        .setHTML("<p style=\"font-size:12px;\">Mailing Center</p>")
+        .addTo(map);
+    }
+    eleMail.onmouseout = function(){
+        popupMail.remove();
+    }
+
     function pressNewHall() {
         var n = document.getElementById('location22').innerHTML;
 
@@ -2219,15 +2232,15 @@
 
     }
 
-    var eleOfficeSprt = document.getElementById('location23');
+    var eleOfficeSprt = document.getElementById('location23b');
     var popupOfficeSprt = new mapboxgl.Popup({
         closeButton: false,
         closeOnClick: false
     });
     eleOfficeSprt.onmouseover = function(){
-        map.flyTo({center: [-122.28487539141474,37.51806072213127],speed: 0.3});
+        map.flyTo({center: [-122.28528599983176,37.518201873921925],speed: 0.3});
 
-        popupOfficeSprt.setLngLat([-122.28487539141474,37.51806072213127])
+        popupOfficeSprt.setLngLat([-122.28528599983176,37.518201873921925])
         .setHTML("<p style=\"font-size:12px;\">Office of Spirituality</p>")
         .addTo(map);
     }
@@ -2265,6 +2278,7 @@
     eleSafe.onmouseout = function(){
         popupSafe.remove();
     }
+
     function pressBtnRalstonAnnex() {
       var u = document.getElementById('location25a').innerHTML;
       if(u == "Ralston Hall Annex")
@@ -2277,6 +2291,23 @@
           .addTo(map);
       }
 
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleRalAnnex = document.getElementById('location25a');
+    var popupRalAnnex = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleRalAnnex.onmouseover = function(){
+        map.flyTo({center: [-122.28647391000729,37.51745393711556],speed: 0.3});
+
+        popupRalAnnex.setLngLat([-122.28647391000729,37.51745393711556])
+        .setHTML("<p style=\"font-size:12px;\">Ralston Hall Annex</p>")
+        .addTo(map);
+    }
+    eleRalAnnex.onmouseout = function(){
+        popupRalAnnex.remove();
     }
 
     function pressBtnRalston() {
@@ -2505,6 +2536,23 @@
         }
     }
 
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAptsCarroll = document.getElementById('location32');
+    var popupAptsCarroll = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAptsCarroll.onmouseover = function(){
+        map.flyTo({center: [-122.28501499999612,37.51643189241878],speed: 0.3});
+
+        popupAptsCarroll.setLngLat([-122.28501499999612,37.51643189241878])
+        .setHTML("<p style=\"font-size:12px;\">The Apartments Carroll</p>")
+        .addTo(map);
+    }
+    eleAptsCarroll.onmouseout = function(){
+        popupAptsCarroll.remove();
+    }
+
     function pressBtnTheApartmentsKane() {
     	var u = document.getElementById('location32a').innerHTML;
         if(u == "The Apartments Kane")
@@ -2516,6 +2564,23 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[33].properties.title + '\',\'' +   geojson.features[33].properties.history + '\',\'' + geojson.features[33].properties.video + '\',\'' + geojson.features[33].properties.image  + '\',\'' + geojson.features[33].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
     	}
+    }
+
+    //onhover of a campus location sidebar item, center map and display tooltip with building name.
+    var eleAptsKane = document.getElementById('location32a');
+    var popupAptsKane = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleAptsKane.onmouseover = function(){
+        map.flyTo({center: [-122.28543400000022,37.5165439283045],speed: 0.3});
+
+        popupAptsKane.setLngLat([-122.28543400000022,37.5165439283045])
+        .setHTML("<p style=\"font-size:12px;\">The Apartments Kane</p>")
+        .addTo(map);
+    }
+    eleAptsKane.onmouseout = function(){
+        popupAptsKane.remove();
     }
 
     function pressBtnTheApartmentsWilkie() {
@@ -2532,11 +2597,22 @@
     }
 
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
-    var eleApts = document.getElementById('location32');
-    var popupApts = new mapboxgl.Popup({
+    var eleAptsWilkie = document.getElementById('location32b');
+    var popupAptsWilkie = new mapboxgl.Popup({
         closeButton: false,
         closeOnClick: false
     });
+    eleAptsWilkie.onmouseover = function(){
+        map.flyTo({center: [-122.28580000000552,37.516739179156104],speed: 0.3});
+
+        popupAptsWilkie.setLngLat([-122.28580000000552,37.516739179156104])
+        .setHTML("<p style=\"font-size:12px;\">The Apartments Wilkie</p>")
+        .addTo(map);
+    }
+    eleAptsWilkie.onmouseout = function(){
+        popupAptsWilkie.remove();
+    }
+
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
@@ -2622,7 +2698,7 @@
         map.flyTo({center: [-122.28652220830261,37.51806184837365],speed: 0.3});
 
         popupToso.setLngLat([-122.28652220830261,37.51806184837365])
-        .setHTML("<p style=\"font-size:12px;\">Toso Residence (Compiegne)</p>")
+        .setHTML("<p style=\"font-size:12px;\">Toso Residences</p>")
         .addTo(map);
     }
     eleToso.onmouseout = function(){
@@ -2692,36 +2768,7 @@
         popupWiegand.remove();
     }
 
-    function pressBtnWriting() {
-        var u = document.getElementById('location38').innerHTML;
-        if(u == "Writing Center")
-        {
-            map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-            var popup = new mapboxgl.Popup({closeOnClick: true})
-            .setLngLat([-122.284934,37.517124])
-            .setHTML('<h3>Writing Center</h3><p>The Writing Center, located in the Campus Center Building adjacent to the Academic Success Center, is a place where teachers, tutors, and students meet to collaborate on all aspects of writing, from basic grammar to advanced composition. All NDNU students may come to the Center for assistance with their writing and any course assignments requiring writing. Friendly instructors and capable tutors make the Writing Center a valuable resource for NDNU students.</p>')
-            .addTo(map);
-
-        }
-    }
-
-    //onhover of a campus location sidebar item, center map and display tooltip with building name.
-    var eleWrite = document.getElementById('location38');
-    var popupWrite = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-    eleWrite.onmouseover = function(){
-        map.flyTo({center: [-122.28492790207042,37.51713367338232],speed: 0.3});
-
-        popupWrite.setLngLat([-122.28492790207042,37.51713367338232])
-        .setHTML("<p style=\"font-size:12px;\">Writing Center</p>")
-        .addTo(map);
-    }
-    eleWrite.onmouseout = function(){
-        popupWrite.remove();
-    }
-
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     function searchBtn(){
         //this function authored by JohnPhilip Lahman
@@ -3275,11 +3322,9 @@
               speed: 0.3,
               offset: [0,400]
           });
-          
+
           var popup = new mapboxgl.Popup({closeOnClick: true}).addTo(map);
           popup.remove();
       }
 
     }
-
-   
