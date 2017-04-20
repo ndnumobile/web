@@ -27,7 +27,7 @@
                 max-width: 600px;
                 max-height: 400px;
                 font-size:12px;
-                overflow-y: scroll;
+                overflow-y: auto;
                 border-radius:25px;
                 border:10px solid #f8c460;
                 padding-left:15px;
@@ -693,7 +693,7 @@
         </div>
 
         <!-- Start of Footer -->
-        <footer>
+        <footer id="pageFooter">
             <div class="footer-left">
                 <!-- AddToAny BEGIN -->
                 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -713,6 +713,15 @@
             </div>
         </footer>
         <!-- End of Footer -->
+
+        <script>
+            $("#advanced-demo").keyup(function(event){
+                if(event.keyCode == 13){
+                    $("#mainSearchBtn").click();
+                }
+            });
+        </script>
+
         <script>
         $(document).ready(function(){
           $('.dropdown-submenu .dropdown-sublink').on("click", function(e){

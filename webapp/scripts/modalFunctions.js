@@ -42,13 +42,18 @@ hamburgerClose.onclick = function(){
     modalopen.style.display ="none";
     closeSideBar.style.display = "block";
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
+    
 }
 // When the user clicks on <Search Bar> Modal is closed
 searchBarClose.onclick = function(){
     modalopen.style.display ="none";      //mapboxgl-popup mapboxgl-popup-anchor-bottom
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
     $("#wrapper").toggleClass("toggled",true);
 }
 
@@ -217,6 +222,9 @@ $('#location4').click(function (e) {
 $('#location5').click(function (e) {
   e.stopPropagation()
 });
+$('#location5a').click(function (e) {
+  e.stopPropagation()
+});
 $('#location6').click(function (e) {
   e.stopPropagation()
 });
@@ -265,16 +273,25 @@ $('#location20').click(function (e) {
 $('#location21').click(function (e) {
   e.stopPropagation()
 });
+$('#location21b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location22').click(function (e) {
   e.stopPropagation()
 });
 $('#location23').click(function (e) {
   e.stopPropagation()
 });
+$('#location23b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location24').click(function (e) {
   e.stopPropagation()
 });
 $('#location25').click(function (e) {
+  e.stopPropagation()
+});
+$('#location25a').click(function (e) {
   e.stopPropagation()
 });
 $('#location26').click(function (e) {
@@ -296,6 +313,12 @@ $('#location31').click(function (e) {
   e.stopPropagation()
 });
 $('#location32').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32a').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32b').click(function (e) {
   e.stopPropagation()
 });
 $('#location33').click(function (e) {
