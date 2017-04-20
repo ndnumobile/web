@@ -222,6 +222,9 @@ $('#location4').click(function (e) {
 $('#location5').click(function (e) {
   e.stopPropagation()
 });
+$('#location5a').click(function (e) {
+  e.stopPropagation()
+});
 $('#location6').click(function (e) {
   e.stopPropagation()
 });
@@ -270,16 +273,25 @@ $('#location20').click(function (e) {
 $('#location21').click(function (e) {
   e.stopPropagation()
 });
+$('#location21b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location22').click(function (e) {
   e.stopPropagation()
 });
 $('#location23').click(function (e) {
   e.stopPropagation()
 });
+$('#location23b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location24').click(function (e) {
   e.stopPropagation()
 });
 $('#location25').click(function (e) {
+  e.stopPropagation()
+});
+$('#location25a').click(function (e) {
   e.stopPropagation()
 });
 $('#location26').click(function (e) {
@@ -301,6 +313,12 @@ $('#location31').click(function (e) {
   e.stopPropagation()
 });
 $('#location32').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32a').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32b').click(function (e) {
   e.stopPropagation()
 });
 $('#location33').click(function (e) {
