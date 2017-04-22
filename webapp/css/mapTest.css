@@ -657,3 +657,7 @@ p{
 #site-header.navbar-default .navbar-brand {
     color: #f8c460;
 }
+
+#pageFooter {
+    z-index: 2000;
+}
