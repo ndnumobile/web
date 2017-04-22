@@ -1462,6 +1462,22 @@
        }
     });
 
+	function navPopup(centerX,centerY,featureLocation)
+	{
+		var centerPositionX = centerX;
+		var centerPositionY = centerY;
+		var featurePosition = featureLocation;
+		
+		map.flyTo({center: [centerPositionX, centerPositionY],speed: 0.3});
+		var popup = new mapboxgl.Popup({closeOnClick: true})
+		.setLngLat([centerPositionX, centerPositionY])
+		.setHTML('<h3>' + geojson.features[featurePosition].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[featurePosition].properties.image + '"></iframe><p>' + geojson.features[featurePosition].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[featurePosition].properties.title + '\',\'' +   geojson.features[featurePosition].properties.history + '\',\'' + geojson.features[featurePosition].properties.video + '\',\'' + geojson.features[featurePosition].properties.image  + '\',\'' + geojson.features[featurePosition].properties.description + '\',\'' + geojson.features[featurePosition].properties.audio + '\',\'' + geojson.features[featurePosition].properties.id + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">More</a>')
+		.addTo(map);
+	}
+	
+	
+	
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 
@@ -1949,7 +1965,6 @@
             .setLngLat([-122.286516,37.518052])
             .setHTML('<h3>'+ poi.poi[8].title+'</h3><p>' + poi.poi[8].details+'</p>')
             .addTo(map);
-
         }
     }
 
@@ -2279,6 +2294,7 @@
         popupSafe.remove();
     }
 
+	//this function can now be removed
     function pressBtnRalstonAnnex() {
       var u = document.getElementById('location25a').innerHTML;
       if(u == "Ralston Hall Annex")
@@ -2310,6 +2326,7 @@
         popupRalAnnex.remove();
     }
 
+	//this function now can be removed
     function pressBtnRalston() {
         var u = document.getElementById('location25').innerHTML;
         if(u == "Ralston Hall Mansion")
@@ -2553,6 +2570,7 @@
         popupAptsCarroll.remove();
     }
 
+	//this function can also be removed now
     function pressBtnTheApartmentsKane() {
     	var u = document.getElementById('location32a').innerHTML;
         if(u == "The Apartments Kane")
