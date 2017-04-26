@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Marys Hall",
-                    "description": "St. Marys Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
+                    "title": "St. Mary's Hall",
+                    "description": "St. Mary's Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, and the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "St. Marys Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Mary's Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -52,10 +52,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Ralston Hall Mansion",
-                    "description": "Ralston Hall a National Historic Landmark and a California Historic Landmark. Completed in 1868, this exquisite Victorian mansion is currently closed for renovation and seismic retrofitting. Once reopened, the hall will once again house the university’s main administrative offices, as well as a new student learning commons.",
+                    "description": "Ralston Hall a National Historic Landmark and a California Historical Landmark. Completed in 1868, this exquisite Victorian mansion is currently closed for renovation and seismic retrofitting. Once reopened, the hall will once again house the university’s main administrative offices, as well as a new student learning commons.",
                     "image": "./img/ralstonHall.JPG",
                     "audio": "./audio/ralstonHallHistory.mp3",
-                    "history": "The hall is named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan.",
+                    "history": "The hall is named for William Chapman Ralston, early owner of the mansion and prominent San Franciscan.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mansion.svg",
                     "iconSize":[25,25]
@@ -76,7 +76,7 @@
                     "description": "The Taube Center is used for performances and art showings.",
                     "image": "./img/taube.JPG",
                     "audio": "./audio/taubeHistory.mp3",
-                    "history": "Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.",
+                    "history": "Originally built as a church, this multi-purpose building is used for classes, recitals, music performances, lectures, and meetings.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/theatreB.svg",
                     "iconSize":[25,25]
@@ -610,7 +610,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Parking Pass Machine",
-                    "description": "2 dollars in coin or one dollar bills gets you a day use parking pass at this parking pass machine. The only one for the main, commuter parking lot.",
+                    "description": "$2 in coins or one dollar bills gets you a day-use parking pass at this parking pass machine, the only one for the main commuter parking lot.",
                     "image": "./img/parkingMachine.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
@@ -682,7 +682,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Overflow Parking Lot",
-                    "description": "Additional parking. A bus can pick you up at the bottom of the driveway. Not well lit, it is recommended to bring a flashlight, and a friend when heading here at night.",
+                    "description": "Additional parking. A bus can pick you up at the bottom of the driveway.",
                     "image": "./img/overflowParking.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
@@ -805,7 +805,7 @@
                     "description": "The center for all mailing needs",
                     "image": "./img/mailingCenterAdjusted.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
+                    "history": "Originally housed in Ralston Hall, the mailing center has moved to accommodate the Ralston Hall renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mail1.svg",
                     "iconSize":[20,20]
@@ -847,20 +847,18 @@
                     "id": "39",
                     "parentId": "",
                     "locType": "building",
-                    "title": "McGraw's Bar & Grill",
+                    "title": "McGraws Bar and Grill",
                     "description": "A great place to study, with better wifi than on campus.",
                     "image": "./img/mcgraws.jpg",
                     "audio": "",
-                    "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks.",
+                    "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks. A favorite spot of former NDNU professor, Ardavan Davaran (March 4,1940 - January 28, 2009); who passed away in Oakland, CA, following a short, but hard fought battle with cancer. Born in Iran, he received his BA in bacteriology; MA and PhD in comparative literature from UC Berkeley. He returned to Iran and taught at Teheran University where he was an associate professor and later chairman of the Department of English and Comparative Literature. Returning to the U.S. in 1980, following the Iranian revolution, he continued his teaching career at Notre Dame de Namur University in Belmont, CA, where he taught in the graduate and undergraduate Department of English. Dr. D, as he was known to his students, was a dedicated and passionate teacher - never missing a class. Described by his students as compassionate and larger than life, Dr. Davaran always challenged them to achieve more than they thought possible of themselves. An avid tennis player, Ardy loved life and lived it to its fullest. His family, colleagues, students, and many, many friends mourn his passing. In Loving Memory of Dr. Ardavan Davaran.",
                     "video": "",
                     "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
-
-                        -122.277581,
-                        37.521535
+                        -122.277581,37.521535
                     ],
                     "type": "Point"
                 }
@@ -895,7 +893,7 @@
 
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
-        [-122.274592, 37.527414]  // Northeast coordinates
+        [-122.274592, 38.527414]  // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
@@ -1467,7 +1465,7 @@
 		var centerPositionX = centerX;
 		var centerPositionY = centerY;
 		var featurePosition = featureLocation;
-		
+
 		map.flyTo({center: [centerPositionX, centerPositionY],speed: 0.3});
 		var popup = new mapboxgl.Popup({closeOnClick: true})
 		.setLngLat([centerPositionX, centerPositionY])
@@ -1475,6 +1473,7 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[featurePosition].properties.title + '\',\'' +   geojson.features[featurePosition].properties.history + '\',\'' + geojson.features[featurePosition].properties.video + '\',\'' + geojson.features[featurePosition].properties.image  + '\',\'' + geojson.features[featurePosition].properties.description + '\',\'' + geojson.features[featurePosition].properties.audio + '\',\'' + geojson.features[featurePosition].properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>')
 		.addTo(map);
 	}
+
 	
 	function navPopupPoi1(centerX, centerY, PoiLocation)
 	{
@@ -2872,13 +2871,13 @@
 
       }else if(x == "Library Lawn"){
           navPopup(-122.285082,37.517643,9);
-          
+
       }else if(x == "Walter Gleason Gym"){
           navPopup(-122.284331,37.518310,10);
-          
+
       }else if(x == "Campus Center"){
           navPopup(-122.284934,37.517124,11);
-          
+
       }else if(x == "Academic Success Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
@@ -2929,7 +2928,7 @@
 
       }else if(x == "The Quad"){
           navPopup(-122.285009,37.516948,12);
-          
+
       }else if(x == "Writing Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
@@ -2947,10 +2946,10 @@
 
       }else if(x == "Center for Spirituality"){
           navPopup(-122.285286,37.518197,13);
-          
+
       }else if(x == "Julie Billiart Hall"){
           navPopup(-122.285396,37.517010,14);
-          
+
       }else if(x == "Dean of Students/Student Affairs"){
           map.flyTo({
               center: [-122.285396,37.517010],
@@ -2977,7 +2976,7 @@
 
       }else if(x == "St. Joseph Hall"){
           navPopup(-122.285579,37.517475,15);
-          
+
       }else if(x == "Housing"){
           map.flyTo({
               center: [-122.285579,37.517475],
@@ -3001,10 +3000,10 @@
 
       }else if(x == "Koret Athletic Field"){
           navPopup(-122.284287,37.515561,16);
-          
+
       }else if(x == "Toso Residences"){
           navPopup(-122.286516,37.518052,17);
-          
+
       }else if(x == "Human Resources"){
           map.flyTo({
               center: [-122.286516,37.518052],
@@ -3043,7 +3042,7 @@
 
       }else if(x == "New Hall"){
           navPopup(-122.285694,37.517938,6);
-          
+
       }else if(x == "Counseling and Health Services"){
           map.flyTo({
               center: [-122.285694,37.517938],
@@ -3058,37 +3057,37 @@
 
       }else if(x == "Taube Center"){
           navPopup(-122.283010,37.516661,3);
-          
+
       }else if(x == "Wiegand Gallery"){
           navPopup(-122.287751,37.518191,18);
-          
+
       }else if(x == "Madison Art Center"){
           navPopup(-122.287697,37.517974,19);
-          
+
       }else if(x == "Cuvilly Hall"){
           navPopup(-122.287009,37.517927,20);
-          
+
       }else if(x == "Bookstore"){
           navPopup(-122.287091,37.518277,21);
-          
+
       }else if(x == "Gavin Hall"){
           navPopup(-122.286697,37.518547,22);
-          
+
       }else if(x == "Province Center"){
           navPopup(-122.287378,37.516547,23);
-          
+
       }else if(x == "NDNU Theatre"){
           navPopup(-122.285244,37.515499,5);
-          
+
       }else if(x == "Mailing Center"){
           navPopup(-122.2878337,37.517000,36);
-          
+
       }else if(x == "Campanile"){
           navPopup(-122.2846963,37.5181250,37);
-          
+
       }else if(x == "Ralston Hall Annex"){
           navPopup(-122.286468,37.517468,39);
-          
+
       }else{
           map.flyTo({
               center: [-122.284934,37.517124],
