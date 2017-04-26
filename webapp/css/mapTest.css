@@ -270,13 +270,20 @@ body{
     width: 100%;
     border-width: 0px 0px 5px 0px;
     border-color: #f8c460;
-    background-color:#011121;
-    background-image:url(../img/masthead4.png);
+    background-color:#006699;
+    /*background-image:url(../img/masthead.png);*/
     /*height: 6.8%;*/
     height: 63px;
     background-position: center;
     background-repeat: no-repeat;
     float: right;
+}
+
+#head-logo{
+    height: 60px;
+    width: 250px;
+    float: right;
+    margin-right:50px;
 }
 
 #navbar-white{
@@ -660,9 +667,13 @@ p{
     color: #f8c460;
 }
 
+
 .carousel {overflow: hidden; 
 }  
 
 .carousel-item {display: inline-block;  
 vertical-align: top; font-size: 20px;
+{
+    z-index: 2000;
+
 }

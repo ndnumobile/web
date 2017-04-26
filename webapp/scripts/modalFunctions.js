@@ -32,11 +32,6 @@ function welcomeModal() {
     }
 }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modalopen.style.display = "none";
-// }
-
 // closes the welcome modal on reset
 function ribbonClose(){
     modalopen.style.display = "none";
@@ -47,13 +42,18 @@ hamburgerClose.onclick = function(){
     modalopen.style.display ="none";
     closeSideBar.style.display = "block";
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
+    
 }
 // When the user clicks on <Search Bar> Modal is closed
 searchBarClose.onclick = function(){
     modalopen.style.display ="none";      //mapboxgl-popup mapboxgl-popup-anchor-bottom
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
-    closeSummaryModal[0].style.display = "none";
+    if(closeSummaryModal[0] != null){
+       closeSummaryModal[0].style.display = "none"; 
+    }
     $("#wrapper").toggleClass("toggled",true);
 }
 
@@ -67,7 +67,6 @@ window.onclick = function(event) {
 // When user clicks on welcome button in navigation menu, the welcome modal is displayed
 openWelcomeModal.onclick = function(){
     modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
-
                 +'<div class="modal-header2 autoModal">'
                     +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
                     +'<div class="modal-title2">Welcome to the NDNU Campus Tour!</div>'
@@ -92,7 +91,6 @@ openWelcomeModal.onclick = function(){
 
 openGeneralHistoryModal.onclick = function(){
     modalopen.innerHTML = '<div id="modalContent" class="modal-content2 autoModal ">'
-
                 +'<div class="modal-header2 autoModal">'
                     +'<div class= "modal-image2"><img src="http://i.imgur.com/A35ss2e.png" alt="argo"></div>'
                     +'<div class="modal-title2">Notre Dame de Namur University</div>'
@@ -163,13 +161,22 @@ openGeneralHistoryModal_es.onclick = function(){
 
 // When the user clicks on the more info button, displays a modal
 function popUpModal(title,history,vid,image,description,audio,id){
+    var lang = document.documentElement.lang;
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
     closeSummaryModal[0].style.display = "none";
     modal2.style.display = "block";
-    document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
+    if (lang == 'es') {
+        document.getElementById("modalContent-es").className = "modModal modal-content2 autoModal";
+    } else {
+        document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
+    }
 
     var detailModal = "<button onClick=\"moreInfoClose()\" data-dismiss=\"modalContent\" class=\"mapboxgl-popup-close-button\">x</button><h3>" + title + "</h3><div id=\"vid-section\" style=\"display:none;\"><iframe class=\"vid-frame\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" scrolling=\"auto\"  src=\"" + vid + "\"></iframe></div><p>" + history + "</p><div id=\"audio-section\" style=\"display:none;\"><audio controls id=\"audio-panel\"><source src=\""+ audio + "\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio></div><div id=\"link-section\" style=\"display:none;\"></div>";
-    document.getElementById("modalContent").innerHTML = detailModal;
+    if (lang == 'es') {
+        document.getElementById("modalContent-es").innerHTML = detailModal;
+    } else {
+        document.getElementById("modalContent").innerHTML = detailModal;
+    }
     if (audio != '') {
         document.getElementById("audio-section").style.display = "block";
     }
@@ -223,6 +230,9 @@ $('#location4').click(function (e) {
 $('#location5').click(function (e) {
   e.stopPropagation()
 });
+$('#location5a').click(function (e) {
+  e.stopPropagation()
+});
 $('#location6').click(function (e) {
   e.stopPropagation()
 });
@@ -271,16 +281,25 @@ $('#location20').click(function (e) {
 $('#location21').click(function (e) {
   e.stopPropagation()
 });
+$('#location21b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location22').click(function (e) {
   e.stopPropagation()
 });
 $('#location23').click(function (e) {
   e.stopPropagation()
 });
+$('#location23b').click(function (e) {
+  e.stopPropagation()
+});
 $('#location24').click(function (e) {
   e.stopPropagation()
 });
 $('#location25').click(function (e) {
+  e.stopPropagation()
+});
+$('#location25a').click(function (e) {
   e.stopPropagation()
 });
 $('#location26').click(function (e) {
@@ -302,6 +321,12 @@ $('#location31').click(function (e) {
   e.stopPropagation()
 });
 $('#location32').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32a').click(function (e) {
+  e.stopPropagation()
+});
+$('#location32b').click(function (e) {
   e.stopPropagation()
 });
 $('#location33').click(function (e) {
