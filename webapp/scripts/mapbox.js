@@ -1474,8 +1474,27 @@
 		.addTo(map);
 	}
 
-
-
+	
+	function navPopupPoi1(centerX, centerY, PoiLocation)
+	{
+		map.flyTo({center: [centerX, centerY],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([centerX, centerY])
+        .setHTML('<h3>'+ poi.poi[PoiLocation].title+'</h3><p>' + poi.poi[PoiLocation].details+'</p>'+ '<img src="'+poi.poi[PoiLocation].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[PoiLocation].audio+'"type="audio/mp3"></audio>' + '<iframe width="320" height="240" src="' + poi.poi[PoiLocation].video + '"></iframe>')
+        .addTo(map);
+	}
+	
+	function navPopupPoi2(centerX, centerY, PoiLocation)
+	{
+		map.flyTo({center: [centerX, centerY],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([centerX, centerY])
+        .setHTML('<h3>'+ poi.poi[PoiLocation].title+'</h3><p>' + poi.poi[PoiLocation].details+'</p>')
+        .addTo(map);
+	}
+	
+	
+	
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 
@@ -2197,7 +2216,8 @@
     eleNewHall.onmouseout = function(){
         popupNewHall.remove();
     }
-
+ 
+  	//this function no longer necessary
     function pressOfficeDiversity() {
         var o = document.getElementById('location23').innerHTML;
 
