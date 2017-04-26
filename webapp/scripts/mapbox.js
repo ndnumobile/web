@@ -1476,6 +1476,24 @@
 		.addTo(map);
 	}
 	
+	function navPopupPoi1(centerX, centerY, PoiLocation)
+	{
+		map.flyTo({center: [centerX, centerY],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([centerX, centerY])
+        .setHTML('<h3>'+ poi.poi[PoiLocation].title+'</h3><p>' + poi.poi[PoiLocation].details+'</p>'+ '<img src="'+poi.poi[PoiLocation].image+'"height="150" width="400">' + '<audio controls>'+ '<source src="' + poi.poi[PoiLocation].audio+'"type="audio/mp3"></audio>' + '<iframe width="320" height="240" src="' + poi.poi[PoiLocation].video + '"></iframe>')
+        .addTo(map);
+	}
+	
+	function navPopupPoi2(centerX, centerY, PoiLocation)
+	{
+		map.flyTo({center: [centerX, centerY],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([centerX, centerY])
+        .setHTML('<h3>'+ poi.poi[PoiLocation].title+'</h3><p>' + poi.poi[PoiLocation].details+'</p>')
+        .addTo(map);
+	}
+	
 	
 	
     function pressBtnAcademic() {
@@ -2199,7 +2217,8 @@
     eleNewHall.onmouseout = function(){
         popupNewHall.remove();
     }
-
+ 
+  	//this function no longer necessary
     function pressOfficeDiversity() {
         var o = document.getElementById('location23').innerHTML;
 
@@ -2563,7 +2582,7 @@
         map.flyTo({center: [-122.28501499999612,37.51643189241878],speed: 0.3});
 
         popupAptsCarroll.setLngLat([-122.28501499999612,37.51643189241878])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Carroll</p>")
+        .setHTML("<p style=\"font-size:12px;\">Carroll Apartments</p>")
         .addTo(map);
     }
     eleAptsCarroll.onmouseout = function(){
@@ -2594,7 +2613,7 @@
         map.flyTo({center: [-122.28543400000022,37.5165439283045],speed: 0.3});
 
         popupAptsKane.setLngLat([-122.28543400000022,37.5165439283045])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Kane</p>")
+        .setHTML("<p style=\"font-size:12px;\">Kane Apartments</p>")
         .addTo(map);
     }
     eleAptsKane.onmouseout = function(){
@@ -2624,7 +2643,7 @@
         map.flyTo({center: [-122.28580000000552,37.516739179156104],speed: 0.3});
 
         popupAptsWilkie.setLngLat([-122.28580000000552,37.516739179156104])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Wilkie</p>")
+        .setHTML("<p style=\"font-size:12px;\">Wilkie Apartments</p>")
         .addTo(map);
     }
     eleAptsWilkie.onmouseout = function(){
