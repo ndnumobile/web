@@ -402,7 +402,7 @@ body{
     border: 14px solid #f8c460;
     border-radius: 25px;
 
-    width: 55%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -494,10 +494,10 @@ body{
 }
 
 .modal-title2{
-    padding: 50px 50px;
+    padding: 20px 20px;
     color:#f8c460;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
     overflow-y: auto;
 
@@ -512,28 +512,33 @@ body{
 .modal-body2 {
     padding: 10px 16px;
     color:#f8c460;
-    font-size: 30px;
+    font-size: 15px;
     overflow-y: auto;
 
 }
 
-.faq-modal .modal-header2 .modal-title2{
+.faq-modal .modal-header2 .modal-title2 {
   font-size: 25px;
   color: white;
-  width: 100%;
+ 
  
 
 }
-.faq-modal .modal-body2 h2{
+.faq-modal .modal-body2  h2{
 font-size: 20px;
 color: white;
+
 }
 .faq-modal .modal-body2 li{
 font-size: 15px;
 color: white;
-width: 100%;
+
 
 }
+.faq-modal .modal-content2{
+  width: 100%;
+}
+
 
 .autoModal.modal .modal-body{
     max-height: 100%;
@@ -549,9 +554,10 @@ h5{
     text-align: left;
 }
 
+
 p2{
-    padding: 1px;
-    font-size: 20px;
+    padding: 3px;
+    font-size: 19px;
     text-align: left;
 }
 

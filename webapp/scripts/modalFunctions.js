@@ -75,8 +75,9 @@ openWelcomeModal.onclick = function(){
 
                 +'<div id="modalPrime" class="modal-body2 autoModal">'
                     +'<h4>This is an interactive map.</h4>'
+                    +'<h4>Created by students of Computer Science department, Class of 2017</h4>'
                     +'<p><u>Helpful Hints</u></p>'
-                    +'<div class="carousel"><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Use the search bar above to search for a location, or click on map locations for a pop-up description.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ-s.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> To close a pop-up window: click the close button in the top right, or click anywhere on the map.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span>  In the lower right corner, you can center the map, zoom in and out, and reset the map to north.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Hold the \'Control\' key and drag the mouse to enter 3D mode. Click the \'Center Map\' button to exit.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> As you zoom in, the names of the buildings will automatically show on the map.</div>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span> Use the search bar above to search for a location, or click on map locations for a pop-up description.<br><span class="glyphicon glyphicon-check"></span>Use the navigation menu in the upper left corner to see a list of campus buildings, find printable school documents or browse FAQ-s.<br><span class="glyphicon glyphicon-check"></span> To close a pop-up window: click the close button in the top right, or click anywhere on the map.<br><span class="glyphicon glyphicon-check"></span>  In the lower right corner, you can center the map, zoom in and out, and reset the map to north.<br><span class="glyphicon glyphicon-check"></span> Hold the \'Control\' key and drag the mouse to enter 3D mode. Click the \'Center Map\' button to exit.<br><span class="glyphicon glyphicon-check"></span> As you zoom in, the names of the buildings will automatically show on the map.<br>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
@@ -85,7 +86,7 @@ openWelcomeModal.onclick = function(){
     modalopen.style.display = "block";
 
     $("#wrapper").toggleClass("toggled");
-    $('#modalPrime .carousel').slick({slidesToShow: 1, dots: true, slidesToScroll: 1, arrows: true});  
+     
 }
 
 
@@ -99,7 +100,7 @@ openGeneralHistoryModal.onclick = function(){
 
                 +'<div id="modalPrime" class="modal-body2 autoModal">'
                     +'<h4>General History</h4>'
-                    +'<div class="carousel"><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> In 1851, the Sisters of Notre Dame de Namur came to the San Francisco Bay Area from their mission schools in Oregon and established the College of Notre Dame in San Jose, California</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> The College of Notre Dame was chartered as the first college in the state of California authorized to grant the baccalaureate degree to women.</div><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Now called Notre Dame de Namur University, NDNU is a Catholic, not-for-profit, coeducational institution serving approximately 1,700 traditional-aged and adult students from diverse backgrounds. </div><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> NDNU maintains a strong commitment to access for diverse populations, academic excellence, social justice and community engagement.</div><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> The university is fully accredited and offers a rich variety of undergraduate, graduate and credential programs. The historic, 50-acre campus is located on the San Francisco Peninsula in Silicon Valley.</div>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span> In 1851, the Sisters of Notre Dame de Namur came to the San Francisco Bay Area from their mission schools in Oregon and established the College of Notre Dame in San Jose, California<br><span class="glyphicon glyphicon-check"></span> The College of Notre Dame was chartered as the first college in the state of California authorized to grant the baccalaureate degree to women.<br><span class="glyphicon glyphicon-check"></span> Now called Notre Dame de Namur University, NDNU is a Catholic, not-for-profit, coeducational institution serving approximately 1,700 traditional-aged and adult students from diverse backgrounds. <br><span class="glyphicon glyphicon-check"></span> NDNU maintains a strong commitment to access for diverse populations, academic excellence, social justice and community engagement.<br><span class="glyphicon glyphicon-check"></span> The university is fully accredited and offers a rich variety of undergraduate, graduate and credential programs. The historic, 50-acre campus is located on the San Francisco Peninsula in Silicon Valley.<br>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
@@ -108,8 +109,7 @@ openGeneralHistoryModal.onclick = function(){
     modalopen.style.display = "block";
 
     $("#wrapper").toggleClass("toggled");
-    
-    $('#modalPrime .carousel').slick({slidesToShow: 1, dots: true, slidesToScroll: 1, arrows: true});  
+     
 }
 
 
@@ -125,7 +125,7 @@ openWelcomeModal_es.onclick = function(){
                 +'<div id="modalPrime" class="modal-body2 autoModal">'
                     +'<h4>Este es un mapa interactivo.</h4>'
                     +'<p><u>Consejos útiles</u></p>'
-                    +'<div class="carousel"><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.</div><div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa.</div> <div class="carousel-item"><span class="glyphicon glyphicon-check"></span> Al acercar, los nombres de los edificios se mostrarán automáticamente en el mapa.</div>'
+                    +'<p2><span class="glyphicon glyphicon-check"></span> Utilice la barra de búsqueda anterior para buscar una ubicación o haga clic en las ubicaciones del mapa para obtener una descripción emergente.<br><span class="glyphicon glyphicon-check"></span>  Utilice el menú de navegación en la esquina superior izquierda para ver una lista de edificios del campus, encontrar documentos para imprimir en la escuela o navegar por las preguntas frecuentes.<br><span class="glyphicon glyphicon-check"></span> Para cerrar una ventana emergente: haga clic en el botón cerrar en la parte superior derecha o haga clic en cualquier parte del mapa.<br><span class="glyphicon glyphicon-check"></span>  Al acercar, los nombres de los edificios se mostrarán automáticamente en el mapa.<br>'
                 +'</div>'
                 +'<div class="modal-footer2 autoModal">'
                 +'</div>'
@@ -135,7 +135,7 @@ openWelcomeModal_es.onclick = function(){
 
     $("#wrapper").toggleClass("toggled");
     
-    $('#modalPrime .carousel').slick({slidesToShow: 1, dots: true, slidesToScroll: 1, arrows: true});  
+   
 }
 
 openGeneralHistoryModal_es.onclick = function(){
