@@ -847,20 +847,18 @@
                     "id": "39",
                     "parentId": "",
                     "locType": "building",
-                    "title": "McGraw's Bar & Grill",
+                    "title": "McGraws Bar and Grill",
                     "description": "A great place to study, with better wifi than on campus.",
                     "image": "./img/mcgraws.jpg",
                     "audio": "",
-                    "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks.",
+                    "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks. A favorite spot of former NDNU professor, Ardavan Davaran (March 4,1940 - January 28, 2009); who passed away in Oakland, CA, following a short, but hard fought battle with cancer. Born in Iran, he received his BA in bacteriology; MA and PhD in comparative literature from UC Berkeley. He returned to Iran and taught at Teheran University where he was an associate professor and later chairman of the Department of English and Comparative Literature. Returning to the U.S. in 1980, following the Iranian revolution, he continued his teaching career at Notre Dame de Namur University in Belmont, CA, where he taught in the graduate and undergraduate Department of English. Dr. D, as he was known to his students, was a dedicated and passionate teacher - never missing a class. Described by his students as compassionate and larger than life, Dr. Davaran always challenged them to achieve more than they thought possible of themselves. An avid tennis player, Ardy loved life and lived it to its fullest. His family, colleagues, students, and many, many friends mourn his passing. In Loving Memory of Dr. Ardavan Davaran.",
                     "video": "",
                     "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
                 "geometry": {
                     "coordinates": [
-
-                        -122.277581,
-                        37.521535
+                        -122.277581,37.521535
                     ],
                     "type": "Point"
                 }
@@ -895,7 +893,7 @@
 
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
-        [-122.274592, 37.527414]  // Northeast coordinates
+        [-122.274592, 38.527414]  // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
@@ -1467,7 +1465,7 @@
 		var centerPositionX = centerX;
 		var centerPositionY = centerY;
 		var featurePosition = featureLocation;
-		
+
 		map.flyTo({center: [centerPositionX, centerPositionY],speed: 0.3});
 		var popup = new mapboxgl.Popup({closeOnClick: true})
 		.setLngLat([centerPositionX, centerPositionY])
@@ -1475,9 +1473,9 @@
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[featurePosition].properties.title + '\',\'' +   geojson.features[featurePosition].properties.history + '\',\'' + geojson.features[featurePosition].properties.video + '\',\'' + geojson.features[featurePosition].properties.image  + '\',\'' + geojson.features[featurePosition].properties.description + '\',\'' + geojson.features[featurePosition].properties.audio + '\',\'' + geojson.features[featurePosition].properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>')
 		.addTo(map);
 	}
-	
-	
-	
+
+
+
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 
@@ -2563,7 +2561,7 @@
         map.flyTo({center: [-122.28501499999612,37.51643189241878],speed: 0.3});
 
         popupAptsCarroll.setLngLat([-122.28501499999612,37.51643189241878])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Carroll</p>")
+        .setHTML("<p style=\"font-size:12px;\">Carroll Apartments</p>")
         .addTo(map);
     }
     eleAptsCarroll.onmouseout = function(){
@@ -2594,7 +2592,7 @@
         map.flyTo({center: [-122.28543400000022,37.5165439283045],speed: 0.3});
 
         popupAptsKane.setLngLat([-122.28543400000022,37.5165439283045])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Kane</p>")
+        .setHTML("<p style=\"font-size:12px;\">Kane Apartments</p>")
         .addTo(map);
     }
     eleAptsKane.onmouseout = function(){
@@ -2624,7 +2622,7 @@
         map.flyTo({center: [-122.28580000000552,37.516739179156104],speed: 0.3});
 
         popupAptsWilkie.setLngLat([-122.28580000000552,37.516739179156104])
-        .setHTML("<p style=\"font-size:12px;\">The Apartments Wilkie</p>")
+        .setHTML("<p style=\"font-size:12px;\">Wilkie Apartments</p>")
         .addTo(map);
     }
     eleAptsWilkie.onmouseout = function(){
@@ -2853,13 +2851,13 @@
 
       }else if(x == "Library Lawn"){
           navPopup(-122.285082,37.517643,9);
-          
+
       }else if(x == "Walter Gleason Gym"){
           navPopup(-122.284331,37.518310,10);
-          
+
       }else if(x == "Campus Center"){
           navPopup(-122.284934,37.517124,11);
-          
+
       }else if(x == "Academic Success Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
@@ -2910,7 +2908,7 @@
 
       }else if(x == "The Quad"){
           navPopup(-122.285009,37.516948,12);
-          
+
       }else if(x == "Writing Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
@@ -2928,10 +2926,10 @@
 
       }else if(x == "Center for Spirituality"){
           navPopup(-122.285286,37.518197,13);
-          
+
       }else if(x == "Julie Billiart Hall"){
           navPopup(-122.285396,37.517010,14);
-          
+
       }else if(x == "Dean of Students/Student Affairs"){
           map.flyTo({
               center: [-122.285396,37.517010],
@@ -2958,7 +2956,7 @@
 
       }else if(x == "St. Joseph Hall"){
           navPopup(-122.285579,37.517475,15);
-          
+
       }else if(x == "Housing"){
           map.flyTo({
               center: [-122.285579,37.517475],
@@ -2982,10 +2980,10 @@
 
       }else if(x == "Koret Athletic Field"){
           navPopup(-122.284287,37.515561,16);
-          
+
       }else if(x == "Toso Residences"){
           navPopup(-122.286516,37.518052,17);
-          
+
       }else if(x == "Human Resources"){
           map.flyTo({
               center: [-122.286516,37.518052],
@@ -3024,7 +3022,7 @@
 
       }else if(x == "New Hall"){
           navPopup(-122.285694,37.517938,6);
-          
+
       }else if(x == "Counseling and Health Services"){
           map.flyTo({
               center: [-122.285694,37.517938],
@@ -3039,37 +3037,37 @@
 
       }else if(x == "Taube Center"){
           navPopup(-122.283010,37.516661,3);
-          
+
       }else if(x == "Wiegand Gallery"){
           navPopup(-122.287751,37.518191,18);
-          
+
       }else if(x == "Madison Art Center"){
           navPopup(-122.287697,37.517974,19);
-          
+
       }else if(x == "Cuvilly Hall"){
           navPopup(-122.287009,37.517927,20);
-          
+
       }else if(x == "Bookstore"){
           navPopup(-122.287091,37.518277,21);
-          
+
       }else if(x == "Gavin Hall"){
           navPopup(-122.286697,37.518547,22);
-          
+
       }else if(x == "Province Center"){
           navPopup(-122.287378,37.516547,23);
-          
+
       }else if(x == "NDNU Theatre"){
           navPopup(-122.285244,37.515499,5);
-          
+
       }else if(x == "Mailing Center"){
           navPopup(-122.2878337,37.517000,36);
-          
+
       }else if(x == "Campanile"){
           navPopup(-122.2846963,37.5181250,37);
-          
+
       }else if(x == "Ralston Hall Annex"){
           navPopup(-122.286468,37.517468,39);
-          
+
       }else{
           map.flyTo({
               center: [-122.284934,37.517124],
