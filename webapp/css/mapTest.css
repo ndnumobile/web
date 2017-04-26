@@ -384,7 +384,7 @@ body{
     padding-top: 100px; /* Location of the box */
     left: 10%;
     top: 0;
-    width: 95%; /* Full width */
+    width: 75%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     /*background-color: rgb(0,0,0); /* Fallback color */
@@ -401,6 +401,7 @@ body{
     padding: 0;
     border: 14px solid #f8c460;
     border-radius: 25px;
+
 
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -512,6 +513,7 @@ body{
 .modal-body2 {
     padding: 10px 16px;
     color:#f8c460;
+
     font-size: 15px;
     overflow-y: auto;
 
@@ -520,8 +522,6 @@ body{
 .faq-modal .modal-header2 .modal-title2 {
   font-size: 25px;
   color: white;
- 
- 
 
 }
 .faq-modal .modal-body2  h2{
@@ -532,7 +532,6 @@ color: white;
 .faq-modal .modal-body2 li{
 font-size: 15px;
 color: white;
-
 
 }
 .faq-modal .modal-content2{
@@ -673,13 +672,6 @@ p{
     color: #f8c460;
 }
 
-
-.carousel {overflow: hidden; 
-}  
-
-.carousel-item {display: inline-block;  
-vertical-align: top; font-size: 20px;
-{
+#pageFooter {
     z-index: 2000;
-
 }
