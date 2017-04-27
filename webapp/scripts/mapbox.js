@@ -893,7 +893,7 @@
 
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
-        [-122.274592, 38.527414]  // Northeast coordinates
+        [-122.274592, 37.527414]  // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
@@ -1499,7 +1499,7 @@
         map.flyTo({center: [-122.28495699776732,37.51718100361937],speed: 0.3});
 
         popupAsc.setLngLat([-122.28495699776732,37.51718100361937])
-        .setHTML("<p style=\"font-size:12px;\">Academic Success Center</p>")
+        .setHTML("<p style=\"font-size:12px;\">Student Success Center</p>")
         .addTo(map);
     }
     eleAsc.onmouseout = function(){
@@ -1531,7 +1531,7 @@
         map.flyTo({center: [-122.28653324831744,37.51806340060595],speed: 0.3});
 
         popupAdmin.setLngLat([-122.28653324831744,37.51806340060595])
-        .setHTML("<p style=\"font-size:12px;\">Administration</p>")
+        .setHTML("<p style=\"font-size:12px;\">President’s Office and Provost</p>")
         .addTo(map);
     }
     eleAdmin.onmouseout = function(){
@@ -2653,7 +2653,7 @@
         map.flyTo({center: [-122.28473279056112,37.51756640732573],speed: 0.3});
 
         popupLib.setLngLat([-122.28473279056112,37.51756640732573])
-        .setHTML("<p style=\"font-size:12px;\">The Carl and Celia Berta Gellert Library</p>")
+        .setHTML("<p style=\"font-size:12px;\">Carl and Celia Berta Gellert Library</p>")
         .addTo(map);
     }
     eleLib.onmouseout = function(){
