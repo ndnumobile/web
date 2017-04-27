@@ -3,26 +3,6 @@
     var geojson = {
         "type": "FeatureCollection",
         "features": [
-            // {
-            //     "type": "Feature",
-            //     "properties": {
-            //         "id": "1",
-            //         "parentId": "",
-            //         "locType": "building",
-            //         "title": "St. Mary's Hall",
-            //         "description": "St. Mary's Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, and the Registrar; as well as the Business Office.",
-            //         "image": "./img/stMarys.JPG",
-            //         "audio": "./audio/stMarysHistory.mp3",
-            //         "history": "St. Mary's Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
-            //         "video": "https://www.youtube.com/embed/wcF3hWxleFg",
-            //         "icon": "./customIcons/gradCap.svg",
-            //         "iconSize":[25,25]
-            //     },
-            //     "geometry": {
-            //         "coordinates": [-122.2849,37.51675],
-            //         "type": "Point"
-            //     }
-            // },
             {
                 "type": "Feature",
                 "properties": {
