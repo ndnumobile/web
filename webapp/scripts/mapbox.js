@@ -9,11 +9,11 @@
                     "id": "1",
                     "parentId": "",
                     "locType": "building",
-                    "title": "St. Marys Hall",
-                    "description": "St. Marys Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, the Registrar; as well as the Business Office.",
+                    "title": "St. Mary's Hall",
+                    "description": "St. Mary's Hall houses the largest number of classrooms. Newly remodeled, the science and computer labs are located in this building, along with the Offices of Public Safety, Financial Aid, and the Registrar; as well as the Business Office.",
                     "image": "./img/stMarys.JPG",
                     "audio": "./audio/stMarysHistory.mp3",
-                    "history": "St. Marys Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
+                    "history": "St. Mary's Hall is named for Our Lady, Notre Dame, mother of Jesus Christ.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/gradCap.svg",
                     "iconSize":[25,25]
@@ -52,10 +52,10 @@
                     "parentId": "",
                     "locType": "building",
                     "title": "Ralston Hall Mansion",
-                    "description": "Ralston Hall a National Historic Landmark and a California Historic Landmark. Completed in 1868, this exquisite Victorian mansion is currently closed for renovation and seismic retrofitting. Once reopened, the hall will once again house the university’s main administrative offices, as well as a new student learning commons.",
+                    "description": "Ralston Hall a National Historic Landmark and a California Historical Landmark. Completed in 1868, this exquisite Victorian mansion is currently closed for renovation and seismic retrofitting. Once reopened, the hall will once again house the university’s main administrative offices, as well as a new student learning commons.",
                     "image": "./img/ralstonHall.JPG",
                     "audio": "./audio/ralstonHallHistory.mp3",
-                    "history": "The hall is named for William Chapman Ralston, original owner of the mansion and prominent San Franciscan.",
+                    "history": "The hall is named for William Chapman Ralston, early owner of the mansion and prominent San Franciscan.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mansion.svg",
                     "iconSize":[25,25]
@@ -76,7 +76,7 @@
                     "description": "The Taube Center is used for performances and art showings.",
                     "image": "./img/taube.JPG",
                     "audio": "./audio/taubeHistory.mp3",
-                    "history": "Originally built as a church, this multi-purposed building is used for classes, recitals, music performances, lectures, and meetings.",
+                    "history": "Originally built as a church, this multi-purpose building is used for classes, recitals, music performances, lectures, and meetings.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/theatreB.svg",
                     "iconSize":[25,25]
@@ -199,7 +199,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Library Lawn",
-                    "description": "University and student events are held on the Library Lawn throughout the year. Here you can see the Chapel, Library, Cafeteria, and Saint Joseph’s Residence Hall.",
+                    "description": "University and student events are held on the Library Lawn throughout the year. Here you can see the Chapel, Library, Cafeteria, and Saint Joseph Hall.",
                     "image": "./img/libraryLawn.JPG",
                     "audio": "./audio/libraryLawn.mp3",
                     "history": "",
@@ -610,7 +610,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Parking Pass Machine",
-                    "description": "2 dollars in coin or one dollar bills gets you a day use parking pass at this parking pass machine. The only one for the main, commuter parking lot.",
+                    "description": "$2 in coins or one dollar bills gets you a day-use parking pass at this parking pass machine, the only one for the main commuter parking lot.",
                     "image": "./img/parkingMachine.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
@@ -682,7 +682,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Overflow Parking Lot",
-                    "description": "Additional parking. A bus can pick you up at the bottom of the driveway. Not well lit, it is recommended to bring a flashlight, and a friend when heading here at night.",
+                    "description": "Additional parking. A bus can pick you up at the bottom of the driveway.",
                     "image": "./img/overflowParking.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
                     "history": "",
@@ -805,7 +805,7 @@
                     "description": "The center for all mailing needs",
                     "image": "./img/mailingCenterAdjusted.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
-                    "history": "Originally housed in Ralston Hall, the mailing center has moved to accomodate the Ralston Hall renovation.",
+                    "history": "Originally housed in Ralston Hall, the mailing center has moved to accommodate the Ralston Hall renovation.",
                     "video": "https://www.youtube.com/embed/wcF3hWxleFg",
                     "icon": "./customIcons/mail1.svg",
                     "iconSize":[20,20]
@@ -1460,19 +1460,19 @@
        }
     });
 
-	function navPopup(centerX,centerY,featureLocation)
-	{
-		var centerPositionX = centerX;
-		var centerPositionY = centerY;
-		var featurePosition = featureLocation;
+    function navPopup(centerX,centerY,featureLocation)
+    {
+        var centerPositionX = centerX;
+        var centerPositionY = centerY;
+        var featurePosition = featureLocation;
 
-		map.flyTo({center: [centerPositionX, centerPositionY],speed: 0.3});
-		var popup = new mapboxgl.Popup({closeOnClick: true})
-		.setLngLat([centerPositionX, centerPositionY])
-		.setHTML('<h3>' + geojson.features[featurePosition].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[featurePosition].properties.image + '"></img><p>' + geojson.features[featurePosition].properties.description + '</p><br>'
+        map.flyTo({center: [centerPositionX, centerPositionY],speed: 0.3});
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+        .setLngLat([centerPositionX, centerPositionY])
+        .setHTML('<h3>' + geojson.features[featurePosition].properties.title + '</h3><img class="popup-image" alt="Location Image" src="' + geojson.features[featurePosition].properties.image + '"></img><p>' + geojson.features[featurePosition].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[featurePosition].properties.title + '\',\'' +   geojson.features[featurePosition].properties.history + '\',\'' + geojson.features[featurePosition].properties.video + '\',\'' + geojson.features[featurePosition].properties.image  + '\',\'' + geojson.features[featurePosition].properties.description + '\',\'' + geojson.features[featurePosition].properties.audio + '\',\'' + geojson.features[featurePosition].properties.id + '\')" class="btn btn-primary btn-lg active btn-more" role="button" aria-pressed="true">More</a>')
-		.addTo(map);
-	}
+        .addTo(map);
+    }
 
 
 
@@ -1609,7 +1609,7 @@
         var u = document.getElementById('location4').innerHTML;
         if(u == "Cafeteria")
         {
-        	  map.flyTo({
+              map.flyTo({
               center: [-122.285235,37.517219],
               speed: 0.3,
 
@@ -1679,17 +1679,17 @@
     }
 
     function pressBtnCampanile() {
-    	var u = document.getElementById('location5a').innerHTML;
+        var u = document.getElementById('location5a').innerHTML;
 
-    	if(u == "Campanile")
-    	{
-    	  map.flyTo({center: [-122.2846963,37.5181250],speed: 0.3,offset: [0,400]});
+        if(u == "Campanile")
+        {
+          map.flyTo({center: [-122.2846963,37.5181250],speed: 0.3,offset: [0,400]});
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2846963,37.5181250])
           .setHTML('<h3>' + geojson.features[37].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[37].properties.image + '"></iframe><p>' + geojson.features[37].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[37].properties.title + '\',\'' +   geojson.features[37].properties.history + '\',\'' + geojson.features[37].properties.video + '\',\'' + geojson.features[37].properties.image  + '\',\'' + geojson.features[37].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
-    	}
+        }
 
     }
 
@@ -1715,7 +1715,7 @@
         if(z == "Career Center")
         {
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
-		  var popup = new mapboxgl.Popup({closeOnClick: true})
+          var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
           .setHTML('<h3>'+ poi.poi[5].title+'</h3><p>' + poi.poi[5].details+'</p>')
           .addTo(map);
@@ -2079,7 +2079,7 @@
         if(d == "Library Lawn")
         {
           map.flyTo({center: [-122.285082,37.517643],speed: 0.3});
-		  var popup = new mapboxgl.Popup({closeOnClick: true})
+          var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.285082,37.517643])
           .setHTML('<h3>' + geojson.features[9].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[9].properties.image + '"></iframe><p>' + geojson.features[9].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[9].properties.title + '\',\'' +   geojson.features[9].properties.history + '\',\'' + geojson.features[9].properties.video + '\',\'' + geojson.features[9].properties.image  + '\',\'' + geojson.features[9].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
@@ -2137,16 +2137,16 @@
     }
 
     function pressBtnMailingCenter() {
-    	var d = document.getElementById('location21b').innerHTML;
-    	if (d == "Mailing Center")
-    	{
-    	  map.flyTo({center: [-122.2878337,37.517000],speed: 0.3,offset: [0,400]});
+        var d = document.getElementById('location21b').innerHTML;
+        if (d == "Mailing Center")
+        {
+          map.flyTo({center: [-122.2878337,37.517000],speed: 0.3,offset: [0,400]});
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.2878337,37.517000])
           .setHTML('<h3>' + geojson.features[36].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[36].properties.image + '"></iframe><p>' + geojson.features[36].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[36].properties.title + '\',\'' +   geojson.features[36].properties.history + '\',\'' + geojson.features[36].properties.video + '\',\'' + geojson.features[36].properties.image  + '\',\'' + geojson.features[36].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
           .addTo(map);
-    	}
+        }
 
     }
 
@@ -2292,12 +2292,12 @@
         popupSafe.remove();
     }
 
-	//this function can now be removed
+    //this function can now be removed
     function pressBtnRalstonAnnex() {
       var u = document.getElementById('location25a').innerHTML;
       if(u == "Ralston Hall Annex")
       {
-      	  map.flyTo({center: [-122.286468,37.517468],speed: 0.3});
+          map.flyTo({center: [-122.286468,37.517468],speed: 0.3});
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286468,37.517468])
           .setHTML('<h3>' + geojson.features[39].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[39].properties.image + '"></iframe><p>' + geojson.features[39].properties.description + '</p><br>'
@@ -2324,7 +2324,7 @@
         popupRalAnnex.remove();
     }
 
-	//this function now can be removed
+    //this function now can be removed
     function pressBtnRalston() {
         var u = document.getElementById('location25').innerHTML;
         if(u == "Ralston Hall Mansion")
@@ -2568,18 +2568,18 @@
         popupAptsCarroll.remove();
     }
 
-	//this function can also be removed now
+    //this function can also be removed now
     function pressBtnTheApartmentsKane() {
-    	var u = document.getElementById('location32a').innerHTML;
+        var u = document.getElementById('location32a').innerHTML;
         if(u == "The Apartments Kane")
-    	{
-    		map.flyTo({center: [-122.285434,37.516556],speed: 0.3});
+        {
+            map.flyTo({center: [-122.285434,37.516556],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.285434,37.516556])
             .setHTML('<h3>' + geojson.features[33].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[33].properties.image + '"></iframe><p>' + geojson.features[33].properties.description + '</p><br>'
                  + '<a href="#" onClick="popUpModal(\'' + geojson.features[33].properties.title + '\',\'' +   geojson.features[33].properties.history + '\',\'' + geojson.features[33].properties.video + '\',\'' + geojson.features[33].properties.image  + '\',\'' + geojson.features[33].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
             .addTo(map);
-    	}
+        }
     }
 
     //onhover of a campus location sidebar item, center map and display tooltip with building name.
@@ -2600,10 +2600,10 @@
     }
 
     function pressBtnTheApartmentsWilkie() {
-    	var u = document.getElementById('location32b').innerHTML;
+        var u = document.getElementById('location32b').innerHTML;
         if(u == "The Apartments Wilkie")
         {
-        	map.flyTo({center: [-122.285800,37.516752],speed: 0.3});
+            map.flyTo({center: [-122.285800,37.516752],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
             .setLngLat([-122.285800,37.516752])
             .setHTML('<h3>' + geojson.features[32].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[32].properties.image + '"></iframe><p>' + geojson.features[32].properties.description + '</p><br>'
