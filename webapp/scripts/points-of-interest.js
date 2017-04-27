@@ -114,7 +114,7 @@ var poi = {
            "title":"Registrar",
            "details":"The Registrar is located in the administration wing of St. Mary Hall.",
            "audio":"",
-           "image":"./img/stMarys.JPG",
+           "image":"",
            "video":""
         },
         {
