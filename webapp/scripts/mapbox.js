@@ -1479,7 +1479,7 @@
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 
-        if(y == "Academic Success Center")
+        if(y == "Student Success Center")
         {
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1510,7 +1510,7 @@
     function pressBtnAdmin() {
         var y = document.getElementById('location1').innerHTML;
 
-        if(y == "Administration")
+        if(y == "President’s Office and Provost")
         {
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1712,7 +1712,7 @@
     function pressBtnCareer() {
         var z = document.getElementById('location6').innerHTML;
 
-        if(z == "Career Services")
+        if(z == "Career Center")
         {
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
 		  var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2632,7 +2632,7 @@
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
-        if(d == "The Carl Gellert and Celia Berta Gellert Library")
+        if(d == "Carl Gellert and Celia Berta Gellert Library")
         {
             map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
