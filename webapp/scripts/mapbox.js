@@ -852,7 +852,7 @@
                     "image": "./img/mcgraws.jpg",
                     "audio": "",
                     "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks. A favorite spot of former NDNU professor, Ardavan Davaran (March 4,1940 - January 28, 2009); who passed away in Oakland, CA, following a short, but hard fought battle with cancer. Born in Iran, he received his BA in bacteriology; MA and PhD in comparative literature from UC Berkeley. He returned to Iran and taught at Teheran University where he was an associate professor and later chairman of the Department of English and Comparative Literature. Returning to the U.S. in 1980, following the Iranian revolution, he continued his teaching career at Notre Dame de Namur University in Belmont, CA, where he taught in the graduate and undergraduate Department of English. Dr. D, as he was known to his students, was a dedicated and passionate teacher - never missing a class. Described by his students as compassionate and larger than life, Dr. Davaran always challenged them to achieve more than they thought possible of themselves. An avid tennis player, Ardy loved life and lived it to its fullest. His family, colleagues, students, and many, many friends mourn his passing. In Loving Memory of Dr. Ardavan Davaran.",
-                    "video": "",
+                    "video": "./img/Dr_D.png",
                     "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
@@ -893,7 +893,7 @@
 
     var bounds = [
         [-122.293931, 37.508234], // Southwest coordinates
-        [-122.274592, 38.527414]  // Northeast coordinates
+        [-122.274592, 37.527414]  // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
@@ -1479,7 +1479,7 @@
     function pressBtnAcademic() {
         var y = document.getElementById('location0').innerHTML;
 
-        if(y == "Academic Success Center")
+        if(y == "Student Success Center")
         {
             map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1499,7 +1499,7 @@
         map.flyTo({center: [-122.28495699776732,37.51718100361937],speed: 0.3});
 
         popupAsc.setLngLat([-122.28495699776732,37.51718100361937])
-        .setHTML("<p style=\"font-size:12px;\">Academic Success Center</p>")
+        .setHTML("<p style=\"font-size:12px;\">Student Success Center</p>")
         .addTo(map);
     }
     eleAsc.onmouseout = function(){
@@ -1510,7 +1510,7 @@
     function pressBtnAdmin() {
         var y = document.getElementById('location1').innerHTML;
 
-        if(y == "Administration")
+        if(y == "President’s Office and Provost")
         {
             map.flyTo({center: [-122.286516,37.518052],speed: 0.3});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -1531,7 +1531,7 @@
         map.flyTo({center: [-122.28653324831744,37.51806340060595],speed: 0.3});
 
         popupAdmin.setLngLat([-122.28653324831744,37.51806340060595])
-        .setHTML("<p style=\"font-size:12px;\">Administration</p>")
+        .setHTML("<p style=\"font-size:12px;\">President’s Office and Provost</p>")
         .addTo(map);
     }
     eleAdmin.onmouseout = function(){
@@ -1712,7 +1712,7 @@
     function pressBtnCareer() {
         var z = document.getElementById('location6').innerHTML;
 
-        if(z == "Career Services")
+        if(z == "Career Center")
         {
           map.flyTo({center: [-122.284934,37.517124],speed: 0.3});
 		  var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2632,7 +2632,7 @@
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
-        if(d == "The Carl Gellert and Celia Berta Gellert Library")
+        if(d == "Carl Gellert and Celia Berta Gellert Library")
         {
             map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2653,7 +2653,7 @@
         map.flyTo({center: [-122.28473279056112,37.51756640732573],speed: 0.3});
 
         popupLib.setLngLat([-122.28473279056112,37.51756640732573])
-        .setHTML("<p style=\"font-size:12px;\">The Carl and Celia Berta Gellert Library</p>")
+        .setHTML("<p style=\"font-size:12px;\">Carl and Celia Berta Gellert Library</p>")
         .addTo(map);
     }
     eleLib.onmouseout = function(){
