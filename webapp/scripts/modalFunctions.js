@@ -158,7 +158,7 @@ openGeneralHistoryModal_es.onclick = function(){
 }
 
 // When the user clicks on the more info button, displays a modal
-function popUpModal(title,history,vid,image,description,audio,id){
+function popUpModal(title,history,vid,image,description,audio,id,imageAlt){
     var lang = document.documentElement.lang;
     var closeSummaryModal = document.getElementsByClassName("mapboxgl-popup mapboxgl-popup-anchor-bottom");
     closeSummaryModal[0].style.display = "none";
@@ -169,7 +169,7 @@ function popUpModal(title,history,vid,image,description,audio,id){
         document.getElementById("modalContent").className = "modModal modal-content2 autoModal";
     }
 
-    var detailModal = "<button onClick=\"moreInfoClose()\" data-dismiss=\"modalContent\" class=\"mapboxgl-popup-close-button\">x</button><h3>" + title + "</h3><div id=\"vid-section\" style=\"display:none;\"><iframe class=\"vid-frame\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" scrolling=\"auto\"  src=\"" + vid + "\"></iframe></div><p>" + history + "</p><div id=\"audio-section\" style=\"display:none;\"><audio controls id=\"audio-panel\"><source src=\""+ audio + "\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio></div><div id=\"link-section\" style=\"display:none;\"></div>";
+    var detailModal = "<button onClick=\"moreInfoClose()\" data-dismiss=\"modalContent\" class=\"mapboxgl-popup-close-button\">x</button><h3>" + title + "</h3><div id=\"vid-section\" style=\"display:none;\"><iframe class=\"vid-frame\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" scrolling=\"auto\"  src=\"" + vid + "\"></iframe></div><div id=\"image-alt\" style=\"display:none;\"><img class=\"detail-image\" src=\""+ imageAlt +"\"/></div><p>" + history + "</p><div id=\"audio-section\" style=\"display:none;\"><audio controls id=\"audio-panel\"><source src=\""+ audio + "\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio></div><div id=\"link-section\" style=\"display:none;\"></div>";
     if (lang == 'es') {
         document.getElementById("modalContent-es").innerHTML = detailModal;
     } else {
@@ -180,6 +180,9 @@ function popUpModal(title,history,vid,image,description,audio,id){
     }
     if (vid != '') {
         document.getElementById("vid-section").style.display = "block";
+    }
+    if(imageAlt != 'undefined' && imageAlt != '' && imageAlt != null){
+        document.getElementById("image-alt").style.display = "block";
     }
 
     var linkHeader;
