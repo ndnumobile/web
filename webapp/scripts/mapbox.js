@@ -199,7 +199,7 @@
                     "parentId": "",
                     "locType": "poi",
                     "title": "Library Lawn",
-                    "description": "University and student events are held on the Library Lawn throughout the year. Here you can see the Chapel, Library, Cafeteria, and Saint Joseph’s Residence Hall.",
+                    "description": "University and student events are held on the Library Lawn throughout the year. Here you can see the Chapel, Library, Cafeteria, and Saint Joseph Hall.",
                     "image": "./img/libraryLawn.JPG",
                     "audio": "./audio/libraryLawn.mp3",
                     "history": "",
