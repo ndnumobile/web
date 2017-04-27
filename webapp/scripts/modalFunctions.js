@@ -181,7 +181,7 @@ function popUpModal(title,history,vid,image,description,audio,id,imageAlt){
     if (vid != '') {
         document.getElementById("vid-section").style.display = "block";
     }
-    if(imageAlt != 'undefined' && imageAlt != ''){
+    if(imageAlt != 'undefined' && imageAlt != '' && imageAlt != null){
         document.getElementById("image-alt").style.display = "block";
     }
 
