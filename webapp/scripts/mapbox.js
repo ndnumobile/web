@@ -2874,7 +2874,7 @@
       }else if(x == "Campus Center"){
           navPopup(-122.284934,37.517124,11);
 
-      }else if(x == "Academic Success Center"){
+      }else if(x == "Student Success Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
@@ -2883,7 +2883,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>Academic Success Center</h3><p>The Academic Success Center is located in the Campus Center</p>')
+          .setHTML('<h3>Student Success Center</h3><p>The Student Success Center is located in the Campus Center</p>')
           .addTo(map);
 
       }else if(x == "Admissions"){
@@ -2958,7 +2958,7 @@
           .setHTML('<h3>Dean of Students</h3><p>The Dean of Students is located on the bottom floor of Julie Billiart Hall.</p>')
           .addTo(map);
 
-      }else if(x == "Career Services"){
+      }else if(x == "Career Center"){
           map.flyTo({
               center: [-122.284934,37.517124],
               speed: 0.3,
@@ -2967,7 +2967,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.284934,37.517124])
-          .setHTML('<h3>Career Services</h3><p>The Career Services Center is located in the Campus Center</p>')
+          .setHTML('<h3>Career Center</h3><p>The Career Center is located in the Campus Center</p>')
           .addTo(map);
 
       }else if(x == "St. Joseph Hall"){
@@ -3012,7 +3012,7 @@
           .setHTML('<h3>Human Resources</h3><p>Human Resources is located in Compiegne Hall.</p>')
           .addTo(map);
 
-      }else if(x == "Administration"){
+      }else if(x == "President's Office and Provost"){
           map.flyTo({
               center: [-122.286516,37.518052],
               speed: 0.3,
@@ -3021,7 +3021,7 @@
 
           var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat([-122.286516,37.518052])
-          .setHTML('<h3>Administration</h3><p>Administration is located in Compiegne Hall.</p>')
+          .setHTML('<h3>President\'s Office and Provost</h3><p>The President\'s Office and Provost is located in Compiegne Hall.</p>')
           .addTo(map);
 
       }else if(x == "Interfaith Prayer Space"){
@@ -3083,6 +3083,19 @@
 
       }else if(x == "Ralston Hall Annex"){
           navPopup(-122.286468,37.517468,39);
+
+      }else if(x == "Cunningham Memorial Chapel"){
+          navPopup(-122.284900,37.518090,7);
+
+      }else if(x == "Office of Spirituality"){
+          navPopup(-122.285286,37.518197,13);
+
+      }else if(x == "Office of Diversity"){
+          map.flyTo({center: [-122.284900,37.518090],speed: 0.3});
+            var popupNewHall = new mapboxgl.Popup({closeOnClick: true})
+            .setLngLat([-122.284900,37.518090])
+            .setHTML('<h3>'+ poi.poi[10].title+'</h3><p>' + poi.poi[10].details+'</p>')
+            .addTo(map);
 
       }else{
           map.flyTo({
