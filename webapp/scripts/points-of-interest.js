@@ -21,8 +21,8 @@ var poi = {
         {
            "id":"poi3",
            "parentId":"12",
-           "title":"Academic Success Center",
-           "details":"The goal of the Academic Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Academic Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.",
+           "title":"Student Success Center",
+           "details":"The goal of the Student Success Center is to support students in all aspects of their academic careers at NDNU, but it is up to the student to seek out these support services. The staff engages in a partnership with students to help them achieve their goals. Students are encouraged to investigate the programs and services to consider how the Center’s staff can assist them to address their concerns and realize their goals. The Student Success Center offers you integrated learning and support services. Professional staff members, peer tutors and faculty work together to promote a supportive learning environment. Don’t hesitate to ask for help! We have all kinds of support services available.",
            "audio":"",
            "image":"",
            "video":""
@@ -30,8 +30,8 @@ var poi = {
         {
            "id":"poi4",
            "parentId":"18",
-           "title":"Administration",
-           "details":"Office of Administration is located in the Toso Residences",
+           "title":"President’s Office and Provost",
+           "details":"President’s Office and Provost is located in the Toso Residences",
            "audio":"",
            "image":"",
            "video":""
@@ -48,8 +48,8 @@ var poi = {
         {
            "id":"poi6",
            "parentId":"12",
-           "title":"Career Services",
-           "details":"The Career Services Center is located in the Campus Center",
+           "title":"Career Center",
+           "details":"The Career Center is located in the Campus Center",
            "audio":"",
            "image":"",
            "video":""
@@ -114,7 +114,7 @@ var poi = {
            "title":"Registrar",
            "details":"The Registrar is located in the administration wing of St. Mary Hall.",
            "audio":"",
-           "image":"./img/stMarys.JPG",
+           "image":"",
            "video":""
         },
         {
