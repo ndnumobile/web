@@ -852,7 +852,7 @@
                     "image": "./img/mcgraws.jpg",
                     "audio": "",
                     "history": "Previously known as Ausiellos, McGraws offers great service and selection of food and drinks. A favorite spot of former NDNU professor, Ardavan Davaran (March 4,1940 - January 28, 2009); who passed away in Oakland, CA, following a short, but hard fought battle with cancer. Born in Iran, he received his BA in bacteriology; MA and PhD in comparative literature from UC Berkeley. He returned to Iran and taught at Teheran University where he was an associate professor and later chairman of the Department of English and Comparative Literature. Returning to the U.S. in 1980, following the Iranian revolution, he continued his teaching career at Notre Dame de Namur University in Belmont, CA, where he taught in the graduate and undergraduate Department of English. Dr. D, as he was known to his students, was a dedicated and passionate teacher - never missing a class. Described by his students as compassionate and larger than life, Dr. Davaran always challenged them to achieve more than they thought possible of themselves. An avid tennis player, Ardy loved life and lived it to its fullest. His family, colleagues, students, and many, many friends mourn his passing. In Loving Memory of Dr. Ardavan Davaran.",
-                    "video": "",
+                    "video": "./img/Dr_D.png",
                     "icon": "./customIcons/beerBottle.svg",
                     "iconSize":[20,20]
                 },
