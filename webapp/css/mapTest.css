@@ -595,6 +595,11 @@ p{
     float:left;
     margin:5px 10px 10px 0px;
 }
+.detail-image{
+    height:158px;
+    float:left;
+    margin:5px 10px 10px 0px;
+}
 .popup-desc{
     margin-top:10px;
     float:left;
