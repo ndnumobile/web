@@ -30,7 +30,7 @@
                     "id": "2",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Carl Gellert and Celia Berta Gellert Library",
+                    "title": "Carl Gellert and Celia Gellert Library",
                     "description": "The library offers a place to study and access to books, periodicals, journals, and online databases. Reference librarians are available to assist with research and other needs.",
                     "image": "./img/library.JPG",
                     "audio": "./audio/libraryHistory.mp3",
@@ -513,7 +513,7 @@
                     "id": "25",
                     "parentId": "",
                     "locType": "building",
-                    "title": "Chapel Annex",
+                    "title": "Cunningham Chapel Annex",
                     "description": "An annex of the chapel, housing the Office of Spirituality.",
                     "image": "./img/ChapelAnnexResize.jpg",
                     "audio": "./audio/PinkNoise_15min.mp3",
@@ -2649,7 +2649,7 @@
 
     function pressBtnLibrary() {
         var d = document.getElementById('location33').innerHTML;
-        if(d == "Carl Gellert and Celia Berta Gellert Library")
+        if(d == "Carl Gellert and Celia Gellert Library")
         {
             map.flyTo({center: [-122.284719, 37.51755],speed: 0.3,offset: [0,400]});
             var popup = new mapboxgl.Popup({closeOnClick: true})
@@ -2670,7 +2670,7 @@
         map.flyTo({center: [-122.28473279056112,37.51756640732573],speed: 0.3});
 
         popupLib.setLngLat([-122.28473279056112,37.51756640732573])
-        .setHTML("<p style=\"font-size:12px;\">Carl and Celia Berta Gellert Library</p>")
+        .setHTML("<p style=\"font-size:12px;\">Carl Gellert and Celia Gellert Library</p>")
         .addTo(map);
     }
     eleLib.onmouseout = function(){
@@ -2809,7 +2809,7 @@
         if(x == "St. Mary's Hall"){
             navPopup(-122.2849, 37.51675,0);
 
-        }else if(x == "The Carl and Celia Berta Gellert Library"){
+        }else if(x == "Carl Gellert and Celia Gellert Library"){
             navPopup(-122.284719, 37.51755,1);
 
         }else if(x == "Ralston Hall"){
