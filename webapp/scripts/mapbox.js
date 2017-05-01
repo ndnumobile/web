@@ -524,8 +524,7 @@
                 },
                 "geometry": {
                     "coordinates": [
-                        -122.285230,
-                        37.518241
+                        -122.285230,37.518241
                     ],
                     "type": "Point"
                 }
@@ -1789,7 +1788,7 @@
         popupCounsel.remove();
     }
 
-    function pressBtnCunningham() {
+    function pressBtnCunninghamAnnex() {
         var u = document.getElementById('location9').innerHTML;
 
         if(u == "Cunningham Chapel Annex")
@@ -2276,6 +2275,69 @@
     }
     eleOfficeSprt.onmouseout = function(){
         popupOfficeSprt.remove();
+    }
+
+    function pressBtnOverflowParking() {
+        var u = document.getElementById('location23c').innerHTML;
+
+        if(u == "Overflow Parking")
+        {
+          map.flyTo({center: [-122.282326,37.517277],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.282326,37.517277])
+          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+        }
+
+    }
+
+    var eleOverflowParking = document.getElementById('location23c');
+    var popupOverflowParking = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleOverflowParking.onmouseover = function(){
+        map.flyTo({center: [-122.282326,37.517277],speed: 0.3});
+
+        popupOverflowParking.setLngLat([-122.282326,37.517277])
+        .setHTML("<p style=\"font-size:12px;\">Overflow Parking</p>")
+        .addTo(map);
+    }
+    eleOverflowParking.onmouseout = function(){
+        popupOverflowParking.remove();
+    }
+
+
+    function pressBtnParkingPassMachine() {
+        var u = document.getElementById('location23d').innerHTML;
+
+        if(u == "Parking Pass Machine")
+        {
+          map.flyTo({center: [-122.284236,37.517684],speed: 0.3,offset: [0,400]});
+          var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat([-122.284236,37.517684])
+          .setHTML('<h3>' + geojson.features[13].properties.title + '</h3><iframe class="popup-image" allowfullscreen="allowfullscreen" frameborder="0" scrolling="auto" src="' + geojson.features[13].properties.image + '"></iframe><p>' + geojson.features[13].properties.description + '</p><br>'
+                 + '<a href="#" onClick="popUpModal(\'' + geojson.features[13].properties.title + '\',\'' +   geojson.features[13].properties.history + '\',\'' + geojson.features[13].properties.video + '\',\'' + geojson.features[13].properties.image  + '\',\'' + geojson.features[13].properties.description + '\')" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">History</a>')
+          .addTo(map);
+        }
+
+    }
+
+    var eleParkingPassMachine = document.getElementById('location23d');
+    var popupParkingPassMachine = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+    eleParkingPassMachine.onmouseover = function(){
+        map.flyTo({center: [-122.284236,37.517684],speed: 0.3});
+
+        popupParkingPassMachine.setLngLat([-122.284236,37.517684])
+        .setHTML("<p style=\"font-size:12px;\">Parking Pass Machine</p>")
+        .addTo(map);
+    }
+    eleParkingPassMachine.onmouseout = function(){
+        popupParkingPassMachine.remove();
     }
 
 
